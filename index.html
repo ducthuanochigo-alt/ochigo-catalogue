@@ -20,7 +20,7 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CÔNG TY TNHH OCHIGO VIỆT NAM - Catalogue & Gia Công Đóng Lô Nhãn Riêng</title>
+  <title>CÔNG TY TNHH OCHIGO VIỆT NAM - Catalogue & Đóng Lô Nhãn Riêng</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -39,7 +39,6 @@
     };
   </script>
   <style>
-    [x-cloak] { display: none !important; }
     .line-clamp-2 {
       display: -webkit-box;
       -webkit-line-clamp: 2;
@@ -54,46 +53,27 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <!-- Top Bar -->
-  <div class="bg-ochigo-dark text-white text-xs sm:text-sm py-2 px-4">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
-      <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-        <span>📞 Tel: <strong>(028) 5411 2207</strong></span>
-        <span>🔥 Hotline: <strong>0946 606 007</strong> / <strong>0944 259 788</strong></span>
-        <span class="hidden md:inline">✉️ info@ochigo.vn</span>
-      </div>
+  <!-- Top Header -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-2xs">
+    <div class="max-w-7xl mx-auto px-4 py-3.5 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
       <div class="flex items-center gap-3">
-        <span>🌐 www.ochigo.vn</span>
-        <span class="bg-ochigo-accent text-white px-2.5 py-0.5 rounded-full text-xs font-semibold">
-          Better Crop Care Solutions
+        <span class="w-9 h-9 rounded-lg bg-ochigo-primary text-white font-extrabold flex items-center justify-center text-lg shrink-0">
+          O
         </span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Header & Main Navigation -->
-  <header class="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 py-3.5 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
-      <div>
-        <div class="flex items-center gap-2.5">
-          <span class="w-9 h-9 rounded-lg bg-ochigo-primary text-white font-extrabold flex items-center justify-center text-lg">
-            O
-          </span>
-          <div>
-            <h1 class="text-base sm:text-xl font-extrabold text-ochigo-dark tracking-tight">
-              CÔNG TY TNHH OCHIGO VIỆT NAM
-            </h1>
-            <p class="text-xs text-slate-500">
-              16.01 Lầu 16, Cao ốc Golden King, Số 15 Nguyễn Lương Bằng, P. Tân Mỹ, TP. HCM
-            </p>
-          </div>
+        <div>
+          <h1 class="text-base sm:text-xl font-extrabold text-ochigo-dark tracking-tight uppercase">
+            CÔNG TY TNHH OCHIGO VIỆT NAM
+          </h1>
+          <p class="text-xs text-slate-500">
+            16.01 Lầu 16, Cao ốc Golden King, Số 15 Nguyễn Lương Bằng, P. Tân Mỹ, TP. HCM
+          </p>
         </div>
       </div>
 
-      <!-- Main Mode Switcher: Catalogue vs Đóng Lô Nhãn Riêng -->
-      <div class="flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200 self-start lg:self-auto">
+      <!-- Mode Switcher -->
+      <div class="flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200 self-start md:self-auto">
         <button id="tab-catalogue" onclick="switchMode('catalogue')"
-          class="px-4 py-2 rounded-lg text-sm font-bold transition bg-ochigo-primary text-white shadow">
+          class="px-4 py-2 rounded-lg text-sm font-bold transition bg-ochigo-primary text-white shadow-2xs">
           📦 Catalogue Sản Phẩm
         </button>
         <button id="tab-donglo" onclick="switchMode('donglo')"
@@ -102,50 +82,23 @@
         </button>
       </div>
     </div>
+    <div class="h-1.5 bg-ochigo-primary w-full"></div>
   </header>
 
-  <!-- Hero Banner -->
-  <section class="bg-gradient-to-r from-ochigo-dark via-ochigo-primary to-emerald-600 text-white py-8 px-4">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-      <div class="max-w-2xl">
-        <span id="hero-badge" class="inline-block bg-white/15 backdrop-blur px-3 py-1 rounded-full text-xs font-semibold mb-2">
-          CATALOGUE GIỚI THIỆU SẢN PHẨM CHÍNH HÃNG
-        </span>
-        <h2 id="hero-title" class="text-2xl sm:text-3xl font-extrabold leading-tight">
-          Giải Pháp Chăm Sóc & Bảo Vệ Cây Trồng Toàn Diện
-        </h2>
-        <p id="hero-desc" class="text-emerald-50 text-sm mt-2">
-          Hình ảnh, hoạt chất, đối tượng đặc trị và liều lượng được đồng bộ trực tiếp từ <code>products.json</code>.
-        </p>
-      </div>
-
-      <!-- Sales Rep Contact Card -->
-      <div class="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-4 text-xs sm:text-sm min-w-[260px]">
-        <div class="font-bold text-amber-300 uppercase text-xs mb-1">Hỗ trợ tư vấn & đóng lô</div>
-        <div class="font-bold text-white">ĐD KD: NGUYỄN ĐỨC THUẬN</div>
-        <div class="text-emerald-50 mt-0.5">📱 Tel/Zalo: <a href="tel:0943537319" class="underline font-semibold">0943 537 319</a></div>
-        <div class="text-emerald-50">📧 <a href="mailto:ducthuanochigo@gmail.com" class="underline">ducthuanochigo@gmail.com</a></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Main Content Container -->
   <main class="max-w-7xl mx-auto px-4 py-6">
     <!-- ==================== PHẦN 1: CATALOGUE SẢN PHẨM ==================== -->
     <section id="section-catalogue">
-      <!-- Filter & Search Bar -->
-      <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm mb-6 space-y-4">
-        <div class="flex flex-col md:flex-row gap-3 justify-between">
+      <!-- Search & Filter Box -->
+      <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-2xs mb-6 space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-center gap-3 justify-between">
           <div class="relative flex-1">
             <input id="cat-search" type="text" oninput="renderCatalogue()"
-              placeholder="Tìm tên sản phẩm, nhãn hiệu, hoạt chất, sâu bệnh đặc trị..."
+              placeholder="Tìm tên sản phẩm, nhãn hiệu, hoạt chất, hoạt chất đặc trị, sâu bệnh..."
               class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-ochigo-primary text-sm" />
             <span class="absolute left-3.5 top-3 text-slate-400">🔍</span>
           </div>
-          <div class="flex items-center gap-2 text-sm text-slate-600">
-            <span>Hiển thị:</span>
-            <strong id="cat-count" class="text-ochigo-dark">0</strong>
-            <span>sản phẩm</span>
+          <div class="text-sm text-slate-600 shrink-0">
+            Hiển thị: <strong id="cat-count" class="text-ochigo-dark font-extrabold">0</strong> sản phẩm
           </div>
         </div>
 
@@ -154,53 +107,43 @@
       </div>
 
       <!-- Product Grid -->
-      <div id="cat-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"></div>
+      <div id="cat-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"></div>
     </section>
 
-    <!-- ==================== PHẦN 2: DANH MỤC ĐÓNG LÔ RIÊNG ==================== -->
+    <!-- ==================== PHẦN 2: DANH MỤC ĐÓNG LÔ NHÃN RIÊNG ==================== -->
     <section id="section-donglo" class="hidden">
-      <!-- Info Banner for Toll Manufacturing / Private Label -->
-      <div class="bg-amber-50 border border-amber-200 rounded-2xl p-4 sm:p-5 mb-6 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
-        <div>
-          <div class="flex flex-wrap items-center gap-2">
-            <span class="bg-ochigo-accent text-white text-xs font-bold px-2.5 py-1 rounded-md">
+      <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-2xs mb-6 space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div>
+            <span class="inline-block bg-ochigo-accent text-white text-xs font-bold px-2.5 py-1 rounded-md">
               GIA CÔNG ĐÓNG LÔ NHÃN RIÊNG
             </span>
-            <span id="donglo-updated" class="text-xs font-semibold text-amber-900">
+            <span id="donglo-updated" class="ml-2 text-xs font-semibold text-slate-500">
               Cập nhật ngày 12/11/2026
             </span>
           </div>
-          <p class="text-sm text-slate-700 mt-2">
-            Danh mục công thức gia công đóng lô cho Quý Đối tác / Đại lý (hỗ trợ in logo, SĐT khách hàng, phân phối theo khu vực).
-          </p>
+          <a href="https://zalo.me/0943537319" target="_blank" rel="noopener"
+            class="inline-flex items-center justify-center gap-2 bg-ochigo-primary hover:bg-ochigo-dark text-white font-bold text-xs sm:text-sm px-4 py-2 rounded-xl transition self-start sm:self-auto">
+            💬 Báo Giá Đóng Lô (0943 537 319)
+          </a>
         </div>
-        <a href="https://zalo.me/0943537319" target="_blank" rel="noopener"
-          class="inline-flex items-center justify-center gap-2 bg-ochigo-primary hover:bg-ochigo-dark text-white font-bold text-sm px-5 py-2.5 rounded-xl transition shrink-0">
-          💬 Liên Hệ Báo Giá Đóng Lô (Zalo)
-        </a>
-      </div>
 
-      <!-- Group Tabs & Search -->
-      <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm mb-6 space-y-4">
-        <div class="flex flex-col md:flex-row gap-3 justify-between">
+        <div class="flex flex-col sm:flex-row sm:items-center gap-3 justify-between">
           <div class="relative flex-1">
             <input id="dl-search" type="text" oninput="renderDongLo()"
-              placeholder="Tìm tên thương mại, hoạt chất, dạng (EC, SC, WP, WG, SL...), cây trồng/ghi chú..."
+              placeholder="Tìm tên thương mại, hoạt chất, dạng (EC, SC, WP, WG, SL...), ghi chú..."
               class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-ochigo-primary text-sm" />
             <span class="absolute left-3.5 top-3 text-slate-400">🔍</span>
           </div>
-          <div class="flex items-center gap-2 text-sm text-slate-600">
-            <span>Tổng:</span>
-            <strong id="dl-count" class="text-ochigo-dark">0</strong>
-            <span>công thức</span>
+          <div class="text-sm text-slate-600 shrink-0">
+            Tổng: <strong id="dl-count" class="text-ochigo-dark font-extrabold">0</strong> công thức
           </div>
         </div>
 
         <div id="dl-filters" class="flex flex-wrap gap-2"></div>
       </div>
 
-      <!-- Dong Lo Table -->
-      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+      <div class="bg-white rounded-2xl border border-slate-200 shadow-2xs overflow-hidden">
         <div class="overflow-x-auto">
           <table class="w-full text-left border-collapse text-sm">
             <thead>
@@ -221,7 +164,7 @@
   </main>
 
   <!-- Product Detail Modal -->
-  <div id="product-modal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-xs items-center justify-center p-4"
+  <div id="product-modal" class="fixed inset-0 z-50 hidden bg-black/60 items-center justify-center p-4"
     onclick="if(event.target === this) closeModal()">
     <div class="bg-white rounded-2xl max-w-2xl w-full overflow-hidden shadow-2xl border border-slate-200">
       <div class="flex items-center justify-between px-5 py-4 border-b border-slate-100">
@@ -235,56 +178,37 @@
         <div class="sm:col-span-7 space-y-3 text-sm">
           <div>
             <h3 id="modal-name" class="text-xl font-extrabold text-ochigo-dark"></h3>
-            <p id="modal-brand" class="text-xs font-semibold text-ochigo-accent mt-0.5"></p>
+            <p id="modal-brand" class="text-xs font-bold text-ochigo-accent uppercase mt-0.5"></p>
           </div>
           <div class="inline-block bg-slate-100 text-slate-700 px-3 py-1 rounded-lg text-xs font-bold">
             Quy cách: <span id="modal-pack"></span>
           </div>
           <div>
-            <div class="text-xs font-bold text-slate-500 uppercase">Thành phần / Hoạt chất</div>
+            <div class="text-xs font-bold text-slate-500 uppercase">Hoạt chất</div>
             <p id="modal-ingredients" class="text-slate-800 mt-0.5"></p>
           </div>
           <div>
-            <div class="text-xs font-bold text-slate-500 uppercase">Công dụng / Đặc trị</div>
+            <div class="text-xs font-bold text-slate-500 uppercase">Hoạt chất đặc trị</div>
+            <p id="modal-active-target" class="font-semibold text-ochigo-dark mt-0.5"></p>
+          </div>
+          <div>
+            <div class="text-xs font-bold text-slate-500 uppercase">Đặc trị</div>
             <p id="modal-usage" class="text-slate-800 mt-0.5"></p>
           </div>
           <div>
             <div class="text-xs font-bold text-slate-500 uppercase">Liều lượng sử dụng</div>
-            <p id="modal-dosage" class="font-semibold text-ochigo-dark mt-0.5"></p>
+            <p id="modal-dosage" class="font-semibold text-slate-900 mt-0.5"></p>
           </div>
-          <div class="pt-2 flex flex-wrap gap-2">
+          <div class="pt-2">
             <a id="modal-zalo" href="https://zalo.me/0943537319" target="_blank" rel="noopener"
-              class="flex-1 text-center bg-ochigo-primary hover:bg-ochigo-dark text-white font-bold py-2.5 px-4 rounded-xl transition">
-              💬 Hỏi Giá / Đặt Hàng Zalo
+              class="block text-center bg-ochigo-primary hover:bg-ochigo-dark text-white font-bold py-2.5 px-4 rounded-xl transition">
+              💬 Liên Hệ Tư Vấn & Báo Giá (0943 537 319)
             </a>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <!-- Footer -->
-  <footer class="bg-slate-900 text-slate-300 mt-12 py-8 px-4 text-xs sm:text-sm">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div>
-        <div class="font-extrabold text-white text-base mb-2">CÔNG TY TNHH OCHIGO VIỆT NAM</div>
-        <p class="text-slate-400">16.01 Lầu 16, Cao ốc Golden King, Số 15 Nguyễn Lương Bằng, Phường Tân Mỹ, TP. Hồ Chí Minh</p>
-        <p class="text-slate-400 mt-1">Website: www.ochigo.vn | Email: info@ochigo.vn</p>
-      </div>
-      <div>
-        <div class="font-bold text-white mb-2">Liên Hệ Văn Phòng & Hotline</div>
-        <p>Tel: (028) 5411 2207</p>
-        <p>Hotline: 0946 606 007 – 0944 259 788</p>
-        <p>Fanpage / Zalo OA: Công ty Ochigo Việt Nam</p>
-      </div>
-      <div>
-        <div class="font-bold text-white mb-2">Đại Diện Kinh Doanh & Đóng Lô</div>
-        <p>Họ tên: <strong>NGUYỄN ĐỨC THUẬN</strong></p>
-        <p>Tel/Zalo: <strong>0943 537 319</strong></p>
-        <p>Email: ducthuanochigo@gmail.com</p>
-      </div>
-    </div>
-  </footer>
 
   <script>
     const FALLBACK_IMG = "data:image/svg+xml;utf8," + encodeURIComponent(`
@@ -301,6 +225,39 @@
     let dongLoData = { items: [], meta: {} };
     let selectedCat = "Tất cả";
     let selectedDongLoGroup = "Tất cả";
+
+    function pickField(obj, keys, fallback = "") {
+      if (!obj || typeof obj !== "object") return fallback;
+      for (const k of keys) {
+        const val = obj[k];
+        if (Array.isArray(val) && val.length) return val.join(", ");
+        if (val !== undefined && val !== null && String(val).trim() !== "") {
+          return String(val).trim();
+        }
+      }
+      return fallback;
+    }
+
+    function normalizeProduct(p, idx) {
+      const id = pickField(p, ["id", "slug", "code"], `prod-${idx}`);
+      const name = pickField(p, ["name", "ten_san_pham", "title", "product_name"], "Sản phẩm");
+      const brand = pickField(p, ["brand", "nhan_hieu", "thuong_hieu", "hieu"], "OCHIGO");
+      const category = pickField(p, ["category", "nhom", "danh_muc", "group"], "Khác");
+      const pack = pickField(p, ["pack", "quy_cach", "packaging", "dung_tich"], "");
+      const image = pickField(p, ["image", "img", "hinh_anh", "photo", "thumbnail"], "");
+      const ingredients = pickField(p, [
+        "ingredients", "hoat_chat", "thanh_phan", "active", "active_ingredient", "composition"
+      ], "");
+      const usage = pickField(p, [
+        "usage", "dac_tri", "cong_dung", "special_usage", "target", "pests", "description"
+      ], "");
+      const activeTarget = pickField(p, [
+        "hoat_chat_dac_tri", "active_target", "targeted_active", "special_active", "key_active"
+      ], "") || (ingredients && usage ? `${ingredients} — Đặc trị: ${usage}` : (ingredients || usage));
+      const dosage = pickField(p, ["dosage", "lieu_luong", "cach_dung", "huong_dan"], "");
+
+      return { _key: id, name, brand, category, pack, image, ingredients, activeTarget, usage, dosage };
+    }
 
     function normalizeText(str = "") {
       return str
@@ -331,30 +288,38 @@
       const tabDl = document.getElementById("tab-donglo");
 
       if (isCat) {
-        tabCat.className = "px-4 py-2 rounded-lg text-sm font-bold transition bg-ochigo-primary text-white shadow";
+        tabCat.className = "px-4 py-2 rounded-lg text-sm font-bold transition bg-ochigo-primary text-white shadow-2xs";
         tabDl.className = "px-4 py-2 rounded-lg text-sm font-bold transition text-slate-700 hover:bg-white";
-        document.getElementById("hero-badge").textContent = "CATALOGUE GIỚI THIỆU SẢN PHẨM CHÍNH HÃNG";
-        document.getElementById("hero-title").textContent = "Giải Pháp Chăm Sóc & Bảo Vệ Cây Trồng Toàn Diện";
-        document.getElementById("hero-desc").innerHTML = "Hình ảnh, hoạt chất, đối tượng đặc trị và liều lượng được liên kết trực tiếp từ <code>products.json</code>.";
       } else {
-        tabDl.className = "px-4 py-2 rounded-lg text-sm font-bold transition bg-ochigo-accent text-white shadow";
+        tabDl.className = "px-4 py-2 rounded-lg text-sm font-bold transition bg-ochigo-accent text-white shadow-2xs";
         tabCat.className = "px-4 py-2 rounded-lg text-sm font-bold transition text-slate-700 hover:bg-white";
-        document.getElementById("hero-badge").textContent = "DANH MỤC GIA CÔNG ĐÓNG LÔ NHÃN RIÊNG";
-        document.getElementById("hero-title").textContent = "Danh Mục Sản Phẩm Gia Công Đóng Lô Theo Yêu Cầu";
-        document.getElementById("hero-desc").innerHTML = "Đầy đủ nhóm Thuốc trừ cỏ, Thuốc ốc, Thuốc kích thích tăng trưởng, Thuốc trừ sâu và Thuốc trừ bệnh từ <code>dong-lo.json</code>.";
       }
     }
 
     function buildCatalogueFilters() {
-      const categories = ["Tất cả", ...new Set(productsData.map(p => p.category).filter(Boolean))];
+      const preferredOrder = [
+        "Tất cả",
+        "Thuốc trừ sâu",
+        "Thuốc trừ bệnh",
+        "Thuốc trừ cỏ",
+        "Phân bón",
+        "Thuốc trừ ốc",
+        "Thuốc trợ lực"
+      ];
+      const existing = [...new Set(productsData.map(p => p.category).filter(Boolean))];
+      const ordered = [
+        ...preferredOrder.filter(c => c === "Tất cả" || existing.includes(c)),
+        ...existing.filter(c => !preferredOrder.includes(c))
+      ];
+
       const container = document.getElementById("cat-filters");
-      container.innerHTML = categories.map(cat => {
+      container.innerHTML = ordered.map(cat => {
         const active = selectedCat === cat;
         return `
           <button onclick="selectCategory('${escapeHtml(cat)}')"
-            class="px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold transition border ${
+            class="px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold transition border ${
               active
-                ? "bg-ochigo-primary text-white border-ochigo-primary shadow-xs"
+                ? "bg-ochigo-primary text-white border-ochigo-primary shadow-2xs"
                 : "bg-white text-slate-700 border-slate-300 hover:border-ochigo-primary"
             }">
             ${escapeHtml(cat)}
@@ -373,7 +338,9 @@
       const q = normalizeText(document.getElementById("cat-search").value);
       const filtered = productsData.filter(p => {
         const matchCat = selectedCat === "Tất cả" || p.category === selectedCat;
-        const blob = normalizeText(`${p.name} ${p.brand} ${p.category} ${p.ingredients} ${p.usage} ${p.dosage}`);
+        const blob = normalizeText(
+          `${p.name} ${p.brand} ${p.category} ${p.ingredients} ${p.activeTarget} ${p.usage} ${p.dosage}`
+        );
         return matchCat && (!q || blob.includes(q));
       });
 
@@ -383,22 +350,21 @@
       if (!filtered.length) {
         grid.innerHTML = `
           <div class="col-span-full bg-white rounded-2xl border border-slate-200 p-10 text-center text-slate-500">
-            Không tìm thấy sản phẩm nào khớp với từ khóa hoặc danh mục đã chọn.
+            Không tìm thấy sản phẩm phù hợp.
           </div>
         `;
         return;
       }
 
-      grid.innerHTML = filtered.map((p, idx) => {
-        const imgSrc = p.image && p.image.trim() ? escapeHtml(p.image) : FALLBACK_IMG;
+      grid.innerHTML = filtered.map(p => {
+        const imgSrc = p.image ? escapeHtml(p.image) : FALLBACK_IMG;
         return `
-          <article class="bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-md transition overflow-hidden flex flex-col">
-            <div class="relative bg-slate-50 h-52 p-4 flex items-center justify-center border-b border-slate-100 cursor-pointer"
-              onclick='openModalById("${escapeHtml(p.id || idx)}")'>
-              <span class="absolute top-3 left-3 bg-ochigo-light text-ochigo-dark text-[11px] font-bold px-2.5 py-1 rounded-full border border-emerald-200">
-                ${escapeHtml(p.category || "Sản phẩm")}
+          <article class="bg-white rounded-2xl border border-slate-200 shadow-2xs hover:shadow-md transition overflow-hidden flex flex-col">
+            <div class="relative bg-slate-50 h-56 p-4 flex items-center justify-center border-b border-slate-100 cursor-pointer"
+              onclick='openModalById("${escapeHtml(p._key)}")'>
+              <span class="absolute top-3 left-3 bg-ochigo-light text-ochigo-dark text-xs font-semibold px-3 py-1 rounded-full border border-emerald-200">
+                ${escapeHtml(p.category)}
               </span>
-              ${p.pack ? `<span class="absolute bottom-3 right-3 bg-ochigo-accent text-white text-xs font-extrabold px-2.5 py-1 rounded-lg shadow-xs">${escapeHtml(p.pack)}</span>` : ""}
               <img src="${imgSrc}" alt="${escapeHtml(p.name)}" loading="lazy"
                 onerror="this.onerror=null;this.src='${FALLBACK_IMG}';"
                 class="max-h-full max-w-full object-contain transition duration-300 hover:scale-105" />
@@ -407,26 +373,29 @@
             <div class="p-4 flex-1 flex flex-col justify-between space-y-3">
               <div class="space-y-1.5">
                 <div class="text-[11px] font-bold uppercase tracking-wide text-ochigo-accent">
-                  ${escapeHtml(p.brand || "OCHIGO")}
+                  ${escapeHtml(p.brand)}
                 </div>
                 <h3 class="font-extrabold text-base text-slate-900 leading-snug">
                   ${escapeHtml(p.name)}
                 </h3>
                 <p class="text-xs text-slate-600 line-clamp-2">
-                  <strong class="text-slate-700">Hoạt chất:</strong> ${escapeHtml(p.ingredients || "-")}
+                  <strong class="text-slate-800">Hoạt chất:</strong> ${escapeHtml(p.ingredients || "-")}
                 </p>
                 <p class="text-xs text-slate-600 line-clamp-2">
-                  <strong class="text-slate-700">Đặc trị:</strong> ${escapeHtml(p.usage || "-")}
+                  <strong class="text-slate-800">Đặc trị:</strong> ${escapeHtml(p.usage || "-")}
+                </p>
+                <p class="text-xs text-slate-700 line-clamp-2 bg-ochigo-light/70 border border-emerald-100 rounded-lg px-2.5 py-1.5">
+                  <strong class="text-ochigo-dark">Hoạt chất đặc trị:</strong> ${escapeHtml(p.activeTarget || "-")}
                 </p>
               </div>
 
-              <div class="pt-2 border-t border-slate-100 flex items-center justify-between gap-2">
-                <button onclick='openModalById("${escapeHtml(p.id || idx)}")'
+              <div class="pt-2.5 border-t border-slate-100 flex items-center justify-between gap-2">
+                <button onclick='openModalById("${escapeHtml(p._key)}")'
                   class="text-xs font-bold text-ochigo-primary hover:text-ochigo-dark underline">
                   Xem liều lượng & chi tiết
                 </button>
                 <a href="https://zalo.me/0943537319" target="_blank" rel="noopener"
-                  class="text-xs font-bold bg-ochigo-light hover:bg-emerald-100 text-ochigo-dark px-3 py-1.5 rounded-lg transition">
+                  class="text-xs font-bold text-ochigo-dark bg-ochigo-light hover:bg-emerald-100 px-3 py-1.5 rounded-lg transition">
                   Báo giá
                 </a>
               </div>
@@ -436,20 +405,22 @@
       }).join("");
     }
 
-    function openModalById(id) {
-      const p = productsData.find((item, index) => String(item.id || index) === String(id));
+    function openModalById(key) {
+      const p = productsData.find(item => item._key === key);
       if (!p) return;
+
       document.getElementById("modal-category").textContent = p.category || "Catalogue";
       document.getElementById("modal-name").textContent = p.name || "";
-      document.getElementById("modal-brand").textContent = p.brand ? `Hiệu: ${p.brand}` : "";
+      document.getElementById("modal-brand").textContent = p.brand || "";
       document.getElementById("modal-pack").textContent = p.pack || "Tiêu chuẩn";
-      document.getElementById("modal-ingredients").textContent = p.ingredients || "Đang cập nhật";
-      document.getElementById("modal-usage").textContent = p.usage || "Đang cập nhật";
+      document.getElementById("modal-ingredients").textContent = p.ingredients || "-";
+      document.getElementById("modal-active-target").textContent = p.activeTarget || "-";
+      document.getElementById("modal-usage").textContent = p.usage || "-";
       document.getElementById("modal-dosage").textContent = p.dosage || "Liên hệ kỹ thuật tư vấn";
 
       const imgEl = document.getElementById("modal-img");
       imgEl.onerror = () => { imgEl.onerror = null; imgEl.src = FALLBACK_IMG; };
-      imgEl.src = p.image && p.image.trim() ? p.image : FALLBACK_IMG;
+      imgEl.src = p.image ? p.image : FALLBACK_IMG;
       imgEl.alt = p.name || "";
 
       const modal = document.getElementById("product-modal");
@@ -464,7 +435,7 @@
     }
 
     function buildDongLoFilters() {
-      const groups = ["Tất cả", ...new Set((dongLoData.items || []).map(i => i.group).filter(Boolean))];
+      const groups = ["Tất cả", ...new Set((dongLoData.items || []).map(i => pickField(i, ["group", "nhom"])).filter(Boolean))];
       const container = document.getElementById("dl-filters");
       container.innerHTML = groups.map(grp => {
         const active = selectedDongLoGroup === grp;
@@ -472,7 +443,7 @@
           <button onclick="selectDongLoGroup('${escapeHtml(grp)}')"
             class="px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold transition border ${
               active
-                ? "bg-ochigo-accent text-white border-ochigo-accent shadow-xs"
+                ? "bg-ochigo-accent text-white border-ochigo-accent shadow-2xs"
                 : "bg-white text-slate-700 border-slate-300 hover:border-ochigo-accent"
             }">
             ${escapeHtml(grp)}
@@ -490,9 +461,14 @@
     function renderDongLo() {
       const q = normalizeText(document.getElementById("dl-search").value);
       const items = dongLoData.items || [];
-      const filtered = items.filter(item => {
-        const matchGroup = selectedDongLoGroup === "Tất cả" || item.group === selectedDongLoGroup;
-        const blob = normalizeText(`${item.stt} ${item.group} ${item.name} ${item.active} ${item.form} ${item.note}`);
+      const filtered = items.filter(raw => {
+        const grp = pickField(raw, ["group", "nhom"], "");
+        const name = pickField(raw, ["name", "ten_thuong_mai"], "");
+        const active = pickField(raw, ["active", "hoat_chat"], "");
+        const form = pickField(raw, ["form", "dang"], "");
+        const note = pickField(raw, ["note", "ghi_chu"], "");
+        const matchGroup = selectedDongLoGroup === "Tất cả" || grp === selectedDongLoGroup;
+        const blob = normalizeText(`${grp} ${name} ${active} ${form} ${note}`);
         return matchGroup && (!q || blob.includes(q));
       });
 
@@ -510,26 +486,35 @@
         return;
       }
 
-      tbody.innerHTML = filtered.map(item => `
-        <tr class="hover:bg-emerald-50/40 transition">
-          <td class="py-3 px-3 text-center font-semibold text-slate-500">${escapeHtml(item.stt)}</td>
-          <td class="py-3 px-4">
-            <div class="font-bold text-slate-900">${escapeHtml(item.name)}</div>
-            <div class="text-[11px] font-semibold text-ochigo-primary">${escapeHtml(item.group)}</div>
-          </td>
-          <td class="py-3 px-4 text-slate-700">${escapeHtml(item.active)}</td>
-          <td class="py-3 px-3 text-center">
-            ${item.form ? `<span class="inline-block px-2 py-0.5 rounded bg-slate-100 text-slate-800 font-bold text-xs">${escapeHtml(item.form)}</span>` : "-"}
-          </td>
-          <td class="py-3 px-4 text-slate-600 text-xs sm:text-sm">${escapeHtml(item.note || "—")}</td>
-          <td class="py-3 px-3 text-center">
-            <a href="https://zalo.me/0943537319" target="_blank" rel="noopener"
-              class="inline-block text-xs font-bold text-ochigo-dark bg-ochigo-light hover:bg-emerald-100 px-2.5 py-1.5 rounded-lg transition">
-              Nhận báo giá
-            </a>
-          </td>
-        </tr>
-      `).join("");
+      tbody.innerHTML = filtered.map((raw, i) => {
+        const stt = pickField(raw, ["stt"], String(i + 1));
+        const grp = pickField(raw, ["group", "nhom"], "");
+        const name = pickField(raw, ["name", "ten_thuong_mai"], "");
+        const active = pickField(raw, ["active", "hoat_chat"], "");
+        const form = pickField(raw, ["form", "dang"], "");
+        const note = pickField(raw, ["note", "ghi_chu"], "");
+
+        return `
+          <tr class="hover:bg-emerald-50/40 transition">
+            <td class="py-3 px-3 text-center font-semibold text-slate-500">${escapeHtml(stt)}</td>
+            <td class="py-3 px-4">
+              <div class="font-bold text-slate-900">${escapeHtml(name)}</div>
+              <div class="text-[11px] font-semibold text-ochigo-primary">${escapeHtml(grp)}</div>
+            </td>
+            <td class="py-3 px-4 text-slate-700">${escapeHtml(active)}</td>
+            <td class="py-3 px-3 text-center">
+              ${form ? `<span class="inline-block px-2 py-0.5 rounded bg-slate-100 text-slate-800 font-bold text-xs">${escapeHtml(form)}</span>` : "-"}
+            </td>
+            <td class="py-3 px-4 text-slate-600 text-xs sm:text-sm">${escapeHtml(note || "—")}</td>
+            <td class="py-3 px-3 text-center">
+              <a href="https://zalo.me/0943537319" target="_blank" rel="noopener"
+                class="inline-block text-xs font-bold text-ochigo-dark bg-ochigo-light hover:bg-emerald-100 px-2.5 py-1.5 rounded-lg transition">
+                Nhận báo giá
+              </a>
+            </td>
+          </tr>
+        `;
+      }).join("");
     }
 
     async function initApp() {
@@ -540,10 +525,21 @@
         ]);
 
         if (catRes.ok) {
-          productsData = await catRes.json();
+          const rawCat = await catRes.json();
+          const arrCat = Array.isArray(rawCat) ? rawCat : (rawCat.products || rawCat.items || []);
+          productsData = arrCat.map((item, idx) => normalizeProduct(item, idx));
         }
+
         if (dlRes.ok) {
-          dongLoData = await dlRes.json();
+          const rawDl = await dlRes.json();
+          if (Array.isArray(rawDl)) {
+            dongLoData = { items: rawDl, meta: {} };
+          } else {
+            dongLoData = {
+              items: rawDl.items || rawDl.data || [],
+              meta: rawDl.meta || {}
+            };
+          }
           if (dongLoData.meta?.updatedAt) {
             document.getElementById("donglo-updated").textContent = `Cập nhật ngày ${dongLoData.meta.updatedAt}`;
           }
