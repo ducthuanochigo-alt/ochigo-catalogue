@@ -1,1066 +1,3602 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <!-- Google Tag Manager -->
-  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TTGDV8PC"></script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K95B8W3JZH"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-K95B8W3JZH');
-  </script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CÔNG TY TNHH OCHIGO VIỆT NAM - Catalogue &amp; Gia Công Đóng Lô Nhãn Riêng</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      font-family: 'Be Vietnam Pro', sans-serif;
-      scroll-behavior: smooth;
-    }
-    .hero-gradient {
-      background: linear-gradient(135deg, #064e3b 0%, #047857 52%, #0d9488 100%);
-    }
-    .glass-card {
-      background: rgba(255, 255, 255, 0.96);
-      backdrop-filter: blur(8px);
-    }
-    .line-clamp-2 {
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-    .line-clamp-3 {
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-  </style>
-</head>
-<body class="bg-slate-50 text-slate-800 antialiased">
 
-  <!-- Top Utility Bar -->
-  <div class="bg-emerald-950 text-emerald-100 text-xs py-2 px-4">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
-      <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-        <span><strong>CÔNG TY TNHH OCHIGO VIỆT NAM</strong> — Better Crop Care Solutions</span>
-        <span class="hidden md:inline text-emerald-500">|</span>
-        <span class="hidden sm:inline">16.01 Lầu 16, Cao ốc GoldenKing, 15 Nguyễn Lương Bằng, P. Tân Mỹ, TP.HCM</span>
-      </div>
-      <div class="flex flex-wrap items-center gap-x-4 gap-y-1 font-medium">
-        <a href="tel:0943537319" class="hover:text-amber-300 transition">📞 Tư vấn: 0943 537 319 (Đức Thuận)</a>
-        <a href="mailto:ducthuanochigo@gmail.com" class="hover:text-amber-300 transition hidden sm:inline">✉️ ducthuanochigo@gmail.com</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Main Header -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
-      <a href="#top" onclick="setMode('commercial')" class="flex items-center gap-3 min-w-0">
-        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-emerald-600 to-teal-700 flex items-center justify-center text-white font-extrabold text-xl shadow-md shrink-0">
-          O
-        </div>
-        <div class="truncate">
-          <div class="font-extrabold text-emerald-900 text-base sm:text-lg leading-tight tracking-tight truncate">OCHIGO VIỆT NAM</div>
-          <div class="text-[11px] font-semibold text-emerald-600 uppercase tracking-wider truncate">Better Crop Care Solutions</div>
-        </div>
-      </a>
-
-      <!-- Mode Switcher -->
-      <div class="flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200 shrink-0">
-        <button id="tabCommercial" onclick="setMode('commercial')" class="px-3 sm:px-4 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition bg-emerald-700 text-white shadow-sm">
-          Catalogue Hàng Thương Mại
-        </button>
-        <button id="tabOem" onclick="setMode('oem')" class="px-3 sm:px-4 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition text-slate-600 hover:text-emerald-800 flex items-center gap-1.5">
-          <span>Gia Công Đóng Lô / Nhãn Riêng</span>
-          <span class="bg-amber-500 text-white text-[10px] px-1.5 py-0.5 rounded-full font-extrabold">OEM</span>
-        </button>
-      </div>
-
-      <nav class="hidden lg:flex items-center gap-5 text-sm font-semibold text-slate-700">
-        <a href="#catalogSection" class="hover:text-emerald-700 transition">Danh mục</a>
-        <a href="#about" class="hover:text-emerald-700 transition">Giới thiệu</a>
-        <a href="#contact" class="hover:text-emerald-700 transition">Liên hệ</a>
-      </nav>
-
-      <div class="flex items-center gap-2 shrink-0">
-        <button onclick="openOemCartModal()" id="headerCartBtn" class="hidden relative bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-300 font-bold text-xs sm:text-sm px-3 py-2 rounded-xl transition items-center gap-1.5">
-          <span>📋 Mã chọn</span>
-          <span id="cartCountBadge" class="bg-amber-600 text-white text-xs font-extrabold px-2 py-0.5 rounded-full">0</span>
-        </button>
-        <a href="https://zalo.me/0943537319" target="_blank" rel="noopener" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs sm:text-sm px-3.5 py-2 rounded-xl shadow-sm transition flex items-center gap-1.5">
-          <span>Chat Zalo</span>
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="top" class="hero-gradient text-white relative overflow-hidden">
-    <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 24px 24px;"></div>
-    <div class="max-w-7xl mx-auto px-4 py-12 md:py-16 relative z-10">
-      <div class="grid lg:grid-cols-12 gap-8 items-center">
-        <div class="lg:col-span-7 space-y-5">
-          <div id="heroBadge" class="inline-flex items-center gap-2 bg-white/15 border border-white/25 text-emerald-50 text-xs font-semibold px-3.5 py-1.5 rounded-full">
-            <span>🌿 Catalogue Phiên Bản 2 • Giải Pháp Bảo Vệ &amp; Dinh Dưỡng Cây Trồng</span>
-          </div>
-          <h1 id="heroTitle" class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight">
-            Giải Pháp Chăm Sóc Cây Trồng <span class="text-amber-300">Hiệu Quả &amp; Bền Vững</span>
-          </h1>
-          <p id="heroDesc" class="text-emerald-50/95 text-base sm:text-lg leading-relaxed max-w-2xl">
-            Danh mục sản phẩm chính hãng của <strong>Công ty TNHH Ochigo Việt Nam</strong> gồm thuốc trừ sâu, thuốc trừ bệnh, thuốc trừ cỏ, phân bón lá &amp; hữu cơ, thuốc trừ ốc và thuốc trợ lực — tối ưu năng suất cho nhà vườn và đại lý.
-          </p>
-
-          <!-- Search Box -->
-          <div class="glass-card rounded-2xl p-2 shadow-xl max-w-2xl">
-            <div class="flex flex-col sm:flex-row gap-2">
-              <div class="relative flex-1">
-                <input
-                  id="searchInput"
-                  type="text"
-                  oninput="renderCurrentView()"
-                  placeholder="Tìm tên thuốc, hiệu nhãn, hoạt chất, cây trồng, sâu/bệnh..."
-                  class="w-full pl-4 pr-10 py-3 rounded-xl text-slate-800 placeholder-slate-400 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-transparent"
-                />
-                <button
-                  id="clearSearchBtn"
-                  onclick="clearSearch()"
-                  title="Xóa từ khóa"
-                  class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 text-sm font-bold"
-                >✕</button>
-              </div>
-              <button
-                onclick="document.getElementById('catalogSection').scrollIntoView({behavior:'smooth'})"
-                class="bg-emerald-700 hover:bg-emerald-800 text-white font-bold px-6 py-3 rounded-xl text-sm sm:text-base transition shadow-md shrink-0"
-              >
-                Tra cứu ngay
-              </button>
-            </div>
-          </div>
-
-          <div class="flex flex-wrap items-center gap-3 pt-1">
-            <button onclick="setMode('commercial')" id="heroBtnCommercial" class="bg-amber-400 hover:bg-amber-300 text-emerald-950 font-extrabold text-sm px-4 py-2.5 rounded-xl transition shadow">
-              Xem Hàng Thương Mại
-            </button>
-            <button onclick="setMode('oem')" id="heroBtnOem" class="bg-white/15 hover:bg-white/25 border border-white/30 text-white font-bold text-sm px-4 py-2.5 rounded-xl transition">
-              Xem Danh Mục Đóng Lô / Nhãn Riêng (400+ Mã)
-            </button>
-          </div>
-        </div>
-
-        <!-- Representative Card -->
-        <div class="lg:col-span-5">
-          <div class="bg-white text-slate-800 rounded-2xl p-6 shadow-2xl border border-emerald-100">
-            <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-4">
-              <div>
-                <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">Hỗ trợ trực tiếp</span>
-                <h2 class="text-xl font-extrabold text-slate-900 mt-2">Đức Thuận — Ochigo Việt Nam</h2>
-                <p class="text-xs text-slate-500 mt-0.5">Tư vấn kỹ thuật, báo giá đại lý &amp; gia công đóng lô</p>
-              </div>
-              <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-extrabold text-lg">
-                ĐT
-              </div>
-            </div>
-
-            <div class="space-y-3 text-sm">
-              <a href="tel:0943537319" class="flex items-center gap-3 p-3 rounded-xl bg-slate-50 hover:bg-emerald-50 transition border border-slate-100">
-                <span class="text-lg">📱</span>
-                <div>
-                  <div class="text-xs text-slate-500">Hotline / Zalo tư vấn</div>
-                  <div class="font-bold text-emerald-800 text-base">0943 537 319</div>
-                </div>
-              </a>
-              <a href="mailto:ducthuanochigo@gmail.com" class="flex items-center gap-3 p-3 rounded-xl bg-slate-50 hover:bg-emerald-50 transition border border-slate-100">
-                <span class="text-lg">✉️</span>
-                <div class="min-w-0">
-                  <div class="text-xs text-slate-500">Email hỗ trợ báo giá &amp; hồ sơ</div>
-                  <div class="font-bold text-slate-800 truncate">ducthuanochigo@gmail.com</div>
-                </div>
-              </a>
-              <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
-                <span class="text-lg">🏢</span>
-                <div>
-                  <div class="text-xs text-slate-500">Trụ sở chính</div>
-                  <div class="font-semibold text-slate-700 text-xs leading-relaxed">16.01 Lầu 16, Cao ốc GoldenKing, 15 Nguyễn Lương Bằng, P. Tân Mỹ, TP.HCM</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="grid grid-cols-2 gap-2.5 mt-5">
-              <a href="tel:0943537319" class="text-center bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-2.5 px-3 rounded-xl text-sm transition">
-                Gọi ngay
-              </a>
-              <a href="https://zalo.me/0943537319" target="_blank" rel="noopener" class="text-center bg-amber-500 hover:bg-amber-600 text-white font-bold py-2.5 px-3 rounded-xl text-sm transition">
-                Nhắn Zalo
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Stats Bar -->
-  <section class="bg-white border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 py-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-      <div class="p-3 rounded-xl bg-emerald-50/70">
-        <div id="statCommercialCount" class="text-2xl sm:text-3xl font-extrabold text-emerald-800">82</div>
-        <div class="text-xs sm:text-sm text-slate-600 font-medium mt-0.5">Sản phẩm thương mại</div>
-      </div>
-      <div class="p-3 rounded-xl bg-amber-50/80">
-        <div id="statOemCount" class="text-2xl sm:text-3xl font-extrabold text-amber-700">400+</div>
-        <div class="text-xs sm:text-sm text-slate-600 font-medium mt-0.5">Mã gia công đóng lô / OEM</div>
-      </div>
-      <div class="p-3 rounded-xl bg-teal-50/70">
-        <div class="text-2xl sm:text-3xl font-extrabold text-teal-800">6 + 5</div>
-        <div class="text-xs sm:text-sm text-slate-600 font-medium mt-0.5">Nhóm SP &amp; nhóm gia công</div>
-      </div>
-      <div class="p-3 rounded-xl bg-slate-100/80">
-        <div class="text-2xl sm:text-3xl font-extrabold text-slate-800">12/11/2026</div>
-        <div class="text-xs sm:text-sm text-slate-600 font-medium mt-0.5">Cập nhật danh mục đóng lô</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Main Catalog & OEM Section -->
-  <main id="catalogSection" class="max-w-7xl mx-auto px-4 py-10">
-
-    <!-- ==================== MODE 1: COMMERCIAL CATALOG ==================== -->
-    <div id="commercialView">
-      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
-        <div>
-          <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Catalogue Phiên Bản 2</span>
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Danh Mục Sản Phẩm Thương Mại</h2>
-        </div>
-        <div id="commercialResultCount" class="text-sm font-semibold text-slate-600 bg-white px-4 py-2 rounded-xl border border-slate-200 shadow-2xs"></div>
-      </div>
-
-      <!-- Commercial Category Tabs -->
-      <div id="commercialCategoryTabs" class="flex flex-wrap gap-2 mb-7"></div>
-
-      <!-- Commercial Product Grid -->
-      <div id="commercialGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"></div>
-
-      <!-- Empty State Commercial -->
-      <div id="commercialEmpty" class="hidden text-center py-16 bg-white rounded-2xl border border-dashed border-slate-300">
-        <div class="text-4xl mb-3">🔎</div>
-        <h3 class="text-lg font-bold text-slate-800">Không tìm thấy sản phẩm phù hợp</h3>
-        <p class="text-sm text-slate-500 mt-1">Hãy thử từ khóa khác (ví dụ: <em>nhện đỏ, đạo ôn, rầy nâu, canxi bo, sầu riêng</em>) hoặc đổi nhóm sản phẩm.</p>
-        <button onclick="resetCommercialFilters()" class="mt-4 bg-emerald-700 hover:bg-emerald-800 text-white text-sm font-bold px-5 py-2.5 rounded-xl transition">
-          Hiển thị tất cả sản phẩm
-        </button>
-      </div>
-    </div>
-
-    <!-- ==================== MODE 2: OEM / PRIVATE LABEL ==================== -->
-    <div id="oemView" class="hidden space-y-6">
-      <div class="bg-gradient-to-r from-emerald-900 via-emerald-800 to-teal-800 text-white rounded-2xl p-6 sm:p-8 shadow-lg">
-        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
-          <div class="space-y-2 max-w-3xl">
-            <div class="inline-flex items-center gap-2 bg-amber-400/20 border border-amber-300/40 text-amber-200 text-xs font-bold px-3 py-1 rounded-full">
-              <span>🏭 DỊCH VỤ GIA CÔNG ĐÓNG LÔ &amp; NHÃN RIÊNG (OEM / PRIVATE LABEL)</span>
-            </div>
-            <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">
-              Danh Mục Hoạt Chất Gia Công Đóng Lô Theo Yêu Cầu
-            </h2>
-            <p class="text-emerald-100 text-sm sm:text-base leading-relaxed">
-              Hỗ trợ đóng lô, xây dựng nhãn riêng / gắn logo &amp; số điện thoại đối tác theo từng vùng thị trường (<em>Đà Nẵng vào Nam, Từ Huế vào Nam...</em>) với đầy đủ dạng bào chế <strong>WP, SC, EC, WG, SL, GR, OD, TB, SP, SG, EW, CS, SE, AB</strong>.
-            </p>
-          </div>
-          <div class="bg-white/10 border border-white/20 rounded-2xl p-4 shrink-0 space-y-1.5 text-xs sm:text-sm">
-            <div class="font-bold text-amber-300">Liên hệ nhận báo giá gia công:</div>
-            <div>Đại diện: <strong>Nguyễn Đức Thuận</strong></div>
-            <div>Tel/Zalo: <a href="tel:0943537319" class="underline font-bold text-white">0943 537 319</a></div>
-            <div>Email: <a href="mailto:ducthuanochigo@gmail.com" class="underline text-emerald-100">ducthuanochigo@gmail.com</a></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-2xs space-y-4">
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
-          <div id="oemGroupTabs" class="flex flex-wrap gap-2"></div>
-          <div id="oemResultCount" class="text-sm font-bold text-emerald-800 bg-emerald-50 px-3.5 py-1.5 rounded-xl shrink-0"></div>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-2 border-t border-slate-100">
-          <div>
-            <label class="block text-xs font-bold text-slate-500 mb-1">Dạng bào chế</label>
-            <select id="oemFormFilter" onchange="renderOem()" class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm bg-slate-50 focus:outline-none focus:ring-2 focus:ring-emerald-500">
-              <option value="ALL">Tất cả dạng (WP, SC, EC, WG, SL...)</option>
-            </select>
-          </div>
-          <div>
-            <label class="block text-xs font-bold text-slate-500 mb-1">Ghi chú / Vùng nhãn</label>
-            <select id="oemNoteFilter" onchange="renderOem()" class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm bg-slate-50 focus:outline-none focus:ring-2 focus:ring-emerald-500">
-              <option value="ALL">Tất cả mã gia công</option>
-              <option value="HAS_NOTE">Có ghi chú / Vùng nhãn riêng</option>
-              <option value="DANANG">Đà Nẵng vào Nam</option>
-              <option value="HUE">Từ Huế vào Nam</option>
-              <option value="LOGO_SDT">Gắn Logo &amp; SĐT khách</option>
-            </select>
-          </div>
-          <div class="sm:col-span-2 flex items-end justify-between gap-2">
-            <button onclick="resetOemFilters()" class="px-4 py-2 rounded-xl border border-slate-300 hover:bg-slate-100 text-xs sm:text-sm font-semibold text-slate-700 transition">
-              Đặt lại bộ lọc
-            </button>
-            <button onclick="openOemCartModal()" class="flex-1 sm:flex-initial bg-amber-500 hover:bg-amber-600 text-white font-bold px-4 py-2 rounded-xl text-xs sm:text-sm transition shadow-sm flex items-center justify-center gap-2">
-              <span>📋 Xem danh sách mã đã chọn</span>
-              <span id="oemCartBtnCount" class="bg-white text-amber-700 px-2 py-0.5 rounded-full text-xs font-extrabold">0</span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
-        <div class="overflow-x-auto">
-          <table class="w-full text-left border-collapse">
-            <thead>
-              <tr class="bg-emerald-900 text-white text-xs uppercase tracking-wider">
-                <th class="py-3.5 px-3 w-12 text-center">Chọn</th>
-                <th class="py-3.5 px-3 w-16 text-center">STT</th>
-                <th class="py-3.5 px-4 min-w-[180px]">Tên thương mại</th>
-                <th class="py-3.5 px-4 min-w-[230px]">Hoạt chất</th>
-                <th class="py-3.5 px-3 w-20 text-center">Dạng</th>
-                <th class="py-3.5 px-4 min-w-[180px]">Ghi chú / Đối tượng / Vùng</th>
-                <th class="py-3.5 px-4 w-32 text-right">Báo giá</th>
-              </tr>
-            </thead>
-            <tbody id="oemTableBody" class="divide-y divide-slate-100 text-sm"></tbody>
-          </table>
-        </div>
-      </div>
-
-      <div id="oemEmpty" class="hidden text-center py-14 bg-white rounded-2xl border border-dashed border-slate-300">
-        <div class="text-4xl mb-2">🧪</div>
-        <h3 class="text-lg font-bold text-slate-800">Không tìm thấy mã hoạt chất phù hợp</h3>
-        <p class="text-sm text-slate-500 mt-1">Thử tìm theo tên thương mại, hoạt chất (ví dụ: <em>Abamectin, Mancozeb, Glufosinate, Azoxystrobin</em>) hoặc cây trồng.</p>
-        <button onclick="resetOemFilters()" class="mt-4 bg-emerald-700 hover:bg-emerald-800 text-white text-sm font-bold px-5 py-2.5 rounded-xl transition">
-          Xóa bộ lọc
-        </button>
-      </div>
-    </div>
-  </main>
-
-  <!-- About Company Section -->
-  <section id="about" class="bg-emerald-950 text-white py-14 mt-10">
-    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-8 items-center">
-      <div class="md:col-span-7 space-y-4">
-        <span class="text-xs font-bold uppercase tracking-widest text-amber-300">Giới thiệu doanh nghiệp</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold leading-snug">Công ty TNHH Ochigo Việt Nam</h2>
-        <p class="text-emerald-100/90 text-sm sm:text-base leading-relaxed">
-          Công ty TNHH Ochigo Việt Nam là đơn vị hoạt động trong lĩnh vực nông nghiệp, chuyên cung cấp các giải pháp chăm sóc cây trồng hiệu quả và bền vững. Được thành lập với sứ mệnh hỗ trợ nền nông nghiệp Việt Nam phát triển theo hướng hiện đại, công ty tập trung vào nghiên cứu và cung cấp các sản phẩm đạt tiêu chuẩn cao, giúp nông dân nâng cao năng suất và chất lượng cây trồng.
-        </p>
-        <p class="text-emerald-100/90 text-sm sm:text-base leading-relaxed">
-          Với phương châm <strong>"Better Crop Care Solutions"</strong> – Giải pháp chăm sóc cây trồng tốt hơn, Ochigo Việt Nam cam kết mang đến các sản phẩm chất lượng, an toàn và thân thiện với môi trường, đồng thời nhận gia công đóng lô &amp; nhãn riêng linh hoạt theo nhu cầu đối tác.
-        </p>
-      </div>
-      <div class="md:col-span-5 grid grid-cols-1 gap-4">
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
-          <div class="text-amber-300 font-bold text-sm mb-1">✓ Giải pháp toàn diện</div>
-          <p class="text-xs sm:text-sm text-emerald-100/85">Đầy đủ nhóm thuốc trừ sâu, trừ bệnh, trừ cỏ, trừ ốc, phân bón lá &amp; hữu cơ, thuốc trợ lực.</p>
-        </div>
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
-          <div class="text-amber-300 font-bold text-sm mb-1">✓ Gia công đóng lô – Nhãn riêng chuyên nghiệp</div>
-          <p class="text-xs sm:text-sm text-emerald-100/85">Danh mục hơn 400 mã hoạt chất đa dạng dạng bào chế, hỗ trợ thiết kế/gắn nhãn riêng theo khu vực thị trường.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact & Quick Order Section -->
-  <section id="contact" class="py-14 bg-slate-100 border-t border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-12 gap-8">
-      <div class="lg:col-span-5 space-y-4">
-        <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Thông tin liên hệ</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Kết Nối Cùng Ochigo Việt Nam</h2>
-        <p class="text-sm text-slate-600 leading-relaxed">
-          Quý đại lý, nhà phân phối và bà con nhà vườn cần tư vấn quy trình phòng trừ sâu bệnh, dinh dưỡng cây trồng hoặc báo giá gia công đóng lô vui lòng liên hệ trực tiếp:
-        </p>
-
-        <div class="bg-white rounded-2xl p-5 border border-slate-200 space-y-3 text-sm shadow-2xs">
-          <div>
-            <div class="text-xs text-slate-400 font-semibold uppercase">Văn phòng công ty</div>
-            <div class="font-bold text-slate-800">CÔNG TY TNHH OCHIGO VIỆT NAM</div>
-            <div class="text-slate-600 text-xs mt-0.5">16.01 Lầu 16, Cao ốc GoldenKing, Số 15 Nguyễn Lương Bằng, Phường Tân Mỹ, Thành phố Hồ Chí Minh, Việt Nam</div>
-          </div>
-          <div class="grid sm:grid-cols-2 gap-3 pt-2 border-t border-slate-100">
-            <div>
-              <div class="text-xs text-slate-400">Điện thoại văn phòng</div>
-              <div class="font-semibold text-slate-700">(028) 5411 2207</div>
-            </div>
-            <div>
-              <div class="text-xs text-slate-400">Website / Email công ty</div>
-              <div class="font-semibold text-emerald-700">www.ochigo.vn • info@ochigo.vn</div>
-            </div>
-          </div>
-          <div class="pt-2 border-t border-slate-100 bg-emerald-50/70 -mx-5 -mb-5 p-4 rounded-b-2xl">
-            <div class="text-xs font-bold text-emerald-800 uppercase">Phụ trách kinh doanh &amp; gia công</div>
-            <div class="font-extrabold text-slate-900 mt-0.5">Đức Thuận (Nguyễn Đức Thuận)</div>
-            <div class="text-xs text-slate-700 mt-1">
-              Hotline/Zalo: <a href="tel:0943537319" class="font-bold text-emerald-700">0943 537 319</a> • Email: <a href="mailto:ducthuanochigo@gmail.com" class="font-semibold text-emerald-700">ducthuanochigo@gmail.com</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="lg:col-span-7">
-        <form onsubmit="submitInquiryForm(event)" class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-4">
-          <h3 class="text-xl font-extrabold text-slate-900">Gửi Yêu Cầu Tư Vấn / Báo Giá</h3>
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-xs font-bold text-slate-600 mb-1">Họ và tên / Tên đại lý *</label>
-              <input id="inqName" type="text" required placeholder="VD: Anh Minh - Đại lý VTNN..." class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500" />
-            </div>
-            <div>
-              <label class="block text-xs font-bold text-slate-600 mb-1">Số điện thoại / Zalo *</label>
-              <input id="inqPhone" type="tel" required placeholder="Nhập SĐT liên hệ lại" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500" />
-            </div>
-          </div>
-
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-xs font-bold text-slate-600 mb-1">Nhu cầu quan tâm</label>
-              <select id="inqType" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
-                <option value="Báo giá hàng thương mại Ochigo">Báo giá hàng thương mại Ochigo</option>
-                <option value="Gia công đóng lô / Nhãn riêng (OEM)">Gia công đóng lô / Nhãn riêng (OEM)</option>
-                <option value="Tư vấn kỹ thuật cây trồng">Tư vấn kỹ thuật cây trồng</option>
-              </select>
-            </div>
-            <div>
-              <label class="block text-xs font-bold text-slate-600 mb-1">Khu vực / Tỉnh thành</label>
-              <input id="inqArea" type="text" placeholder="VD: Lâm Đồng, Đắk Lắk, Tiền Giang, Đồng Tháp..." class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500" />
-            </div>
-          </div>
-
-          <div>
-            <label class="block text-xs font-bold text-slate-600 mb-1">Sản phẩm hoặc mã gia công cần hỏi *</label>
-            <textarea id="inqMessage" rows="3" required placeholder="Ghi rõ tên sản phẩm, mã gia công, dạng đóng gói hoặc số lượng dự kiến..." class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"></textarea>
-          </div>
-
-          <div class="flex flex-wrap items-center gap-3 pt-1">
-            <button type="submit" class="bg-emerald-700 hover:bg-emerald-800 text-white font-bold px-6 py-3 rounded-xl text-sm transition shadow-sm">
-              Gửi qua Zalo (Đức Thuận)
-            </button>
-            <button type="button" onclick="sendInquiryViaEmail()" class="bg-slate-800 hover:bg-slate-900 text-white font-bold px-5 py-3 rounded-xl text-sm transition">
-              Gửi qua Email
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-slate-900 text-slate-400 text-xs py-6 px-4">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
-      <div>© 2026 <strong>CÔNG TY TNHH OCHIGO VIỆT NAM</strong>. Bảo lưu mọi quyền.</div>
-      <div>Phụ trách tư vấn: <strong>Đức Thuận</strong> • 0943 537 319 • ducthuanochigo@gmail.com</div>
-    </div>
-  </footer>
-
-  <!-- Floating Zalo Button -->
-  <a
-    href="https://zalo.me/0943537319"
-    target="_blank"
-    rel="noopener"
-    title="Chat Zalo với Đức Thuận - 0943 537 319"
-    class="fixed bottom-5 right-5 z-40 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-3 rounded-full shadow-2xl flex items-center gap-2 text-sm transition hover:scale-105"
-  >
-    <span>💬</span>
-    <span class="hidden sm:inline">Zalo Đức Thuận</span>
-  </a>
-
-  <!-- ==================== MODAL 1: COMMERCIAL PRODUCT DETAIL ==================== -->
-  <div id="productModal" class="fixed inset-0 z-50 hidden bg-slate-950/60 backdrop-blur-xs items-center justify-center p-4">
-    <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200">
-      <div class="sticky top-0 bg-white border-b border-slate-100 px-6 py-4 flex items-center justify-between">
-        <span id="modalCategoryBadge" class="text-xs font-extrabold uppercase tracking-wider px-3 py-1 rounded-full bg-emerald-100 text-emerald-800"></span>
-        <button onclick="closeProductModal()" class="text-slate-400 hover:text-slate-700 text-xl font-bold px-2">✕</button>
-      </div>
-      <div id="modalProductContent" class="p-6 space-y-4"></div>
-    </div>
-  </div>
-
-  <!-- ==================== MODAL 2: OEM SELECTED CODES CART ==================== -->
-  <div id="oemCartModal" class="fixed inset-0 z-50 hidden bg-slate-950/60 backdrop-blur-xs items-center justify-center p-4">
-    <div class="bg-white rounded-2xl max-w-3xl w-full max-h-[90vh] flex flex-col shadow-2xl border border-slate-200">
-      <div class="px-6 py-4 border-b border-slate-100 flex items-center justify-between">
-        <div>
-          <h3 class="text-lg font-extrabold text-slate-900">Danh Sách Mã Gia Công Đóng Lô Đã Chọn</h3>
-          <p class="text-xs text-slate-500">Gửi nhanh danh sách mã này tới Đức Thuận để nhận báo giá gia công &amp; nhãn riêng</p>
-        </div>
-        <button onclick="closeOemCartModal()" class="text-slate-400 hover:text-slate-700 text-xl font-bold px-2">✕</button>
-      </div>
-
-      <div class="p-6 overflow-y-auto flex-1 space-y-4">
-        <div id="oemCartItems" class="space-y-2.5"></div>
-
-        <div class="grid sm:grid-cols-2 gap-3 pt-3 border-t border-slate-100">
-          <div>
-            <label class="block text-xs font-bold text-slate-600 mb-1">Tên đơn vị / Khách hàng</label>
-            <input id="oemCustomerName" type="text" placeholder="VD: Công ty / Đại lý..." class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm" />
-          </div>
-          <div>
-            <label class="block text-xs font-bold text-slate-600 mb-1">Yêu cầu đóng gói / Nhãn riêng</label>
-            <input id="oemLabelNote" type="text" placeholder="VD: Chai 450ml / Gói 100g / Nhãn riêng..." class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm" />
-          </div>
-        </div>
-      </div>
-
-      <div class="px-6 py-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 rounded-b-2xl">
-        <button onclick="clearOemCart()" class="text-xs sm:text-sm font-semibold text-rose-600 hover:text-rose-700">
-          Xóa tất cả mã đã chọn
-        </button>
-        <div class="flex flex-wrap items-center gap-2.5">
-          <button onclick="copyOemCartText()" class="bg-white hover:bg-slate-100 border border-slate-300 text-slate-800 font-bold px-4 py-2.5 rounded-xl text-xs sm:text-sm transition">
-            Copy danh sách
-          </button>
-          <button onclick="sendOemCartZalo()" class="bg-emerald-700 hover:bg-emerald-800 text-white font-bold px-4 py-2.5 rounded-xl text-xs sm:text-sm transition">
-            Gửi Zalo báo giá
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    const ZALO_PHONE = "0943537319";
-    const CONTACT_EMAIL = "ducthuanochigo@gmail.com";
-
-    let currentMode = "commercial";
-    let selectedCommercialCat = "Tất cả";
-    let selectedOemGroup = "Tất cả";
-    let COMMERCIAL_PRODUCTS = [];
-    let OEM_CODES = [];
-    let selectedOemIds = new Set();
-
-    function removeDiacritics(str = "") {
-      return String(str)
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .replace(/đ/g, "d")
-        .replace(/Đ/g, "D")
-        .toLowerCase();
-    }
-
-    function escapeHtml(str = "") {
-      return String(str)
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#39;");
-    }
-
-    function buildImageSrc(imagePath = "") {
-      const clean = String(imagePath || "").trim().replace(/^\/+/, "");
-      if (!clean) return "";
-      return "./" + clean.split("/").map(seg => encodeURIComponent(seg)).join("/");
-    }
-
-    function getCatBadgeStyle(cat) {
-      const map = {
-        "Thuốc trừ sâu": "bg-rose-50 text-rose-700 border-rose-200",
-        "Thuốc trừ bệnh": "bg-sky-50 text-sky-700 border-sky-200",
-        "Thuốc trừ cỏ": "bg-lime-50 text-lime-800 border-lime-200",
-        "Phân bón": "bg-emerald-50 text-emerald-800 border-emerald-200",
-        "Thuốc trừ ốc": "bg-purple-50 text-purple-700 border-purple-200",
-        "Thuốc trợ lực": "bg-amber-50 text-amber-800 border-amber-200"
-      };
-      return map[cat] || "bg-slate-100 text-slate-700 border-slate-200";
-    }
-
-    function normalizeProduct(item, index) {
-      const name = item.name || item.title || item.product_name || item.code || `Sản phẩm ${index + 1}`;
-      const sub = item.sub || item.code || item.subtitle || item.brand || "";
-      const cat = item.cat || item.category || item.group || "Khác";
-      const image = item.image || item.img || item.thumbnail || item.photo || "";
-      const ingredients = item.ingredients || item.active || item.composition || "";
-      const targets = item.targets || item.pest || item.crop || "";
-      const highlights = item.highlights || item.description || item.desc || item.usage || "";
-      const pack = item.pack || item.packaging || item.volume || item.dosage || "";
-      const zalo = item.zalo || ZALO_PHONE;
-
-      return {
-        id: item.id || `sp-${index + 1}`,
-        name,
-        sub,
-        cat,
-        image,
-        ingredients,
-        targets,
-        highlights,
-        pack,
-        zalo
-      };
-    }
-
-    function normalizeOemItem(item, idx) {
-      return {
-        id: item.id || `oem-${idx + 1}`,
-        name: item.name || item.code || item.product_name || "",
-        active: item.active || item.ingredients || item.composition || "",
-        form: item.form || item.type || "",
-        note: item.note || item.region || item.target || "",
-        group: item.group || item.category || "Khác"
-      };
-    }
-
-    function setMode(mode) {
-      currentMode = mode;
-      const isCommercial = mode === "commercial";
-      document.getElementById("commercialView").classList.toggle("hidden", !isCommercial);
-      document.getElementById("oemView").classList.toggle("hidden", isCommercial);
-
-      const tabComm = document.getElementById("tabCommercial");
-      const tabOem = document.getElementById("tabOem");
-      if (isCommercial) {
-        tabComm.className = "px-3 sm:px-4 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition bg-emerald-700 text-white shadow-sm";
-        tabOem.className = "px-3 sm:px-4 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition text-slate-600 hover:text-emerald-800 flex items-center gap-1.5";
-      } else {
-        tabOem.className = "px-3 sm:px-4 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition bg-emerald-700 text-white shadow-sm flex items-center gap-1.5";
-        tabComm.className = "px-3 sm:px-4 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition text-slate-600 hover:text-emerald-800";
-      }
-      renderCurrentView();
-    }
-
-    function clearSearch() {
-      const input = document.getElementById("searchInput");
-      input.value = "";
-      document.getElementById("clearSearchBtn").classList.add("hidden");
-      renderCurrentView();
-    }
-
-    function renderCurrentView() {
-      const input = document.getElementById("searchInput");
-      const clearBtn = document.getElementById("clearSearchBtn");
-      if (clearBtn) {
-        clearBtn.classList.toggle("hidden", !input.value.trim());
-      }
-      if (currentMode === "commercial") {
-        renderCommercialTabs();
-        renderCommercial();
-      } else {
-        renderOem();
-      }
-    }
-
-    function renderCommercialTabs() {
-      const container = document.getElementById("commercialCategoryTabs");
-      if (!container) return;
-
-      const cats = ["Tất cả"];
-      COMMERCIAL_PRODUCTS.forEach((p) => {
-        if (p.cat && !cats.includes(p.cat)) cats.push(p.cat);
-      });
-
-      container.innerHTML = cats.map((cat) => {
-        const count = cat === "Tất cả"
-          ? COMMERCIAL_PRODUCTS.length
-          : COMMERCIAL_PRODUCTS.filter((p) => p.cat === cat).length;
-        const active = selectedCommercialCat === cat;
-        const cls = active
-          ? "bg-emerald-700 text-white border-emerald-700 shadow-sm"
-          : "bg-white text-slate-700 border-slate-200 hover:border-emerald-400 hover:text-emerald-800";
-        return `<button onclick="selectCommercialCat('${escapeHtml(cat)}')" class="px-3.5 py-2 rounded-xl border text-xs sm:text-sm font-bold transition ${cls}">${escapeHtml(cat)} (${count})</button>`;
-      }).join("");
-    }
-
-    function selectCommercialCat(cat) {
-      selectedCommercialCat = cat;
-      renderCommercialTabs();
-      renderCommercial();
-    }
-
-    function resetCommercialFilters() {
-      selectedCommercialCat = "Tất cả";
-      const searchInput = document.getElementById("searchInput");
-      if (searchInput) searchInput.value = "";
-      const clearBtn = document.getElementById("clearSearchBtn");
-      if (clearBtn) clearBtn.classList.add("hidden");
-      renderCommercialTabs();
-      renderCommercial();
-    }
-
-    function renderCommercial() {
-      const grid = document.getElementById("commercialGrid");
-      const empty = document.getElementById("commercialEmpty");
-      const countEl = document.getElementById("commercialResultCount");
-      if (!grid) return;
-
-      const rawQuery = (document.getElementById("searchInput")?.value || "").trim();
-      const q = removeDiacritics(rawQuery);
-
-      const filtered = COMMERCIAL_PRODUCTS.filter((p) => {
-        const matchCat = selectedCommercialCat === "Tất cả" || p.cat === selectedCommercialCat;
-        if (!matchCat) return false;
-        if (!q) return true;
-        const hay = removeDiacritics(`${p.name} ${p.sub} ${p.cat} ${p.image} ${p.ingredients} ${p.targets} ${p.highlights} ${p.pack}`);
-        return hay.includes(q);
-      });
-
-      if (countEl) {
-        countEl.textContent = `Hiển thị ${filtered.length} / ${COMMERCIAL_PRODUCTS.length} sản phẩm`;
-      }
-
-      if (filtered.length === 0) {
-        grid.innerHTML = "";
-        if (empty) empty.classList.remove("hidden");
-        return;
-      }
-
-      if (empty) empty.classList.add("hidden");
-
-      grid.innerHTML = filtered.map((p) => {
-        const imgSrc = buildImageSrc(p.image);
-        const badgeClass = getCatBadgeStyle(p.cat);
-        return `
-          <article class="bg-white rounded-2xl border border-slate-200 hover:border-emerald-400 shadow-2xs hover:shadow-md transition flex flex-col justify-between overflow-hidden">
-            <div>
-              <div class="relative h-48 bg-slate-50 border-b border-slate-100 flex items-center justify-center p-3 overflow-hidden">
-                ${imgSrc
-                  ? `<img src="${imgSrc}" alt="${escapeHtml(p.name)}" loading="lazy" class="max-h-full max-w-full object-contain transition duration-300 hover:scale-105" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" />
-                     <div class="hidden text-center text-xs text-slate-400 px-2">Chưa tải được ảnh:<br><span class="font-semibold text-slate-500">${escapeHtml(p.image)}</span></div>`
-                  : `<div class="text-xs text-slate-400">Chưa có ảnh sản phẩm</div>`
-                }
-                <span class="absolute top-2.5 left-2.5 text-[11px] font-bold px-2.5 py-0.5 rounded-full border ${badgeClass}">${escapeHtml(p.cat)}</span>
-              </div>
-
-              <div class="p-4 space-y-2">
-                <h3 class="font-extrabold text-slate-900 text-base leading-snug line-clamp-2">${escapeHtml(p.name)}</h3>
-                ${p.sub ? `<div class="text-xs font-semibold text-emerald-700">${escapeHtml(p.sub)}</div>` : ""}
-                ${p.ingredients ? `<p class="text-xs text-slate-600 line-clamp-2"><strong>Thành phần:</strong> ${escapeHtml(p.ingredients)}</p>` : ""}
-                ${p.targets ? `<p class="text-xs text-slate-600 line-clamp-2"><strong>Công dụng:</strong> ${escapeHtml(p.targets)}</p>` : ""}
-                ${p.highlights ? `<p class="text-xs text-slate-500 line-clamp-2">${escapeHtml(p.highlights)}</p>` : ""}
-              </div>
-            </div>
-
-            <div class="px-4 pb-4 pt-2 flex items-center justify-between gap-2 border-t border-slate-100 mt-2">
-              <button onclick="openProductModal('${escapeHtml(p.id)}')" class="text-xs font-bold text-emerald-700 hover:text-emerald-900 py-1.5">
-                Xem chi tiết
-              </button>
-              <a href="https://zalo.me/${encodeURIComponent(p.zalo || ZALO_PHONE)}?text=${encodeURIComponent("Xin báo giá sản phẩm: " + p.name)}" target="_blank" rel="noopener" class="bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold px-3 py-1.5 rounded-lg transition">
-                Hỏi giá Zalo
-              </a>
-            </div>
-          </article>
-        `;
-      }).join("");
-    }
-
-    function openProductModal(id) {
-      const p = COMMERCIAL_PRODUCTS.find((item) => String(item.id) === String(id));
-      if (!p) return;
-      const modal = document.getElementById("productModal");
-      const badge = document.getElementById("modalCategoryBadge");
-      const content = document.getElementById("modalProductContent");
-      const imgSrc = buildImageSrc(p.image);
-
-      badge.textContent = p.cat || "Sản phẩm";
-      content.innerHTML = `
-        <div class="flex flex-col sm:flex-row gap-5 items-start">
-          <div class="w-full sm:w-52 h-52 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center p-3 shrink-0">
-            ${imgSrc
-              ? `<img src="${imgSrc}" alt="${escapeHtml(p.name)}" class="max-h-full max-w-full object-contain" onerror="this.style.display='none'" />`
-              : `<span class="text-xs text-slate-400">Không có ảnh</span>`
-            }
-          </div>
-          <div class="space-y-2.5 flex-1">
-            <h3 class="text-xl font-extrabold text-slate-900">${escapeHtml(p.name)}</h3>
-            ${p.sub ? `<div class="text-sm font-bold text-emerald-700">${escapeHtml(p.sub)}</div>` : ""}
-            ${p.pack ? `<div class="text-xs bg-emerald-50 text-emerald-800 font-semibold px-3 py-1.5 rounded-lg inline-block">Quy cách / Liều lượng: ${escapeHtml(p.pack)}</div>` : ""}
-            ${p.ingredients ? `<div class="text-sm text-slate-700"><strong>Thành phần:</strong> ${escapeHtml(p.ingredients)}</div>` : ""}
-            ${p.targets ? `<div class="text-sm text-slate-700"><strong>Đặc trị / Công dụng:</strong> ${escapeHtml(p.targets)}</div>` : ""}
-            ${p.highlights ? `<div class="text-sm text-slate-600 leading-relaxed">${escapeHtml(p.highlights)}</div>` : ""}
-          </div>
-        </div>
-        <div class="pt-4 border-t border-slate-100 flex flex-wrap justify-end gap-2.5">
-          <button onclick="closeProductModal()" class="px-4 py-2 rounded-xl border border-slate-300 text-sm font-semibold text-slate-700 hover:bg-slate-50">Đóng</button>
-          <a href="https://zalo.me/${encodeURIComponent(p.zalo || ZALO_PHONE)}?text=${encodeURIComponent("Tư vấn & báo giá sản phẩm: " + p.name)}" target="_blank" rel="noopener" class="px-5 py-2 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white text-sm font-bold">
-            Liên hệ Zalo báo giá
-          </a>
-        </div>
-      `;
-
-      modal.classList.remove("hidden");
-      modal.classList.add("flex");
-    }
-
-    function closeProductModal() {
-      const modal = document.getElementById("productModal");
-      modal.classList.add("hidden");
-      modal.classList.remove("flex");
-    }
-
-    function initOemFilters() {
-      const groupTabs = document.getElementById("oemGroupTabs");
-      const formSelect = document.getElementById("oemFormFilter");
-      if (groupTabs) {
-        const groups = ["Tất cả", "Thuốc trừ sâu", "Thuốc trừ bệnh", "Thuốc trừ cỏ", "Phân bón", "Khác"];
-        OEM_CODES.forEach((item) => {
-          if (item.group && !groups.includes(item.group)) groups.push(item.group);
-        });
-        groupTabs.innerHTML = groups.map((g) => {
-          const active = selectedOemGroup === g;
-          const cls = active
-            ? "bg-emerald-700 text-white border-emerald-700"
-            : "bg-slate-50 text-slate-700 border-slate-200 hover:border-emerald-400";
-          return `<button onclick="selectOemGroup('${escapeHtml(g)}')" class="px-3 py-1.5 rounded-xl border text-xs font-bold transition ${cls}">${escapeHtml(g)}</button>`;
-        }).join("");
-      }
-
-      if (formSelect) {
-        const currentVal = formSelect.value || "ALL";
-        const forms = Array.from(new Set(OEM_CODES.map((i) => (i.form || "").trim()).filter(Boolean)));
-        formSelect.innerHTML = `<option value="ALL">Tất cả dạng (WP, SC, EC, WG, SL...)</option>` +
-          forms.map((f) => `<option value="${escapeHtml(f)}">${escapeHtml(f)}</option>`).join("");
-        formSelect.value = forms.includes(currentVal) ? currentVal : "ALL";
-      }
-    }
-
-    function selectOemGroup(g) {
-      selectedOemGroup = g;
-      initOemFilters();
-      renderOem();
-    }
-
-    function resetOemFilters() {
-      selectedOemGroup = "Tất cả";
-      const formFilter = document.getElementById("oemFormFilter");
-      const noteFilter = document.getElementById("oemNoteFilter");
-      const searchInput = document.getElementById("searchInput");
-      if (formFilter) formFilter.value = "ALL";
-      if (noteFilter) noteFilter.value = "ALL";
-      if (searchInput) searchInput.value = "";
-      const clearBtn = document.getElementById("clearSearchBtn");
-      if (clearBtn) clearBtn.classList.add("hidden");
-      initOemFilters();
-      renderOem();
-    }
-
-    function matchOemNoteFilter(noteText, filterVal) {
-      if (!filterVal || filterVal === "ALL") return true;
-      const n = removeDiacritics(noteText || "");
-      if (filterVal === "HAS_NOTE") return n.trim().length > 0;
-      if (filterVal === "DANANG") return n.includes("da nang");
-      if (filterVal === "HUE") return n.includes("hue");
-      if (filterVal === "LOGO_SDT") return n.includes("logo") || n.includes("sdt") || n.includes("so dien thoai");
-      return true;
-    }
-
-    function renderOem() {
-      const tbody = document.getElementById("oemTableBody");
-      const empty = document.getElementById("oemEmpty");
-      const countEl = document.getElementById("oemResultCount");
-      if (!tbody) return;
-
-      const q = removeDiacritics((document.getElementById("searchInput")?.value || "").trim());
-      const formVal = document.getElementById("oemFormFilter")?.value || "ALL";
-      const noteVal = document.getElementById("oemNoteFilter")?.value || "ALL";
-
-      const rows = OEM_CODES.filter((item) => {
-        if (selectedOemGroup !== "Tất cả" && item.group !== selectedOemGroup) return false;
-        if (formVal !== "ALL" && (item.form || "").trim() !== formVal) return false;
-        if (!matchOemNoteFilter(item.note, noteVal)) return false;
-        if (!q) return true;
-        return removeDiacritics(`${item.name} ${item.active} ${item.form} ${item.note} ${item.group}`).includes(q);
-      });
-
-      if (countEl) countEl.textContent = `${rows.length} mã gia công`;
-
-      if (rows.length === 0) {
-        tbody.innerHTML = "";
-        if (empty) empty.classList.remove("hidden");
-        return;
-      }
-
-      if (empty) empty.classList.add("hidden");
-      tbody.innerHTML = rows.map((item, idx) => {
-        const checked = selectedOemIds.has(item.id) ? "checked" : "";
-        return `
-          <tr class="hover:bg-emerald-50/40">
-            <td class="py-3 px-3 text-center"><input type="checkbox" ${checked} onchange="toggleOemItem('${escapeHtml(item.id)}')" /></td>
-            <td class="py-3 px-3 text-center text-slate-500">${idx + 1}</td>
-            <td class="py-3 px-4 font-bold text-slate-900">${escapeHtml(item.name || "")}</td>
-            <td class="py-3 px-4 text-slate-700">${escapeHtml(item.active || "")}</td>
-            <td class="py-3 px-3 text-center font-semibold text-emerald-800">${escapeHtml(item.form || "")}</td>
-            <td class="py-3 px-4 text-xs text-slate-600">${escapeHtml(item.note || "")}</td>
-            <td class="py-3 px-4 text-right">
-              <a href="https://zalo.me/${ZALO_PHONE}?text=${encodeURIComponent("Báo giá gia công mã: " + item.name)}" target="_blank" rel="noopener" class="text-xs font-bold text-emerald-700 hover:underline">Báo giá</a>
-            </td>
-          </tr>
-        `;
-      }).join("");
-    }
-
-    function toggleOemItem(id) {
-      if (selectedOemIds.has(id)) selectedOemIds.delete(id);
-      else selectedOemIds.add(id);
-      updateCartBadges();
-    }
-
-    function updateCartBadges() {
-      const count = selectedOemIds.size;
-      const badge = document.getElementById("cartCountBadge");
-      const oemBtnCount = document.getElementById("oemCartBtnCount");
-      const headerCartBtn = document.getElementById("headerCartBtn");
-      if (badge) badge.textContent = count;
-      if (oemBtnCount) oemBtnCount.textContent = count;
-      if (headerCartBtn) {
-        headerCartBtn.classList.toggle("hidden", count === 0);
-        headerCartBtn.classList.toggle("flex", count > 0);
-      }
-    }
-
-    function openOemCartModal() {
-      const modal = document.getElementById("oemCartModal");
-      const container = document.getElementById("oemCartItems");
-      const items = OEM_CODES.filter((item) => selectedOemIds.has(item.id));
-      container.innerHTML = items.length
-        ? items.map((i) => `<div class="p-3 rounded-xl bg-slate-50 border border-slate-200 flex justify-between items-center text-sm"><div><strong>${escapeHtml(i.name)}</strong> <span class="text-slate-500">(${escapeHtml(i.active)})</span></div><button onclick="toggleOemItem('${escapeHtml(i.id)}'); openOemCartModal();" class="text-rose-600 text-xs font-bold">Bỏ</button></div>`).join("")
-        : `<div class="text-center text-sm text-slate-500 py-6">Chưa chọn mã gia công nào.</div>`;
-      modal.classList.remove("hidden");
-      modal.classList.add("flex");
-    }
-
-    function closeOemCartModal() {
-      const modal = document.getElementById("oemCartModal");
-      modal.classList.add("hidden");
-      modal.classList.remove("flex");
-    }
-
-    function clearOemCart() {
-      selectedOemIds.clear();
-      updateCartBadges();
-      renderOem();
-      openOemCartModal();
-    }
-
-    function getOemCartSummaryText() {
-      const customer = document.getElementById("oemCustomerName")?.value.trim() || "";
-      const note = document.getElementById("oemLabelNote")?.value.trim() || "";
-      const items = OEM_CODES.filter((item) => selectedOemIds.has(item.id));
-      const lines = [
-        "YÊU CẦU BÁO GIÁ GIA CÔNG ĐÓNG LÔ / NHÃN RIÊNG:",
-        customer ? `- Đơn vị: ${customer}` : null,
-        note ? `- Quy cách / Nhãn: ${note}` : null,
-        ...items.map((i, idx) => `${idx + 1}. ${i.name} (${i.active || i.form || ""})`)
-      ].filter(Boolean);
-      return lines.join("\n");
-    }
-
-    function copyOemCartText() {
-      const txt = getOemCartSummaryText();
-      navigator.clipboard?.writeText(txt);
-      alert("Đã copy danh sách mã đã chọn.");
-    }
-
-    function sendOemCartZalo() {
-      const txt = encodeURIComponent(getOemCartSummaryText());
-      window.open(`https://zalo.me/${ZALO_PHONE}?text=${txt}`, "_blank", "noopener");
-    }
-
-    function buildGeneralInquiryText() {
-      const name = document.getElementById("inqName")?.value.trim() || "";
-      const phone = document.getElementById("inqPhone")?.value.trim() || "";
-      const type = document.getElementById("inqType")?.value || "";
-      const area = document.getElementById("inqArea")?.value.trim() || "";
-      const msg = document.getElementById("inqMessage")?.value.trim() || "";
-      return [
-        "YÊU CẦU TƯ VẤN / BÁO GIÁ OCHIGO VIỆT NAM:",
-        `- Họ tên/Đại lý: ${name || "(chưa nhập)"}`,
-        `- SĐT/Zalo: ${phone || "(chưa nhập)"}`,
-        `- Nhu cầu: ${type}`,
-        `- Khu vực: ${area || "(chưa nhập)"}`,
-        `- Nội dung: ${msg || "(chưa nhập)"}`
-      ].join("\n");
-    }
-
-    function submitInquiryForm(e) {
-      e.preventDefault();
-      const text = encodeURIComponent(buildGeneralInquiryText());
-      window.open(`https://zalo.me/${ZALO_PHONE}?text=${text}`, "_blank", "noopener");
-    }
-
-    function sendInquiryViaEmail() {
-      const subject = encodeURIComponent("Liên hệ tư vấn / báo giá Ochigo Việt Nam");
-      const body = encodeURIComponent(buildGeneralInquiryText());
-      window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
-    }
-
-    ["productModal", "oemCartModal"].forEach((id) => {
-      document.getElementById(id)?.addEventListener("click", (e) => {
-        if (e.target.id === id) {
-          if (id === "productModal") closeProductModal();
-          else closeOemCartModal();
-        }
-      });
-    });
-
-    async function tryFetchJson(path) {
-      try {
-        const res = await fetch(path, { cache: "no-store" });
-        if (!res.ok) return null;
-        return await res.json();
-      } catch (_) {
-        return null;
-      }
-    }
-
-    async function initCatalogue() {
-      const prodJson = await tryFetchJson("./products.json");
-      if (prodJson) {
-        const rawProducts = Array.isArray(prodJson)
-          ? prodJson
-          : (Array.isArray(prodJson.products) ? prodJson.products : (Array.isArray(prodJson.commercial) ? prodJson.commercial : []));
-        COMMERCIAL_PRODUCTS = rawProducts.map(normalizeProduct);
-
-        if (!Array.isArray(prodJson) && Array.isArray(prodJson.oem)) {
-          OEM_CODES = prodJson.oem.map(normalizeOemItem);
-        }
-      }
-
-      if (OEM_CODES.length === 0) {
-        const oemJson = await tryFetchJson("./oem.json");
-        if (oemJson) {
-          const rawOem = Array.isArray(oemJson)
-            ? oemJson
-            : (Array.isArray(oemJson.oem) ? oemJson.oem : (Array.isArray(oemJson.items) ? oemJson.items : []));
-          OEM_CODES = rawOem.map(normalizeOemItem);
-        }
-      }
-
-      const statCommEl = document.getElementById("statCommercialCount");
-      if (statCommEl && COMMERCIAL_PRODUCTS.length > 0) {
-        statCommEl.textContent = String(COMMERCIAL_PRODUCTS.length);
-      }
-
-      const statOemEl = document.getElementById("statOemCount");
-      if (statOemEl && OEM_CODES.length > 0) {
-        statOemEl.textContent = String(OEM_CODES.length);
-      }
-
-      const heroBtnComm = document.getElementById("heroBtnCommercial");
-      if (heroBtnComm && COMMERCIAL_PRODUCTS.length > 0) {
-        heroBtnComm.textContent = `Xem Hàng Thương Mại (${COMMERCIAL_PRODUCTS.length} SP)`;
-      }
-
-      renderCommercialTabs();
-      renderCommercial();
-      initOemFilters();
-      renderOem();
-      updateCartBadges();
-    }
-
-    initCatalogue();
-  </script>
-</body>
-</html>
+  {
+    "id": "oem-thuốc-trừ-cỏ-1-1",
+    "stt": 1,
+    "group": "Thuốc trừ cỏ",
+    "name": "FURORE 10WP",
+    "active": "Bensulfuron methyl 10% w/w",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-2-2",
+    "stt": 2,
+    "group": "Thuốc trừ cỏ",
+    "name": "Incher 100EC",
+    "active": "Cyhalofop-butyl 100g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-3-3",
+    "stt": 3,
+    "group": "Thuốc trừ cỏ",
+    "name": "TOP HELMER 10 OD",
+    "active": "Topramezone 10% w/w",
+    "form": "OD",
+    "note": "Cỏ dại/ngô"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-4-4",
+    "stt": 4,
+    "group": "Thuốc trừ cỏ",
+    "name": "TRIHAMEX 300EC",
+    "active": "Pretilacholor 300 g/l + chất an toàn Fenclorim 100g/l",
+    "form": "EC",
+    "note": "cỏ/lúa gieo thẳng. Chỉ để logo & số đt khách lên nhãn làm từ Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-5-5",
+    "stt": 5,
+    "group": "Thuốc trừ cỏ",
+    "name": "SUNFOSINAT 200SL",
+    "active": "Glufosinate ammonium 200G/L",
+    "form": "SL",
+    "note": "Chỉ để logo & số đt khách lên nhãn làm từ Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-6-6",
+    "stt": 6,
+    "group": "Thuốc trừ cỏ",
+    "name": "IACO 500EC",
+    "active": "Acetochlor 500g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-7-7",
+    "stt": 7,
+    "group": "Thuốc trừ cỏ",
+    "name": "NOFAMI 10SC",
+    "active": "Bispyribac-sodium 10% w/w",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-8-8",
+    "stt": 8,
+    "group": "Thuốc trừ cỏ",
+    "name": "NEWFOSINATE 150SL",
+    "active": "Glufosinate ammonium 150G/L",
+    "form": "SL",
+    "note": "Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-9-9",
+    "stt": 9,
+    "group": "Thuốc trừ cỏ",
+    "name": "SANAZINE 500SC",
+    "active": "Atrazine 500g/l",
+    "form": "SC",
+    "note": "Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-10-10",
+    "stt": 10,
+    "group": "Thuốc trừ cỏ",
+    "name": "ALYANDO 200WG",
+    "active": "Metsulfuron Methyl 200g/kg",
+    "form": "WG",
+    "note": "Chỉ để logo & số đt khách lên nhãn làm từ Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-11-11",
+    "stt": 11,
+    "group": "Thuốc trừ cỏ",
+    "name": "TGOLD 52WP",
+    "active": "Nicosufuron 4% + Atrazin 48% (w/w)",
+    "form": "WP",
+    "note": "Cỏ/ ngô. Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-12-12",
+    "stt": 12,
+    "group": "Thuốc trừ cỏ",
+    "name": "AMESIP 80WP",
+    "active": "Ametryn 800g/kg",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-13-13",
+    "stt": 13,
+    "group": "Thuốc trừ cỏ",
+    "name": "ASUPERGRAS 200SL",
+    "active": "Glufosinate ammonium 200G/L",
+    "form": "SL",
+    "note": "Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-14-14",
+    "stt": 14,
+    "group": "Thuốc trừ cỏ",
+    "name": "SAMSINATE 200SL",
+    "active": "Glufosinate 200g/l",
+    "form": "SL",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-15-15",
+    "stt": 15,
+    "group": "Thuốc trừ cỏ",
+    "name": "GROUD UP 200 SL",
+    "active": "Glufosinate 200g/l",
+    "form": "SL",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-16-16",
+    "stt": 16,
+    "group": "Thuốc trừ cỏ",
+    "name": "BUTALO 60EC",
+    "active": "Butachlor 600g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-17-17",
+    "stt": 17,
+    "group": "Thuốc trừ cỏ",
+    "name": "INCHER 100EC",
+    "active": "Cyhalofop-butyl 100g/l",
+    "form": "EC",
+    "note": "cỏ/ lúa gieo thẳng"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-18-18",
+    "stt": 18,
+    "group": "Thuốc trừ cỏ",
+    "name": "ZIMIZIN 800WP",
+    "active": "Atrazine 800g/kg",
+    "form": "WP",
+    "note": "Cỏ/ ngô"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-19-19",
+    "stt": 19,
+    "group": "Thuốc trừ cỏ",
+    "name": "KOCIN 60EC",
+    "active": "Butachlor 600g/l",
+    "form": "EC",
+    "note": "cỏ/lúa, lạc"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-20-20",
+    "stt": 20,
+    "group": "Thuốc trừ cỏ",
+    "name": "SIFATA 36WP",
+    "active": "Quinclorac 33% + Bensulfuron Methyl 3%",
+    "form": "WP",
+    "note": "cỏ/ lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-21-21",
+    "stt": 21,
+    "group": "Thuốc trừ cỏ",
+    "name": "BUTAVI 60EC",
+    "active": "Butachlor 600g/l",
+    "form": "EC",
+    "note": "cỏ/lúa, lạc"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-22-22",
+    "stt": 22,
+    "group": "Thuốc trừ cỏ",
+    "name": "HOSTENSIA 10SL",
+    "active": "Glufosinate ammonium 10%W/W",
+    "form": "SL",
+    "note": "cỏ/ cao su"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-23-23",
+    "stt": 23,
+    "group": "Thuốc trừ cỏ",
+    "name": "FARRA 100EC",
+    "active": "Cyhalofop Butyl 100g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-24-24",
+    "stt": 24,
+    "group": "Thuốc trừ cỏ",
+    "name": "Helmer Brarita 200SL",
+    "active": "Glufosinate-ammonium 200g/L",
+    "form": "SL",
+    "note": "Cỏ dại/Cà phê"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-25-25",
+    "stt": 25,
+    "group": "Thuốc trừ cỏ",
+    "name": "AF - Stenzone 50SL",
+    "active": "MCPA-sodium 10% w/w + Bentazone 40% w/w",
+    "form": "SL",
+    "note": "Cỏ chác lác, cỏ lá rộng; cỏ/ngô, lạc"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-26-26",
+    "stt": 26,
+    "group": "Thuốc trừ cỏ",
+    "name": "AF - Pendimex 40SC",
+    "active": "Pendimethalin 40% w/w",
+    "form": "SC",
+    "note": "Thuốc diệt cỏ đất tiền nảy mầm cho cây trồng cạn: cỏ hàng niên họ hòa bản (tấm, cỏ lồng vực, cỏ đuôi phụng, đuôi chó) và cỏ lá rộng hàng niên (rau dền, diếp hoang, rau sam...) trên ngô, đậu tương, lạc, bông, khoai tây, thuốc lá, tỏi, hẹ, hành, ớt, cà tím, cải bắp"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-27-27",
+    "stt": 27,
+    "group": "Thuốc trừ cỏ",
+    "name": "Mezin-xtra 55SC",
+    "active": "Atrazine 50% + Mesotrione 5%",
+    "form": "SC",
+    "note": "Ngô: Cỏ hòa thảo, lá rộng"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-28-28",
+    "stt": 28,
+    "group": "Thuốc trừ cỏ",
+    "name": "Doziquat 25SL",
+    "active": "Diquat dibromide 25%w/w",
+    "form": "SL",
+    "note": "Cà phê: Cỏ dại"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-29-29",
+    "stt": 29,
+    "group": "Thuốc trừ cỏ",
+    "name": "SAM SINATE® 200 SL",
+    "active": "Glufosinate ammonium 200g/l",
+    "form": "SL",
+    "note": "Cao su: Cỏ"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-30-30",
+    "stt": 30,
+    "group": "Thuốc trừ cỏ",
+    "name": "Rosazone 60EC",
+    "active": "Butachlor 50% w/w + Oxadiazon 10% w/w",
+    "form": "EC",
+    "note": "Ngô/ cỏ"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-31-31",
+    "stt": 31,
+    "group": "Thuốc trừ cỏ",
+    "name": "Grass-King 20SL",
+    "active": "Diquat Dibromide 20 % w/w",
+    "form": "SL",
+    "note": "Cao su: Cỏ dại"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-32-32",
+    "stt": 32,
+    "group": "Thuốc trừ cỏ",
+    "name": "Rotrione 34.4SC",
+    "active": "Tembotrione 34,4% w/w",
+    "form": "SC",
+    "note": "Ngô/ cỏ"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-33-33",
+    "stt": 33,
+    "group": "Thuốc trừ cỏ",
+    "name": "Sundiquat 200SL",
+    "active": "Diquat dibromide 200g/l",
+    "form": "SL",
+    "note": "Cỏ dại/Cà phê"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-34-34",
+    "stt": 34,
+    "group": "Thuốc trừ cỏ",
+    "name": "Tvatozone 35EC",
+    "active": "Acetochlor 30% + Oxadiazon 5%",
+    "form": "SL",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-35-35",
+    "stt": 35,
+    "group": "Thuốc trừ cỏ",
+    "name": "AF-Fulsta 200SL",
+    "active": "Glufosinate ammonium 200g/l",
+    "form": "SL",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-36-36",
+    "stt": 36,
+    "group": "Thuốc trừ cỏ",
+    "name": "Yosky 10SL",
+    "active": "Glufosinate-P 10%w/w",
+    "form": "SL",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-37-37",
+    "stt": 37,
+    "group": "Thuốc trừ cỏ",
+    "name": "TVSHOT 30OD",
+    "active": "Cyhalofop-butyl 30% w/w",
+    "form": "OD",
+    "note": "cỏ/lúa gieo thẳng"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-38-38",
+    "stt": 38,
+    "group": "Thuốc trừ cỏ",
+    "name": "TVAZONE 38SL",
+    "active": "Bentazone 33% + MCPA 5%",
+    "form": "SL",
+    "note": "cỏ/ngô"
+  },
+  {
+    "id": "oem-thuốc-trừ-cỏ-39-39",
+    "stt": 39,
+    "group": "Thuốc trừ cỏ",
+    "name": "Medalylindiavb 32EC",
+    "active": "Imazethapyr 2% + Pendimethalin 30%",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-ốc-1-40",
+    "stt": 1,
+    "group": "Thuốc trừ ốc",
+    "name": "PILOT 15AB",
+    "active": "Metaldehyde 15% w/w",
+    "form": "AB",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-ốc-2-41",
+    "stt": 2,
+    "group": "Thuốc trừ ốc",
+    "name": "OCINDIA 750WP",
+    "active": "Niclosamide 700g/kg + Pyridaben 50g/kg",
+    "form": "WP",
+    "note": "ốc bươu vàng/ lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-ốc-3-42",
+    "stt": 3,
+    "group": "Thuốc trừ ốc",
+    "name": "CAPOVER 150GR",
+    "active": "Abamectin 5g/kg + Metaldehyde 145g/kg",
+    "form": "GR",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-ốc-4-43",
+    "stt": 4,
+    "group": "Thuốc trừ ốc",
+    "name": "CAPORT 750WP",
+    "active": "Niclosamide 745g/kg + Abamectin 5g/kg",
+    "form": "",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-ốc-5-44",
+    "stt": 5,
+    "group": "Thuốc trừ ốc",
+    "name": "Notralis 18GR",
+    "active": "Metaldehyde 18% w/w",
+    "form": "GR",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-ốc-6-45",
+    "stt": 6,
+    "group": "Thuốc trừ ốc",
+    "name": "NP SNAILICIDE 700WP",
+    "active": "Niclosamide 700g/kg",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-ốc-7-46",
+    "stt": 7,
+    "group": "Thuốc trừ ốc",
+    "name": "TOB 1.88GR",
+    "active": "Cafein 1.5% + Nicotine Sulfate 0.3% + Azadirachtin 0.08%",
+    "form": "GR",
+    "note": "Thuốc ốc"
+  },
+  {
+    "id": "oem-thuốc-trừ-ốc-8-47",
+    "stt": 8,
+    "group": "Thuốc trừ ốc",
+    "name": "BAYERMUNICH-ĐỨC 800WP",
+    "active": "Niclosamide olamine 780g/kg + Abamectin 20g/kg",
+    "form": "WP",
+    "note": "ốc bươu vàng/ lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-ốc-9-48",
+    "stt": 9,
+    "group": "Thuốc trừ ốc",
+    "name": "Oc Clear 700WP",
+    "active": "Niclosamide 700g/kg",
+    "form": "WP",
+    "note": "Lúa: Ốc bưu vàng"
+  },
+  {
+    "id": "oem-thuốc-trừ-ốc-10-49",
+    "stt": 10,
+    "group": "Thuốc trừ ốc",
+    "name": "DOBAY 810WP",
+    "active": "Niclosamide olamine 810g/kg",
+    "form": "WP",
+    "note": "ốc bươu vàng/ lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-ốc-11-50",
+    "stt": 11,
+    "group": "Thuốc trừ ốc",
+    "name": "Ốc usa 700WP",
+    "active": "Niclosamide 700g/kg",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-ốc-12-51",
+    "stt": 12,
+    "group": "Thuốc trừ ốc",
+    "name": "Tatoo 150AB",
+    "active": "Metaldehyde 150 g/kg",
+    "form": "AB",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-kích-thích-tăng-trưởng-1-52",
+    "stt": 1,
+    "group": "Thuốc kích thích tăng trưởng",
+    "name": "Atomin 15WP",
+    "active": "Paclobutrazol 15% w/w",
+    "form": "WP",
+    "note": "Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-kích-thích-tăng-trưởng-2-53",
+    "stt": 2,
+    "group": "Thuốc kích thích tăng trưởng",
+    "name": "EGIBO 80SG",
+    "active": "Gibberellic acid 80% w/w",
+    "form": "SG",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-kích-thích-tăng-trưởng-3-54",
+    "stt": 3,
+    "group": "Thuốc kích thích tăng trưởng",
+    "name": "AF - Growth 20TB",
+    "active": "Gibberellic acid 20% w/w",
+    "form": "TB",
+    "note": "Kích thích sinh trưởng/lúa, thanh long, cam, bưởi"
+  },
+  {
+    "id": "oem-thuốc-kích-thích-tăng-trưởng-4-55",
+    "stt": 4,
+    "group": "Thuốc kích thích tăng trưởng",
+    "name": "Sun Thephone 400SL",
+    "active": "Ethephon 400 g/l",
+    "form": "SL",
+    "note": "Kích thích mủ/Cao su"
+  },
+  {
+    "id": "oem-thuốc-kích-thích-tăng-trưởng-5-56",
+    "stt": 5,
+    "group": "Thuốc kích thích tăng trưởng",
+    "name": "Paclovbusa 25SC",
+    "active": "Paclobutrazol 25%w/w",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-kích-thích-tăng-trưởng-6-57",
+    "stt": 6,
+    "group": "Thuốc kích thích tăng trưởng",
+    "name": "Gibow 200TB (10g)",
+    "active": "Gibberellic acid 200g/kg",
+    "form": "TB",
+    "note": "ĐHST/thanh long"
+  },
+  {
+    "id": "oem-thuốc-kích-thích-tăng-trưởng-7-58",
+    "stt": 7,
+    "group": "Thuốc kích thích tăng trưởng",
+    "name": "Gibow 200TB (5g)",
+    "active": "Gibberellic acid 200g/kg",
+    "form": "TB",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-kích-thích-tăng-trưởng-8-59",
+    "stt": 8,
+    "group": "Thuốc kích thích tăng trưởng",
+    "name": "Gibow 200WP",
+    "active": "Gibberellic acid 200g/kg",
+    "form": "WP",
+    "note": "KTST/lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-1-60",
+    "stt": 1,
+    "group": "Thuốc trừ sâu",
+    "name": "HAIHAMEC 3.6EC",
+    "active": "Abamectin 3,6% w/w cps 200-400 (dark brown color)",
+    "form": "EC",
+    "note": "bọ trĩ, sâu đục bẹ, sâu cuốn lá, nhện gié/ lúa; sâu tơ, sâu xanh/ bắp cải; bọ trĩ/ dưa hấu, điều; nhện đỏ/ cam; rệp sáp/ hồ tiêu"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-2-61",
+    "stt": 2,
+    "group": "Thuốc trừ sâu",
+    "name": "METHOZIDETV 240SC",
+    "active": "Methoxyfenozide 240g/l (light yellow color)",
+    "form": "SC",
+    "note": "sâu cuốn lá/lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-3-62",
+    "stt": 3,
+    "group": "Thuốc trừ sâu",
+    "name": "MEGAMECTIN 126WG",
+    "active": "Abamectin 126g/kg",
+    "form": "WG",
+    "note": "sâu cuốn lá/lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-4-63",
+    "stt": 4,
+    "group": "Thuốc trừ sâu",
+    "name": "AF Exatin 15SC",
+    "active": "Abamectin 3% w/w + Etoxazole 12% w/w",
+    "form": "SC",
+    "note": "Nhện đỏ cây ăn trái, rau màu"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-5-64",
+    "stt": 5,
+    "group": "Thuốc trừ sâu",
+    "name": "AF - UNIMAX 40SC",
+    "active": "Indoxacarb 10% w/w + Methoxyfenozide 30% w/w",
+    "form": "SC",
+    "note": "Sâu đục thân, sâu cuốn lá/lúa; sâu keo mùa thu, sâu khoang/ngô; sâu xanh da láng, sâu tơ/bắp cải; sâu khoang, sâu xanh/lạc"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-6-65",
+    "stt": 6,
+    "group": "Thuốc trừ sâu",
+    "name": "AF - Metazone 22SC",
+    "active": "Emamectin Benzoate 2% w/w + Metaflumizone 20% w/w",
+    "form": "SC",
+    "note": "Sâu cuốn lá, sâu hành, sâu xanh da láng, sâu tơ, rầy xanh (bắp cải/lúa)"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-7-66",
+    "stt": 7,
+    "group": "Thuốc trừ sâu",
+    "name": "AF - Primus 25EC",
+    "active": "Beta-cypermethrin 2.5% w/w + Phoxim 22.5% w/w",
+    "form": "EC",
+    "note": "Rầy nâu, sâu đục thân, muỗi hành, bọ xít hôi (lúa); sâu khoang, sâu keo mùa thu (lạc/ngô)"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-8-67",
+    "stt": 8,
+    "group": "Thuốc trừ sâu",
+    "name": "AU Ferotin 8SC",
+    "active": "Emamectin benzoate 3% + Lufenuron 5%",
+    "form": "SC",
+    "note": "Hoa cúc / bọ trĩ"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-9-68",
+    "stt": 9,
+    "group": "Thuốc trừ sâu",
+    "name": "AU- Takamid F 35WG",
+    "active": "Acetamiprid 15% + Flonicamid 20%",
+    "form": "WG",
+    "note": "Hoa cúc / bọ trĩ"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-10-69",
+    "stt": 10,
+    "group": "Thuốc trừ sâu",
+    "name": "TVPYRAFOS 750WP",
+    "active": "Monosultap 750g/kg",
+    "form": "WP",
+    "note": "sâu đục thân/lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-11-70",
+    "stt": 11,
+    "group": "Thuốc trừ sâu",
+    "name": "SUDOKU 22EC",
+    "active": "Abamectin 20g/l + Matrine 2g/l",
+    "form": "EC",
+    "note": "tuyến trùng/hồ tiêu"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-12-71",
+    "stt": 12,
+    "group": "Thuốc trừ sâu",
+    "name": "NOSPIDER 190EC",
+    "active": "Abamectin 35g/l + Imidacloprid 5g/l + Pyridaben 150g/l",
+    "form": "EC",
+    "note": "nhện gié/lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-13-72",
+    "stt": 13,
+    "group": "Thuốc trừ sâu",
+    "name": "TVPYMEMOS 650WG",
+    "active": "Buprofezin 150g/kg + Pymetrozine 500g/kg",
+    "form": "WG",
+    "note": "rầy nâu/lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-14-73",
+    "stt": 14,
+    "group": "Thuốc trừ sâu",
+    "name": "EMATHION 100WG",
+    "active": "Emamectin benzoate 100 g/kg (Avermectin B1a 90% + Avermectin B1b 10%)",
+    "form": "WG",
+    "note": "sâu cuốn lá/lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-15-74",
+    "stt": 15,
+    "group": "Thuốc trừ sâu",
+    "name": "ABACHEZT 666WG",
+    "active": "Abamectin 116g/kg + Pymetrozine 550g/kg",
+    "form": "WG",
+    "note": "rầy nâu/ lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-16-75",
+    "stt": 16,
+    "group": "Thuốc trừ sâu",
+    "name": "TUKTUK 20SC",
+    "active": "Lambda-cyhalothrin: 10% w/w + Thiamethoxam 10%w/w",
+    "form": "SC",
+    "note": "rệp muội/ngô"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-17-76",
+    "stt": 17,
+    "group": "Thuốc trừ sâu",
+    "name": "TP-PENTIN 15EC",
+    "active": "Cypermethrin 2.6% + Fenitrothion 10.5% + Fenvalerate 1.9% (w/w)",
+    "form": "EC",
+    "note": "Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-18-77",
+    "stt": 18,
+    "group": "Thuốc trừ sâu",
+    "name": "TP – THẦN TỘC 16.000IU",
+    "active": "Bacillus thuringiensis var. T 36 16000 IU",
+    "form": "SC",
+    "note": "Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-19-78",
+    "stt": 19,
+    "group": "Thuốc trừ sâu",
+    "name": "SIMSON 50SC",
+    "active": "Fenpyroximate 50g/l",
+    "form": "SC",
+    "note": "Nhện đỏ/hoa hồng"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-20-79",
+    "stt": 20,
+    "group": "Thuốc trừ sâu",
+    "name": "PENRON 50WP",
+    "active": "Diafenthiuron 500 g/kg",
+    "form": "WP",
+    "note": "sâu xanh bướm trắng/cải bắp"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-21-80",
+    "stt": 21,
+    "group": "Thuốc trừ sâu",
+    "name": "MISEC 1.0EC",
+    "active": "Azadirachtin 10g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-22-81",
+    "stt": 22,
+    "group": "Thuốc trừ sâu",
+    "name": "SAFRICE 20WP",
+    "active": "Dinotefuran 20% w/w",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-23-82",
+    "stt": 23,
+    "group": "Thuốc trừ sâu",
+    "name": "REP PLAY 75WP",
+    "active": "Imidacloprid 5% w/w + Thiosultap-sodium 70% w/w (nereistoxin)",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-24-83",
+    "stt": 24,
+    "group": "Thuốc trừ sâu",
+    "name": "NOSAU 85WP",
+    "active": "Cartap 75% w/w + Imidacloprid 10% w/w",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-25-84",
+    "stt": 25,
+    "group": "Thuốc trừ sâu",
+    "name": "NOFARA 350SC",
+    "active": "Thiamethoxam 350gr/l",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-26-85",
+    "stt": 26,
+    "group": "Thuốc trừ sâu",
+    "name": "SUN DATANAL 300WP",
+    "active": "Buprofenzin 100g/kg + Imidacloprid 200g/kg",
+    "form": "WP",
+    "note": "Bọ phấn trắng/Sắn"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-27-86",
+    "stt": 27,
+    "group": "Thuốc trừ sâu",
+    "name": "PROLINDIA 44EC",
+    "active": "Cypermethrin 4% w/w + Profenofos 40% w/w",
+    "form": "EC",
+    "note": "Sâu xanh da láng/lạc"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-28-87",
+    "stt": 28,
+    "group": "Thuốc trừ sâu",
+    "name": "BH-BIROXY 20EC",
+    "active": "Bifenthrin 10% w/w + Pyriproxyfen 10% w/w",
+    "form": "EC",
+    "note": "Sâu khoang/lạc"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-29-88",
+    "stt": 29,
+    "group": "Thuốc trừ sâu",
+    "name": "Thần Công 25WP",
+    "active": "Buprofenzin 25% (w/w)",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-30-89",
+    "stt": 30,
+    "group": "Thuốc trừ sâu",
+    "name": "PRODIFE'S 5.8EC",
+    "active": "Emamectin benzoate 5.8% w/w (Avermectin B1a 90% + Avermectin B1b 10%)",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-31-90",
+    "stt": 31,
+    "group": "Thuốc trừ sâu",
+    "name": "PRODIFE'S 8WG",
+    "active": "Emamectin benzoate 8% w/w (Avermectin B1a 90% + Avermectin B1b 10%)",
+    "form": "WG",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-32-91",
+    "stt": 32,
+    "group": "Thuốc trừ sâu",
+    "name": "NOMIDA 700WG",
+    "active": "Imidacloprid 700g/kg",
+    "form": "WG",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-33-92",
+    "stt": 33,
+    "group": "Thuốc trừ sâu",
+    "name": "TIGER FIVE 5.0EC",
+    "active": "Abamectin 5.0% w/w (light yellow color)",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-34-93",
+    "stt": 34,
+    "group": "Thuốc trừ sâu",
+    "name": "CHESSIN 600WP",
+    "active": "Dinotefuran 200g/kg + Pymetrozine 400g/kg",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-35-94",
+    "stt": 35,
+    "group": "Thuốc trừ sâu",
+    "name": "KHONGRAY 54WP",
+    "active": "Acetamiprid 24% + Buprofezin 30%",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-36-95",
+    "stt": 36,
+    "group": "Thuốc trừ sâu",
+    "name": "NOSAURAY 120EC",
+    "active": "Abamectin 30g/l + Imidacloprid 90g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-37-96",
+    "stt": 37,
+    "group": "Thuốc trừ sâu",
+    "name": "NP-CYRIN SUPER 250EC",
+    "active": "Cypermethrin 25% (w/w)",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-38-97",
+    "stt": 38,
+    "group": "Thuốc trừ sâu",
+    "name": "SUPEPUGIN 750WP",
+    "active": "Thiodicarb 750g/kg",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-39-98",
+    "stt": 39,
+    "group": "Thuốc trừ sâu",
+    "name": "THẦN CÔNG GOLD 39WP",
+    "active": "Buprofezin 22% + Imidacloprid 17%",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-40-99",
+    "stt": 40,
+    "group": "Thuốc trừ sâu",
+    "name": "SHACHONGJING 95WP",
+    "active": "Thiosultap-sodium 95% w/w (nereistoxin)",
+    "form": "WP",
+    "note": "Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-41-100",
+    "stt": 41,
+    "group": "Thuốc trừ sâu",
+    "name": "IMIPRID 10WP",
+    "active": "Buprofezin 6,7% + Imidacloprid 3,3%",
+    "form": "WP",
+    "note": "Đưa SĐT + Logo khách lên nhãn"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-42-101",
+    "stt": 42,
+    "group": "Thuốc trừ sâu",
+    "name": "Boama 2.0EC",
+    "active": "Abamectin 2.0% w/w",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-43-102",
+    "stt": 43,
+    "group": "Thuốc trừ sâu",
+    "name": "Bopy 14EC",
+    "active": "Pyrethrins 14g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-44-103",
+    "stt": 44,
+    "group": "Thuốc trừ sâu",
+    "name": "Abinsec 1.8EC",
+    "active": "Abamectin 1.8% w/w",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-45-104",
+    "stt": 45,
+    "group": "Thuốc trừ sâu",
+    "name": "Factor 50EC",
+    "active": "Fenitrothion 500g/l",
+    "form": "EC",
+    "note": "Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-46-105",
+    "stt": 46,
+    "group": "Thuốc trừ sâu",
+    "name": "SHERDOBA 2.0EC",
+    "active": "Emamectin benzoate 20g/l",
+    "form": "EC",
+    "note": "Từ Huế vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-47-106",
+    "stt": 47,
+    "group": "Thuốc trừ sâu",
+    "name": "SHERDOBA 55WG",
+    "active": "Emamectin benzoate 55g/kg",
+    "form": "WG",
+    "note": "Từ Huế vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-48-107",
+    "stt": 48,
+    "group": "Thuốc trừ sâu",
+    "name": "SHERDOBA 20EC",
+    "active": "Emamectin Benzoate 20g/l",
+    "form": "EC",
+    "note": "Sâu khoang/lạc, sâu cuốn lá/lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-49-108",
+    "stt": 49,
+    "group": "Thuốc trừ sâu",
+    "name": "NOMIDA 10WP",
+    "active": "Imidacloprid 10% w/w",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-50-109",
+    "stt": 50,
+    "group": "Thuốc trừ sâu",
+    "name": "SOMETHRIN 10EC",
+    "active": "Cypermethrin 10% w/w",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-51-110",
+    "stt": 51,
+    "group": "Thuốc trừ sâu",
+    "name": "LUFEMIN 100EC",
+    "active": "Lufenuron 50 g/L + Emamectin Benzoate 50 g/L EC",
+    "form": "EC",
+    "note": "hoa cúc/ sâu xanh"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-52-111",
+    "stt": 52,
+    "group": "Thuốc trừ sâu",
+    "name": "CHIPU 120SC",
+    "active": "Chlorfenapyr 100 g/L + Emamectin Benzoate 20 g/L SC",
+    "form": "SC",
+    "note": "lạc/ sâu xanh da láng"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-53-112",
+    "stt": 53,
+    "group": "Thuốc trừ sâu",
+    "name": "NOFARA 35WG",
+    "active": "Thiamethoxam 35% w/w",
+    "form": "WG",
+    "note": "lúa/ bọ trĩ"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-54-113",
+    "stt": 54,
+    "group": "Thuốc trừ sâu",
+    "name": "CAYMANGOLD 33WP",
+    "active": "Acetamiprid 25% + Imidacloprid 8% (w/w)",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-55-114",
+    "stt": 55,
+    "group": "Thuốc trừ sâu",
+    "name": "FORGON 40EC",
+    "active": "Dimethoate 400g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-56-115",
+    "stt": 56,
+    "group": "Thuốc trừ sâu",
+    "name": "FORCIN 50EC",
+    "active": "Fenobucarb (BPMC) 500g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-57-116",
+    "stt": 57,
+    "group": "Thuốc trừ sâu",
+    "name": "THIPRO 550EC",
+    "active": "Profenofos 450g/l + Thiamethoxam 100g/l",
+    "form": "EC",
+    "note": "Đưa SĐT + Logo khách lên nhãn"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-58-117",
+    "stt": 58,
+    "group": "Thuốc trừ sâu",
+    "name": "ARRIPHOS 40EC",
+    "active": "Dimethoate 400g/l",
+    "form": "EC",
+    "note": "Chỉ để logo & số đt khách lên nhãn làm từ Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-59-118",
+    "stt": 59,
+    "group": "Thuốc trừ sâu",
+    "name": "ΒΙΡΙΜΑΙ 150EC",
+    "active": "Pyridaben 150g/l",
+    "form": "EC",
+    "note": "Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-60-119",
+    "stt": 60,
+    "group": "Thuốc trừ sâu",
+    "name": "SPIRO 240SC",
+    "active": "Spirodiclofen 240g/l",
+    "form": "SC",
+    "note": "Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-61-120",
+    "stt": 61,
+    "group": "Thuốc trừ sâu",
+    "name": "TUXEDO 500SC",
+    "active": "Diafenthiuron 500 g/L",
+    "form": "SC",
+    "note": "Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-62-121",
+    "stt": 62,
+    "group": "Thuốc trừ sâu",
+    "name": "TACE 20SP",
+    "active": "Acetamiprid 20% w/w",
+    "form": "SP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-63-122",
+    "stt": 63,
+    "group": "Thuốc trừ sâu",
+    "name": "Master indo 150SC",
+    "active": "indoxacarb 150g/l",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-64-123",
+    "stt": 64,
+    "group": "Thuốc trừ sâu",
+    "name": "ZAMECTIN 65EC",
+    "active": "Emamectin benzoate 65g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-65-124",
+    "stt": 65,
+    "group": "Thuốc trừ sâu",
+    "name": "DIỆT RẦY 277WP",
+    "active": "Acetamiprid 77g/kg + Metolcarb 200g/kg",
+    "form": "WP",
+    "note": "Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-66-125",
+    "stt": 66,
+    "group": "Thuốc trừ sâu",
+    "name": "INMANDA 100WP",
+    "active": "Imidacloprid 100g/kg",
+    "form": "WP",
+    "note": "Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-67-126",
+    "stt": 67,
+    "group": "Thuốc trừ sâu",
+    "name": "LEDAN 4GR",
+    "active": "Cartap Hydrochloride 4% w/w",
+    "form": "GR",
+    "note": "Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-68-127",
+    "stt": 68,
+    "group": "Thuốc trừ sâu",
+    "name": "CYMKILL 25EC",
+    "active": "Cypermethrin 25% w/w",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-69-128",
+    "stt": 69,
+    "group": "Thuốc trừ sâu",
+    "name": "SUMO 2.5EC",
+    "active": "Lambda-cyhalothrin 25g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-70-129",
+    "stt": 70,
+    "group": "Thuốc trừ sâu",
+    "name": "TUMAZINE 500WP",
+    "active": "Cyromazine 50% w/w",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-71-130",
+    "stt": 71,
+    "group": "Thuốc trừ sâu",
+    "name": "SIEUBUP 200WP",
+    "active": "Dinotefuran 50g/kg + Buprofezin 150g/kg",
+    "form": "WP",
+    "note": "Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-72-131",
+    "stt": 72,
+    "group": "Thuốc trừ sâu",
+    "name": "KIMBAS 500EC",
+    "active": "Fenobucarb 350g/l + Isoprocarb 150g/l",
+    "form": "EC",
+    "note": "Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-73-132",
+    "stt": 73,
+    "group": "Thuốc trừ sâu",
+    "name": "BISECTOR 500EC",
+    "active": "Dimethoate 400g/l + Fenobucarb 100g/l",
+    "form": "EC",
+    "note": "Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-74-133",
+    "stt": 74,
+    "group": "Thuốc trừ sâu",
+    "name": "BINHFOS 50EC",
+    "active": "Profenofos 500g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-75-134",
+    "stt": 75,
+    "group": "Thuốc trừ sâu",
+    "name": "BINHTAC 20EC",
+    "active": "Amitraz 200g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-76-135",
+    "stt": 76,
+    "group": "Thuốc trừ sâu",
+    "name": "SHA CHONG SHUANG 18SL",
+    "active": "Thiosultap-sodium (nereistoxin): 180g/l",
+    "form": "SL",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-77-136",
+    "stt": 77,
+    "group": "Thuốc trừ sâu",
+    "name": "SHA CHONG SHUANG 50SP",
+    "active": "Thiosultap-sodium (nereistoxin): 50% w/w",
+    "form": "SP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-78-137",
+    "stt": 78,
+    "group": "Thuốc trừ sâu",
+    "name": "TENANO 20SC",
+    "active": "Emamectin benzoate 2% + Methoxyfenozide 18% w/w",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-79-138",
+    "stt": 79,
+    "group": "Thuốc trừ sâu",
+    "name": "TVPYMEDA 350WP",
+    "active": "Imidacloprid 150g/kg + Pymetrozine 200g/kg",
+    "form": "WP",
+    "note": "Chỉ để logo & số đt khách lên nhãn làm từ Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-80-139",
+    "stt": 80,
+    "group": "Thuốc trừ sâu",
+    "name": "AFUDAN 20SC",
+    "active": "Carbosulfan 200g/l",
+    "form": "SC",
+    "note": "Từ Huế vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-81-140",
+    "stt": 81,
+    "group": "Thuốc trừ sâu",
+    "name": "Yapoko 250SC (PL mới)",
+    "active": "Lambda_cyhalothrin 110g/l + Thimethoxam 140g/l",
+    "form": "SC",
+    "note": "lúa/rầy nâu"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-82-141",
+    "stt": 82,
+    "group": "Thuốc trừ sâu",
+    "name": "HAMA 250SC",
+    "active": "Chlorfluazuron 250g/l",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-83-142",
+    "stt": 83,
+    "group": "Thuốc trừ sâu",
+    "name": "HAEURO 125WG",
+    "active": "Emamectin benzoate 125g/l",
+    "form": "WG",
+    "note": "lúa/sâu cuốn lá"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-84-143",
+    "stt": 84,
+    "group": "Thuốc trừ sâu",
+    "name": "NHỆN CHÚA 200SC",
+    "active": "Spirodiclofen 19% w/w + Abamectin 1% w/w",
+    "form": "SC",
+    "note": "Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-85-144",
+    "stt": 85,
+    "group": "Thuốc trừ sâu",
+    "name": "DOP 25 WG",
+    "active": "Thiamethoxam 25% w/w",
+    "form": "WG",
+    "note": "hoa cúc/ bọ trĩ"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-86-145",
+    "stt": 86,
+    "group": "Thuốc trừ sâu",
+    "name": "ROYAL CITY 75WG",
+    "active": "Emamectin Benzoate 75g/ kg",
+    "form": "WG",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-87-146",
+    "stt": 87,
+    "group": "Thuốc trừ sâu",
+    "name": "SAFRICE 20WP",
+    "active": "Dinotefuran 20%w/w",
+    "form": "WP",
+    "note": "rầy nâu/ lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-88-147",
+    "stt": 88,
+    "group": "Thuốc trừ sâu",
+    "name": "BILLADEN 50WG",
+    "active": "Emamectin benzoate 50g/kg",
+    "form": "WG",
+    "note": "Nhện đỏ/cam, sâu xanh/bắp cải"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-89-148",
+    "stt": 89,
+    "group": "Thuốc trừ sâu",
+    "name": "BILLADEN 50EC",
+    "active": "Emamectin benzoate 50g/l",
+    "form": "EC",
+    "note": "Nhện đỏ/cam, sâu xanh/bắp cải"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-90-149",
+    "stt": 90,
+    "group": "Thuốc trừ sâu",
+    "name": "THADANT 300EC",
+    "active": "Chlorfluazuron 100g/l + Emamectin benzoate 120g/l + Indoxacarb 80g/l",
+    "form": "EC",
+    "note": "Sâu cuốn lá/ lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-91-150",
+    "stt": 91,
+    "group": "Thuốc trừ sâu",
+    "name": "THADANT 200SC",
+    "active": "Chlorfluazuron 50g/l + Emamectin benzoate 50g/l + Indoxacarb 100g/l",
+    "form": "SC",
+    "note": "Sâu cuốn lá, nhện gié/ lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-92-151",
+    "stt": 92,
+    "group": "Thuốc trừ sâu",
+    "name": "SANEDAN 95 WP",
+    "active": "Thiosultap-sodium 95% (Nereistoxin)",
+    "form": "WP",
+    "note": "sâu đục thân/ lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-93-152",
+    "stt": 93,
+    "group": "Thuốc trừ sâu",
+    "name": "CHERY 70WP",
+    "active": "Pymetrozine 65% + Thiamethoxam 5%",
+    "form": "WP",
+    "note": "rầy nâu/lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-94-153",
+    "stt": 94,
+    "group": "Thuốc trừ sâu",
+    "name": "FANTASY 20EC",
+    "active": "Fenvalerate 200g/l",
+    "form": "EC",
+    "note": "rầy nâu/ lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-95-154",
+    "stt": 95,
+    "group": "Thuốc trừ sâu",
+    "name": "MARGO 20SC",
+    "active": "METAFLUMIZONE 10% + METHOXYFENOZIDE 10%",
+    "form": "SC",
+    "note": "Sâu xanh da láng/hành"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-96-155",
+    "stt": 96,
+    "group": "Thuốc trừ sâu",
+    "name": "ROCKY 150SC",
+    "active": "Bifenthrin 50g/l + Flonicamid 100g/l",
+    "form": "SC",
+    "note": "bọ phấn trắng/sắn"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-97-156",
+    "stt": 97,
+    "group": "Thuốc trừ sâu",
+    "name": "FULLKILL 50EC",
+    "active": "Permethrin 500g/l",
+    "form": "EC",
+    "note": "sâu cuốn lá/ lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-98-157",
+    "stt": 98,
+    "group": "Thuốc trừ sâu",
+    "name": "FORTAC 5EC",
+    "active": "Alphacypermethrin 5%",
+    "form": "EC",
+    "note": "sâu cuốn lá/ lúa, Sâu khoang /lạc"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-99-158",
+    "stt": 99,
+    "group": "Thuốc trừ sâu",
+    "name": "EXCEED 440EC",
+    "active": "Cypermethrin 40g/l + Profenofos 400g/l",
+    "form": "EC",
+    "note": "bọ phấn/khoai tây"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-100-159",
+    "stt": 100,
+    "group": "Thuốc trừ sâu",
+    "name": "LEDAN 95SP",
+    "active": "Cartap Hydrochloride 95%",
+    "form": "SP",
+    "note": "sâu đục thân/lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-101-160",
+    "stt": 101,
+    "group": "Thuốc trừ sâu",
+    "name": "Dofenapyr 140SC",
+    "active": "Indoxacarb 40 g/l + Chlorfenapyr 100 g/l",
+    "form": "SC",
+    "note": "Sâu keo mùa thu/ngô"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-102-161",
+    "stt": 102,
+    "group": "Thuốc trừ sâu",
+    "name": "Cymazin 35SC",
+    "active": "Cyromazine 34%w/w + Abamectin 1% w/w",
+    "form": "SC",
+    "note": "Sâu vẽ bùa/Cam"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-103-162",
+    "stt": 103,
+    "group": "Thuốc trừ sâu",
+    "name": "BrahMos 500SC",
+    "active": "Diafenthiuron 500 g/l",
+    "form": "SC",
+    "note": "Nhện đỏ/Cam"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-104-163",
+    "stt": 104,
+    "group": "Thuốc trừ sâu",
+    "name": "Helmer Admida 350SC",
+    "active": "Imidacloprid 350g/L",
+    "form": "SC",
+    "note": "Bọ phấn trắng/Sắn"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-105-164",
+    "stt": 105,
+    "group": "Thuốc trừ sâu",
+    "name": "Sun Eluron 45WG",
+    "active": "Lufenuron 40% + Emamectin benzoate 5%",
+    "form": "WG",
+    "note": "Sâu keo mùa thu/ngô"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-106-165",
+    "stt": 106,
+    "group": "Thuốc trừ sâu",
+    "name": "Sun Vuanhen 15WP",
+    "active": "Clofentezine 5%w/w + Pyridaben 10%w/w",
+    "form": "WP",
+    "note": "Nhện đỏ/Sắn"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-107-166",
+    "stt": 107,
+    "group": "Thuốc trừ sâu",
+    "name": "Abamec-MQ 50EC",
+    "active": "Abamectin 50g/l",
+    "form": "EC",
+    "note": "Sâu khoang/Lạc, Nhện đỏ/chè"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-108-167",
+    "stt": 108,
+    "group": "Thuốc trừ sâu",
+    "name": "Rice NP 47SC",
+    "active": "Abamectin 22g/l + Spinosad 25g/l",
+    "form": "SC",
+    "note": "Sâu đục quả/Vải"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-109-168",
+    "stt": 109,
+    "group": "Thuốc trừ sâu",
+    "name": "RD-Antlion 44EC",
+    "active": "Cypermethrin 4% + Profenofos 40%w/w",
+    "form": "EC",
+    "note": "Sâu xanh da láng/Lạc"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-110-169",
+    "stt": 110,
+    "group": "Thuốc trừ sâu",
+    "name": "Kaiser-Pro 35SC",
+    "active": "Abamectin 5%w/w + Spirodiclofen 30%w/w",
+    "form": "SC",
+    "note": "Bọ phấn/Sắn"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-111-170",
+    "stt": 111,
+    "group": "Thuốc trừ sâu",
+    "name": "Sun Promite 70EC",
+    "active": "Propargite 70%w/w",
+    "form": "EC",
+    "note": "Nhện đỏ/hoa hồng"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-112-171",
+    "stt": 112,
+    "group": "Thuốc trừ sâu",
+    "name": "BH-Vareton 18.5SC",
+    "active": "Chlorantraniliprole 18.5%w/w",
+    "form": "SC",
+    "note": "Sâu khoang/Lạc"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-113-172",
+    "stt": 113,
+    "group": "Thuốc trừ sâu",
+    "name": "Sun Atlanta 400WP",
+    "active": "Acetamiprid 200 g/kg + Buprofezin 200 g/kg",
+    "form": "WP",
+    "note": "Bọ phấn trắng/Sắn"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-114-173",
+    "stt": 114,
+    "group": "Thuốc trừ sâu",
+    "name": "Mexyfema 20SC",
+    "active": "Emamectin benzoate 2% + Methoxyfenozide 18%",
+    "form": "SC",
+    "note": "Sâu xanh da láng/Đậu tương"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-115-174",
+    "stt": 115,
+    "group": "Thuốc trừ sâu",
+    "name": "Vakala 250WP",
+    "active": "Acetamiprid 100g/kg + Buprofezin 150 g/kg",
+    "form": "WP",
+    "note": "Rệp sáp/Sắn"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-116-175",
+    "stt": 116,
+    "group": "Thuốc trừ sâu",
+    "name": "Sunmumbai 44EC",
+    "active": "Cypermethrin 4%w/w + Profenofos 40%w/w",
+    "form": "EC",
+    "note": "Sâu khoang/Lạc"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-117-176",
+    "stt": 117,
+    "group": "Thuốc trừ sâu",
+    "name": "Bnongduyen® 4.0 EC",
+    "active": "Abamectin 4% w/w",
+    "form": "EC",
+    "note": "Lúa: sâu cuốn lá, rầy nâu; Cam: Nhện đỏ; Dưa hấu: Bọ trĩ; Bắp cải: Sâu tơ"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-118-177",
+    "stt": 118,
+    "group": "Thuốc trừ sâu",
+    "name": "Cyromaz 31 SC",
+    "active": "Abamectin 0,7%w/w + Cyromazine 30,3%w/w",
+    "form": "SC",
+    "note": "Khoai tây: giòi đục lá"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-119-178",
+    "stt": 119,
+    "group": "Thuốc trừ sâu",
+    "name": "Speedter 10EC",
+    "active": "Alpha-cypermethrin 10%w/w",
+    "form": "EC",
+    "note": "Lạc: Sâu Khoang"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-120-179",
+    "stt": 120,
+    "group": "Thuốc trừ sâu",
+    "name": "Speedter 10SC",
+    "active": "Alpha-cypermethrin 10%w/w",
+    "form": "SC",
+    "note": "Lạc: Sâu Khoang"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-121-180",
+    "stt": 121,
+    "group": "Thuốc trừ sâu",
+    "name": "Extra-Spiderindia 56.4SC",
+    "active": "Bifenthrin 9.4%w/w + Diafenthiuron 47%w/w",
+    "form": "SC",
+    "note": "Ngô/sâu keo mùa thu"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-122-181",
+    "stt": 122,
+    "group": "Thuốc trừ sâu",
+    "name": "Samtako 20SC",
+    "active": "Chlorantraniliprole 16%w/w + Indoxacarb 4%w/w",
+    "form": "SC",
+    "note": "Ngô/sâu keo mùa thu"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-123-182",
+    "stt": 123,
+    "group": "Thuốc trừ sâu",
+    "name": "SAMPYER 360 SC",
+    "active": "Chlorfenapyr 360g/l",
+    "form": "SC",
+    "note": "Đậu tương/ sâu xanh da láng"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-124-183",
+    "stt": 124,
+    "group": "Thuốc trừ sâu",
+    "name": "Samcyper 25EС",
+    "active": "Cypermethrin 25%w/w",
+    "form": "EC",
+    "note": "Đậu tương: Sâu xanh"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-125-184",
+    "stt": 125,
+    "group": "Thuốc trừ sâu",
+    "name": "Cynofos 44EC",
+    "active": "Cypermethrin 4% w/w + Profenofos 40% w/w",
+    "form": "EC",
+    "note": "Lạc: Sâu Khoang"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-126-185",
+    "stt": 126,
+    "group": "Thuốc trừ sâu",
+    "name": "SAM SPIDER®500WP",
+    "active": "Diafenthiuron 500g/kg",
+    "form": "WP",
+    "note": "Nho: Nhện đỏ"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-127-186",
+    "stt": 127,
+    "group": "Thuốc trừ sâu",
+    "name": "SAM SPIDER®500SC",
+    "active": "Diafenthiuron 500g/l",
+    "form": "SC",
+    "note": "Hoa Hồng: Nhện đỏ hai chấm"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-128-187",
+    "stt": 128,
+    "group": "Thuốc trừ sâu",
+    "name": "Spiderindia 47.8SC",
+    "active": "Diafenthiuron 47,8%w/w",
+    "form": "SC",
+    "note": "Hoa Hồng: Nhện đỏ hai chấm"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-129-188",
+    "stt": 129,
+    "group": "Thuốc trừ sâu",
+    "name": "Boema 50 EC",
+    "active": "Emamectin benzoate 50g/lít",
+    "form": "EC",
+    "note": "Lúa: Sâu cuốn lá, Cam: Nhện đỏ"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-130-189",
+    "stt": 130,
+    "group": "Thuốc trừ sâu",
+    "name": "Boema 50 WG",
+    "active": "Emamectin benzoate 50g/kg",
+    "form": "WG",
+    "note": "Lúa/sâu cuốn lá, Bắp cải/sâu tơ"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-131-190",
+    "stt": 131,
+    "group": "Thuốc trừ sâu",
+    "name": "Hepler 1.9EC",
+    "active": "Emamectin benzoate 1.9%w/w",
+    "form": "EC",
+    "note": "Ngô/sâu keo mùa thu"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-132-191",
+    "stt": 132,
+    "group": "Thuốc trừ sâu",
+    "name": "ETO-XTRA 110 SC",
+    "active": "Etoxazole 110g/lít",
+    "form": "SC",
+    "note": "Hoa Hồng: Nhện đỏ"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-133-192",
+    "stt": 133,
+    "group": "Thuốc trừ sâu",
+    "name": "Laska 10GR",
+    "active": "Fosthiazate 10% w/w",
+    "form": "GR",
+    "note": "Cà phê: Tuyến trùng"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-134-193",
+    "stt": 134,
+    "group": "Thuốc trừ sâu",
+    "name": "Laska 30CS",
+    "active": "Fosthiazate 30% w/w",
+    "form": "CS",
+    "note": "Cà phê/tuyến trùng"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-135-194",
+    "stt": 135,
+    "group": "Thuốc trừ sâu",
+    "name": "Samimi 20 WP",
+    "active": "Imidacloprid 20% w/w",
+    "form": "WP",
+    "note": "Sắn/Rệp sáp bột hồng"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-136-195",
+    "stt": 136,
+    "group": "Thuốc trừ sâu",
+    "name": "Samimi 30.5 SC",
+    "active": "Imidacloprid 30.5% w/w",
+    "form": "SC",
+    "note": "Sắn/Rệp sáp bột hồng"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-137-196",
+    "stt": 137,
+    "group": "Thuốc trừ sâu",
+    "name": "Samimi 17.8SL",
+    "active": "Imidacloprid 17.8% w/w",
+    "form": "SL",
+    "note": "Mía/ rệp bông xơ"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-138-197",
+    "stt": 138,
+    "group": "Thuốc trừ sâu",
+    "name": "SAMIDA 70WG",
+    "active": "Imidacloprid 70% w/w",
+    "form": "WG",
+    "note": "Sắn: rệp sáp bột hồng"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-139-198",
+    "stt": 139,
+    "group": "Thuốc trừ sâu",
+    "name": "SAMXACARB® 145 SC",
+    "active": "Indoxacarb 14.5% w/w",
+    "form": "SC",
+    "note": "Lạc: Sâu Khoang"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-140-199",
+    "stt": 140,
+    "group": "Thuốc trừ sâu",
+    "name": "Krexim 44.3SC",
+    "active": "Kresoxim-methyl 44.3%w/w",
+    "form": "SC",
+    "note": "Cà phê: Rỉ sắt"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-141-200",
+    "stt": 141,
+    "group": "Thuốc trừ sâu",
+    "name": "Tiwepusa 247SC",
+    "active": "Profenofos 100g/l + Thiamethoxam 147g/l",
+    "form": "SC",
+    "note": "Ngô: Sâu keo mùa thu"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-142-201",
+    "stt": 142,
+    "group": "Thuốc trừ sâu",
+    "name": "Tiwepusa 247EC",
+    "active": "Profenofos 100g/l + Thiamethoxam 147g/l",
+    "form": "EC",
+    "note": "Ngô: Sâu keo mùa thu"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-143-202",
+    "stt": 143,
+    "group": "Thuốc trừ sâu",
+    "name": "BIN® 25 EC",
+    "active": "Rotenone 25g/lit",
+    "form": "EC",
+    "note": "Lúa/Sâu Cuốn Lá; Đậu xanh/ sâu đục quả"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-144-203",
+    "stt": 144,
+    "group": "Thuốc trừ sâu",
+    "name": "Pistol 2.5SC",
+    "active": "Spinosad 2.5%w/w",
+    "form": "SC",
+    "note": "Lạc: sâu khoang; Cải bắp: sâu tơ"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-145-204",
+    "stt": 145,
+    "group": "Thuốc trừ sâu",
+    "name": "Sunfusa 80WG",
+    "active": "Sulful 80%w/w",
+    "form": "WG",
+    "note": "Hoa Hồng: Nhện đỏ hai chấm"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-146-205",
+    "stt": 146,
+    "group": "Thuốc trừ sâu",
+    "name": "METHOXAM 350SC",
+    "active": "Thiamethoxam 350g/l",
+    "form": "SC",
+    "note": "Mía/rệp bông xơ"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-147-206",
+    "stt": 147,
+    "group": "Thuốc trừ sâu",
+    "name": "Vdimectin 10SC",
+    "active": "Abamectin 10%w/w",
+    "form": "SC",
+    "note": "Lạc/sâu xanh"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-148-207",
+    "stt": 148,
+    "group": "Thuốc trừ sâu",
+    "name": "Pytax-s 5EC",
+    "active": "Alpha-cypermethrin 50g/l",
+    "form": "EC",
+    "note": "Lúa: Sâu cuốn lá"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-149-208",
+    "stt": 149,
+    "group": "Thuốc trừ sâu",
+    "name": "Boaza 0.3 EC",
+    "active": "Azadirachtin 3g/l",
+    "form": "EC",
+    "note": "Bắp cải: Sâu tơ"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-150-209",
+    "stt": 150,
+    "group": "Thuốc trừ sâu",
+    "name": "Rosatap 52WP",
+    "active": "Buprofezin 12%w/w + Monosultap 40%w/w",
+    "form": "WP",
+    "note": "Lạc: sâu khoang"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-151-210",
+    "stt": 151,
+    "group": "Thuốc trừ sâu",
+    "name": "Abagent 500WP",
+    "active": "Cartap Hydrochloride 470 g/kg + Imidacloprid 30g/kg",
+    "form": "WP",
+    "note": "Lúa: Sâu cuốn lá"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-152-211",
+    "stt": 152,
+    "group": "Thuốc trừ sâu",
+    "name": "Pitakousa 18.5SC",
+    "active": "Chlorantraniliprole 18,5% w/w",
+    "form": "SC",
+    "note": "Ngô: sâu keo mùa thu"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-153-212",
+    "stt": 153,
+    "group": "Thuốc trừ sâu",
+    "name": "CHAPYR 12 SC",
+    "active": "Chlorfenapyr 10% w/w + Emamectin benzoate 2% w/w",
+    "form": "SC",
+    "note": "Lạc: Sâu xanh da láng"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-154-213",
+    "stt": 154,
+    "group": "Thuốc trừ sâu",
+    "name": "Somethrin 10 EC",
+    "active": "Cypermethrin 10% w/w",
+    "form": "EC",
+    "note": "Lúa: Bọ trĩ"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-155-214",
+    "stt": 155,
+    "group": "Thuốc trừ sâu",
+    "name": "KATIFOS 440 EC",
+    "active": "Cypermethrin 40g/l + Profenofos 400g/l",
+    "form": "EC",
+    "note": "Lạc/sâu khoang"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-156-215",
+    "stt": 156,
+    "group": "Thuốc trừ sâu",
+    "name": "Z-MAI 50SC",
+    "active": "Diafenthiuron 500g/kg",
+    "form": "SC",
+    "note": "Hoa Hồng/nhện đỏ"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-157-216",
+    "stt": 157,
+    "group": "Thuốc trừ sâu",
+    "name": "Forgon 40EC",
+    "active": "Dimethoate 400 g/lít",
+    "form": "EC",
+    "note": "Lúa: Sâu cuốn lá"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-158-217",
+    "stt": 158,
+    "group": "Thuốc trừ sâu",
+    "name": "Sieubup 200WP",
+    "active": "Dinotefuran 50g/kg + Buprofezin 150g/kg",
+    "form": "WP",
+    "note": "Lúa/rầy nâu"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-159-218",
+    "stt": 159,
+    "group": "Thuốc trừ sâu",
+    "name": "Forcin 50EC",
+    "active": "Fenobucarb 500 g/l",
+    "form": "EC",
+    "note": "Lúa/rầy nâu; Bông Vải bọ Trĩ"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-160-219",
+    "stt": 160,
+    "group": "Thuốc trừ sâu",
+    "name": "Lanro 500EC",
+    "active": "Fenobucarb 450 g/l + Imidacloprid 50g/l",
+    "form": "EC",
+    "note": "Lúa: Rầy nâu, Bọ Trĩ"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-161-220",
+    "stt": 161,
+    "group": "Thuốc trừ sâu",
+    "name": "OFI 200SL",
+    "active": "Imidacloprid 200g/l",
+    "form": "SL",
+    "note": "Đậu tương/rệp muội"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-162-221",
+    "stt": 162,
+    "group": "Thuốc trừ sâu",
+    "name": "Palman 150EC",
+    "active": "Spirodiclofen 150g/l",
+    "form": "EC",
+    "note": "Cam: Nhện Đỏ"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-163-222",
+    "stt": 163,
+    "group": "Thuốc trừ sâu",
+    "name": "Palman 240SC",
+    "active": "Spirodiclofen 240g/l",
+    "form": "SC",
+    "note": "Hoa Hồng/nhện đỏ"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-164-223",
+    "stt": 164,
+    "group": "Thuốc trừ sâu",
+    "name": "Cyphos 25EC",
+    "active": "Quinalphos 25% w/w",
+    "form": "EC",
+    "note": "Lạc: sâu khoang"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-165-224",
+    "stt": 165,
+    "group": "Thuốc trừ sâu",
+    "name": "METHOXAM 25WG",
+    "active": "Thiamethoxam 25% w/w",
+    "form": "WG",
+    "note": "Mía/rệp bông xơ"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-166-225",
+    "stt": 166,
+    "group": "Thuốc trừ sâu",
+    "name": "BH-Tamil 39.35SC",
+    "active": "Flubendiamide 39.35%w/w",
+    "form": "SC",
+    "note": "Sâu tơ/bắp cải"
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-167-226",
+    "stt": 167,
+    "group": "Thuốc trừ sâu",
+    "name": "Centamivbusa 35WG",
+    "active": "Acetamiprid 15% + Flonicamid 20%",
+    "form": "WG",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-168-227",
+    "stt": 168,
+    "group": "Thuốc trừ sâu",
+    "name": "Fluronusavb 5EC",
+    "active": "Beta-cypermethrin 3.8% + Hexaflumuron 1.2%",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-169-228",
+    "stt": 169,
+    "group": "Thuốc trừ sâu",
+    "name": "SV-Proman 25SC",
+    "active": "Glufosinate ammonium 200g/l",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-170-229",
+    "stt": 170,
+    "group": "Thuốc trừ sâu",
+    "name": "BV.Cropskill 9.75SC",
+    "active": "Indoxacarb 4.5% + Novaluron 5.25%",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-171-230",
+    "stt": 171,
+    "group": "Thuốc trừ sâu",
+    "name": "SV-Proman 25SC",
+    "active": "Spirodiclofen 20%w/w + Abamectin 5%w/w",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-172-231",
+    "stt": 172,
+    "group": "Thuốc trừ sâu",
+    "name": "TVG20 565EС",
+    "active": "Profenophos 480g/l + Dinotefuran 85g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-173-232",
+    "stt": 173,
+    "group": "Thuốc trừ sâu",
+    "name": "TVG28 650SP",
+    "active": "Nitepyram 650g/kg",
+    "form": "SP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-174-233",
+    "stt": 174,
+    "group": "Thuốc trừ sâu",
+    "name": "AF-Pontifex 440EC",
+    "active": "Cypermethrin 40g/l + Profenofos 400g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-175-234",
+    "stt": 175,
+    "group": "Thuốc trừ sâu",
+    "name": "Unimectin 116WG",
+    "active": "Abamectin 78g/kg + Emamectin Benzoazte 38g/kg",
+    "form": "WG",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-176-235",
+    "stt": 176,
+    "group": "Thuốc trừ sâu",
+    "name": "Tvdan 300WP",
+    "active": "Buprofezin 200g/kg + Imidacloprid 100g/kg",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-177-236",
+    "stt": 177,
+    "group": "Thuốc trừ sâu",
+    "name": "Unimectin 20EC",
+    "active": "Abamectin 18g/l + Emamectin benzoate 2g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-178-237",
+    "stt": 178,
+    "group": "Thuốc trừ sâu",
+    "name": "BP Ram 500SG",
+    "active": "Nitenpyram 500g/kg",
+    "form": "SG",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-179-238",
+    "stt": 179,
+    "group": "Thuốc trừ sâu",
+    "name": "Promathion 55WG",
+    "active": "Azadirachtin 3g/kg + Emamectin benzoate 52g/kg",
+    "form": "WG",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-180-239",
+    "stt": 180,
+    "group": "Thuốc trừ sâu",
+    "name": "Abazateha 20SC",
+    "active": "Abamectin 1%w/w + Bifenazate 19%w/w",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-181-240",
+    "stt": 181,
+    "group": "Thuốc trừ sâu",
+    "name": "Igro 240SC",
+    "active": "Chlorfenapyr 240 g/l",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-182-241",
+    "stt": 182,
+    "group": "Thuốc trừ sâu",
+    "name": "IE-MAX 150EC",
+    "active": "Emamectin 50g/l + Indoxacrd 100g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-183-242",
+    "stt": 183,
+    "group": "Thuốc trừ sâu",
+    "name": "Yonmix 27SC",
+    "active": "Spirodiclofen 18% + Pyridaben 9%",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-184-243",
+    "stt": 184,
+    "group": "Thuốc trừ sâu",
+    "name": "Schezgold 500WG",
+    "active": "Pymetrozine 500g/kg",
+    "form": "WG",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-185-244",
+    "stt": 185,
+    "group": "Thuốc trừ sâu",
+    "name": "Pyramite 400WP",
+    "active": "Pyridaben 150g/kg + Sulfur 250g/kg",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-186-245",
+    "stt": 186,
+    "group": "Thuốc trừ sâu",
+    "name": "Hacomai 57EC",
+    "active": "Propargite 57%w/w",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-187-246",
+    "stt": 187,
+    "group": "Thuốc trừ sâu",
+    "name": "Bpalatox 100EC",
+    "active": "Alpha-cypermethrin 100g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-188-247",
+    "stt": 188,
+    "group": "Thuốc trừ sâu",
+    "name": "Moousa 50EC",
+    "active": "Emamectin Benzoate 50g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-189-248",
+    "stt": 189,
+    "group": "Thuốc trừ sâu",
+    "name": "Moousa 60WG",
+    "active": "Emamectin Benzoate 60g/kg",
+    "form": "WG",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-190-249",
+    "stt": 190,
+    "group": "Thuốc trừ sâu",
+    "name": "Nas 60EC",
+    "active": "Abamectin 60g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-191-250",
+    "stt": 191,
+    "group": "Thuốc trừ sâu",
+    "name": "SPIRO 240SC",
+    "active": "Spirodiclofen 240g/l",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-192-251",
+    "stt": 192,
+    "group": "Thuốc trừ sâu",
+    "name": "Yonlock 240SC",
+    "active": "Spirodiclofen 240g/l",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-193-252",
+    "stt": 193,
+    "group": "Thuốc trừ sâu",
+    "name": "Apolo 25SC",
+    "active": "Buprofezin 250g/l",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-194-253",
+    "stt": 194,
+    "group": "Thuốc trừ sâu",
+    "name": "Bạch tượng 64EC",
+    "active": "Emamectin benzoate 60 g/l + Matrine 4g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-195-254",
+    "stt": 195,
+    "group": "Thuốc trừ sâu",
+    "name": "Caymangold 33WP",
+    "active": "Acetamiprid 25% + Imidacloprid 8%",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-sâu-196-255",
+    "stt": 196,
+    "group": "Thuốc trừ sâu",
+    "name": "BV.Cropamin 50WP",
+    "active": "Copper Oxychloride 45% + Kasugamycin 5%",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-1-256",
+    "stt": 1,
+    "group": "Thuốc trừ bệnh",
+    "name": "PROBICOL 200WP",
+    "active": "Bismerthiazol 190g/kg + kasugamycin 10g/kg",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-2-257",
+    "stt": 2,
+    "group": "Thuốc trừ bệnh",
+    "name": "GAMYCINUSA 150SL",
+    "active": "Kasugamycin 10g/l + Streptomycin sulfate 140g/l",
+    "form": "SL",
+    "note": "bạc lá/lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-3-258",
+    "stt": 3,
+    "group": "Thuốc trừ bệnh",
+    "name": "GAMYCINUSA 185WP",
+    "active": "Kasugamycin 15g/kg + Streptomycin sulfate 170g/kg",
+    "form": "WP",
+    "note": "bạc lá/ lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-4-259",
+    "stt": 4,
+    "group": "Thuốc trừ bệnh",
+    "name": "AZOBEM 400SC",
+    "active": "Azoxystrobin 30 g/l + Tricyclazole 370 g/l",
+    "form": "SC",
+    "note": "đạo ôn/lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-5-260",
+    "stt": 5,
+    "group": "Thuốc trừ bệnh",
+    "name": "MYCINUSA 78WP",
+    "active": "Ningnanmycin 10g/kg + Streptomycin sulfate 68g/kg",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-6-261",
+    "stt": 6,
+    "group": "Thuốc trừ bệnh",
+    "name": "MYCINUSA 80SL",
+    "active": "Ningnanmycin 20G/L + Streptomycin sulfate 60G/L",
+    "form": "SL",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-7-262",
+    "stt": 7,
+    "group": "Thuốc trừ bệnh",
+    "name": "KAMYCINUSA 75SL",
+    "active": "Ningnanmycin 65 g/l + kasugamycin 10g/l",
+    "form": "SL",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-8-263",
+    "stt": 8,
+    "group": "Thuốc trừ bệnh",
+    "name": "BRETIL SUPER 300EC",
+    "active": "Difenoconazole 150g/l + propiconazole 150g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-9-264",
+    "stt": 9,
+    "group": "Thuốc trừ bệnh",
+    "name": "AZOMOONPRO 50SC",
+    "active": "Azoxystrobin: 20% w/w + Dimethomorph: 30% w/w",
+    "form": "SC",
+    "note": "Chỉ để logo & số đt khách lên nhãn làm từ Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-10-265",
+    "stt": 10,
+    "group": "Thuốc trừ bệnh",
+    "name": "AF - Hymexyl 30SL",
+    "active": "Metalaxyl 6% w/w + Hymexazol 24% w/w",
+    "form": "SL",
+    "note": "Bệnh truyền qua đất: chết nhanh (hồ tiêu, dưa chuột, ớt...); điều trị toàn thân + khử trùng đất. Ngăn ngừa cây con chết; thúc đẩy sự phát triển của rễ; tăng cường sức đề kháng và khả năng chống chịu stress cho cây con"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-11-266",
+    "stt": 11,
+    "group": "Thuốc trừ bệnh",
+    "name": "AF - Pycofen 40SC",
+    "active": "Difenconazole 15% w/w + Pyraclostrobin 25% w/w",
+    "form": "SC",
+    "note": "Bệnh thán thư, bệnh sẹo, bệnh phấn trắng, đốm đen, sương mai, gỉ sắt... Bệnh đạo ôn, lem lép hạt, vàng lá..."
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-12-267",
+    "stt": 12,
+    "group": "Thuốc trừ bệnh",
+    "name": "AU- Morax 60WG",
+    "active": "Cymoxanil 40% + Pyraclostrobin 20%",
+    "form": "WG",
+    "note": "Cà phê / rỉ sắt"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-13-268",
+    "stt": 13,
+    "group": "Thuốc trừ bệnh",
+    "name": "Sunmofamid 24SC",
+    "active": "Cyazofamid 8% + Cymoxanil 16%",
+    "form": "SC",
+    "note": "Khoai tây / mốc sương"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-14-269",
+    "stt": 14,
+    "group": "Thuốc trừ bệnh",
+    "name": "AU - Perzoxin 48SC",
+    "active": "Azoxystrobin 30% + Difenoconazole 18%",
+    "form": "SC",
+    "note": "Cà phê / rỉ sắt"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-15-270",
+    "stt": 15,
+    "group": "Thuốc trừ bệnh",
+    "name": "AU- Perfect 36SC",
+    "active": "Kasugamycin 3% + Oxine copper 33%",
+    "form": "SC",
+    "note": "Cà phê / rỉ sắt"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-16-271",
+    "stt": 16,
+    "group": "Thuốc trừ bệnh",
+    "name": "Spring Inner 32SC",
+    "active": "Fluopicolide 8% + Pyraclostrobin 24%",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-17-272",
+    "stt": 17,
+    "group": "Thuốc trừ bệnh",
+    "name": "AZMILAN 300SC",
+    "active": "Tricyclazole 250g/l + Hexaconazole 50g/l",
+    "form": "SC",
+    "note": "Cà phê / thán thư"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-18-273",
+    "stt": 18,
+    "group": "Thuốc trừ bệnh",
+    "name": "Antimer-So 800WP",
+    "active": "Bismerthiazol 200g/kg + tricyclazole 400g/kg + sulfue 200g/kg",
+    "form": "WP",
+    "note": "Từ Huế vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-19-274",
+    "stt": 19,
+    "group": "Thuốc trừ bệnh",
+    "name": "Asmiltatopsuper 400SC",
+    "active": "Azoxystrobin 250g/l + Difenoconazole 150g/l",
+    "form": "SC",
+    "note": "Từ Huế vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-20-275",
+    "stt": 20,
+    "group": "Thuốc trừ bệnh",
+    "name": "KILLVIRUS 20WP",
+    "active": "Copper acetate 5% + Moroxydine hydrochloride 15% w/w",
+    "form": "WP",
+    "note": "Chỉ để logo & số đt khách lên nhãn làm từ Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-21-276",
+    "stt": 21,
+    "group": "Thuốc trừ bệnh",
+    "name": "MEKONGVIL 5SC",
+    "active": "Hexaconazole 50g/l",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-22-277",
+    "stt": 22,
+    "group": "Thuốc trừ bệnh",
+    "name": "JAPA VIL 110SC",
+    "active": "Hexaconazole 110g/l",
+    "form": "SC",
+    "note": "Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-23-278",
+    "stt": 23,
+    "group": "Thuốc trừ bệnh",
+    "name": "PIM.PIM 75WP",
+    "active": "Tricyclazole 75% w/w",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-24-279",
+    "stt": 24,
+    "group": "Thuốc trừ bệnh",
+    "name": "SUN COTROBIL 150SC",
+    "active": "Azoxystrobin 50g/l + Hexaconazole 100g/l",
+    "form": "SC",
+    "note": "Đốm nâu/lạc"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-25-280",
+    "stt": 25,
+    "group": "Thuốc trừ bệnh",
+    "name": "HATAKA WP",
+    "active": "Bacillus amyloliquefaciens H201 1×10 CFU/g",
+    "form": "WP",
+    "note": "Đốm vòng/cà chua, Phấn trắng/dưa chuột"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-26-281",
+    "stt": 26,
+    "group": "Thuốc trừ bệnh",
+    "name": "TP - ΖΕΡ 18EC",
+    "active": "18 %w/w : Tổ hợp dầu thực vật (dầu màng tang, dầu sả, dầu hồng, dầu hương nhu, dầu chanh)",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-27-282",
+    "stt": 27,
+    "group": "Thuốc trừ bệnh",
+    "name": "NOFADA 822WP",
+    "active": "Hexaconazole 32g/kg + Isoprothiolane 350g/kg + Tricyclazole 440g/kg",
+    "form": "WP",
+    "note": "Đạo ôn/lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-28-283",
+    "stt": 28,
+    "group": "Thuốc trừ bệnh",
+    "name": "AMICOL 360EC",
+    "active": "Difenoconazole 155g/l + Propiconazole 155g/l + Tebuconazole 50g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-29-284",
+    "stt": 29,
+    "group": "Thuốc trừ bệnh",
+    "name": "KING-CIDE JAPAN 460SC",
+    "active": "Azoxystrobin 200g/l + Hexaconazole 40g/l + Tricyclazole 220g/l",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-30-285",
+    "stt": 30,
+    "group": "Thuốc trừ bệnh",
+    "name": "MI STOP 350SC",
+    "active": "Azoxystrobin 200 g/l + Difenoconazole 150 g/l",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-31-286",
+    "stt": 31,
+    "group": "Thuốc trừ bệnh",
+    "name": "MITOP ONE 390SC",
+    "active": "Azoxystrobin 210 g/l + Difenoconazole 130 g/l + Hexaconazole 50g/l",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-32-287",
+    "stt": 32,
+    "group": "Thuốc trừ bệnh",
+    "name": "NP G6 860WP",
+    "active": "Isoprothiolane 460g/kg + Tricyclazole 400g/kg",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-33-288",
+    "stt": 33,
+    "group": "Thuốc trừ bệnh",
+    "name": "IMPERIAL 610WP",
+    "active": "Difenoconazole 150g/kg + Tricyclazole 460g/kg",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-34-289",
+    "stt": 34,
+    "group": "Thuốc trừ bệnh",
+    "name": "DOHAZOL 250SC",
+    "active": "Tricyclazole 220g/l + Hexaconazole 30g/l",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-35-290",
+    "stt": 35,
+    "group": "Thuốc trừ bệnh",
+    "name": "FENIL BGO 40SC",
+    "active": "Fenoxanil 15% + Tricyclazole 25%",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-36-291",
+    "stt": 36,
+    "group": "Thuốc trừ bệnh",
+    "name": "CHAPAON 770WP",
+    "active": "Copper Hydroxide 770g/kg",
+    "form": "WP",
+    "note": "Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-37-292",
+    "stt": 37,
+    "group": "Thuốc trừ bệnh",
+    "name": "BYPHAN 800WP",
+    "active": "Mancozeb 800g/kg",
+    "form": "WP",
+    "note": "Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-38-293",
+    "stt": 38,
+    "group": "Thuốc trừ bệnh",
+    "name": "AN-K-ZEB 80WP",
+    "active": "Mancozeb 800g/kg",
+    "form": "WP",
+    "note": "các công ty khác đưa logo và SĐT"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-39-294",
+    "stt": 39,
+    "group": "Thuốc trừ bệnh",
+    "name": "MOLBENG 2SL",
+    "active": "Ningnanmycin 20g/l",
+    "form": "SL",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-40-295",
+    "stt": 40,
+    "group": "Thuốc trừ bệnh",
+    "name": "RIDOKIN 58WP",
+    "active": "Mancozeb 48% + Metalaxyl 10%",
+    "form": "WP",
+    "note": "các công ty khác đưa logo và SĐT"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-41-296",
+    "stt": 41,
+    "group": "Thuốc trừ bệnh",
+    "name": "THALONIL 75WP",
+    "active": "Chlorothalonil 750g/kg",
+    "form": "WP",
+    "note": "Sương mai/ dưa hấu, đốm vòng/ cà chua. Từ Huế vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-42-297",
+    "stt": 42,
+    "group": "Thuốc trừ bệnh",
+    "name": "NAXANIL 20SC",
+    "active": "Fenoxnil 200g/l",
+    "form": "SC",
+    "note": "các công ty khác đưa logo và SĐT"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-43-298",
+    "stt": 43,
+    "group": "Thuốc trừ bệnh",
+    "name": "BPBYMS 200WP",
+    "active": "Tricyclazole 200g/kg",
+    "form": "WP",
+    "note": "Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-44-299",
+    "stt": 44,
+    "group": "Thuốc trừ bệnh",
+    "name": "BIMSON 750WP",
+    "active": "Isoprothiolane 375g/kg + Tricyclazole 375g/kg",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-45-300",
+    "stt": 45,
+    "group": "Thuốc trừ bệnh",
+    "name": "Zinforce 80WP",
+    "active": "Zineb 800g/kg",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-46-301",
+    "stt": 46,
+    "group": "Thuốc trừ bệnh",
+    "name": "YOSHINO 70WP",
+    "active": "Propineb 70% w/w",
+    "form": "WP",
+    "note": "các công ty khác đưa logo và SĐT"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-47-302",
+    "stt": 47,
+    "group": "Thuốc trừ bệnh",
+    "name": "GRAHITECH 2SL",
+    "active": "Kasugamycin 2% w/w",
+    "form": "SL",
+    "note": "Chỉ để logo & số đt khách lên nhãn làm từ Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-48-303",
+    "stt": 48,
+    "group": "Thuốc trừ bệnh",
+    "name": "SHIELD-FAST 200SC",
+    "active": "Cyazofamid 200g/l",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-49-304",
+    "stt": 49,
+    "group": "Thuốc trừ bệnh",
+    "name": "NEKKO 69WP",
+    "active": "Dimethomorph 9%w/w + Mancozeb 60%w/w",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-50-305",
+    "stt": 50,
+    "group": "Thuốc trừ bệnh",
+    "name": "FORDO 250EC",
+    "active": "Propiconazole 250g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-51-306",
+    "stt": 51,
+    "group": "Thuốc trừ bệnh",
+    "name": "FAMYCINUSA 100WP",
+    "active": "Kasugamycin 10g/kg + Ningnanmycin 40g/kg + Streptomycin sulfate 50g/kg",
+    "form": "WP",
+    "note": "Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-52-307",
+    "stt": 52,
+    "group": "Thuốc trừ bệnh",
+    "name": "PYRAMOS 40SL",
+    "active": "Ningnanmycin 40g/l",
+    "form": "SL",
+    "note": "Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-53-308",
+    "stt": 53,
+    "group": "Thuốc trừ bệnh",
+    "name": "FORWANIL 50SC",
+    "active": "Chlorothalonil 500g/l",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-54-309",
+    "stt": 54,
+    "group": "Thuốc trừ bệnh",
+    "name": "ONE CLEAR 50 WG",
+    "active": "Azoxystrobin 20% + Cymoxanil 30%",
+    "form": "WG",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-55-310",
+    "stt": 55,
+    "group": "Thuốc trừ bệnh",
+    "name": "LIMOUSINE 30WP",
+    "active": "Zhongshengmycin 3% wp",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-56-311",
+    "stt": 56,
+    "group": "Thuốc trừ bệnh",
+    "name": "MASTERY 25SC",
+    "active": "Pyraclostrobin 25%w/w",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-57-312",
+    "stt": 57,
+    "group": "Thuốc trừ bệnh",
+    "name": "BE-AM USA 810WP",
+    "active": "Tricyclazole 800g/kg + Azoxystrobin 10g/kg",
+    "form": "WP",
+    "note": "Đà Nẵng vào Nam"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-58-313",
+    "stt": 58,
+    "group": "Thuốc trừ bệnh",
+    "name": "SALEGOLD 250EC",
+    "active": "Metalaxyl 250 g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-59-314",
+    "stt": 59,
+    "group": "Thuốc trừ bệnh",
+    "name": "STARDOBA 715WP",
+    "active": "Tricyclazole 700g/kg + Kasugamycin 15g/kg",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-60-315",
+    "stt": 60,
+    "group": "Thuốc trừ bệnh",
+    "name": "MASTER ONE 26 SC",
+    "active": "Fenoxamil 20% w/w + Krepsoxim 6% w/w",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-61-316",
+    "stt": 61,
+    "group": "Thuốc trừ bệnh",
+    "name": "MASTER PLUS 225 SC",
+    "active": "Picoxystrobin 22,5 % w/w",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-62-317",
+    "stt": 62,
+    "group": "Thuốc trừ bệnh",
+    "name": "HOANGANHBUL 72 WP",
+    "active": "Mancozed 64% w/w + metalaxyl 8% w/w",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-63-318",
+    "stt": 63,
+    "group": "Thuốc trừ bệnh",
+    "name": "VOALYDACYN-NHẬT 5SL",
+    "active": "Voalydamycin 5%",
+    "form": "SL",
+    "note": "Khô vằn/lúa; nấm hồng/cao su"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-64-319",
+    "stt": 64,
+    "group": "Thuốc trừ bệnh",
+    "name": "PROBENCARB 250WP",
+    "active": "Bismerthiazol 200g/kg + Streptomycin sulfate 50g/kg",
+    "form": "WP",
+    "note": "Bạc lá/lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-65-320",
+    "stt": 65,
+    "group": "Thuốc trừ bệnh",
+    "name": "AD CARP 2SL",
+    "active": "Kasugamycin 2%",
+    "form": "SL",
+    "note": "Bạc lá/lúa, thán thư/ ớt"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-66-321",
+    "stt": 66,
+    "group": "Thuốc trừ bệnh",
+    "name": "KADATIL 300WP",
+    "active": "Bismerthiazol 300g/kg",
+    "form": "WP",
+    "note": "Bạc lá/lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-67-322",
+    "stt": 67,
+    "group": "Thuốc trừ bệnh",
+    "name": "NOFACOL 70WP",
+    "active": "Propineb 70%",
+    "form": "WP",
+    "note": "lem lép hạt/ lúa, thán thư/ xoài, ớt; đốm vòng/cà chua, thán thư/thanh long"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-68-323",
+    "stt": 68,
+    "group": "Thuốc trừ bệnh",
+    "name": "FOTHANE 80WP",
+    "active": "Mancozed 80g/kg",
+    "form": "WP",
+    "note": "thán thư/ bắp cải, đạo ôn/ lúa."
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-69-324",
+    "stt": 69,
+    "group": "Thuốc trừ bệnh",
+    "name": "FORTAZEB 72WP",
+    "active": "Mancozeb 64% + Metalaxyl 8%",
+    "form": "WP",
+    "note": "loét sọc mặt cạo/ cao su"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-70-325",
+    "stt": 70,
+    "group": "Thuốc trừ bệnh",
+    "name": "ACO ONE 400EC",
+    "active": "Isoprothiolane 400g/l",
+    "form": "EC",
+    "note": "đạo ôn/ lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-71-326",
+    "stt": 71,
+    "group": "Thuốc trừ bệnh",
+    "name": "NAFLUZ 270SC",
+    "active": "Tebuconazole 180g/l + Thiafluzamide 90g/l",
+    "form": "SC",
+    "note": "Lở cổ rễ/ lạc"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-72-327",
+    "stt": 72,
+    "group": "Thuốc trừ bệnh",
+    "name": "VARISON 5WP",
+    "active": "VALIDAMYCIN 5% W/W",
+    "form": "WP",
+    "note": "khô vằn/lúa"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-73-328",
+    "stt": 73,
+    "group": "Thuốc trừ bệnh",
+    "name": "RHETT 60WG",
+    "active": "Metiram 550g/kg + Pyraclostrobin 50g/kg",
+    "form": "WG",
+    "note": "rỉ sắt/ hoa cúc"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-74-329",
+    "stt": 74,
+    "group": "Thuốc trừ bệnh",
+    "name": "CAROZATE 72WP",
+    "active": "Mancozeb 64% + Cymoxanil 8%",
+    "form": "WP",
+    "note": "sương mai/ khoai tây; chết nhanh/ hồ tiêu; chết chậm/hồ tiêu; rỉ sắt/ cà phê"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-75-330",
+    "stt": 75,
+    "group": "Thuốc trừ bệnh",
+    "name": "Met-Helmer 72WP",
+    "active": "Metalaxyl 8%w/w + Mancozeb 64%w/w",
+    "form": "WP",
+    "note": "Xì mủ/Cao su, Thán thư/cà phê, Đốm đen/hoa hồng"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-76-331",
+    "stt": 76,
+    "group": "Thuốc trừ bệnh",
+    "name": "Morphelmer 500WP",
+    "active": "Dimethomorph 500g/kg",
+    "form": "WP",
+    "note": "Giả sương mai/Dưa hấu"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-77-332",
+    "stt": 77,
+    "group": "Thuốc trừ bệnh",
+    "name": "Kargate 470WP",
+    "active": "Kasugamycin 2% + Copper oxychloride 45%",
+    "form": "WP",
+    "note": "Phấn trắng/hoa hồng"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-78-333",
+    "stt": 78,
+    "group": "Thuốc trừ bệnh",
+    "name": "Carlotta 80WG",
+    "active": "Dimethomorph 80%w/w",
+    "form": "WG",
+    "note": "Thán thư/Xoài"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-79-334",
+    "stt": 79,
+    "group": "Thuốc trừ bệnh",
+    "name": "Sun Coloraz 400EW",
+    "active": "Tebuconazole 133g/l + Prochloraz 267 g/l",
+    "form": "EW",
+    "note": "Đốm lá/Lạc"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-80-335",
+    "stt": 80,
+    "group": "Thuốc trừ bệnh",
+    "name": "Sulfurluxthai 80WG",
+    "active": "Sulfur 80g/kg",
+    "form": "WG",
+    "note": "Thán thư/Vải"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-81-336",
+    "stt": 81,
+    "group": "Thuốc trừ bệnh",
+    "name": "Fostynium 75WP",
+    "active": "Fosetyl-aluminium 40%w/w + Mancozeb 35%w/w",
+    "form": "WP",
+    "note": "Giả sương mai/Dưa hấu"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-82-337",
+    "stt": 82,
+    "group": "Thuốc trừ bệnh",
+    "name": "Sunmanbul 80WP",
+    "active": "Mancozeb 80%w/w",
+    "form": "WP",
+    "note": "Đốm lá/Lạc"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-83-338",
+    "stt": 83,
+    "group": "Thuốc trừ bệnh",
+    "name": "RD-Viral 5SC",
+    "active": "Hexaconazole 5%w/w",
+    "form": "SC",
+    "note": "Rỉ sắt/Cà phê"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-84-339",
+    "stt": 84,
+    "group": "Thuốc trừ bệnh",
+    "name": "Romandine 64WP",
+    "active": "Mancozeb 56% w/w + Chlorothalonil 8%w/w",
+    "form": "WP",
+    "note": "Rỉ sắt/Cà phê"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-85-340",
+    "stt": 85,
+    "group": "Thuốc trừ bệnh",
+    "name": "Dimoxim 80WG",
+    "active": "Dimethomorph 50%w/w + Kresoxim methyl 30%w/w",
+    "form": "WG",
+    "note": "Phấn trắng/Dưa chuột"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-86-341",
+    "stt": 86,
+    "group": "Thuốc trừ bệnh",
+    "name": "PIRASTAR 183SE",
+    "active": "Epoxiconazole 50g/l + Pyraclostrobin 133g/l",
+    "form": "SE",
+    "note": "cà phê/ rỉ sắt"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-87-342",
+    "stt": 87,
+    "group": "Thuốc trừ bệnh",
+    "name": "SAM ROBIN 250 SC",
+    "active": "Azoxystrobin 250 g/l",
+    "form": "SC",
+    "note": "Xoài: Thán thư"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-88-343",
+    "stt": 88,
+    "group": "Thuốc trừ bệnh",
+    "name": "AZODIFE 325 SC",
+    "active": "Azoxystrobin 200 g/l + Difenoconazole 125 g/l",
+    "form": "SC",
+    "note": "Cà phê: Thán Thư"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-89-344",
+    "stt": 89,
+    "group": "Thuốc trừ bệnh",
+    "name": "Armytatopusa 500SC",
+    "active": "Azoxystrobin 250g/l + Difenoconazole 250g/l",
+    "form": "SC",
+    "note": "Cà phê: rỉ sắt"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-90-345",
+    "stt": 90,
+    "group": "Thuốc trừ bệnh",
+    "name": "CAROLIN 25 SC",
+    "active": "Azoxystrobin 12.5% + Tebuconazole 12.5% w/w",
+    "form": "SC",
+    "note": "Cà phê: rỉ sắt"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-91-346",
+    "stt": 91,
+    "group": "Thuốc trừ bệnh",
+    "name": "SAMCONIL® 500 SC",
+    "active": "Chlorothalonil 500 g/l",
+    "form": "SC",
+    "note": "Hoa hồng: Phấn trắng"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-92-347",
+    "stt": 92,
+    "group": "Thuốc trừ bệnh",
+    "name": "Copercide 50WP",
+    "active": "Copper Oxychloride 50%w/w",
+    "form": "WP",
+    "note": "Khoai tây: mốc sương"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-93-348",
+    "stt": 93,
+    "group": "Thuốc trừ bệnh",
+    "name": "Halminton 40SC",
+    "active": "Dimethomorph 40%w/w",
+    "form": "SC",
+    "note": "Hồ tiêu: chết nhanh"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-94-349",
+    "stt": 94,
+    "group": "Thuốc trừ bệnh",
+    "name": "KAMMURI 300 EC",
+    "active": "Difenoconazole 150 g/l + Propiconazole 150 g/l",
+    "form": "EC",
+    "note": "Cà phê: Rỉ sắt"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-95-350",
+    "stt": 95,
+    "group": "Thuốc trừ bệnh",
+    "name": "Til Pro 50EW",
+    "active": "Difenoconazole 25%w/w + Propiconazole 25%w/w",
+    "form": "EW",
+    "note": "Lạc: đốm nâu"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-96-351",
+    "stt": 96,
+    "group": "Thuốc trừ bệnh",
+    "name": "HEXAUSA 10 SC",
+    "active": "Hexaconazole 10% w/w",
+    "form": "SC",
+    "note": "Cà phê: Nấm Hồng"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-97-352",
+    "stt": 97,
+    "group": "Thuốc trừ bệnh",
+    "name": "Unizebando® 800 WP",
+    "active": "Mancozeb 800g/kg",
+    "form": "WP",
+    "note": "Cà Chua: Sương mai"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-98-353",
+    "stt": 98,
+    "group": "Thuốc trừ bệnh",
+    "name": "Trimangold® 800 WP",
+    "active": "Mancozeb 620g/kg + Tricyclazole 180 g/kg",
+    "form": "WP",
+    "note": "Hoa Hồng: Đốm đen"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-99-354",
+    "stt": 99,
+    "group": "Thuốc trừ bệnh",
+    "name": "Pacitaly 15WP",
+    "active": "Paclobutrazol 15%w/w",
+    "form": "WP",
+    "note": "Khoai lang: điều hòa sinh trưởng"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-100-355",
+    "stt": 100,
+    "group": "Thuốc trừ bệnh",
+    "name": "Pakloindia 23SC",
+    "active": "Paclobutrazol 23%w/w",
+    "form": "SC",
+    "note": "Khoai lang: điều hòa sinh trưởng"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-101-356",
+    "stt": 101,
+    "group": "Thuốc trừ bệnh",
+    "name": "FINISH 700 WP",
+    "active": "Propineb 700 g/kg",
+    "form": "WP",
+    "note": "Cà phê: Thán Thư"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-102-357",
+    "stt": 102,
+    "group": "Thuốc trừ bệnh",
+    "name": "DIROBIN 30 WG",
+    "active": "Azoxystrobin 20% w/w + Dimethomorph 10% w/w",
+    "form": "WG",
+    "note": "Khoai Tây: Mốc Sương"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-103-358",
+    "stt": 103,
+    "group": "Thuốc trừ bệnh",
+    "name": "PN-Coppercide 50 WP",
+    "active": "Copper Oxychloride 50 % w/w",
+    "form": "WP",
+    "note": "Lạc/ Đốm lá, thối thân, Cà phê/ Rỉ sắt"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-104-359",
+    "stt": 104,
+    "group": "Thuốc trừ bệnh",
+    "name": "Nemo 250 EC",
+    "active": "Difenoconazole 250g/l",
+    "form": "EC",
+    "note": "Hoa hồng: Đốm đen"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-105-360",
+    "stt": 105,
+    "group": "Thuốc trừ bệnh",
+    "name": "Niclosat 4SL",
+    "active": "Ningnanmycin 4% w/w",
+    "form": "SL",
+    "note": "Lúa: Khô vằn, bạc lá; Cà chua: Lở cổ rễ, sương mai; Lạc, đậu đỗ, bắp cải: Lở cổ rễ; Cà phê: Khô cành; Ngô: Khô vằn; Khoai tây, bí xanh: Thối gốc; Ớt: Xoăn lá; Thuốc Lá: Hoa lá; Cao su: Nấm hồng"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-106-361",
+    "stt": 106,
+    "group": "Thuốc trừ bệnh",
+    "name": "Vdimin 5SL",
+    "active": "Oligosaccharins 5% w/w",
+    "form": "SL",
+    "note": "Dưa chuột: giả sương mai"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-107-362",
+    "stt": 107,
+    "group": "Thuốc trừ bệnh",
+    "name": "Bidizole 750 WP",
+    "active": "Tricyclazole 750 g/kg",
+    "form": "WP",
+    "note": "Lúa: Đạo Ôn"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-108-363",
+    "stt": 108,
+    "group": "Thuốc trừ bệnh",
+    "name": "Oc Clear 700WP",
+    "active": "Niclosamide 700g/kg",
+    "form": "WP",
+    "note": "Lúa: Ốc bưu vàng"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-109-364",
+    "stt": 109,
+    "group": "Thuốc trừ bệnh",
+    "name": "Sunnofamid 40WP",
+    "active": "Cymoxanil 30%w/w + Cyazofamid 10%w/w",
+    "form": "WP",
+    "note": "Mốc sương/khoai tây"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-110-365",
+    "stt": 110,
+    "group": "Thuốc trừ bệnh",
+    "name": "Sun Milano 60WG",
+    "active": "Metiram 55%w/w + Pyraclostrobin 5%w/w",
+    "form": "WG",
+    "note": "Rỉ sắt/đậu tương"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-111-366",
+    "stt": 111,
+    "group": "Thuốc trừ bệnh",
+    "name": "Sun Momobul 70WG",
+    "active": "Cymoxanil 20%w/w + Dimethomorph 50%w/w",
+    "form": "WG",
+    "note": "Đốm nâu/lạc"
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-112-367",
+    "stt": 112,
+    "group": "Thuốc trừ bệnh",
+    "name": "AF-Oxyned 16SC",
+    "active": "Prochloraz 8%w/w + Iprodion 8%w/w",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-113-368",
+    "stt": 113,
+    "group": "Thuốc trừ bệnh",
+    "name": "Famycinusa 150SL",
+    "active": "Streptomycin 100g/l + Ningnangmycin 40g/l + Kasugamycin 10g/l",
+    "form": "SL",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-114-369",
+    "stt": 114,
+    "group": "Thuốc trừ bệnh",
+    "name": "Famycinusa 100WP",
+    "active": "Kasugamycin 10g/kg + Ningnanmycin 40g/kg + Streptomycin sulfate 50g/kg",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-115-370",
+    "stt": 115,
+    "group": "Thuốc trừ bệnh",
+    "name": "Cymonebindiavb 76WP",
+    "active": "Cymoxanil 6% + Propineb 70%",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-116-371",
+    "stt": 116,
+    "group": "Thuốc trừ bệnh",
+    "name": "PyrazoleTV 25SC",
+    "active": "Pyraclostrobin 25%w/w",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-117-372",
+    "stt": 117,
+    "group": "Thuốc trừ bệnh",
+    "name": "Stazole top 650WP",
+    "active": "Isoprothiolane 250g/kg + Tricyclazole 400g/kg",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-118-373",
+    "stt": 118,
+    "group": "Thuốc trừ bệnh",
+    "name": "AFENZOLE 325SC",
+    "active": "Azoxystrobin 200g/L + Difenconazole 125g/L",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-119-374",
+    "stt": 119,
+    "group": "Thuốc trừ bệnh",
+    "name": "Asmiltatop Super 400SC",
+    "active": "Azoxystrobin 250g/l + Difenoconazole 150g/l",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-120-375",
+    "stt": 120,
+    "group": "Thuốc trừ bệnh",
+    "name": "Pyrolax 250EC",
+    "active": "Pyraclostrobin 250g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-121-376",
+    "stt": 121,
+    "group": "Thuốc trừ bệnh",
+    "name": "Mocopindiatv 50WP",
+    "active": "Copper oxychloride 50%w/w",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-122-377",
+    "stt": 122,
+    "group": "Thuốc trừ bệnh",
+    "name": "TD-Lurmodier 500WP",
+    "active": "Dimethomorph 500g/kg",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-123-378",
+    "stt": 123,
+    "group": "Thuốc trừ bệnh",
+    "name": "Talaxylindiavb 72WP (V)",
+    "active": "Mancozeb 64% + Metalaxyl 8%",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-124-379",
+    "stt": 124,
+    "group": "Thuốc trừ bệnh",
+    "name": "Talaxylindiavb 72WP (X)",
+    "active": "Mancozeb 64% + Metalaxyl 8%",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-125-380",
+    "stt": 125,
+    "group": "Thuốc trừ bệnh",
+    "name": "Pyravil 5SC",
+    "active": "Hexaconazole 5%w/w",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-126-381",
+    "stt": 126,
+    "group": "Thuốc trừ bệnh",
+    "name": "Pyravil 5SC (XL)",
+    "active": "Hexaconazole 5%w/w",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-127-382",
+    "stt": 127,
+    "group": "Thuốc trừ bệnh",
+    "name": "Tvzeb 800WP (V)",
+    "active": "Hexaconazole 5%w/w",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-128-383",
+    "stt": 128,
+    "group": "Thuốc trừ bệnh",
+    "name": "Tvzeb 800WP (X)",
+    "active": "Mancozeb 800g/kg",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-129-384",
+    "stt": 129,
+    "group": "Thuốc trừ bệnh",
+    "name": "Kamycinjapane 80WP",
+    "active": "Kasugamycin 80g/kg",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-130-385",
+    "stt": 130,
+    "group": "Thuốc trừ bệnh",
+    "name": "Fulac 80WP",
+    "active": "Sulfur 800g/kg",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-131-386",
+    "stt": 131,
+    "group": "Thuốc trừ bệnh",
+    "name": "Fulac 80WG",
+    "active": "Sulfur 800g/kg",
+    "form": "WG",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-132-387",
+    "stt": 132,
+    "group": "Thuốc trừ bệnh",
+    "name": "Fulac 500SC",
+    "active": "Sulfur 500g/l",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-133-388",
+    "stt": 133,
+    "group": "Thuốc trừ bệnh",
+    "name": "Kamycinjapane 20SL",
+    "active": "Kasugamycin 20g/l",
+    "form": "SL",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-134-389",
+    "stt": 134,
+    "group": "Thuốc trừ bệnh",
+    "name": "ZebindiaX 80WP (V)",
+    "active": "Mancozeb 800g/kg",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-135-390",
+    "stt": 135,
+    "group": "Thuốc trừ bệnh",
+    "name": "ZebindiaX 80WP (X)",
+    "active": "Mancozeb 800g/kg",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-136-391",
+    "stt": 136,
+    "group": "Thuốc trừ bệnh",
+    "name": "Sulfurindiavb 80WG",
+    "active": "Sulfur 55.16%w/w",
+    "form": "WG",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-137-392",
+    "stt": 137,
+    "group": "Thuốc trừ bệnh",
+    "name": "Sulfurindiavb 55.16SC",
+    "active": "Sulfur 55.16%w/w",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-138-393",
+    "stt": 138,
+    "group": "Thuốc trừ bệnh",
+    "name": "Haifangmeisu 10WG",
+    "active": "Validamycin 10% w/w",
+    "form": "WG",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-139-394",
+    "stt": 139,
+    "group": "Thuốc trừ bệnh",
+    "name": "Masterapc 600WG",
+    "active": "Albendazole 100g/kg + Tricyclazole 500g/kg",
+    "form": "WG",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-140-395",
+    "stt": 140,
+    "group": "Thuốc trừ bệnh",
+    "name": "Atintin 400EC",
+    "active": "Difenoconazole 200g/l + Propiconazole 200g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-141-396",
+    "stt": 141,
+    "group": "Thuốc trừ bệnh",
+    "name": "Amilan 300SC",
+    "active": "Hexaconazole 50g/l + Tricyclazole 250g/l",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-142-397",
+    "stt": 142,
+    "group": "Thuốc trừ bệnh",
+    "name": "Fortil 25SC",
+    "active": "Tebuconazole 250g/l",
+    "form": "SC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-143-398",
+    "stt": 143,
+    "group": "Thuốc trừ bệnh",
+    "name": "Starkonazole 40WP",
+    "active": "Kresoxim-methyl 30% + Difenoconazole 10%",
+    "form": "WP",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-144-399",
+    "stt": 144,
+    "group": "Thuốc trừ bệnh",
+    "name": "Bretil Super 300EC",
+    "active": "Difenoconazole 150g/l + Propiconazole 150g/l",
+    "form": "EC",
+    "note": ""
+  },
+  {
+    "id": "oem-thuốc-trừ-bệnh-145-400",
+    "stt": 145,
+    "group": "Thuốc trừ bệnh",
+    "name": "Imperial 610WP",
+    "active": "Difenoconazole 150g/kg + Tricyclazole 460g/kg",
+    "form": "WP",
+    "note": ""
+  }
+]
