@@ -9,7 +9,18 @@
     "additives": "Special additives 450 g/l",
     "targets": "Rệp sáp; Mọt đục cành; Sâu đục quả; Nhện đỏ; Kiến; Rệp vây xanh; Rệp muội đen; Sùng (bọ hà)",
     "dosage": "Pha 450ml cho 500 - 600 lít",
-    "packing": "450 ml"
+    "packing": "450 ml",
+    "hoatChat": "Profenofos 450 g/l + Thiamethoxam 100 g/l",
+    "hoat_chat": "Profenofos 450 g/l + Thiamethoxam 100 g/l",
+    "dacTri": "Rệp sáp; Mọt đục cành; Sâu đục quả; Nhện đỏ; Kiến; Rệp vây xanh; Rệp muội đen; Sùng (bọ hà)",
+    "dac_tri": "Rệp sáp; Mọt đục cành; Sâu đục quả; Nhện đỏ; Kiến; Rệp vây xanh; Rệp muội đen; Sùng (bọ hà)",
+    "lieuLuong": "Pha 450ml cho 500 - 600 lít",
+    "lieu_luong": "Pha 450ml cho 500 - 600 lít",
+    "quyCach": "450 ml",
+    "quy_cach": "450 ml",
+    "phuGia": "Special additives 450 g/l",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "THIPRO 550EC.png"
   },
   {
     "id": "yapoko-250sc",
@@ -21,7 +32,18 @@
     "additives": "Special additives 750 g/l",
     "targets": "Rầy nâu; Bọ xít hôi; Sâu cuốn lá; Sâu đục thân; Bọ trĩ; Sâu đục quả; Dòi đục lá; Bọ xít muỗi; Sâu tơ; Bọ nhảy",
     "dosage": "Pha 450ml cho 500 - 600 lít",
-    "packing": "450 ml"
+    "packing": "450 ml",
+    "hoatChat": "Lambda-cyhalothrin 110 g/l + Thiamethoxam 140 g/l",
+    "hoat_chat": "Lambda-cyhalothrin 110 g/l + Thiamethoxam 140 g/l",
+    "dacTri": "Rầy nâu; Bọ xít hôi; Sâu cuốn lá; Sâu đục thân; Bọ trĩ; Sâu đục quả; Dòi đục lá; Bọ xít muỗi; Sâu tơ; Bọ nhảy",
+    "dac_tri": "Rầy nâu; Bọ xít hôi; Sâu cuốn lá; Sâu đục thân; Bọ trĩ; Sâu đục quả; Dòi đục lá; Bọ xít muỗi; Sâu tơ; Bọ nhảy",
+    "lieuLuong": "Pha 450ml cho 500 - 600 lít",
+    "lieu_luong": "Pha 450ml cho 500 - 600 lít",
+    "quyCach": "450 ml",
+    "quy_cach": "450 ml",
+    "phuGia": "Special additives 750 g/l",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "YAPOKO 250SC.png"
   },
   {
     "id": "haihamec-3-6ec",
@@ -33,7 +55,18 @@
     "additives": "Phụ gia vừa đủ 96.4% w/w",
     "targets": "Bọ trĩ, sâu đục bẹ, sâu cuốn lá, nhện gié, sâu xanh, rệp sáp, nhện đỏ",
     "dosage": "Pha 7.5ml cho 25 lít",
-    "packing": "450 ml"
+    "packing": "450 ml",
+    "hoatChat": "Abamectin 3.6% w/w",
+    "hoat_chat": "Abamectin 3.6% w/w",
+    "dacTri": "Bọ trĩ, sâu đục bẹ, sâu cuốn lá, nhện gié, sâu xanh, rệp sáp, nhện đỏ",
+    "dac_tri": "Bọ trĩ, sâu đục bẹ, sâu cuốn lá, nhện gié, sâu xanh, rệp sáp, nhện đỏ",
+    "lieuLuong": "Pha 7.5ml cho 25 lít",
+    "lieu_luong": "Pha 7.5ml cho 25 lít",
+    "quyCach": "450 ml",
+    "quy_cach": "450 ml",
+    "phuGia": "Phụ gia vừa đủ 96.4% w/w",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "HAIHAMEC 3.6EC (2).png"
   },
   {
     "id": "tuxedo-500sc",
@@ -45,7 +78,18 @@
     "additives": "Special Additives 500 g/l",
     "targets": "Nhện đỏ, nhện vàng, nhện lông nhung...",
     "dosage": "240ml pha 400 lít",
-    "packing": "240 ml"
+    "packing": "240 ml",
+    "hoatChat": "Diafenthiuron 500 g/l",
+    "hoat_chat": "Diafenthiuron 500 g/l",
+    "dacTri": "Nhện đỏ, nhện vàng, nhện lông nhung...",
+    "dac_tri": "Nhện đỏ, nhện vàng, nhện lông nhung...",
+    "lieuLuong": "240ml pha 400 lít",
+    "lieu_luong": "240ml pha 400 lít",
+    "quyCach": "240 ml",
+    "quy_cach": "240 ml",
+    "phuGia": "Special Additives 500 g/l",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "TUXEDO 500SC.jpg"
   },
   {
     "id": "nofara-35wg",
@@ -57,7 +101,18 @@
     "additives": "Special additives 65% w/w",
     "targets": "Bọ trĩ; rầy nâu",
     "dosage": "Pha 20g cho bình 25 lít",
-    "packing": "100 g"
+    "packing": "100 g",
+    "hoatChat": "Thiamethoxam 35% w/w",
+    "hoat_chat": "Thiamethoxam 35% w/w",
+    "dacTri": "Bọ trĩ; rầy nâu",
+    "dac_tri": "Bọ trĩ; rầy nâu",
+    "lieuLuong": "Pha 20g cho bình 25 lít",
+    "lieu_luong": "Pha 20g cho bình 25 lít",
+    "quyCach": "100 g",
+    "quy_cach": "100 g",
+    "phuGia": "Special additives 65% w/w",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "NOFARA 35WG.png"
   },
   {
     "id": "nosau-85wp",
@@ -69,7 +124,18 @@
     "additives": "Special additives 15% w/w",
     "targets": "Sâu đục thân; sâu cuốn lá",
     "dosage": "100g pha 200 lít nước",
-    "packing": "100 g"
+    "packing": "100 g",
+    "hoatChat": "Cartap 75% w/w + Imidacloprid 10% w/w",
+    "hoat_chat": "Cartap 75% w/w + Imidacloprid 10% w/w",
+    "dacTri": "Sâu đục thân; sâu cuốn lá",
+    "dac_tri": "Sâu đục thân; sâu cuốn lá",
+    "lieuLuong": "100g pha 200 lít nước",
+    "lieu_luong": "100g pha 200 lít nước",
+    "quyCach": "100 g",
+    "quy_cach": "100 g",
+    "phuGia": "Special additives 15% w/w",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "NOSAU 85WP.png"
   },
   {
     "id": "fullkill-50ec",
@@ -81,7 +147,18 @@
     "additives": "Additives (phụ gia) vừa đủ 1 lít",
     "targets": "Sâu cuốn lá, sâu ăn lá, bọ xít muỗi, rệp sáp, sâu đục trái, sâu xanh da láng",
     "dosage": "Pha 450ml cho 500 - 600 lít",
-    "packing": "450 ml"
+    "packing": "450 ml",
+    "hoatChat": "Permethrin 500 g/l",
+    "hoat_chat": "Permethrin 500 g/l",
+    "dacTri": "Sâu cuốn lá, sâu ăn lá, bọ xít muỗi, rệp sáp, sâu đục trái, sâu xanh da láng",
+    "dac_tri": "Sâu cuốn lá, sâu ăn lá, bọ xít muỗi, rệp sáp, sâu đục trái, sâu xanh da láng",
+    "lieuLuong": "Pha 450ml cho 500 - 600 lít",
+    "lieu_luong": "Pha 450ml cho 500 - 600 lít",
+    "quyCach": "450 ml",
+    "quy_cach": "450 ml",
+    "phuGia": "Additives (phụ gia) vừa đủ 1 lít",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "FULLKILL 50EC.png"
   },
   {
     "id": "bisector-500ec",
@@ -93,7 +170,18 @@
     "additives": "Special Additives 500 g/l",
     "targets": "Sâu bướm, Rệp sáp, Sên và ốc sên, Bộ sâu tai, Bọ trĩ, Nhện đỏ, Ruồi vàng, Ruồi trắng, Bướm đêm, Sâu ăn lá, Bọ xít, Rầy nâu",
     "dosage": "1 lít/ha. 400 - 500 lít/ha (pha 450ml cho 400 lít)",
-    "packing": "450 ml"
+    "packing": "450 ml",
+    "hoatChat": "Dimethoate 400 g/l + Fenobucarb 100 g/l",
+    "hoat_chat": "Dimethoate 400 g/l + Fenobucarb 100 g/l",
+    "dacTri": "Sâu bướm, Rệp sáp, Sên và ốc sên, Bộ sâu tai, Bọ trĩ, Nhện đỏ, Ruồi vàng, Ruồi trắng, Bướm đêm, Sâu ăn lá, Bọ xít, Rầy nâu",
+    "dac_tri": "Sâu bướm, Rệp sáp, Sên và ốc sên, Bộ sâu tai, Bọ trĩ, Nhện đỏ, Ruồi vàng, Ruồi trắng, Bướm đêm, Sâu ăn lá, Bọ xít, Rầy nâu",
+    "lieuLuong": "1 lít/ha. 400 - 500 lít/ha (pha 450ml cho 400 lít)",
+    "lieu_luong": "1 lít/ha. 400 - 500 lít/ha (pha 450ml cho 400 lít)",
+    "quyCach": "450 ml",
+    "quy_cach": "450 ml",
+    "phuGia": "Special Additives 500 g/l",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "BISECTOR 500EC.png"
   },
   {
     "id": "afudan-20sc",
@@ -105,7 +193,18 @@
     "additives": "Special Additive 800 g/l",
     "targets": "Sâu đục thân, bọ trĩ, bọ cánh tơ, bọ nhảy, rệp sáp, rầy nâu, rầy xanh, tuyến trùng, nhện gié, sâu đất, sùng/ hà, đuông dừa, rầy trắng",
     "dosage": "Pha 450ml cho 500 - 600 lít",
-    "packing": "450 ml"
+    "packing": "450 ml",
+    "hoatChat": "Carbosulfan 200 g/l",
+    "hoat_chat": "Carbosulfan 200 g/l",
+    "dacTri": "Sâu đục thân, bọ trĩ, bọ cánh tơ, bọ nhảy, rệp sáp, rầy nâu, rầy xanh, tuyến trùng, nhện gié, sâu đất, sùng/ hà, đuông dừa, rầy trắng",
+    "dac_tri": "Sâu đục thân, bọ trĩ, bọ cánh tơ, bọ nhảy, rệp sáp, rầy nâu, rầy xanh, tuyến trùng, nhện gié, sâu đất, sùng/ hà, đuông dừa, rầy trắng",
+    "lieuLuong": "Pha 450ml cho 500 - 600 lít",
+    "lieu_luong": "Pha 450ml cho 500 - 600 lít",
+    "quyCach": "450 ml",
+    "quy_cach": "450 ml",
+    "phuGia": "Special Additive 800 g/l",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "afudan.jpg"
   },
   {
     "id": "prodifes-5-8ec",
@@ -117,7 +216,18 @@
     "additives": "Phụ gia đặc biệt + dung môi",
     "targets": "Sâu cuốn lá, nhện lông nhung, rầy bông",
     "dosage": "450ml pha 500 - 600 lít",
-    "packing": "450 ml"
+    "packing": "450 ml",
+    "hoatChat": "Emamectin benzoate 5.8% w/w (Avermectin B1a 90% + Avermectin B1b 10%)",
+    "hoat_chat": "Emamectin benzoate 5.8% w/w (Avermectin B1a 90% + Avermectin B1b 10%)",
+    "dacTri": "Sâu cuốn lá, nhện lông nhung, rầy bông",
+    "dac_tri": "Sâu cuốn lá, nhện lông nhung, rầy bông",
+    "lieuLuong": "450ml pha 500 - 600 lít",
+    "lieu_luong": "450ml pha 500 - 600 lít",
+    "quyCach": "450 ml",
+    "quy_cach": "450 ml",
+    "phuGia": "Phụ gia đặc biệt + dung môi",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "prodife.jpg"
   },
   {
     "id": "ledan-95sp",
@@ -129,7 +239,18 @@
     "additives": "Special Additives 5% w/w",
     "targets": "Sâu đục thân, sâu cuốn lá, sâu bướm",
     "dosage": "Pha 100g pha 200 lít",
-    "packing": "100 g"
+    "packing": "100 g",
+    "hoatChat": "Cartap (Cartap Hydrochloride) 95% w/w",
+    "hoat_chat": "Cartap (Cartap Hydrochloride) 95% w/w",
+    "dacTri": "Sâu đục thân, sâu cuốn lá, sâu bướm",
+    "dac_tri": "Sâu đục thân, sâu cuốn lá, sâu bướm",
+    "lieuLuong": "Pha 100g pha 200 lít",
+    "lieu_luong": "Pha 100g pha 200 lít",
+    "quyCach": "100 g",
+    "quy_cach": "100 g",
+    "phuGia": "Special Additives 5% w/w",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "LEDAN 95SP.png"
   },
   {
     "id": "khongray-54wp",
@@ -141,7 +262,18 @@
     "additives": "Special Additives 46% w/w",
     "targets": "Bọ nhảy, rệp sáp, rệp muỗi, bọ phấn trắng, bọ trĩ, rầy nâu, sâu vẽ bùa",
     "dosage": "Pha 100g pha 200 lít",
-    "packing": "100 g"
+    "packing": "100 g",
+    "hoatChat": "Acetamiprid 24% w/w + Buprofezin 30% w/w",
+    "hoat_chat": "Acetamiprid 24% w/w + Buprofezin 30% w/w",
+    "dacTri": "Bọ nhảy, rệp sáp, rệp muỗi, bọ phấn trắng, bọ trĩ, rầy nâu, sâu vẽ bùa",
+    "dac_tri": "Bọ nhảy, rệp sáp, rệp muỗi, bọ phấn trắng, bọ trĩ, rầy nâu, sâu vẽ bùa",
+    "lieuLuong": "Pha 100g pha 200 lít",
+    "lieu_luong": "Pha 100g pha 200 lít",
+    "quyCach": "100 g",
+    "quy_cach": "100 g",
+    "phuGia": "Special Additives 46% w/w",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "KHONGRAY 5WP.png"
   },
   {
     "id": "lufemin-100ec",
@@ -153,7 +285,18 @@
     "additives": "Special Additives 900 g/l",
     "targets": "Sâu cuốn lá, sâu tơ, sâu xanh da láng, sâu vẽ bùa, sâu cắn chẽn, sâu ăn tạp (ăn bông, ăn lá...), sâu keo, sâu dù",
     "dosage": "100ml / 200 lít",
-    "packing": "200 ml"
+    "packing": "200 ml",
+    "hoatChat": "Lufenuron 50 g/l + Emamectin Benzoate 50 g/l",
+    "hoat_chat": "Lufenuron 50 g/l + Emamectin Benzoate 50 g/l",
+    "dacTri": "Sâu cuốn lá, sâu tơ, sâu xanh da láng, sâu vẽ bùa, sâu cắn chẽn, sâu ăn tạp (ăn bông, ăn lá...), sâu keo, sâu dù",
+    "dac_tri": "Sâu cuốn lá, sâu tơ, sâu xanh da láng, sâu vẽ bùa, sâu cắn chẽn, sâu ăn tạp (ăn bông, ăn lá...), sâu keo, sâu dù",
+    "lieuLuong": "100ml / 200 lít",
+    "lieu_luong": "100ml / 200 lít",
+    "quyCach": "200 ml",
+    "quy_cach": "200 ml",
+    "phuGia": "Special Additives 900 g/l",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "LUFEMIN 100EC.jpg"
   },
   {
     "id": "chessin-600wp",
@@ -165,7 +308,18 @@
     "additives": "Special Additives 400 g/kg",
     "targets": "Rầy xanh, rệp sáp, rầy trắng, rầy nhớt, bọ trĩ, rầy nâu, sâu đục thân, ruồi vàng",
     "dosage": "Pha 100g pha 200 lít",
-    "packing": "100 g"
+    "packing": "100 g",
+    "hoatChat": "Pymetrozine 400 g/kg + Dinotefuran 200 g/kg",
+    "hoat_chat": "Pymetrozine 400 g/kg + Dinotefuran 200 g/kg",
+    "dacTri": "Rầy xanh, rệp sáp, rầy trắng, rầy nhớt, bọ trĩ, rầy nâu, sâu đục thân, ruồi vàng",
+    "dac_tri": "Rầy xanh, rệp sáp, rầy trắng, rầy nhớt, bọ trĩ, rầy nâu, sâu đục thân, ruồi vàng",
+    "lieuLuong": "Pha 100g pha 200 lít",
+    "lieu_luong": "Pha 100g pha 200 lít",
+    "quyCach": "100 g",
+    "quy_cach": "100 g",
+    "phuGia": "Special Additives 400 g/kg",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "CHESSIN 600WP.png"
   },
   {
     "id": "romano-250ec",
@@ -177,7 +331,18 @@
     "additives": "Special Additives 750 g/l",
     "targets": "Bọ trĩ, bọ xít, rầy bông, rầy nông, rầy xanh, rầy trắng, rầy mềm, rầy nhớt",
     "dosage": "0,8 lít/ha (pha 40ml / 25 lít nước)",
-    "packing": "450 ml"
+    "packing": "450 ml",
+    "hoatChat": "Profenofos 200 g/l + Imidacloprid 50 g/l",
+    "hoat_chat": "Profenofos 200 g/l + Imidacloprid 50 g/l",
+    "dacTri": "Bọ trĩ, bọ xít, rầy bông, rầy nông, rầy xanh, rầy trắng, rầy mềm, rầy nhớt",
+    "dac_tri": "Bọ trĩ, bọ xít, rầy bông, rầy nông, rầy xanh, rầy trắng, rầy mềm, rầy nhớt",
+    "lieuLuong": "0,8 lít/ha (pha 40ml / 25 lít nước)",
+    "lieu_luong": "0,8 lít/ha (pha 40ml / 25 lít nước)",
+    "quyCach": "450 ml",
+    "quy_cach": "450 ml",
+    "phuGia": "Special Additives 750 g/l",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "ROMANO 250EC.png"
   },
   {
     "id": "spider-240sc",
@@ -189,7 +354,18 @@
     "additives": "Special Additives 76% w/w (Phụ gia + dung môi đặc biệt)",
     "targets": "Nhện đỏ, nhện vàng, nhện trắng",
     "dosage": "25ml / bình 25L hoặc 200ml cho 500L",
-    "packing": "200 ml"
+    "packing": "200 ml",
+    "hoatChat": "Bifenazate 16% w/w + Spirodiclofen 8% w/w",
+    "hoat_chat": "Bifenazate 16% w/w + Spirodiclofen 8% w/w",
+    "dacTri": "Nhện đỏ, nhện vàng, nhện trắng",
+    "dac_tri": "Nhện đỏ, nhện vàng, nhện trắng",
+    "lieuLuong": "25ml / bình 25L hoặc 200ml cho 500L",
+    "lieu_luong": "25ml / bình 25L hoặc 200ml cho 500L",
+    "quyCach": "200 ml",
+    "quy_cach": "200 ml",
+    "phuGia": "Special Additives 76% w/w (Phụ gia + dung môi đặc biệt)",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "SPIDER 240SC.jpg"
   },
   {
     "id": "samurai-800wg",
@@ -201,7 +377,18 @@
     "additives": "Special Additives 20% w/w",
     "targets": "Rầy nâu, sâu cuốn lá, sâu đục thân, bọ trĩ, rệp sáp",
     "dosage": "Gói 100g pha 100 lít nước",
-    "packing": "100 g"
+    "packing": "100 g",
+    "hoatChat": "Nitenpyram 20% w/w + Pymetrozine 60% w/w",
+    "hoat_chat": "Nitenpyram 20% w/w + Pymetrozine 60% w/w",
+    "dacTri": "Rầy nâu, sâu cuốn lá, sâu đục thân, bọ trĩ, rệp sáp",
+    "dac_tri": "Rầy nâu, sâu cuốn lá, sâu đục thân, bọ trĩ, rệp sáp",
+    "lieuLuong": "Gói 100g pha 100 lít nước",
+    "lieu_luong": "Gói 100g pha 100 lít nước",
+    "quyCach": "100 g",
+    "quy_cach": "100 g",
+    "phuGia": "Special Additives 20% w/w",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "samurai 800wg có cây lúa.png"
   },
   {
     "id": "chery-70wg",
@@ -213,7 +400,18 @@
     "additives": "Special Additives 30% w/w",
     "targets": "Rầy xanh, rệp sáp, rầy trắng, rầy nhớt, bọ trĩ, rầy nâu, sâu đục thân, ruồi vàng",
     "dosage": "100g pha 100 - 200 lít",
-    "packing": "100 g"
+    "packing": "100 g",
+    "hoatChat": "Pymetrozine 65% w/w + Thiamethoxam 5% w/w",
+    "hoat_chat": "Pymetrozine 65% w/w + Thiamethoxam 5% w/w",
+    "dacTri": "Rầy xanh, rệp sáp, rầy trắng, rầy nhớt, bọ trĩ, rầy nâu, sâu đục thân, ruồi vàng",
+    "dac_tri": "Rầy xanh, rệp sáp, rầy trắng, rầy nhớt, bọ trĩ, rầy nâu, sâu đục thân, ruồi vàng",
+    "lieuLuong": "100g pha 100 - 200 lít",
+    "lieu_luong": "100g pha 100 - 200 lít",
+    "quyCach": "100 g",
+    "quy_cach": "100 g",
+    "phuGia": "Special Additives 30% w/w",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "CHERY-70WG.jpg"
   },
   {
     "id": "takashi-22sc",
@@ -225,7 +423,18 @@
     "additives": "Surfactant + Solvent 78% w/w",
     "targets": "Rệp muội, sâu xanh da láng, rầy mềm, bọ phấn, bọ trĩ và các nhóm côn trùng chích hút",
     "dosage": "100ml pha cho 100 lít nước",
-    "packing": "100 ml"
+    "packing": "100 ml",
+    "hoatChat": "Spirotetramat 11% w/w + Thiacloprid 11% w/w",
+    "hoat_chat": "Spirotetramat 11% w/w + Thiacloprid 11% w/w",
+    "dacTri": "Rệp muội, sâu xanh da láng, rầy mềm, bọ phấn, bọ trĩ và các nhóm côn trùng chích hút",
+    "dac_tri": "Rệp muội, sâu xanh da láng, rầy mềm, bọ phấn, bọ trĩ và các nhóm côn trùng chích hút",
+    "lieuLuong": "100ml pha cho 100 lít nước",
+    "lieu_luong": "100ml pha cho 100 lít nước",
+    "quyCach": "100 ml",
+    "quy_cach": "100 ml",
+    "phuGia": "Surfactant + Solvent 78% w/w",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "Takashi.jpg"
   },
   {
     "id": "diet-ray-277wp",
@@ -237,7 +446,18 @@
     "additives": "Special additives 723 g/kg",
     "targets": "Sâu cuốn lá, rầy nâu, rệp sáp, rầy xanh, bọ xít muỗi",
     "dosage": "10g / 20 lít, 100gr / 200 lít",
-    "packing": "100 g"
+    "packing": "100 g",
+    "hoatChat": "Metolcarb 200 g/kg + Acetamiprid 77 g/kg",
+    "hoat_chat": "Metolcarb 200 g/kg + Acetamiprid 77 g/kg",
+    "dacTri": "Sâu cuốn lá, rầy nâu, rệp sáp, rầy xanh, bọ xít muỗi",
+    "dac_tri": "Sâu cuốn lá, rầy nâu, rệp sáp, rầy xanh, bọ xít muỗi",
+    "lieuLuong": "10g / 20 lít, 100gr / 200 lít",
+    "lieu_luong": "10g / 20 lít, 100gr / 200 lít",
+    "quyCach": "100 g",
+    "quy_cach": "100 g",
+    "phuGia": "Special additives 723 g/kg",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "DIET RAY 277WP.png"
   },
   {
     "id": "ledan-4gr",
@@ -249,7 +469,18 @@
     "additives": "Special Additives 96% w/w",
     "targets": "Sâu đục thân, sâu cuốn lá, rầy nâu, rệp sáp, bọ xít muỗi",
     "dosage": "15 - 20 kg/ha",
-    "packing": "1 kg"
+    "packing": "1 kg",
+    "hoatChat": "Cartap Hydrochloride 4% w/w",
+    "hoat_chat": "Cartap Hydrochloride 4% w/w",
+    "dacTri": "Sâu đục thân, sâu cuốn lá, rầy nâu, rệp sáp, bọ xít muỗi",
+    "dac_tri": "Sâu đục thân, sâu cuốn lá, rầy nâu, rệp sáp, bọ xít muỗi",
+    "lieuLuong": "15 - 20 kg/ha",
+    "lieu_luong": "15 - 20 kg/ha",
+    "quyCach": "1 kg",
+    "quy_cach": "1 kg",
+    "phuGia": "Special Additives 96% w/w",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "LEDAN 4GR.png"
   },
   {
     "id": "tvpymeda-350wp",
@@ -261,7 +492,18 @@
     "additives": "Special Additives 650 g/kg",
     "targets": "Sâu đục thân, sâu cuốn lá, rầy nâu, rệp sáp, bọ xít muỗi",
     "dosage": "100gr pha 200 - 250 lít nước",
-    "packing": "100 g"
+    "packing": "100 g",
+    "hoatChat": "Pymetrozine 200 g/kg + Imidacloprid 150 g/kg",
+    "hoat_chat": "Pymetrozine 200 g/kg + Imidacloprid 150 g/kg",
+    "dacTri": "Sâu đục thân, sâu cuốn lá, rầy nâu, rệp sáp, bọ xít muỗi",
+    "dac_tri": "Sâu đục thân, sâu cuốn lá, rầy nâu, rệp sáp, bọ xít muỗi",
+    "lieuLuong": "100gr pha 200 - 250 lít nước",
+    "lieu_luong": "100gr pha 200 - 250 lít nước",
+    "quyCach": "100 g",
+    "quy_cach": "100 g",
+    "phuGia": "Special Additives 650 g/kg",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "TVPYMEDA 350WP.png"
   },
   {
     "id": "chipu-120sc",
@@ -273,7 +515,18 @@
     "additives": "Special Additives 880 g/l",
     "targets": "Sâu cuốn lá, sâu tơ, sâu xanh da láng, sâu vẽ bùa, sâu cắn chẽn, sâu ăn tạp (ăn bông, ăn lá...), sâu keo, sâu dù",
     "dosage": "Gói 25ml pha 25 lít",
-    "packing": "25 ml"
+    "packing": "25 ml",
+    "hoatChat": "Chlorfenapyr 100 g/l + Emamectin Benzoate 20 g/l",
+    "hoat_chat": "Chlorfenapyr 100 g/l + Emamectin Benzoate 20 g/l",
+    "dacTri": "Sâu cuốn lá, sâu tơ, sâu xanh da láng, sâu vẽ bùa, sâu cắn chẽn, sâu ăn tạp (ăn bông, ăn lá...), sâu keo, sâu dù",
+    "dac_tri": "Sâu cuốn lá, sâu tơ, sâu xanh da láng, sâu vẽ bùa, sâu cắn chẽn, sâu ăn tạp (ăn bông, ăn lá...), sâu keo, sâu dù",
+    "lieuLuong": "Gói 25ml pha 25 lít",
+    "lieu_luong": "Gói 25ml pha 25 lít",
+    "quyCach": "25 ml",
+    "quy_cach": "25 ml",
+    "phuGia": "Special Additives 880 g/l",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "CHIPU 120SC.jpg"
   },
   {
     "id": "sieubup-200wp",
@@ -285,7 +538,18 @@
     "additives": "Special Additives 800 g/kg",
     "targets": "Sâu đục thân, sâu cuốn lá, rầy nâu, rệp sáp, bọ xít muỗi",
     "dosage": "Pha 100g cho 200 lít nước",
-    "packing": "100 g"
+    "packing": "100 g",
+    "hoatChat": "Buprofezin 150 g/kg + Dinotefuran 50 g/kg",
+    "hoat_chat": "Buprofezin 150 g/kg + Dinotefuran 50 g/kg",
+    "dacTri": "Sâu đục thân, sâu cuốn lá, rầy nâu, rệp sáp, bọ xít muỗi",
+    "dac_tri": "Sâu đục thân, sâu cuốn lá, rầy nâu, rệp sáp, bọ xít muỗi",
+    "lieuLuong": "Pha 100g cho 200 lít nước",
+    "lieu_luong": "Pha 100g cho 200 lít nước",
+    "quyCach": "100 g",
+    "quy_cach": "100 g",
+    "phuGia": "Special Additives 800 g/kg",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "SIEUBUP 200WP.png"
   },
   {
     "id": "simson-50sc",
@@ -297,7 +561,18 @@
     "additives": "Special Additives 950 g/l",
     "targets": "Nhện đỏ",
     "dosage": "Pha 240ml cho 500 lít nước",
-    "packing": "240 ml"
+    "packing": "240 ml",
+    "hoatChat": "Fenpyroximate 50 g/l",
+    "hoat_chat": "Fenpyroximate 50 g/l",
+    "dacTri": "Nhện đỏ",
+    "dac_tri": "Nhện đỏ",
+    "lieuLuong": "Pha 240ml cho 500 lít nước",
+    "lieu_luong": "Pha 240ml cho 500 lít nước",
+    "quyCach": "240 ml",
+    "quy_cach": "240 ml",
+    "phuGia": "Special Additives 950 g/l",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "simson 50sc.png"
   },
   {
     "id": "exceed-440ec",
@@ -309,7 +584,18 @@
     "additives": "Special Additives 560 g/l",
     "targets": "Sâu đục thân hại lúa, bù lạch, sâu vẽ bùa, rầy trắng, rầy nâu, rệp sáp, rệp muội, bọ phấn, bọ xít...",
     "dosage": "Pha 40ml cho bình 25L hoặc chai 450ml cho 500 lít nước",
-    "packing": "450 ml"
+    "packing": "450 ml",
+    "hoatChat": "Cypermethrin 40 g/l + Profenofos 400 g/l",
+    "hoat_chat": "Cypermethrin 40 g/l + Profenofos 400 g/l",
+    "dacTri": "Sâu đục thân hại lúa, bù lạch, sâu vẽ bùa, rầy trắng, rầy nâu, rệp sáp, rệp muội, bọ phấn, bọ xít...",
+    "dac_tri": "Sâu đục thân hại lúa, bù lạch, sâu vẽ bùa, rầy trắng, rầy nâu, rệp sáp, rệp muội, bọ phấn, bọ xít...",
+    "lieuLuong": "Pha 40ml cho bình 25L hoặc chai 450ml cho 500 lít nước",
+    "lieu_luong": "Pha 40ml cho bình 25L hoặc chai 450ml cho 500 lít nước",
+    "quyCach": "450 ml",
+    "quy_cach": "450 ml",
+    "phuGia": "Special Additives 560 g/l",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "exceed 440ec.jpeg"
   },
   {
     "id": "bo-doi-xy-simson-50sc-tuk-tuk-20sc",
@@ -321,7 +607,18 @@
     "additives": "Special Additives 950 g/l (Chai X); Special Additives 80% w/w (Chai Y)",
     "targets": "Sâu hành, nhện đỏ, rệp muội, bọ trĩ, sâu tơ...",
     "dosage": "50ml chai X + 50ml chai Y pha 25 lít nước",
-    "packing": "240 ml"
+    "packing": "240 ml",
+    "hoatChat": "Simson 50SC (Chai X): Fenpyroximate 50 g/l; Tuk Tuk 20SC (Chai Y): Lambda-cyhalothrin 10% w/w + Thiamethoxam 10% w/w",
+    "hoat_chat": "Simson 50SC (Chai X): Fenpyroximate 50 g/l; Tuk Tuk 20SC (Chai Y): Lambda-cyhalothrin 10% w/w + Thiamethoxam 10% w/w",
+    "dacTri": "Sâu hành, nhện đỏ, rệp muội, bọ trĩ, sâu tơ...",
+    "dac_tri": "Sâu hành, nhện đỏ, rệp muội, bọ trĩ, sâu tơ...",
+    "lieuLuong": "50ml chai X + 50ml chai Y pha 25 lít nước",
+    "lieu_luong": "50ml chai X + 50ml chai Y pha 25 lít nước",
+    "quyCach": "240 ml",
+    "quy_cach": "240 ml",
+    "phuGia": "Special Additives 950 g/l (Chai X); Special Additives 80% w/w (Chai Y)",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "bộ đôi.jpg"
   },
   {
     "id": "djong-24ec",
@@ -333,7 +630,18 @@
     "additives": "Special Additives 76% w/w",
     "targets": "Sâu keo, bọ trĩ, rệp sáp, rệp muội, rầy xanh",
     "dosage": "450ml pha cho 400 lít nước",
-    "packing": "450 ml"
+    "packing": "450 ml",
+    "hoatChat": "Phoxim 14% w/w + Profenofos 10% w/w",
+    "hoat_chat": "Phoxim 14% w/w + Profenofos 10% w/w",
+    "dacTri": "Sâu keo, bọ trĩ, rệp sáp, rệp muội, rầy xanh",
+    "dac_tri": "Sâu keo, bọ trĩ, rệp sáp, rệp muội, rầy xanh",
+    "lieuLuong": "450ml pha cho 400 lít nước",
+    "lieu_luong": "450ml pha cho 400 lít nước",
+    "quyCach": "450 ml",
+    "quy_cach": "450 ml",
+    "phuGia": "Special Additives 76% w/w",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "DJONG 24EC.png"
   },
   {
     "id": "tuk-tuk-20sc",
@@ -345,7 +653,18 @@
     "additives": "Special Additives 80% w/w",
     "targets": "Rầy xanh, rầy phấn trắng, bọ trĩ, rệp muội, ruồi vàng...",
     "dosage": "450ml pha cho 500 lít nước",
-    "packing": "450 ml"
+    "packing": "450 ml",
+    "hoatChat": "Lambda-cyhalothrin 10% w/w + Thiamethoxam 10% w/w",
+    "hoat_chat": "Lambda-cyhalothrin 10% w/w + Thiamethoxam 10% w/w",
+    "dacTri": "Rầy xanh, rầy phấn trắng, bọ trĩ, rệp muội, ruồi vàng...",
+    "dac_tri": "Rầy xanh, rầy phấn trắng, bọ trĩ, rệp muội, ruồi vàng...",
+    "lieuLuong": "450ml pha cho 500 lít nước",
+    "lieu_luong": "450ml pha cho 500 lít nước",
+    "quyCach": "450 ml",
+    "quy_cach": "450 ml",
+    "phuGia": "Special Additives 80% w/w",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "TUK TUK 20SC.jpg"
   },
   {
     "id": "nara-37ec",
@@ -357,7 +676,18 @@
     "additives": "Special Additives 63% w/w",
     "targets": "Sâu keo, rệp sáp, rệp muội, bọ trĩ, sâu cuốn lá...",
     "dosage": "Pha chai 450ml cho 400 lít",
-    "packing": "450 ml"
+    "packing": "450 ml",
+    "hoatChat": "Profenofos 35% w/w + Abamectin 2% w/w",
+    "hoat_chat": "Profenofos 35% w/w + Abamectin 2% w/w",
+    "dacTri": "Sâu keo, rệp sáp, rệp muội, bọ trĩ, sâu cuốn lá...",
+    "dac_tri": "Sâu keo, rệp sáp, rệp muội, bọ trĩ, sâu cuốn lá...",
+    "lieuLuong": "Pha chai 450ml cho 400 lít",
+    "lieu_luong": "Pha chai 450ml cho 400 lít",
+    "quyCach": "450 ml",
+    "quy_cach": "450 ml",
+    "phuGia": "Special Additives 63% w/w",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "NARA.jpg"
   },
   {
     "id": "multigard-300sc",
@@ -369,7 +699,18 @@
     "additives": "Special Additives 700 g/l",
     "targets": "Ruồi đục thân, dòi đục lá, sâu vẽ bùa, muỗi hành...",
     "dosage": "Pha chai 220ml cho 500 lít nước",
-    "packing": "220 ml"
+    "packing": "220 ml",
+    "hoatChat": "Cyromazine 300 g/l",
+    "hoat_chat": "Cyromazine 300 g/l",
+    "dacTri": "Ruồi đục thân, dòi đục lá, sâu vẽ bùa, muỗi hành...",
+    "dac_tri": "Ruồi đục thân, dòi đục lá, sâu vẽ bùa, muỗi hành...",
+    "lieuLuong": "Pha chai 220ml cho 500 lít nước",
+    "lieu_luong": "Pha chai 220ml cho 500 lít nước",
+    "quyCach": "220 ml",
+    "quy_cach": "220 ml",
+    "phuGia": "Special Additives 700 g/l",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "MUTILGARD 300SC.jpg"
   },
   {
     "id": "rocky-150sc",
@@ -381,7 +722,18 @@
     "additives": "Special Additives 850 g/l",
     "targets": "Rầy trắng, rầy nâu, rầy xanh, bọ trĩ, rệp sáp, rệp vảy, sâu tơ, sâu cuốn lá",
     "dosage": "Pha chai 100 ml cho 100 lít nước",
-    "packing": "100 ml"
+    "packing": "100 ml",
+    "hoatChat": "Bifenthrin 50 g/l + Flonicamid 100 g/l",
+    "hoat_chat": "Bifenthrin 50 g/l + Flonicamid 100 g/l",
+    "dacTri": "Rầy trắng, rầy nâu, rầy xanh, bọ trĩ, rệp sáp, rệp vảy, sâu tơ, sâu cuốn lá",
+    "dac_tri": "Rầy trắng, rầy nâu, rầy xanh, bọ trĩ, rệp sáp, rệp vảy, sâu tơ, sâu cuốn lá",
+    "lieuLuong": "Pha chai 100 ml cho 100 lít nước",
+    "lieu_luong": "Pha chai 100 ml cho 100 lít nước",
+    "quyCach": "100 ml",
+    "quy_cach": "100 ml",
+    "phuGia": "Special Additives 850 g/l",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "rocky.jpg"
   },
   {
     "id": "zozavic-10-5ec",
@@ -393,7 +745,18 @@
     "additives": "Special Additives 89.5% w/w",
     "targets": "Nhện đỏ",
     "dosage": "1.2 lít / 500 lít nước",
-    "packing": "450 ml"
+    "packing": "450 ml",
+    "hoatChat": "Pyridaben 10.2% w/w + Abamectin 0.3% w/w",
+    "hoat_chat": "Pyridaben 10.2% w/w + Abamectin 0.3% w/w",
+    "dacTri": "Nhện đỏ",
+    "dac_tri": "Nhện đỏ",
+    "lieuLuong": "1.2 lít / 500 lít nước",
+    "lieu_luong": "1.2 lít / 500 lít nước",
+    "quyCach": "450 ml",
+    "quy_cach": "450 ml",
+    "phuGia": "Special Additives 89.5% w/w",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "ZOZAVIC 10.5EC.png"
   },
   {
     "id": "nofara-350sc",
@@ -405,7 +768,18 @@
     "additives": "Special Additives 650 g/l",
     "targets": "Rầy nâu, rầy xanh, bọ trĩ, bọ phấn trắng, rệp sáp non, rệp mềm. Một số đối tượng môi giới truyền bệnh virus",
     "dosage": "0.3 lít/ha, lượng nước phun 320 - 500 lít/ha",
-    "packing": "450 ml"
+    "packing": "450 ml",
+    "hoatChat": "Thiamethoxam 350 g/l",
+    "hoat_chat": "Thiamethoxam 350 g/l",
+    "dacTri": "Rầy nâu, rầy xanh, bọ trĩ, bọ phấn trắng, rệp sáp non, rệp mềm. Một số đối tượng môi giới truyền bệnh virus",
+    "dac_tri": "Rầy nâu, rầy xanh, bọ trĩ, bọ phấn trắng, rệp sáp non, rệp mềm. Một số đối tượng môi giới truyền bệnh virus",
+    "lieuLuong": "0.3 lít/ha, lượng nước phun 320 - 500 lít/ha",
+    "lieu_luong": "0.3 lít/ha, lượng nước phun 320 - 500 lít/ha",
+    "quyCach": "450 ml",
+    "quy_cach": "450 ml",
+    "phuGia": "Special Additives 650 g/l",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "NOFARA.jpg"
   },
   {
     "id": "nafenron-18sc",
@@ -417,7 +791,18 @@
     "additives": "Surfactant + Solvent 82% w/w",
     "targets": "Sâu khoang, sâu keo mùa thu, sâu tơ, sâu xanh da láng..., sâu kháng khó trị",
     "dosage": "Liều lượng: 0.4 lít/ha. Lượng nước: 400 - 500 lít/ha",
-    "packing": "450 ml"
+    "packing": "450 ml",
+    "hoatChat": "Chlorfenapyr 15% w/w + Lufenuron 3% w/w",
+    "hoat_chat": "Chlorfenapyr 15% w/w + Lufenuron 3% w/w",
+    "dacTri": "Sâu khoang, sâu keo mùa thu, sâu tơ, sâu xanh da láng..., sâu kháng khó trị",
+    "dac_tri": "Sâu khoang, sâu keo mùa thu, sâu tơ, sâu xanh da láng..., sâu kháng khó trị",
+    "lieuLuong": "Liều lượng: 0.4 lít/ha. Lượng nước: 400 - 500 lít/ha",
+    "lieu_luong": "Liều lượng: 0.4 lít/ha. Lượng nước: 400 - 500 lít/ha",
+    "quyCach": "450 ml",
+    "quy_cach": "450 ml",
+    "phuGia": "Surfactant + Solvent 82% w/w",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "NAFENRON 18SC.png"
   },
   {
     "id": "tp-open-57ec",
@@ -429,7 +814,18 @@
     "additives": "Surfactant + Solvent 43% w/w",
     "targets": "Nhện đỏ, Sâu tơ, Sâu xanh, Bọ trĩ, Ruồi vàng",
     "dosage": "400 - 500 lít",
-    "packing": "450 ml"
+    "packing": "450 ml",
+    "hoatChat": "Propargite 57% w/w",
+    "hoat_chat": "Propargite 57% w/w",
+    "dacTri": "Nhện đỏ, Sâu tơ, Sâu xanh, Bọ trĩ, Ruồi vàng",
+    "dac_tri": "Nhện đỏ, Sâu tơ, Sâu xanh, Bọ trĩ, Ruồi vàng",
+    "lieuLuong": "400 - 500 lít",
+    "lieu_luong": "400 - 500 lít",
+    "quyCach": "450 ml",
+    "quy_cach": "450 ml",
+    "phuGia": "Surfactant + Solvent 43% w/w",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "TP_OPEN 57EC.jpg"
   },
   {
     "id": "mancobgo-80wp-vang",
@@ -441,7 +837,18 @@
     "additives": "Special additives 20% w/w (Phụ gia đặc biệt vừa đủ 1kg)",
     "targets": "Thán thư, sương mai, thối quả, đốm lá",
     "dosage": "60g - 75g / bình 25L",
-    "packing": "1 kg"
+    "packing": "1 kg",
+    "hoatChat": "Mancozeb 80% w/w (800 g/kg)",
+    "hoat_chat": "Mancozeb 80% w/w (800 g/kg)",
+    "dacTri": "Thán thư, sương mai, thối quả, đốm lá",
+    "dac_tri": "Thán thư, sương mai, thối quả, đốm lá",
+    "lieuLuong": "60g - 75g / bình 25L",
+    "lieu_luong": "60g - 75g / bình 25L",
+    "quyCach": "1 kg",
+    "quy_cach": "1 kg",
+    "phuGia": "Special additives 20% w/w (Phụ gia đặc biệt vừa đủ 1kg)",
+    "danhMuc": "Thuốc trừ bệnh",
+    "hinhAnh": "MANCOBGO 80WP VANG.png"
   },
   {
     "id": "mancobgo-80wp-xanh",
@@ -453,7 +860,18 @@
     "additives": "Phụ gia đặc biệt vừa đủ 1kg",
     "targets": "Thán thư, sương mai, thối quả, đốm lá",
     "dosage": "60g - 75g / bình 25L",
-    "packing": "1 kg"
+    "packing": "1 kg",
+    "hoatChat": "Mancozeb 80% w/w (800 g/kg)",
+    "hoat_chat": "Mancozeb 80% w/w (800 g/kg)",
+    "dacTri": "Thán thư, sương mai, thối quả, đốm lá",
+    "dac_tri": "Thán thư, sương mai, thối quả, đốm lá",
+    "lieuLuong": "60g - 75g / bình 25L",
+    "lieu_luong": "60g - 75g / bình 25L",
+    "quyCach": "1 kg",
+    "quy_cach": "1 kg",
+    "phuGia": "Phụ gia đặc biệt vừa đủ 1kg",
+    "danhMuc": "Thuốc trừ bệnh",
+    "hinhAnh": "MANCOBGO 80WP XANH.png"
   },
   {
     "id": "pyramos-40sl",
@@ -465,7 +883,18 @@
     "additives": "Phụ gia đặc biệt",
     "targets": "Bệnh đạo ôn, khô vằn, bạc lá, virus/nấm bệnh trên cây trồng",
     "dosage": "Theo hướng dẫn nhà sản xuất",
-    "packing": "450 ml"
+    "packing": "450 ml",
+    "hoatChat": "Ningnanmycin 40 g/l",
+    "hoat_chat": "Ningnanmycin 40 g/l",
+    "dacTri": "Bệnh đạo ôn, khô vằn, bạc lá, virus/nấm bệnh trên cây trồng",
+    "dac_tri": "Bệnh đạo ôn, khô vằn, bạc lá, virus/nấm bệnh trên cây trồng",
+    "lieuLuong": "Theo hướng dẫn nhà sản xuất",
+    "lieu_luong": "Theo hướng dẫn nhà sản xuất",
+    "quyCach": "450 ml",
+    "quy_cach": "450 ml",
+    "phuGia": "Phụ gia đặc biệt",
+    "danhMuc": "Thuốc trừ bệnh",
+    "hinhAnh": "PYRAMOS 40SL.png"
   },
   {
     "id": "stardoba-715wp",
@@ -477,7 +906,18 @@
     "additives": "Phụ gia đặc biệt",
     "targets": "Sương mai, thán thư, nứt thân xì mủ, mốc sương",
     "dosage": "Theo hướng dẫn nhà sản xuất",
-    "packing": "1 kg"
+    "packing": "1 kg",
+    "hoatChat": "Dimethomorph 9% w/w + Mancozeb 60% w/w",
+    "hoat_chat": "Dimethomorph 9% w/w + Mancozeb 60% w/w",
+    "dacTri": "Sương mai, thán thư, nứt thân xì mủ, mốc sương",
+    "dac_tri": "Sương mai, thán thư, nứt thân xì mủ, mốc sương",
+    "lieuLuong": "Theo hướng dẫn nhà sản xuất",
+    "lieu_luong": "Theo hướng dẫn nhà sản xuất",
+    "quyCach": "1 kg",
+    "quy_cach": "1 kg",
+    "phuGia": "Phụ gia đặc biệt",
+    "danhMuc": "Thuốc trừ bệnh",
+    "hinhAnh": "STARDOBA 715WP.png"
   },
   {
     "id": "one-clear-50wg",
@@ -489,7 +929,18 @@
     "additives": "Phụ gia đặc biệt",
     "targets": "Mốc sương, sương mai, thán thư, đạo ôn, lem lép hạt",
     "dosage": "Theo hướng dẫn nhà sản xuất",
-    "packing": "100 g"
+    "packing": "100 g",
+    "hoatChat": "Azoxystrobin 20% w/w + Cymoxanil 30% w/w",
+    "hoat_chat": "Azoxystrobin 20% w/w + Cymoxanil 30% w/w",
+    "dacTri": "Mốc sương, sương mai, thán thư, đạo ôn, lem lép hạt",
+    "dac_tri": "Mốc sương, sương mai, thán thư, đạo ôn, lem lép hạt",
+    "lieuLuong": "Theo hướng dẫn nhà sản xuất",
+    "lieu_luong": "Theo hướng dẫn nhà sản xuất",
+    "quyCach": "100 g",
+    "quy_cach": "100 g",
+    "phuGia": "Phụ gia đặc biệt",
+    "danhMuc": "Thuốc trừ bệnh",
+    "hinhAnh": "ONE CLEAR 50WG.png"
   },
   {
     "id": "dr-green-800wp",
@@ -501,7 +952,18 @@
     "additives": "Phụ gia đặc biệt",
     "targets": "Thán thư, đốm lá, sương mai, phấn trắng, rỉ sắt",
     "dosage": "Theo hướng dẫn nhà sản xuất",
-    "packing": "1 kg"
+    "packing": "1 kg",
+    "hoatChat": "Chlorothalonil 200 g/kg + Propineb 600 g/kg",
+    "hoat_chat": "Chlorothalonil 200 g/kg + Propineb 600 g/kg",
+    "dacTri": "Thán thư, đốm lá, sương mai, phấn trắng, rỉ sắt",
+    "dac_tri": "Thán thư, đốm lá, sương mai, phấn trắng, rỉ sắt",
+    "lieuLuong": "Theo hướng dẫn nhà sản xuất",
+    "lieu_luong": "Theo hướng dẫn nhà sản xuất",
+    "quyCach": "1 kg",
+    "quy_cach": "1 kg",
+    "phuGia": "Phụ gia đặc biệt",
+    "danhMuc": "Thuốc trừ bệnh",
+    "hinhAnh": "DR.GREEN 800WP.png"
   },
   {
     "id": "japa-vil-110sc",
@@ -513,7 +975,18 @@
     "additives": "Special Additive 890 g/l",
     "targets": "Thán thư, nấm hồng, phấn trắng, sương mai, thối nhũn, đốm lá, đốm đen, rỉ sắt",
     "dosage": "Pha 20ml / bình 20 lít nước (0,4 - 0,5 lít/ha)",
-    "packing": "1 lít"
+    "packing": "1 lít",
+    "hoatChat": "Hexaconazole 110 g/l",
+    "hoat_chat": "Hexaconazole 110 g/l",
+    "dacTri": "Thán thư, nấm hồng, phấn trắng, sương mai, thối nhũn, đốm lá, đốm đen, rỉ sắt",
+    "dac_tri": "Thán thư, nấm hồng, phấn trắng, sương mai, thối nhũn, đốm lá, đốm đen, rỉ sắt",
+    "lieuLuong": "Pha 20ml / bình 20 lít nước (0,4 - 0,5 lít/ha)",
+    "lieu_luong": "Pha 20ml / bình 20 lít nước (0,4 - 0,5 lít/ha)",
+    "quyCach": "1 lít",
+    "quy_cach": "1 lít",
+    "phuGia": "Special Additive 890 g/l",
+    "danhMuc": "Thuốc trừ bệnh",
+    "hinhAnh": "JAPA VIL 110SC.png"
   },
   {
     "id": "mastery-25sc",
@@ -525,7 +998,18 @@
     "additives": "Special Additive 75% w/w",
     "targets": "Mốc sương, phấn trắng, đốm lá, thán thư",
     "dosage": "Pha 20ml cho bình 25 lít. 400ml cho ha",
-    "packing": "210 ml"
+    "packing": "210 ml",
+    "hoatChat": "Pyraclostrobin 25% w/w",
+    "hoat_chat": "Pyraclostrobin 25% w/w",
+    "dacTri": "Mốc sương, phấn trắng, đốm lá, thán thư",
+    "dac_tri": "Mốc sương, phấn trắng, đốm lá, thán thư",
+    "lieuLuong": "Pha 20ml cho bình 25 lít. 400ml cho ha",
+    "lieu_luong": "Pha 20ml cho bình 25 lít. 400ml cho ha",
+    "quyCach": "210 ml",
+    "quy_cach": "210 ml",
+    "phuGia": "Special Additive 75% w/w",
+    "danhMuc": "Thuốc trừ bệnh",
+    "hinhAnh": "MASTERY 25SC.png"
   },
   {
     "id": "hoanganhbul-72wp",
@@ -537,7 +1021,18 @@
     "additives": "Special additives 28% w/w",
     "targets": "Cháy bìa lá, sương mai, thán thư, nứt thân, xì mủ, thối rễ, ghẻ sẹo, nấm trái sầu riêng",
     "dosage": "Liều 50g / bình 25 lít",
-    "packing": "1 kg"
+    "packing": "1 kg",
+    "hoatChat": "Mancozeb 64% w/w + Metalaxyl 8% w/w",
+    "hoat_chat": "Mancozeb 64% w/w + Metalaxyl 8% w/w",
+    "dacTri": "Cháy bìa lá, sương mai, thán thư, nứt thân, xì mủ, thối rễ, ghẻ sẹo, nấm trái sầu riêng",
+    "dac_tri": "Cháy bìa lá, sương mai, thán thư, nứt thân, xì mủ, thối rễ, ghẻ sẹo, nấm trái sầu riêng",
+    "lieuLuong": "Liều 50g / bình 25 lít",
+    "lieu_luong": "Liều 50g / bình 25 lít",
+    "quyCach": "1 kg",
+    "quy_cach": "1 kg",
+    "phuGia": "Special additives 28% w/w",
+    "danhMuc": "Thuốc trừ bệnh",
+    "hinhAnh": "HOANGANHBUL 72WP.png"
   },
   {
     "id": "nekko-69wp",
@@ -549,7 +1044,18 @@
     "additives": "Special additives 31% w/w",
     "targets": "Sương mai, thán thư, đốm lá, xì mủ thân, thối rễ, phấn trắng, ghẻ sẹo quả, héo xanh",
     "dosage": "2 kg / 400 - 600 lít",
-    "packing": "1 kg"
+    "packing": "1 kg",
+    "hoatChat": "Mancozeb 60% w/w + Dimethomorph 9% w/w",
+    "hoat_chat": "Mancozeb 60% w/w + Dimethomorph 9% w/w",
+    "dacTri": "Sương mai, thán thư, đốm lá, xì mủ thân, thối rễ, phấn trắng, ghẻ sẹo quả, héo xanh",
+    "dac_tri": "Sương mai, thán thư, đốm lá, xì mủ thân, thối rễ, phấn trắng, ghẻ sẹo quả, héo xanh",
+    "lieuLuong": "2 kg / 400 - 600 lít",
+    "lieu_luong": "2 kg / 400 - 600 lít",
+    "quyCach": "1 kg",
+    "quy_cach": "1 kg",
+    "phuGia": "Special additives 31% w/w",
+    "danhMuc": "Thuốc trừ bệnh",
+    "hinhAnh": "NEKKO-69WP.webp"
   },
   {
     "id": "pim-pim-75wp",
@@ -561,7 +1067,18 @@
     "additives": "Special Additives 25% w/w",
     "targets": "Đạo ôn lá, đạo ôn đốt thân, đạo ôn cổ gié, cổ bông",
     "dosage": "0.3 - 0.4 kg/ha. 400 - 500l/ha",
-    "packing": "100 g"
+    "packing": "100 g",
+    "hoatChat": "Tricyclazole 75% w/w",
+    "hoat_chat": "Tricyclazole 75% w/w",
+    "dacTri": "Đạo ôn lá, đạo ôn đốt thân, đạo ôn cổ gié, cổ bông",
+    "dac_tri": "Đạo ôn lá, đạo ôn đốt thân, đạo ôn cổ gié, cổ bông",
+    "lieuLuong": "0.3 - 0.4 kg/ha. 400 - 500l/ha",
+    "lieu_luong": "0.3 - 0.4 kg/ha. 400 - 500l/ha",
+    "quyCach": "100 g",
+    "quy_cach": "100 g",
+    "phuGia": "Special Additives 25% w/w",
+    "danhMuc": "Thuốc trừ bệnh",
+    "hinhAnh": "PIM.PIM 75WP.jpg"
   },
   {
     "id": "lusatex-5sl",
@@ -573,7 +1090,18 @@
     "additives": "Special Additive 950 g/l",
     "targets": "Chết nhanh, bạc lá, lem lép hạt, xoăn lá, phấn trắng, héo rũ, sương mai, hoa lá, chết khô",
     "dosage": "Pha 0.3 - 0.4 lít cho 400 - 600 lít nước",
-    "packing": "450 ml"
+    "packing": "450 ml",
+    "hoatChat": "Garlic oil 20 g/l + Ningnanmycin 30 g/l",
+    "hoat_chat": "Garlic oil 20 g/l + Ningnanmycin 30 g/l",
+    "dacTri": "Chết nhanh, bạc lá, lem lép hạt, xoăn lá, phấn trắng, héo rũ, sương mai, hoa lá, chết khô",
+    "dac_tri": "Chết nhanh, bạc lá, lem lép hạt, xoăn lá, phấn trắng, héo rũ, sương mai, hoa lá, chết khô",
+    "lieuLuong": "Pha 0.3 - 0.4 lít cho 400 - 600 lít nước",
+    "lieu_luong": "Pha 0.3 - 0.4 lít cho 400 - 600 lít nước",
+    "quyCach": "450 ml",
+    "quy_cach": "450 ml",
+    "phuGia": "Special Additive 950 g/l",
+    "danhMuc": "Thuốc trừ bệnh",
+    "hinhAnh": "LUSATEX 5SL.png"
   },
   {
     "id": "king-cide-japan-460sc",
@@ -585,7 +1113,18 @@
     "additives": "Special Additives 540 g/l",
     "targets": "Đạo ôn, khô vằn, lem lép hạt",
     "dosage": "1 chai pha 400 - 500 lít",
-    "packing": "420 ml"
+    "packing": "420 ml",
+    "hoatChat": "Tricyclazole 220 g/l + Azoxystrobin 200 g/l + Hexaconazole 40 g/l",
+    "hoat_chat": "Tricyclazole 220 g/l + Azoxystrobin 200 g/l + Hexaconazole 40 g/l",
+    "dacTri": "Đạo ôn, khô vằn, lem lép hạt",
+    "dac_tri": "Đạo ôn, khô vằn, lem lép hạt",
+    "lieuLuong": "1 chai pha 400 - 500 lít",
+    "lieu_luong": "1 chai pha 400 - 500 lít",
+    "quyCach": "420 ml",
+    "quy_cach": "420 ml",
+    "phuGia": "Special Additives 540 g/l",
+    "danhMuc": "Thuốc trừ bệnh",
+    "hinhAnh": "KING-CIDE JAPAN 460SC.png"
   },
   {
     "id": "salegold-250ec",
@@ -597,7 +1136,18 @@
     "additives": "Special additives 750 g/l",
     "targets": "Bệnh do nấm Phytophthora trên hồ tiêu, sầu riêng, cao su. Bệnh sương mai trên khoai tây, cà chua",
     "dosage": "240ml pha 200 - 250 lít",
-    "packing": "240 ml"
+    "packing": "240 ml",
+    "hoatChat": "Metalaxyl 250 g/l",
+    "hoat_chat": "Metalaxyl 250 g/l",
+    "dacTri": "Bệnh do nấm Phytophthora trên hồ tiêu, sầu riêng, cao su. Bệnh sương mai trên khoai tây, cà chua",
+    "dac_tri": "Bệnh do nấm Phytophthora trên hồ tiêu, sầu riêng, cao su. Bệnh sương mai trên khoai tây, cà chua",
+    "lieuLuong": "240ml pha 200 - 250 lít",
+    "lieu_luong": "240ml pha 200 - 250 lít",
+    "quyCach": "240 ml",
+    "quy_cach": "240 ml",
+    "phuGia": "Special additives 750 g/l",
+    "danhMuc": "Thuốc trừ bệnh",
+    "hinhAnh": "SALEGOLD.png"
   },
   {
     "id": "azomoonpro-50sc",
@@ -609,7 +1159,18 @@
     "additives": "Special Additives 50% w/w",
     "targets": "Lem lép hạt, thán thư, sương mai, vàng lá chín sớm, cháy lá, thối quả, xì mủ nứt thân, rỉ sắt",
     "dosage": "Pha 20ml / bình 25 lít",
-    "packing": "100 ml"
+    "packing": "100 ml",
+    "hoatChat": "Azoxystrobin 20% w/w + Dimethomorph 30% w/w",
+    "hoat_chat": "Azoxystrobin 20% w/w + Dimethomorph 30% w/w",
+    "dacTri": "Lem lép hạt, thán thư, sương mai, vàng lá chín sớm, cháy lá, thối quả, xì mủ nứt thân, rỉ sắt",
+    "dac_tri": "Lem lép hạt, thán thư, sương mai, vàng lá chín sớm, cháy lá, thối quả, xì mủ nứt thân, rỉ sắt",
+    "lieuLuong": "Pha 20ml / bình 25 lít",
+    "lieu_luong": "Pha 20ml / bình 25 lít",
+    "quyCach": "100 ml",
+    "quy_cach": "100 ml",
+    "phuGia": "Special Additives 50% w/w",
+    "danhMuc": "Thuốc trừ bệnh",
+    "hinhAnh": "azomoonpro 50sc.png"
   },
   {
     "id": "nofacol-70wp",
@@ -621,7 +1182,18 @@
     "additives": "Special Additive 30% w/w",
     "targets": "Các bệnh đốm vòng, đốm lá trên cà chua, thán thư, sương mai, trên xoài, ớt, thanh long..., đạo ôn, lem lép hạt trên lúa",
     "dosage": "2kg/ha với lượng nước 320 - 400 lít/ha",
-    "packing": "1 kg"
+    "packing": "1 kg",
+    "hoatChat": "Propineb 70% w/w",
+    "hoat_chat": "Propineb 70% w/w",
+    "dacTri": "Các bệnh đốm vòng, đốm lá trên cà chua, thán thư, sương mai, trên xoài, ớt, thanh long..., đạo ôn, lem lép hạt trên lúa",
+    "dac_tri": "Các bệnh đốm vòng, đốm lá trên cà chua, thán thư, sương mai, trên xoài, ớt, thanh long..., đạo ôn, lem lép hạt trên lúa",
+    "lieuLuong": "2kg/ha với lượng nước 320 - 400 lít/ha",
+    "lieu_luong": "2kg/ha với lượng nước 320 - 400 lít/ha",
+    "quyCach": "1 kg",
+    "quy_cach": "1 kg",
+    "phuGia": "Special Additive 30% w/w",
+    "danhMuc": "Thuốc trừ bệnh",
+    "hinhAnh": "NOFACOL 70WP.png"
   },
   {
     "id": "acoustic-5sl",
@@ -633,7 +1205,18 @@
     "additives": "Special Additives 95% w/w",
     "targets": "Đốm nâu, đốm đen, phấn trắng, vàng lá, rụng lá, sương mai, thán thư..., Héo do vi khuẩn, thối nhũn, cháy lá, đốm lá, thối rễ, héo xanh...",
     "dosage": "Pha 375ml/ha. Lượng nước 500 lít/ha",
-    "packing": "450 ml"
+    "packing": "450 ml",
+    "hoatChat": "Oligosaccharins 5% w/w",
+    "hoat_chat": "Oligosaccharins 5% w/w",
+    "dacTri": "Đốm nâu, đốm đen, phấn trắng, vàng lá, rụng lá, sương mai, thán thư..., Héo do vi khuẩn, thối nhũn, cháy lá, đốm lá, thối rễ, héo xanh...",
+    "dac_tri": "Đốm nâu, đốm đen, phấn trắng, vàng lá, rụng lá, sương mai, thán thư..., Héo do vi khuẩn, thối nhũn, cháy lá, đốm lá, thối rễ, héo xanh...",
+    "lieuLuong": "Pha 375ml/ha. Lượng nước 500 lít/ha",
+    "lieu_luong": "Pha 375ml/ha. Lượng nước 500 lít/ha",
+    "quyCach": "450 ml",
+    "quy_cach": "450 ml",
+    "phuGia": "Special Additives 95% w/w",
+    "danhMuc": "Thuốc trừ bệnh",
+    "hinhAnh": "ACOUSTIC 5SL.png"
   },
   {
     "id": "kill-virus-20wp",
@@ -645,7 +1228,18 @@
     "additives": "Special Additives 80% w/w",
     "targets": "Xoăn lá, xoăn ngọn, vàng lá, thán thư, đầu lân, quéo đọt, rút đọt, mốc sương, đốm lá, rỉ sắt, héo rũ, héo xanh, sọc...",
     "dosage": "Pha 100g / 50 lít nước",
-    "packing": "100 g"
+    "packing": "100 g",
+    "hoatChat": "Moroxydine hydrochloride 15% w/w + Copper acetate 5% w/w",
+    "hoat_chat": "Moroxydine hydrochloride 15% w/w + Copper acetate 5% w/w",
+    "dacTri": "Xoăn lá, xoăn ngọn, vàng lá, thán thư, đầu lân, quéo đọt, rút đọt, mốc sương, đốm lá, rỉ sắt, héo rũ, héo xanh, sọc...",
+    "dac_tri": "Xoăn lá, xoăn ngọn, vàng lá, thán thư, đầu lân, quéo đọt, rút đọt, mốc sương, đốm lá, rỉ sắt, héo rũ, héo xanh, sọc...",
+    "lieuLuong": "Pha 100g / 50 lít nước",
+    "lieu_luong": "Pha 100g / 50 lít nước",
+    "quyCach": "100 g",
+    "quy_cach": "100 g",
+    "phuGia": "Special Additives 80% w/w",
+    "danhMuc": "Thuốc trừ bệnh",
+    "hinhAnh": "KILLVIRUS 20WP.png"
   },
   {
     "id": "mi-stop-350sc",
@@ -657,7 +1251,18 @@
     "additives": "Special Additives 650 g/l",
     "targets": "Lem lép hạt, thán thư, phấn trắng, sương mai, đốm nâu, đốm lá trên lúa, nhãn, vải, chôm chôm, sầu riêng, xoài, bưởi, rau màu...",
     "dosage": "Liều lượng: 0,25 - 0,3 lít/ha. Lượng nước: 400 - 500 lít/ha",
-    "packing": "250 ml"
+    "packing": "250 ml",
+    "hoatChat": "Azoxystrobin 200 g/l + Difenoconazole 150 g/l",
+    "hoat_chat": "Azoxystrobin 200 g/l + Difenoconazole 150 g/l",
+    "dacTri": "Lem lép hạt, thán thư, phấn trắng, sương mai, đốm nâu, đốm lá trên lúa, nhãn, vải, chôm chôm, sầu riêng, xoài, bưởi, rau màu...",
+    "dac_tri": "Lem lép hạt, thán thư, phấn trắng, sương mai, đốm nâu, đốm lá trên lúa, nhãn, vải, chôm chôm, sầu riêng, xoài, bưởi, rau màu...",
+    "lieuLuong": "Liều lượng: 0,25 - 0,3 lít/ha. Lượng nước: 400 - 500 lít/ha",
+    "lieu_luong": "Liều lượng: 0,25 - 0,3 lít/ha. Lượng nước: 400 - 500 lít/ha",
+    "quyCach": "250 ml",
+    "quy_cach": "250 ml",
+    "phuGia": "Special Additives 650 g/l",
+    "danhMuc": "Thuốc trừ bệnh",
+    "hinhAnh": "mi stop.jpg"
   },
   {
     "id": "kasugacin-3sl",
@@ -669,7 +1274,18 @@
     "additives": "Surfactant + Solvent 970 g/l",
     "targets": "Đặc trị bệnh đạo ôn, khô vằn trên lúa và bệnh sương mai trên dưa chuột. Phòng thối nhũn trên rau màu",
     "dosage": "Liều lượng: 0,75 - 1,0 lít/ha. Lượng nước phun: 400 - 600 lít/ha",
-    "packing": "450 ml"
+    "packing": "450 ml",
+    "hoatChat": "Kasugamycin 30 g/l",
+    "hoat_chat": "Kasugamycin 30 g/l",
+    "dacTri": "Đặc trị bệnh đạo ôn, khô vằn trên lúa và bệnh sương mai trên dưa chuột. Phòng thối nhũn trên rau màu",
+    "dac_tri": "Đặc trị bệnh đạo ôn, khô vằn trên lúa và bệnh sương mai trên dưa chuột. Phòng thối nhũn trên rau màu",
+    "lieuLuong": "Liều lượng: 0,75 - 1,0 lít/ha. Lượng nước phun: 400 - 600 lít/ha",
+    "lieu_luong": "Liều lượng: 0,75 - 1,0 lít/ha. Lượng nước phun: 400 - 600 lít/ha",
+    "quyCach": "450 ml",
+    "quy_cach": "450 ml",
+    "phuGia": "Surfactant + Solvent 970 g/l",
+    "danhMuc": "Thuốc trừ bệnh",
+    "hinhAnh": "KASUGACIN 3SL (KASUCIN).jpg"
   },
   {
     "id": "sun-coloraz-400ew",
@@ -681,7 +1297,18 @@
     "additives": "Surfactant + Solvent 600 g/l",
     "targets": "Thán thư, đạo ôn, khô vằn, lem lép hạt, đốm lá",
     "dosage": "Liều lượng: 0.5 lít/ha. Lượng nước: 400 - 600 lít/ha",
-    "packing": "240 ml"
+    "packing": "240 ml",
+    "hoatChat": "Prochloraz 267 g/l + Tebuconazole 133 g/l",
+    "hoat_chat": "Prochloraz 267 g/l + Tebuconazole 133 g/l",
+    "dacTri": "Thán thư, đạo ôn, khô vằn, lem lép hạt, đốm lá",
+    "dac_tri": "Thán thư, đạo ôn, khô vằn, lem lép hạt, đốm lá",
+    "lieuLuong": "Liều lượng: 0.5 lít/ha. Lượng nước: 400 - 600 lít/ha",
+    "lieu_luong": "Liều lượng: 0.5 lít/ha. Lượng nước: 400 - 600 lít/ha",
+    "quyCach": "240 ml",
+    "quy_cach": "240 ml",
+    "phuGia": "Surfactant + Solvent 600 g/l",
+    "danhMuc": "Thuốc trừ bệnh",
+    "hinhAnh": "sun coloraz.jpg"
   },
   {
     "id": "sun-cotrobil-150sc",
@@ -693,7 +1320,18 @@
     "additives": "Surfactant + Solvent 850 g/l",
     "targets": "Thán thư, đốm lá, đốm nâu, rỉ sắt và phấn trắng trên những cây trồng phù hợp",
     "dosage": "Liều lượng: 0.6 lít/ha. Lượng nước: 500 lít/ha",
-    "packing": "480 ml"
+    "packing": "480 ml",
+    "hoatChat": "Azoxystrobin 50 g/l + Hexaconazole 100 g/l",
+    "hoat_chat": "Azoxystrobin 50 g/l + Hexaconazole 100 g/l",
+    "dacTri": "Thán thư, đốm lá, đốm nâu, rỉ sắt và phấn trắng trên những cây trồng phù hợp",
+    "dac_tri": "Thán thư, đốm lá, đốm nâu, rỉ sắt và phấn trắng trên những cây trồng phù hợp",
+    "lieuLuong": "Liều lượng: 0.6 lít/ha. Lượng nước: 500 lít/ha",
+    "lieu_luong": "Liều lượng: 0.6 lít/ha. Lượng nước: 500 lít/ha",
+    "quyCach": "480 ml",
+    "quy_cach": "480 ml",
+    "phuGia": "Surfactant + Solvent 850 g/l",
+    "danhMuc": "Thuốc trừ bệnh",
+    "hinhAnh": "SUN COTROBIL 150SC.png"
   },
   {
     "id": "seal-200sl",
@@ -705,7 +1343,18 @@
     "additives": "Phụ gia đặc biệt vừa đủ 1 lít",
     "targets": "Thuốc trừ cỏ không chọn lọc, hậu nảy mầm; cỏ lá rộng và lá hẹp (cỏ mần trầu, cỏ tranh, cỏ gấu, cỏ chỉ...)",
     "dosage": "900ml pha 100 lít nước",
-    "packing": "900 ml"
+    "packing": "900 ml",
+    "hoatChat": "Glufosinate ammonium 200 g/l",
+    "hoat_chat": "Glufosinate ammonium 200 g/l",
+    "dacTri": "Thuốc trừ cỏ không chọn lọc, hậu nảy mầm; cỏ lá rộng và lá hẹp (cỏ mần trầu, cỏ tranh, cỏ gấu, cỏ chỉ...)",
+    "dac_tri": "Thuốc trừ cỏ không chọn lọc, hậu nảy mầm; cỏ lá rộng và lá hẹp (cỏ mần trầu, cỏ tranh, cỏ gấu, cỏ chỉ...)",
+    "lieuLuong": "900ml pha 100 lít nước",
+    "lieu_luong": "900ml pha 100 lít nước",
+    "quyCach": "900 ml",
+    "quy_cach": "900 ml",
+    "phuGia": "Phụ gia đặc biệt vừa đủ 1 lít",
+    "danhMuc": "Thuốc trừ cỏ",
+    "hinhAnh": "seal.jpg"
   },
   {
     "id": "tacogold-400ec",
@@ -717,7 +1366,18 @@
     "additives": "Surfactant + solvent: vừa đủ 1 lít (Phụ gia + dung môi đặc biệt)",
     "targets": "Cỏ lồng vực (cỏ gạo), cỏ đuôi phụng (cỏ cám), cỏ cháo, cỏ chác, lác (lông heo), cỏ lá rộng khác (rau mác bao, rau chốc, rau mương, gạc nai...)",
     "dosage": "Liều 50ml cho bình 25 lít",
-    "packing": "1 lít"
+    "packing": "1 lít",
+    "hoatChat": "Butachlor 100 g/l + Pretilachlor 300 g/l + Fenclorim 100 g/l",
+    "hoat_chat": "Butachlor 100 g/l + Pretilachlor 300 g/l + Fenclorim 100 g/l",
+    "dacTri": "Cỏ lồng vực (cỏ gạo), cỏ đuôi phụng (cỏ cám), cỏ cháo, cỏ chác, lác (lông heo), cỏ lá rộng khác (rau mác bao, rau chốc, rau mương, gạc nai...)",
+    "dac_tri": "Cỏ lồng vực (cỏ gạo), cỏ đuôi phụng (cỏ cám), cỏ cháo, cỏ chác, lác (lông heo), cỏ lá rộng khác (rau mác bao, rau chốc, rau mương, gạc nai...)",
+    "lieuLuong": "Liều 50ml cho bình 25 lít",
+    "lieu_luong": "Liều 50ml cho bình 25 lít",
+    "quyCach": "1 lít",
+    "quy_cach": "1 lít",
+    "phuGia": "Surfactant + solvent: vừa đủ 1 lít (Phụ gia + dung môi đặc biệt)",
+    "danhMuc": "Thuốc trừ cỏ",
+    "hinhAnh": "Tacogold 400EC.jpeg"
   },
   {
     "id": "farra-100ew",
@@ -729,7 +1389,18 @@
     "additives": "Special Additive 900 g/l",
     "targets": "Cỏ lồng vực (cỏ gạo) & cỏ đuôi phụng cho lúa",
     "dosage": "90 - 100 ml / 25 lít",
-    "packing": "450 ml"
+    "packing": "450 ml",
+    "hoatChat": "Cyhalofop-butyl 100 g/l",
+    "hoat_chat": "Cyhalofop-butyl 100 g/l",
+    "dacTri": "Cỏ lồng vực (cỏ gạo) & cỏ đuôi phụng cho lúa",
+    "dac_tri": "Cỏ lồng vực (cỏ gạo) & cỏ đuôi phụng cho lúa",
+    "lieuLuong": "90 - 100 ml / 25 lít",
+    "lieu_luong": "90 - 100 ml / 25 lít",
+    "quyCach": "450 ml",
+    "quy_cach": "450 ml",
+    "phuGia": "Special Additive 900 g/l",
+    "danhMuc": "Thuốc trừ cỏ",
+    "hinhAnh": "FARRA 100EW.png"
   },
   {
     "id": "butalo-60ec",
@@ -741,7 +1412,18 @@
     "additives": "Special Additives 400 g/l",
     "targets": "Lúa cỏ, cỏ lồng vực, cỏ đuôi phụng, cỏ cháo, cỏ chác, cỏ chỉ, u du, rau trai, rau mương...",
     "dosage": "Pha 75ml / bình 20L (phun 2 bình cho 1.000m²)",
-    "packing": "1 lít"
+    "packing": "1 lít",
+    "hoatChat": "Butachlor 600 g/l",
+    "hoat_chat": "Butachlor 600 g/l",
+    "dacTri": "Lúa cỏ, cỏ lồng vực, cỏ đuôi phụng, cỏ cháo, cỏ chác, cỏ chỉ, u du, rau trai, rau mương...",
+    "dac_tri": "Lúa cỏ, cỏ lồng vực, cỏ đuôi phụng, cỏ cháo, cỏ chác, cỏ chỉ, u du, rau trai, rau mương...",
+    "lieuLuong": "Pha 75ml / bình 20L (phun 2 bình cho 1.000m²)",
+    "lieu_luong": "Pha 75ml / bình 20L (phun 2 bình cho 1.000m²)",
+    "quyCach": "1 lít",
+    "quy_cach": "1 lít",
+    "phuGia": "Special Additives 400 g/l",
+    "danhMuc": "Thuốc trừ cỏ",
+    "hinhAnh": "BUTALO 60EC.jpg"
   },
   {
     "id": "combi-chelate",
@@ -753,7 +1435,18 @@
     "additives": "Vi lượng dạng Chelate",
     "targets": "Cung cấp nguyên tố vi lượng thiết yếu, tăng sức đề kháng, ngăn rụng lá/hoa/trái non, ra hoa đồng loạt, tăng độ ngọt và hương vị nông sản",
     "dosage": "25g sử dụng cho phuy 200 - 220 lít nước",
-    "packing": "25 g"
+    "packing": "25 g",
+    "hoatChat": "Mg: 6,6%; S: 10%; B: 5.000ppm; Cu: 5.000ppm; Fe: 5.000ppm; Mn: 15.000ppm; Zn: 45.000ppm; Mo: 100ppm; Humidity: 20%",
+    "hoat_chat": "Mg: 6,6%; S: 10%; B: 5.000ppm; Cu: 5.000ppm; Fe: 5.000ppm; Mn: 15.000ppm; Zn: 45.000ppm; Mo: 100ppm; Humidity: 20%",
+    "dacTri": "Cung cấp nguyên tố vi lượng thiết yếu, tăng sức đề kháng, ngăn rụng lá/hoa/trái non, ra hoa đồng loạt, tăng độ ngọt và hương vị nông sản",
+    "dac_tri": "Cung cấp nguyên tố vi lượng thiết yếu, tăng sức đề kháng, ngăn rụng lá/hoa/trái non, ra hoa đồng loạt, tăng độ ngọt và hương vị nông sản",
+    "lieuLuong": "25g sử dụng cho phuy 200 - 220 lít nước",
+    "lieu_luong": "25g sử dụng cho phuy 200 - 220 lít nước",
+    "quyCach": "25 g",
+    "quy_cach": "25 g",
+    "phuGia": "Vi lượng dạng Chelate",
+    "danhMuc": "Phân bón",
+    "hinhAnh": "COMBI CHELATE.png"
   },
   {
     "id": "vejeto-multi",
@@ -765,7 +1458,18 @@
     "additives": "Mo, Zn, Fulvic acid, Potassium, B, Mn, Amino acids, Vitamins, IBA, Enzyme Mix",
     "targets": "Ra rễ mạnh, lá xanh mướt dày lá, ra nhiều hoa đậu nhiều trái, lớn bóng đẹp trái, phục hồi cây sau sâu bệnh/thu hoạch, chống chịu môi trường",
     "dosage": "500ml cho 200 lít nước hoặc 5 lít cho 2000 lít nước",
-    "packing": "5 lít"
+    "packing": "5 lít",
+    "hoatChat": "Hữu cơ: 35%; Nts: 4%; Tỷ lệ C/N: 12; pHH2O: 5.0; Tỷ trọng: 1.1",
+    "hoat_chat": "Hữu cơ: 35%; Nts: 4%; Tỷ lệ C/N: 12; pHH2O: 5.0; Tỷ trọng: 1.1",
+    "dacTri": "Ra rễ mạnh, lá xanh mướt dày lá, ra nhiều hoa đậu nhiều trái, lớn bóng đẹp trái, phục hồi cây sau sâu bệnh/thu hoạch, chống chịu môi trường",
+    "dac_tri": "Ra rễ mạnh, lá xanh mướt dày lá, ra nhiều hoa đậu nhiều trái, lớn bóng đẹp trái, phục hồi cây sau sâu bệnh/thu hoạch, chống chịu môi trường",
+    "lieuLuong": "500ml cho 200 lít nước hoặc 5 lít cho 2000 lít nước",
+    "lieu_luong": "500ml cho 200 lít nước hoặc 5 lít cho 2000 lít nước",
+    "quyCach": "5 lít",
+    "quy_cach": "5 lít",
+    "phuGia": "Mo, Zn, Fulvic acid, Potassium, B, Mn, Amino acids, Vitamins, IBA, Enzyme Mix",
+    "danhMuc": "Phân bón",
+    "hinhAnh": "VEJETO.png"
   },
   {
     "id": "brassino-seawead",
@@ -777,7 +1481,18 @@
     "additives": "Rong biển, Brassinolide, Chelated (EDTA): Zn, Mg, Mn, Cu, Mo...",
     "targets": "Chống rụng tức thì cho bông/trái non, mát cây/bông, xanh dày mướt lá, chống stress sốc nhiệt/sốc mưa, phục hồi ngộ độc phân bón",
     "dosage": "Cây ăn trái (bưởi, sầu riêng, cam, mít...): 500ml / phuy 500 - 1000L. Cây lúa, nếp và cây lấy củ: 50ml / bình 25L",
-    "packing": "500 ml"
+    "packing": "500 ml",
+    "hoatChat": "Hữu cơ: 20%; Nts: 2.5%; P2O5hh: 2.5%; K2Ohh: 2.5%; Tỷ lệ C/N: 6.5; pHH2O: 7.0; Tỷ trọng: 1.1",
+    "hoat_chat": "Hữu cơ: 20%; Nts: 2.5%; P2O5hh: 2.5%; K2Ohh: 2.5%; Tỷ lệ C/N: 6.5; pHH2O: 7.0; Tỷ trọng: 1.1",
+    "dacTri": "Chống rụng tức thì cho bông/trái non, mát cây/bông, xanh dày mướt lá, chống stress sốc nhiệt/sốc mưa, phục hồi ngộ độc phân bón",
+    "dac_tri": "Chống rụng tức thì cho bông/trái non, mát cây/bông, xanh dày mướt lá, chống stress sốc nhiệt/sốc mưa, phục hồi ngộ độc phân bón",
+    "lieuLuong": "Cây ăn trái (bưởi, sầu riêng, cam, mít...): 500ml / phuy 500 - 1000L. Cây lúa, nếp và cây lấy củ: 50ml / bình 25L",
+    "lieu_luong": "Cây ăn trái (bưởi, sầu riêng, cam, mít...): 500ml / phuy 500 - 1000L. Cây lúa, nếp và cây lấy củ: 50ml / bình 25L",
+    "quyCach": "500 ml",
+    "quy_cach": "500 ml",
+    "phuGia": "Rong biển, Brassinolide, Chelated (EDTA): Zn, Mg, Mn, Cu, Mo...",
+    "danhMuc": "Phân bón",
+    "hinhAnh": "BRASSINO SEAWEAD.png"
   },
   {
     "id": "combi-chelate-max",
@@ -789,7 +1504,18 @@
     "additives": "Phụ gia vi lượng Chelate và các loại đặc biệt khác vừa đủ 100%",
     "targets": "Giữ xanh lá, tăng quang hợp, tăng năng suất, khắc phục thiếu trung vi lượng, ra hoa đồng loạt, giảm rụng trái non",
     "dosage": "Pha 500 ml cho 500 lít nước",
-    "packing": "500 ml"
+    "packing": "500 ml",
+    "hoatChat": "Bo: 2.000; Zn: 1.000; Cu: 1.000; Fe: 1.000; Mn: 1.000 (mg/kg); Tỷ trọng: 1,178",
+    "hoat_chat": "Bo: 2.000; Zn: 1.000; Cu: 1.000; Fe: 1.000; Mn: 1.000 (mg/kg); Tỷ trọng: 1,178",
+    "dacTri": "Giữ xanh lá, tăng quang hợp, tăng năng suất, khắc phục thiếu trung vi lượng, ra hoa đồng loạt, giảm rụng trái non",
+    "dac_tri": "Giữ xanh lá, tăng quang hợp, tăng năng suất, khắc phục thiếu trung vi lượng, ra hoa đồng loạt, giảm rụng trái non",
+    "lieuLuong": "Pha 500 ml cho 500 lít nước",
+    "lieu_luong": "Pha 500 ml cho 500 lít nước",
+    "quyCach": "500 ml",
+    "quy_cach": "500 ml",
+    "phuGia": "Phụ gia vi lượng Chelate và các loại đặc biệt khác vừa đủ 100%",
+    "danhMuc": "Phân bón",
+    "hinhAnh": "COMBI.png"
   },
   {
     "id": "kali-huu-co-nuoc-trong",
@@ -801,7 +1527,18 @@
     "additives": "Monopotassium Phosphate, Potassium carbonate, Vitamin (Thiamine, Acid ascorbic...), Chelated (EDTA): Zn, Mg, Ca, Cu...",
     "targets": "Tạo hạt nuôi hạt, tăng hạt chắc trên bông, lá đòng xanh bền, hạn chế lem lép/rụng hạt, chín vàng đều, vào gạo nhanh, đẹp màu nặng ký",
     "dosage": "500ml sử dụng cho 1 ha",
-    "packing": "500 ml"
+    "packing": "500 ml",
+    "hoatChat": "Available Phosphate (P2O5hh): 5%; Soluble Potash (K2Ohh): 25%; Độ ẩm: 5%",
+    "hoat_chat": "Available Phosphate (P2O5hh): 5%; Soluble Potash (K2Ohh): 25%; Độ ẩm: 5%",
+    "dacTri": "Tạo hạt nuôi hạt, tăng hạt chắc trên bông, lá đòng xanh bền, hạn chế lem lép/rụng hạt, chín vàng đều, vào gạo nhanh, đẹp màu nặng ký",
+    "dac_tri": "Tạo hạt nuôi hạt, tăng hạt chắc trên bông, lá đòng xanh bền, hạn chế lem lép/rụng hạt, chín vàng đều, vào gạo nhanh, đẹp màu nặng ký",
+    "lieuLuong": "500ml sử dụng cho 1 ha",
+    "lieu_luong": "500ml sử dụng cho 1 ha",
+    "quyCach": "500 ml",
+    "quy_cach": "500 ml",
+    "phuGia": "Monopotassium Phosphate, Potassium carbonate, Vitamin (Thiamine, Acid ascorbic...), Chelated (EDTA): Zn, Mg, Ca, Cu...",
+    "danhMuc": "Phân bón",
+    "hinhAnh": "kali nước trong.webp"
   },
   {
     "id": "zinc-plus-plus",
@@ -813,7 +1550,18 @@
     "additives": "Phụ gia vi lượng Chelate và các loại đặc biệt khác vừa đủ 100%",
     "targets": "Điều hòa sinh trưởng, phân hóa mầm hoa, thúc ra hoa nhanh, xanh lá lâu tăng quang hợp, sửa trái tròn đều hạn chế lép/sượng trái, tăng sức đề kháng",
     "dosage": "50ml cho bình 25 lít",
-    "packing": "1 lít"
+    "packing": "1 lít",
+    "hoatChat": "Zn: 25.000mg/l; Tỷ trọng: 1,127",
+    "hoat_chat": "Zn: 25.000mg/l; Tỷ trọng: 1,127",
+    "dacTri": "Điều hòa sinh trưởng, phân hóa mầm hoa, thúc ra hoa nhanh, xanh lá lâu tăng quang hợp, sửa trái tròn đều hạn chế lép/sượng trái, tăng sức đề kháng",
+    "dac_tri": "Điều hòa sinh trưởng, phân hóa mầm hoa, thúc ra hoa nhanh, xanh lá lâu tăng quang hợp, sửa trái tròn đều hạn chế lép/sượng trái, tăng sức đề kháng",
+    "lieuLuong": "50ml cho bình 25 lít",
+    "lieu_luong": "50ml cho bình 25 lít",
+    "quyCach": "1 lít",
+    "quy_cach": "1 lít",
+    "phuGia": "Phụ gia vi lượng Chelate và các loại đặc biệt khác vừa đủ 100%",
+    "danhMuc": "Phân bón",
+    "hinhAnh": "ZIC C.jpeg"
   },
   {
     "id": "branoline-0-01sl-lua",
@@ -825,7 +1573,18 @@
     "additives": "Nguyên liệu và phụ gia: Bổ sung BRASSINOLIDE",
     "targets": "Rễ khỏe, mầm to, mạ tốt, tăng nhiều chồi hữu hiệu, trổ mạnh đều to chắc hạt",
     "dosage": "Pha 10 - 15ml Branoline 0.01SL cho 25 lít nước",
-    "packing": "220 ml"
+    "packing": "220 ml",
+    "hoatChat": "Hữu cơ: 25%; pHH2O: 7.2; Tỷ trọng: 1.1",
+    "hoat_chat": "Hữu cơ: 25%; pHH2O: 7.2; Tỷ trọng: 1.1",
+    "dacTri": "Rễ khỏe, mầm to, mạ tốt, tăng nhiều chồi hữu hiệu, trổ mạnh đều to chắc hạt",
+    "dac_tri": "Rễ khỏe, mầm to, mạ tốt, tăng nhiều chồi hữu hiệu, trổ mạnh đều to chắc hạt",
+    "lieuLuong": "Pha 10 - 15ml Branoline 0.01SL cho 25 lít nước",
+    "lieu_luong": "Pha 10 - 15ml Branoline 0.01SL cho 25 lít nước",
+    "quyCach": "220 ml",
+    "quy_cach": "220 ml",
+    "phuGia": "Nguyên liệu và phụ gia: Bổ sung BRASSINOLIDE",
+    "danhMuc": "Phân bón",
+    "hinhAnh": "BRANOLINE LÚA.png"
   },
   {
     "id": "branoline-0-01sl-cay-an-trai",
@@ -837,7 +1596,18 @@
     "additives": "Nguyên liệu và phụ gia: Bổ sung BRASSINOLIDE",
     "targets": "Chống stress cho cây (hạn mặn, lạnh, ngộ độc, sốc nhiệt...), khắc phục vàng lá, chai bông",
     "dosage": "Pha 10 - 15ml Branoline 0.01SL cho 25 lít nước",
-    "packing": "220 ml"
+    "packing": "220 ml",
+    "hoatChat": "Hữu cơ: 25%; pHH2O: 7.2; Tỷ trọng: 1.1",
+    "hoat_chat": "Hữu cơ: 25%; pHH2O: 7.2; Tỷ trọng: 1.1",
+    "dacTri": "Chống stress cho cây (hạn mặn, lạnh, ngộ độc, sốc nhiệt...), khắc phục vàng lá, chai bông",
+    "dac_tri": "Chống stress cho cây (hạn mặn, lạnh, ngộ độc, sốc nhiệt...), khắc phục vàng lá, chai bông",
+    "lieuLuong": "Pha 10 - 15ml Branoline 0.01SL cho 25 lít nước",
+    "lieu_luong": "Pha 10 - 15ml Branoline 0.01SL cho 25 lít nước",
+    "quyCach": "220 ml",
+    "quy_cach": "220 ml",
+    "phuGia": "Nguyên liệu và phụ gia: Bổ sung BRASSINOLIDE",
+    "danhMuc": "Phân bón",
+    "hinhAnh": "BRANOLINE TRÁI CÂY.png"
   },
   {
     "id": "ph-up",
@@ -849,7 +1619,18 @@
     "additives": "Phụ gia nâng pH và cải tạo đất",
     "targets": "Nâng pH đất giúp tăng hấp thụ dưỡng chất, cải thiện vi sinh vật & cấu trúc đất, giảm nguy cơ bệnh do pH thấp, giảm độc tính kim loại nặng",
     "dosage": "Pha 500ml cho 200 - 400 lít nước, tưới đẫm cho 1000m². Định kỳ tưới mỗi tháng 1 lần giúp pH ổn định từ 5.5 trở lên",
-    "packing": "500 ml"
+    "packing": "500 ml",
+    "hoatChat": "Hữu cơ: 20%; Nts: 2.5%; P2O5hh: 2.5%; K2Ohh: 2.5%; Tỷ lệ C/N: 12; pHH2O: 7.0; Tỷ trọng: 1.1",
+    "hoat_chat": "Hữu cơ: 20%; Nts: 2.5%; P2O5hh: 2.5%; K2Ohh: 2.5%; Tỷ lệ C/N: 12; pHH2O: 7.0; Tỷ trọng: 1.1",
+    "dacTri": "Nâng pH đất giúp tăng hấp thụ dưỡng chất, cải thiện vi sinh vật & cấu trúc đất, giảm nguy cơ bệnh do pH thấp, giảm độc tính kim loại nặng",
+    "dac_tri": "Nâng pH đất giúp tăng hấp thụ dưỡng chất, cải thiện vi sinh vật & cấu trúc đất, giảm nguy cơ bệnh do pH thấp, giảm độc tính kim loại nặng",
+    "lieuLuong": "Pha 500ml cho 200 - 400 lít nước, tưới đẫm cho 1000m². Định kỳ tưới mỗi tháng 1 lần giúp pH ổn định từ 5.5 trở lên",
+    "lieu_luong": "Pha 500ml cho 200 - 400 lít nước, tưới đẫm cho 1000m². Định kỳ tưới mỗi tháng 1 lần giúp pH ổn định từ 5.5 trở lên",
+    "quyCach": "500 ml",
+    "quy_cach": "500 ml",
+    "phuGia": "Phụ gia nâng pH và cải tạo đất",
+    "danhMuc": "Phân bón",
+    "hinhAnh": "PH-UP.png"
   },
   {
     "id": "paclo-sc",
@@ -861,7 +1642,18 @@
     "additives": "Phụ gia vi lượng Chelate, bổ sung Paclo và các loại phụ gia đặc biệt khác vừa đủ 100%",
     "targets": "Điều hòa sinh trưởng, phân hóa mầm hoa rõ ràng, ra hoa nhanh mạnh tập trung, chặn đọt ém đọt khống chế chồi mầm, hạn chế đổ ngã/sượng trái tăng phấn",
     "dosage": "50ml sử dụng cho bình 25 lít",
-    "packing": "500 ml"
+    "packing": "500 ml",
+    "hoatChat": "Zn: 25.000mg/l; Tỷ trọng: 1,127",
+    "hoat_chat": "Zn: 25.000mg/l; Tỷ trọng: 1,127",
+    "dacTri": "Điều hòa sinh trưởng, phân hóa mầm hoa rõ ràng, ra hoa nhanh mạnh tập trung, chặn đọt ém đọt khống chế chồi mầm, hạn chế đổ ngã/sượng trái tăng phấn",
+    "dac_tri": "Điều hòa sinh trưởng, phân hóa mầm hoa rõ ràng, ra hoa nhanh mạnh tập trung, chặn đọt ém đọt khống chế chồi mầm, hạn chế đổ ngã/sượng trái tăng phấn",
+    "lieuLuong": "50ml sử dụng cho bình 25 lít",
+    "lieu_luong": "50ml sử dụng cho bình 25 lít",
+    "quyCach": "500 ml",
+    "quy_cach": "500 ml",
+    "phuGia": "Phụ gia vi lượng Chelate, bổ sung Paclo và các loại phụ gia đặc biệt khác vừa đủ 100%",
+    "danhMuc": "Phân bón",
+    "hinhAnh": "PACLO-SC25.png"
   },
   {
     "id": "guitar",
@@ -873,7 +1665,18 @@
     "additives": "Vitamin B1 (Thiamine), Sophora japonica extract, Monopotassium Phosphate, Potassium carbonate, Vitamin (Thiamine, Acid ascorbic...), Chelated (EDTA): Zn, Mg, Ca, Cu...",
     "targets": "Vô gạo nhanh, sáng bông, năng lượng, chắc cây, xanh lá đòng, tạo hạt vượt trội",
     "dosage": "Sử dụng 500ml GUITAR cho 1 ha (hoặc pha 25ml / bình 25 lít nước)",
-    "packing": "500 ml"
+    "packing": "500 ml",
+    "hoatChat": "Available Phosphate (P2O5hh): 5%; Soluble Potash (K2Ohh): 25%; Độ ẩm: 5%",
+    "hoat_chat": "Available Phosphate (P2O5hh): 5%; Soluble Potash (K2Ohh): 25%; Độ ẩm: 5%",
+    "dacTri": "Vô gạo nhanh, sáng bông, năng lượng, chắc cây, xanh lá đòng, tạo hạt vượt trội",
+    "dac_tri": "Vô gạo nhanh, sáng bông, năng lượng, chắc cây, xanh lá đòng, tạo hạt vượt trội",
+    "lieuLuong": "Sử dụng 500ml GUITAR cho 1 ha (hoặc pha 25ml / bình 25 lít nước)",
+    "lieu_luong": "Sử dụng 500ml GUITAR cho 1 ha (hoặc pha 25ml / bình 25 lít nước)",
+    "quyCach": "500 ml",
+    "quy_cach": "500 ml",
+    "phuGia": "Vitamin B1 (Thiamine), Sophora japonica extract, Monopotassium Phosphate, Potassium carbonate, Vitamin (Thiamine, Acid ascorbic...), Chelated (EDTA): Zn, Mg, Ca, Cu...",
+    "danhMuc": "Phân bón",
+    "hinhAnh": "GUITAR & PIANO"
   },
   {
     "id": "piano",
@@ -885,7 +1688,18 @@
     "additives": "Phụ gia dinh dưỡng hữu cơ nhập khẩu Turkey",
     "targets": "Chuyển Vàng thành Xanh tức khắc, khỏe cây mướt lá đầy hạt sáng hạt, thúc đẩy chuyển hóa vào gạo nhanh, phục hồi cây suy yếu, dưỡng cây",
     "dosage": "1 cặp dùng cho 1 ha (hoặc 25ml / bình 25 lít nước)",
-    "packing": "500 ml"
+    "packing": "500 ml",
+    "hoatChat": "Hữu cơ: 35%; Nts: 4%; Tỷ lệ C/N: 12; pHH2O: 5.0; Tỷ trọng: 1.1",
+    "hoat_chat": "Hữu cơ: 35%; Nts: 4%; Tỷ lệ C/N: 12; pHH2O: 5.0; Tỷ trọng: 1.1",
+    "dacTri": "Chuyển Vàng thành Xanh tức khắc, khỏe cây mướt lá đầy hạt sáng hạt, thúc đẩy chuyển hóa vào gạo nhanh, phục hồi cây suy yếu, dưỡng cây",
+    "dac_tri": "Chuyển Vàng thành Xanh tức khắc, khỏe cây mướt lá đầy hạt sáng hạt, thúc đẩy chuyển hóa vào gạo nhanh, phục hồi cây suy yếu, dưỡng cây",
+    "lieuLuong": "1 cặp dùng cho 1 ha (hoặc 25ml / bình 25 lít nước)",
+    "lieu_luong": "1 cặp dùng cho 1 ha (hoặc 25ml / bình 25 lít nước)",
+    "quyCach": "500 ml",
+    "quy_cach": "500 ml",
+    "phuGia": "Phụ gia dinh dưỡng hữu cơ nhập khẩu Turkey",
+    "danhMuc": "Phân bón",
+    "hinhAnh": "GUITAR & PIANO"
   },
   {
     "id": "cabozin",
@@ -897,7 +1711,18 @@
     "additives": "Phụ gia dạng sữa mát cây",
     "targets": "Tăng ra hoa, đậu trái, chống rụng bông/rụng trái, tăng thụ phấn, chống nứt trái/dị hình dị dạng trái",
     "dosage": "Pha 25 - 30ml / 25 lít nước",
-    "packing": "500 ml"
+    "packing": "500 ml",
+    "hoatChat": "Canxi (Ca): 7%; Bo (B): 500 ppm; Kẽm (Zn): 900 ppm; pHH2O: 5; Tỷ trọng: 1.1",
+    "hoat_chat": "Canxi (Ca): 7%; Bo (B): 500 ppm; Kẽm (Zn): 900 ppm; pHH2O: 5; Tỷ trọng: 1.1",
+    "dacTri": "Tăng ra hoa, đậu trái, chống rụng bông/rụng trái, tăng thụ phấn, chống nứt trái/dị hình dị dạng trái",
+    "dac_tri": "Tăng ra hoa, đậu trái, chống rụng bông/rụng trái, tăng thụ phấn, chống nứt trái/dị hình dị dạng trái",
+    "lieuLuong": "Pha 25 - 30ml / 25 lít nước",
+    "lieu_luong": "Pha 25 - 30ml / 25 lít nước",
+    "quyCach": "500 ml",
+    "quy_cach": "500 ml",
+    "phuGia": "Phụ gia dạng sữa mát cây",
+    "danhMuc": "Phân bón",
+    "hinhAnh": "cabozin.png"
   },
   {
     "id": "phostagen-npk-spray",
@@ -909,7 +1734,18 @@
     "additives": "Dinh dưỡng tổng hợp nuôi trái mọi giai đoạn",
     "targets": "Tăng trọng lượng, nuôi trái đều bóng đẹp, hạn chế sượng/lép/rụng trái non, cây khỏe hấp thu nhanh, chống chịu thời tiết bất lợi",
     "dosage": "Pha 25 - 30 ml cho bình 25 lít nước, hoặc 500 ml cho 500 lít nước",
-    "packing": "500 ml"
+    "packing": "500 ml",
+    "hoatChat": "Đạm tổng số (Nts): 2%; Lân hữu hiệu (P2O5hh): 2%; Kali hữu hiệu (K2Ohh): 2%; Chất hữu cơ: 4,9%; Bo (B): 500 ppm; Sắt (Fe): 100 ppm; Đồng (Cu): 100 ppm; Mangan (Mn): 100 ppm; Kẽm (Zn): 100 ppm; pHH2O: 5; Tỷ trọng: 1,1",
+    "hoat_chat": "Đạm tổng số (Nts): 2%; Lân hữu hiệu (P2O5hh): 2%; Kali hữu hiệu (K2Ohh): 2%; Chất hữu cơ: 4,9%; Bo (B): 500 ppm; Sắt (Fe): 100 ppm; Đồng (Cu): 100 ppm; Mangan (Mn): 100 ppm; Kẽm (Zn): 100 ppm; pHH2O: 5; Tỷ trọng: 1,1",
+    "dacTri": "Tăng trọng lượng, nuôi trái đều bóng đẹp, hạn chế sượng/lép/rụng trái non, cây khỏe hấp thu nhanh, chống chịu thời tiết bất lợi",
+    "dac_tri": "Tăng trọng lượng, nuôi trái đều bóng đẹp, hạn chế sượng/lép/rụng trái non, cây khỏe hấp thu nhanh, chống chịu thời tiết bất lợi",
+    "lieuLuong": "Pha 25 - 30 ml cho bình 25 lít nước, hoặc 500 ml cho 500 lít nước",
+    "lieu_luong": "Pha 25 - 30 ml cho bình 25 lít nước, hoặc 500 ml cho 500 lít nước",
+    "quyCach": "500 ml",
+    "quy_cach": "500 ml",
+    "phuGia": "Dinh dưỡng tổng hợp nuôi trái mọi giai đoạn",
+    "danhMuc": "Phân bón",
+    "hinhAnh": "Phostagen (2).png"
   },
   {
     "id": "mic-90",
@@ -921,7 +1757,18 @@
     "additives": "Fulvic Acid, Humic Acid, Rong biển, Vi lượng EDTA (Zn, Cu, Fe, Mn...)",
     "targets": "Phát triển bộ rễ mạnh, cứng cây chống đổ ngã, nở bụi đẻ nhánh tối đa, tăng vi sinh vật có lợi trong đất, cải thiện cấu trúc đất, giảm ngộ độc hữu cơ",
     "dosage": "Trộn cùng phân bón gốc: trộn 5kg/ha. Tưới gốc: Pha 1kg với 800 - 1000L nước, tưới 5L/gốc",
-    "packing": "1 kg"
+    "packing": "1 kg",
+    "hoatChat": "Hữu cơ 70%; K2Ohh: 3.8%; tỷ lệ C/N: 12; pHH2O: 5; Độ ẩm: 30%",
+    "hoat_chat": "Hữu cơ 70%; K2Ohh: 3.8%; tỷ lệ C/N: 12; pHH2O: 5; Độ ẩm: 30%",
+    "dacTri": "Phát triển bộ rễ mạnh, cứng cây chống đổ ngã, nở bụi đẻ nhánh tối đa, tăng vi sinh vật có lợi trong đất, cải thiện cấu trúc đất, giảm ngộ độc hữu cơ",
+    "dac_tri": "Phát triển bộ rễ mạnh, cứng cây chống đổ ngã, nở bụi đẻ nhánh tối đa, tăng vi sinh vật có lợi trong đất, cải thiện cấu trúc đất, giảm ngộ độc hữu cơ",
+    "lieuLuong": "Trộn cùng phân bón gốc: trộn 5kg/ha. Tưới gốc: Pha 1kg với 800 - 1000L nước, tưới 5L/gốc",
+    "lieu_luong": "Trộn cùng phân bón gốc: trộn 5kg/ha. Tưới gốc: Pha 1kg với 800 - 1000L nước, tưới 5L/gốc",
+    "quyCach": "1 kg",
+    "quy_cach": "1 kg",
+    "phuGia": "Fulvic Acid, Humic Acid, Rong biển, Vi lượng EDTA (Zn, Cu, Fe, Mn...)",
+    "danhMuc": "Phân bón",
+    "hinhAnh": "Mic 90.png"
   },
   {
     "id": "evo-bloom-5-60-15",
@@ -933,7 +1780,18 @@
     "additives": "Chelate (EDTA) Mg, Zn, Ca, Cu, Fe, Bo...",
     "targets": "Kích phân hóa mầm hoa, ra hoa đồng đều, ngừa nghẹn hoa, ra hoa dễ dàng, hỗ trợ xử lý ra hoa nghịch vụ hiệu quả",
     "dosage": "Pha 25 - 30g cho bình 25 lít nước",
-    "packing": "1 kg"
+    "packing": "1 kg",
+    "hoatChat": "Đạm tổng số (Nts): 5%; Lân hữu hiệu (P2O5hh): 60%; Kali hữu hiệu (K2Ohh): 15%; Độ ẩm: 5%",
+    "hoat_chat": "Đạm tổng số (Nts): 5%; Lân hữu hiệu (P2O5hh): 60%; Kali hữu hiệu (K2Ohh): 15%; Độ ẩm: 5%",
+    "dacTri": "Kích phân hóa mầm hoa, ra hoa đồng đều, ngừa nghẹn hoa, ra hoa dễ dàng, hỗ trợ xử lý ra hoa nghịch vụ hiệu quả",
+    "dac_tri": "Kích phân hóa mầm hoa, ra hoa đồng đều, ngừa nghẹn hoa, ra hoa dễ dàng, hỗ trợ xử lý ra hoa nghịch vụ hiệu quả",
+    "lieuLuong": "Pha 25 - 30g cho bình 25 lít nước",
+    "lieu_luong": "Pha 25 - 30g cho bình 25 lít nước",
+    "quyCach": "1 kg",
+    "quy_cach": "1 kg",
+    "phuGia": "Chelate (EDTA) Mg, Zn, Ca, Cu, Fe, Bo...",
+    "danhMuc": "Phân bón",
+    "hinhAnh": "EVO BLOOM.png"
   },
   {
     "id": "camaxcium-active",
@@ -945,7 +1803,18 @@
     "additives": "Vitamin, Chelate (EDTA): Mg, S, Fe, Cu, Mo...",
     "targets": "Bổ sung Canxi hữu hiệu hấp thu nhanh, hạn chế sượng cơm/sượng nước, ngừa cháy múi/méo trái, ổn định cấu trúc mô quả, múi đầy cơm dẻo béo ngọt, hạn chế nứt/vàng múi",
     "dosage": "1 lít / 500 - 1000 lít",
-    "packing": "1 Lít"
+    "packing": "1 Lít",
+    "hoatChat": "Canxi (Ca): 7%; Bo (B): 500 ppm; Kẽm (Zn): 900 ppm; pHH2O: 5; Tỷ trọng: 1.1",
+    "hoat_chat": "Canxi (Ca): 7%; Bo (B): 500 ppm; Kẽm (Zn): 900 ppm; pHH2O: 5; Tỷ trọng: 1.1",
+    "dacTri": "Bổ sung Canxi hữu hiệu hấp thu nhanh, hạn chế sượng cơm/sượng nước, ngừa cháy múi/méo trái, ổn định cấu trúc mô quả, múi đầy cơm dẻo béo ngọt, hạn chế nứt/vàng múi",
+    "dac_tri": "Bổ sung Canxi hữu hiệu hấp thu nhanh, hạn chế sượng cơm/sượng nước, ngừa cháy múi/méo trái, ổn định cấu trúc mô quả, múi đầy cơm dẻo béo ngọt, hạn chế nứt/vàng múi",
+    "lieuLuong": "1 lít / 500 - 1000 lít",
+    "lieu_luong": "1 lít / 500 - 1000 lít",
+    "quyCach": "1 Lít",
+    "quy_cach": "1 Lít",
+    "phuGia": "Vitamin, Chelate (EDTA): Mg, S, Fe, Cu, Mo...",
+    "danhMuc": "Phân bón",
+    "hinhAnh": "calcium boron.jpg"
   },
   {
     "id": "kali-silic",
@@ -957,7 +1826,18 @@
     "additives": "Chelated (EDTA): Zn, Mg, Ca, Cu...",
     "targets": "Chắc thân cứng lá, tăng vận chuyển dinh dưỡng, trái to chắc cơm bóng mượt màu đẹp, hạt chắc củ to quả sáng đẹp, tăng độ ngọt",
     "dosage": "500ml / 250 - 500 lít nước. Pha 30 - 50 ml / bình 25 lít nước",
-    "packing": "1 Lít"
+    "packing": "1 Lít",
+    "hoatChat": "Kali hữu hiệu (K2Ohh): 6%; Silic hữu hiệu (SiO2hh): 10%; pHH2O: 12; Tỷ trọng: 1.2",
+    "hoat_chat": "Kali hữu hiệu (K2Ohh): 6%; Silic hữu hiệu (SiO2hh): 10%; pHH2O: 12; Tỷ trọng: 1.2",
+    "dacTri": "Chắc thân cứng lá, tăng vận chuyển dinh dưỡng, trái to chắc cơm bóng mượt màu đẹp, hạt chắc củ to quả sáng đẹp, tăng độ ngọt",
+    "dac_tri": "Chắc thân cứng lá, tăng vận chuyển dinh dưỡng, trái to chắc cơm bóng mượt màu đẹp, hạt chắc củ to quả sáng đẹp, tăng độ ngọt",
+    "lieuLuong": "500ml / 250 - 500 lít nước. Pha 30 - 50 ml / bình 25 lít nước",
+    "lieu_luong": "500ml / 250 - 500 lít nước. Pha 30 - 50 ml / bình 25 lít nước",
+    "quyCach": "1 Lít",
+    "quy_cach": "1 Lít",
+    "phuGia": "Chelated (EDTA): Zn, Mg, Ca, Cu...",
+    "danhMuc": "Phân bón",
+    "hinhAnh": "kali silic.jpg"
   },
   {
     "id": "coc-2000-dong-do",
@@ -969,7 +1849,18 @@
     "additives": "Phụ gia vi lượng Chelate và các loại đặc biệt khác vừa đủ 100%",
     "targets": "Rửa sạch rong rêu, mảng bám, gỉ sắt trên lá do dùng phân bón lá nhiều; công nghệ siêu mịn loang trải đều bám dính tốt, đồng tinh chất tính mát",
     "dosage": "Pha 25ml cho bình 25 lít hoặc 500ml cho 500 lít nước, phun đều lên lá, thân và vùng rễ",
-    "packing": "500 ml"
+    "packing": "500 ml",
+    "hoatChat": "Cu: 20.000mg/l; Tỷ trọng: 1,157",
+    "hoat_chat": "Cu: 20.000mg/l; Tỷ trọng: 1,157",
+    "dacTri": "Rửa sạch rong rêu, mảng bám, gỉ sắt trên lá do dùng phân bón lá nhiều; công nghệ siêu mịn loang trải đều bám dính tốt, đồng tinh chất tính mát",
+    "dac_tri": "Rửa sạch rong rêu, mảng bám, gỉ sắt trên lá do dùng phân bón lá nhiều; công nghệ siêu mịn loang trải đều bám dính tốt, đồng tinh chất tính mát",
+    "lieuLuong": "Pha 25ml cho bình 25 lít hoặc 500ml cho 500 lít nước, phun đều lên lá, thân và vùng rễ",
+    "lieu_luong": "Pha 25ml cho bình 25 lít hoặc 500ml cho 500 lít nước, phun đều lên lá, thân và vùng rễ",
+    "quyCach": "500 ml",
+    "quy_cach": "500 ml",
+    "phuGia": "Phụ gia vi lượng Chelate và các loại đặc biệt khác vừa đủ 100%",
+    "danhMuc": "Phân bón",
+    "hinhAnh": "CoC2000.png"
   },
   {
     "id": "zinc-micro",
@@ -981,7 +1872,18 @@
     "additives": "Vi lượng kẽm nhập khẩu Turkey",
     "targets": "Kích rễ - xanh lá - tăng chồi khỏe, hỗ trợ thụ phấn/đậu hoa/đậu trái, giảm xoắn lá/vàng đọt/chậm lớn do thiếu kẽm, tăng hiệu quả hấp thu dinh dưỡng",
     "dosage": "Pha 10 - 30 ml / 20 lít nước, phun 2 - 3 lần trong suốt vụ",
-    "packing": "20 lít"
+    "packing": "20 lít",
+    "hoatChat": "Zinc (Zn) 25,000mg/l, Density 1,127",
+    "hoat_chat": "Zinc (Zn) 25,000mg/l, Density 1,127",
+    "dacTri": "Kích rễ - xanh lá - tăng chồi khỏe, hỗ trợ thụ phấn/đậu hoa/đậu trái, giảm xoắn lá/vàng đọt/chậm lớn do thiếu kẽm, tăng hiệu quả hấp thu dinh dưỡng",
+    "dac_tri": "Kích rễ - xanh lá - tăng chồi khỏe, hỗ trợ thụ phấn/đậu hoa/đậu trái, giảm xoắn lá/vàng đọt/chậm lớn do thiếu kẽm, tăng hiệu quả hấp thu dinh dưỡng",
+    "lieuLuong": "Pha 10 - 30 ml / 20 lít nước, phun 2 - 3 lần trong suốt vụ",
+    "lieu_luong": "Pha 10 - 30 ml / 20 lít nước, phun 2 - 3 lần trong suốt vụ",
+    "quyCach": "20 lít",
+    "quy_cach": "20 lít",
+    "phuGia": "Vi lượng kẽm nhập khẩu Turkey",
+    "danhMuc": "Phân bón",
+    "hinhAnh": "ZinC micro.jpg"
   },
   {
     "id": "calcium-boron",
@@ -993,7 +1895,18 @@
     "additives": "Canxi - Bo nhập khẩu Turkey",
     "targets": "Hoa nở đều, đậu trái tốt, hạn chế rụng bông/rụng trái non, tăng độ cứng cáp cho thân/rễ/lá, hạn chế rụng/nứt trái",
     "dosage": "Pha 20 - 30 ml / bình 20 lít nước",
-    "packing": "20 lít"
+    "packing": "20 lít",
+    "hoatChat": "Bo (B) 5,000mg/kg, Density: 1,159",
+    "hoat_chat": "Bo (B) 5,000mg/kg, Density: 1,159",
+    "dacTri": "Hoa nở đều, đậu trái tốt, hạn chế rụng bông/rụng trái non, tăng độ cứng cáp cho thân/rễ/lá, hạn chế rụng/nứt trái",
+    "dac_tri": "Hoa nở đều, đậu trái tốt, hạn chế rụng bông/rụng trái non, tăng độ cứng cáp cho thân/rễ/lá, hạn chế rụng/nứt trái",
+    "lieuLuong": "Pha 20 - 30 ml / bình 20 lít nước",
+    "lieu_luong": "Pha 20 - 30 ml / bình 20 lít nước",
+    "quyCach": "20 lít",
+    "quy_cach": "20 lít",
+    "phuGia": "Canxi - Bo nhập khẩu Turkey",
+    "danhMuc": "Phân bón",
+    "hinhAnh": "calcium boron.jpg"
   },
   {
     "id": "organic-365",
@@ -1005,7 +1918,18 @@
     "additives": "Hữu cơ nhập khẩu Turkey",
     "targets": "Phục hồi nhanh sau thu hoạch, tăng phát triển rễ/chồi/lá non, tăng sức đề kháng rõ rệt, hoa ra đồng loạt, đậu trái tốt, trái lớn đều đẹp màu",
     "dosage": "Pha 20 - 30 ml / bình 20 lít nước, phun định kỳ 2 - 3 lần mỗi vụ tùy cây trồng",
-    "packing": "20 lít"
+    "packing": "20 lít",
+    "hoatChat": "Organic Matter: 25%; Ratio C/N: 5, pHH2O: 7.2, Density: 1.1",
+    "hoat_chat": "Organic Matter: 25%; Ratio C/N: 5, pHH2O: 7.2, Density: 1.1",
+    "dacTri": "Phục hồi nhanh sau thu hoạch, tăng phát triển rễ/chồi/lá non, tăng sức đề kháng rõ rệt, hoa ra đồng loạt, đậu trái tốt, trái lớn đều đẹp màu",
+    "dac_tri": "Phục hồi nhanh sau thu hoạch, tăng phát triển rễ/chồi/lá non, tăng sức đề kháng rõ rệt, hoa ra đồng loạt, đậu trái tốt, trái lớn đều đẹp màu",
+    "lieuLuong": "Pha 20 - 30 ml / bình 20 lít nước, phun định kỳ 2 - 3 lần mỗi vụ tùy cây trồng",
+    "lieu_luong": "Pha 20 - 30 ml / bình 20 lít nước, phun định kỳ 2 - 3 lần mỗi vụ tùy cây trồng",
+    "quyCach": "20 lít",
+    "quy_cach": "20 lít",
+    "phuGia": "Hữu cơ nhập khẩu Turkey",
+    "danhMuc": "Phân bón",
+    "hinhAnh": "organic-365.jpg"
   },
   {
     "id": "pilot-15ab",
@@ -1017,7 +1941,18 @@
     "additives": "Special Additives 85% w/w",
     "targets": "Ốc bươu vàng, ốc sên, ốc nhớt",
     "dosage": "4.0 kg/ha",
-    "packing": "1 kg"
+    "packing": "1 kg",
+    "hoatChat": "Metaldehyde 15% w/w",
+    "hoat_chat": "Metaldehyde 15% w/w",
+    "dacTri": "Ốc bươu vàng, ốc sên, ốc nhớt",
+    "dac_tri": "Ốc bươu vàng, ốc sên, ốc nhớt",
+    "lieuLuong": "4.0 kg/ha",
+    "lieu_luong": "4.0 kg/ha",
+    "quyCach": "1 kg",
+    "quy_cach": "1 kg",
+    "phuGia": "Special Additives 85% w/w",
+    "danhMuc": "Thuốc trừ ốc",
+    "hinhAnh": "PILOT 15AB"
   },
   {
     "id": "np-snailicide-700wp",
@@ -1029,7 +1964,18 @@
     "additives": "Special additives 300 g/kg",
     "targets": "Ốc bươu vàng",
     "dosage": "700wp liều 100gr pha 150L",
-    "packing": "100 g"
+    "packing": "100 g",
+    "hoatChat": "Niclosamide 700 g/kg",
+    "hoat_chat": "Niclosamide 700 g/kg",
+    "dacTri": "Ốc bươu vàng",
+    "dac_tri": "Ốc bươu vàng",
+    "lieuLuong": "700wp liều 100gr pha 150L",
+    "lieu_luong": "700wp liều 100gr pha 150L",
+    "quyCach": "100 g",
+    "quy_cach": "100 g",
+    "phuGia": "Special additives 300 g/kg",
+    "danhMuc": "Thuốc trừ ốc",
+    "hinhAnh": "NP SNAILICIDE 700WP"
   },
   {
     "id": "boostup",
@@ -1041,7 +1987,18 @@
     "additives": "Chất hỗ trợ dùng trong nông nghiệp",
     "targets": "Loang trải đều, thấm sâu, lưu dẫn mạnh, bám dính cao; hạn chế rửa trôi do mưa, tăng hiệu lực thuốc BVTV và hấp thu phân bón lá/tưới gốc",
     "dosage": "Pha 5ml cùng thuốc BVTV hoặc phân bón lá cho bình 25 lít. 100ml pha 500 lít",
-    "packing": "100 ml"
+    "packing": "100 ml",
+    "hoatChat": "Surfactant Trixilosane Polyether: 30%",
+    "hoat_chat": "Surfactant Trixilosane Polyether: 30%",
+    "dacTri": "Loang trải đều, thấm sâu, lưu dẫn mạnh, bám dính cao; hạn chế rửa trôi do mưa, tăng hiệu lực thuốc BVTV và hấp thu phân bón lá/tưới gốc",
+    "dac_tri": "Loang trải đều, thấm sâu, lưu dẫn mạnh, bám dính cao; hạn chế rửa trôi do mưa, tăng hiệu lực thuốc BVTV và hấp thu phân bón lá/tưới gốc",
+    "lieuLuong": "Pha 5ml cùng thuốc BVTV hoặc phân bón lá cho bình 25 lít. 100ml pha 500 lít",
+    "lieu_luong": "Pha 5ml cùng thuốc BVTV hoặc phân bón lá cho bình 25 lít. 100ml pha 500 lít",
+    "quyCach": "100 ml",
+    "quy_cach": "100 ml",
+    "phuGia": "Chất hỗ trợ dùng trong nông nghiệp",
+    "danhMuc": "Thuốc trợ lực",
+    "hinhAnh": "BOOSTUP.png"
   },
   {
     "id": "fast-go",
@@ -1053,6 +2010,17 @@
     "additives": "Chất hỗ trợ dùng trong nông nghiệp",
     "targets": "Loang trải đều, thấm sâu, lưu dẫn mạnh, bám dính cao; tăng hiệu lực thuốc BVTV, hấp thu dinh dưỡng khi dùng cùng phân bón lá/tưới gốc, hạn chế rửa trôi",
     "dosage": "Pha 5ml Fast Go cùng thuốc BVTV hoặc phân bón cho bình 25L",
-    "packing": "100 ml"
+    "packing": "100 ml",
+    "hoatChat": "Propylene Glycol, Polyether Modified Silane, Polyoxyethylene Alkyl Phenol Ether",
+    "hoat_chat": "Propylene Glycol, Polyether Modified Silane, Polyoxyethylene Alkyl Phenol Ether",
+    "dacTri": "Loang trải đều, thấm sâu, lưu dẫn mạnh, bám dính cao; tăng hiệu lực thuốc BVTV, hấp thu dinh dưỡng khi dùng cùng phân bón lá/tưới gốc, hạn chế rửa trôi",
+    "dac_tri": "Loang trải đều, thấm sâu, lưu dẫn mạnh, bám dính cao; tăng hiệu lực thuốc BVTV, hấp thu dinh dưỡng khi dùng cùng phân bón lá/tưới gốc, hạn chế rửa trôi",
+    "lieuLuong": "Pha 5ml Fast Go cùng thuốc BVTV hoặc phân bón cho bình 25L",
+    "lieu_luong": "Pha 5ml Fast Go cùng thuốc BVTV hoặc phân bón cho bình 25L",
+    "quyCach": "100 ml",
+    "quy_cach": "100 ml",
+    "phuGia": "Chất hỗ trợ dùng trong nông nghiệp",
+    "danhMuc": "Thuốc trợ lực",
+    "hinhAnh": "FAST GO.png"
   }
 ]
