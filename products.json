@@ -1,659 +1,86 @@
 [
   {
-    "id": "acoustic-5sl",
-    "name": "ACOUSTIC 5SL",
-    "code": "Hiệu OLIGO",
-    "category": "Thuốc trừ bệnh sinh học",
-    "image": "ACOUSTIC 5SL.png",
-    "description": "Oligosaccharins 5% w/w, Special Additives 95% w/w. Điều hòa sinh trưởng, chống stress, ngừa vi khuẩn, virus, trị nấm.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "afudan-20sc",
-    "name": "AFUDAN 20SC",
-    "code": "Hiệu Carbo",
-    "category": "Thuốc trừ sâu",
-    "image": "afudan.jpg",
-    "description": "Carbosulfan 200g/l, Additives 800g/l. Đặc trị sâu đục thân, bọ trĩ, bọ cánh tơ, bọ nhảy, rệp sáp, rầy nâu, rầy xanh, nhện, tuyến trùng.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "amicol-360ec",
-    "name": "AMICOL 360EC",
-    "code": "Hiệu SAM GO • 240ml",
-    "category": "Thuốc trừ bệnh",
-    "image": "AMICOL 360EC.jpeg",
-    "description": "Difenoconazole 155g/l, Propiconazole 155g/l, Tebuconazole 50g/l, Special Additives 640g/l. Đặc trị lem lép hạt, lên màu sáng hạt.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "azomoonpro-50sc",
-    "name": "AZOMOONPRO 50SC",
-    "code": "Hiệu AZOVIS 50 • 100ml/200L",
-    "category": "Thuốc trừ bệnh",
-    "image": "azomoonpro 50sc.png",
-    "description": "Azoxystrobin 20% w/w, Dimethomorph 30% w/w, Special Additives 50% w/w. Đặc trị thán thư, khô bệnh sau 2 ngày.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "bisector-500ec",
-    "name": "BISECTOR 500EC",
-    "code": "Hiệu BỌ XÍT • 450ML",
-    "category": "Thuốc trừ sâu",
-    "image": "BISECTOR 500EC.png",
-    "description": "Dimethoate 400g/l, Fenobucarb 100g/l, Special Additive 500g/l. Đặc trị bọ xít hôi (bọ hút).",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "bo-doi-guitar-piano",
-    "name": "BỘ ĐÔI GUITAR & PIANO",
-    "code": "1 Hộp / 1 Hecta",
-    "category": "Phân bón nuôi hạt",
-    "image": "bộ đôi.jpg",
-    "description": "Siêu phẩm nuôi hạt, to hạt, vô gạo nhanh, sáng bông, chắc cây, xanh lá đòng sau 3 ngày.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "boostup",
-    "name": "BOOSTUP",
-    "code": "100 ML",
-    "category": "Chất hỗ trợ nông nghiệp",
-    "image": "BOOSTUP.png",
-    "description": "Tăng lực thuốc BVTV và phân bón: siêu bám dính, thấm sâu, loang trải mạnh.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "branoline-0-01sl-lua",
-    "name": "BRANOLINE 0.01SL (LÚA)",
-    "code": "Brasinoline 0.01% + Hữu cơ 25%",
-    "category": "Điều hòa sinh trưởng & Hữu cơ",
-    "image": "BRANOLINE LÚA.png",
-    "description": "Rễ khỏe, mầm to, mạ tốt; tăng nhiều chồi hữu hiệu; trổ mạnh, đều, to, chắc hạt.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "branoline-0-01sl-trai-cay",
-    "name": "BRANOLINE 0.01SL (TRÁI CÂY)",
-    "code": "Brasinoline 0.01% + Hữu cơ 25%",
-    "category": "Điều hòa sinh trưởng & Hữu cơ",
-    "image": "BRANOLINE TRÁI CÂY.png",
-    "description": "Chống stress cho cây (hạn mặn, lạnh, ngộ độc, sốc nhiệt...); khắc phục vàng lá, chai bông.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "brassino-seaweed",
-    "name": "BRASSINO SEAWEAD",
-    "code": "500ML • Organic",
-    "category": "Phân bón rong biển & vi lượng",
-    "image": "BRASSINO SEAWEAD.png",
-    "description": "Bổ sung khoáng chất từ Brassinolid & rong biển, phục hồi ngộ độc, mát cây mát bông, giảm rụng bông/trái non, lớn trái đẹp trái.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "butalo-60ec",
-    "name": "BUTALO 60EC",
-    "code": "Hiệu DIỆT MẦM OCHIGO",
-    "category": "Thuốc trừ cỏ tiền nảy mầm",
-    "image": "BUTALO 60EC.jpg",
-    "description": "Butachlor 600g/l, Special Additives 400g/l. Diệt sạch mầm cỏ, lúa cỏ (cỏ lồng vực, đuôi phụng, chác lác, cỏ chỉ), an toàn cho lúa, không gây chết vũng.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "cabozin",
-    "name": "CABOZIN (Canxi - Bo - Kẽm sữa)",
-    "code": "500 ml • New",
-    "category": "Phân bón trung vi lượng",
-    "image": "cabozin.png",
-    "description": "Tăng ra hoa, đậu trái; chống rụng bông, rụng trái; tăng khả năng thụ phấn; chống nứt trái, dị hình, dị dạng.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "calcium-boron",
-    "name": "CALCIUM BORON",
-    "code": "EV05 HUMI PRO • 20 LT",
-    "category": "Phân bón vi lượng",
-    "image": "calcium boron.jpg",
-    "description": "Micronutrient fertilizer — Bo (B): 5,000mg/kg, Density: 1,159. Bổ sung Canxi Bo hỗ trợ ra hoa đậu trái và nuôi trái.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "chery-70wg",
-    "name": "CHERY 70WG",
-    "code": "Hiệu GO-PYM • 100G",
-    "category": "Thuốc trừ sâu",
-    "image": "CHERY-70WG.jpg",
-    "description": "Pymetrozine 65% w/w, Thiamethoxam 5% w/w, Special Additives 30% w/w. Diệt rầy nhanh mạnh, diệt từ trứng, ngăn bộc phát, lưu dẫn kéo dài.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "chessin-600wp",
-    "name": "CHESSIN 600WP",
-    "code": "Hiệu GO - BOT • 100G",
-    "category": "Thuốc trừ sâu",
-    "image": "CHESSIN 600WP.png",
-    "description": "Pymetrozine 400g/kg, Dinotefuran 200g/kg, Special Additives 400g/kg. Hiệu lực nhanh, lưu dẫn cực mạnh, không lo rầy tái phát.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "chipu-120sc",
-    "name": "CHIPU 120SC",
-    "code": "Hiệu GOFENTIN 120 • 25ml",
-    "category": "Thuốc trừ sâu",
-    "image": "CHIPU 120SC.jpg",
-    "description": "Chlorfenapyr 100g/l, Emamectin Benzoate 20g/l, Special Additives 880g/l. Đặc trị trứng, sâu non, sâu kháng thuốc, sâu cuốn lá, sâu tơ, sâu xanh da láng, vẽ bùa, sâu đục/ăn tạp.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "coc-2000",
-    "name": "COC 2000 ĐỒNG ĐỎ",
-    "code": "Nano Đồng Đỏ",
-    "category": "Thuốc trừ bệnh / Vi lượng đồng",
-    "image": "CoC2000.png",
-    "description": "Nano đồng đỏ siêu kháng nấm khuẩn, cung cấp vi lượng đồng tăng đề kháng, hỗ trợ cây trồng, thấm sâu tác dụng lâu dài.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "combi-chelate",
-    "name": "COMBI CHELATE",
-    "code": "Thailand • 25g",
-    "category": "Phân bón trung vi lượng",
-    "image": "COMBI CHELATE.png",
-    "description": "Bổ sung trung vi lượng tổng hợp (Mg 6,6%, S 10%, Bo, Cu, Fe, Mn, Zn, Mo), dùng mọi giai đoạn, tốt cây lớn trái.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "combi-chelate-max",
-    "name": "COMBI CHELATE-MAX",
-    "code": "Israel Material",
-    "category": "Phân bón trung vi lượng",
-    "image": "COMBI.png",
-    "description": "Bổ sung dinh dưỡng thiếu hụt, lá xanh bóng lá dày lá, mập thân trái to, trái lớn đẹp màu nặng ký.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "dr-green-800wp",
-    "name": "DR.GREEN 800WP",
-    "code": "Hiệu PROPICOL • 100g",
-    "category": "Thuốc trừ bệnh",
-    "image": "DR.GREEN 800WP.png",
-    "description": "Propineb 600g/kg, Chlorothalonil 200g/kg, Special Additives 200g/kg (có chứa kẽm). Trừ nấm phổ rộng, đặc trị thán thư, vàng lá, khô vằn, lem lép hạt, đốm nâu, phấn trắng, rỉ sắt, sương mai.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "evo-bloom",
-    "name": "EVO BLOOM 5-60-15",
-    "code": "EV12 • 1kg • 100% Hòa Tan",
-    "category": "Phân bón hỗn hợp NPK",
-    "image": "EVO BLOOM.png",
-    "description": "Chống nghẹn hoa, phân hóa mầm hoa, tạo mầm hoa nhiều, xử lý ra hoa nghịch vụ.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "exceed-440ec",
-    "name": "EXCEED 440EC",
-    "code": "Hiệu LION KING • 450 ml",
-    "category": "Thuốc trừ sâu",
-    "image": "exceed 440ec.jpeg",
-    "description": "Cypermethrin 40 g/l, Profenofos 400 g/l, Special Additives 560 g/l. Xông hơi cực mạnh, hiệu lực nhanh, cắt vòng đời sâu hại.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "fast-go",
-    "name": "FAST GO",
-    "code": "Nhanh 1 Giây • 100 ml",
-    "category": "Chất hỗ trợ nông nghiệp",
-    "image": "FAST GO.png",
-    "description": "Tăng lực thuốc BVTV và phân bón: siêu bám dính, thấm sâu, loang trải mạnh, mưa không sợ nắng chẳng lo.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "haihamec-3-6ec",
-    "name": "HAIHAMEC 3.6EC",
-    "code": "Hiệu OMEC 3.6 • Nước Trong",
-    "category": "Thuốc trừ sâu / Nhện đỏ",
-    "image": "HAIHAMEC 3.6EC (2).png",
-    "description": "Abamectin 3.6% w/w, Special Additive 96.4% w/w. Đặc trị nhện đỏ, công nghệ mới chống nghẹt béc.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "hoanganhbul-72wp",
-    "name": "HOANGANHBUL 72WP",
-    "code": "Hiệu ORDIR MỸ 72 • 1KG",
-    "category": "Thuốc trừ bệnh",
-    "image": "HOANGANHBUL 72WP.png",
-    "description": "Mancozeb 64% w/w, Metalaxyl 8% w/w, Special Additives 28% w/w. Đặc trị nấm bệnh phổ rộng, sạch bệnh xanh cây, bột cực mịn.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "japa-vil-110sc-lua",
-    "name": "JAPA VIL 110SC",
-    "code": "Hiệu HEXA 110 • 1 lít",
-    "category": "Thuốc trừ bệnh",
-    "image": "japa lúa.png",
-    "description": "Hexaconazole 110 g/l, Special Additives 890 g/l. Sáng bông, đầy hạt, sạch bệnh, xanh lá, diệt nhanh nấm bệnh.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "japa-vil-110sc",
-    "name": "JAPA VIL 110SC",
-    "code": "Hiệu GOVIL 110",
-    "category": "Thuốc trừ bệnh",
-    "image": "JAPA VIL 110SC.png",
-    "description": "Hexaconazole 110g/l, Special Additive 890g/l. Bảo vệ cây, đẩy lùi bệnh hại, sáng bông, đầy hạt, sạch bệnh, xanh lá.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "kali-huu-co-nuoc-trong",
-    "name": "KALI HỮU CƠ NƯỚC TRONG",
-    "code": "500ml / 1ha • Phun Máy Bay",
-    "category": "Phân bón hữu cơ / Nuôi hạt",
-    "image": "kali nước trong.webp",
-    "description": "Chuyên dùng cho phun bằng máy bay: vô gạo nhanh, sáng bông, chắc cây, dưỡng xanh lá đòng.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "kali-silic",
-    "name": "KALI SILIC",
-    "code": "Kali & Silic Hàm Lượng Cao",
-    "category": "Phân bón trung vi lượng",
-    "image": "kali silic.jpg",
-    "description": "Lên cơm, nuôi trái, đầy hộc, chống lép, chống sượng, tăng phẩm chất, ngăn ngừa méo trái, lép trái, dị hình.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "kasugacin-3sl",
-    "name": "KASUGACIN 3SL",
-    "code": "Hiệu KASUCIN • 450 ml",
-    "category": "Thuốc trừ bệnh sinh học",
-    "image": "KASUGACIN 3SL (KASUCIN).jpg",
-    "description": "Kasugamycin 30 g/l, Surfactant + Solvent 970 g/l. Kháng sinh sinh học đặc trị bệnh do vi khuẩn, khô nhanh vết bệnh, hiệu lực 24/7.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "khongray-54wp",
-    "name": "KHONGRAY 54WP",
-    "code": "Hiệu ZERO RẦY 54 • 100Gr",
-    "category": "Thuốc trừ sâu",
-    "image": "KHONGRAY 5WP.png",
-    "description": "Acetamiprid 24% w/w, Buprofezin 30% w/w, Special Additives 46% w/w. Sạch rầy chích hút, cắt vòng đời, chống lột xác.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "ledan-4gr",
-    "name": "LEDAN 4GR",
-    "code": "Hiệu THUỐC RẢI - CHIGO • 1 Kg",
-    "category": "Thuốc trừ sâu dạng hạt",
-    "image": "LEDAN 4GR.png",
-    "description": "Cartap Hydrochloride 4% w/w, Special Additives 96% w/w. Thuốc rải dạng hạt, xông hơi cực mạnh, sạch sâu nhanh, sâu bên trong cũng chết.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "ledan-95sp",
-    "name": "LEDAN 95SP",
-    "code": "Hiệu RAY 95 • 100g",
-    "category": "Thuốc trừ sâu",
-    "image": "LEDAN 95SP.png",
-    "description": "Cartap Hydrochloride 95% w/w, Special Additives 5% w/w. Chuyên trị sâu kháng, diệt trứng, sâu non & trưởng thành, tê liệt ngay khi phun, ung trứng, lưu dẫn kéo dài.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "lufemin-100ec",
-    "name": "LUFEMIN 100EC",
-    "code": "Hiệu GOBEN EXTRA",
-    "category": "Thuốc trừ sâu",
-    "image": "LUFEMIN 100EC.jpg",
-    "description": "Lufenuron 50 g/L, Emamectin Benzoate 50 g/L, Special Additives 900 g/L. Quét sạch sâu tức khắc, diệt sạch trứng & sâu non, sâu kháng thuốc.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "lusatex-5sl",
-    "name": "LUSATEX 5SL",
-    "code": "Hiệu GALICIN 500 • 450ml",
-    "category": "Thuốc trừ bệnh",
-    "image": "LUSATEX 5SL.png",
-    "description": "Garlic oil 20g/l, Ningnanmycin 30g/l, Special Additive 950g/l. Đặc trị tan nấm sạch khuẩn: sương mai, héo rũ, lem lép hạt, phấn trắng, xoăn lá, chết khô, chết nhanh, hoa lá, bạc lá.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "mastery-25sc",
-    "name": "MASTERY 25SC",
-    "code": "Pyraclostrobin 25% w/w",
-    "category": "Thuốc trừ bệnh",
-    "image": "MASTERY 25SC.png",
-    "description": "Pyraclostrobin 25% w/w, Special Additives 75% w/w. Hàm lượng cao, trừ nấm bệnh phổ rộng, tác dụng đa thời điểm, hỗ trợ điều hòa sinh trưởng.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "mi-stop-350sc",
-    "name": "MI STOP 350SC",
-    "code": "Hiệu GOFEN TOP • 250 ml",
-    "category": "Thuốc trừ bệnh",
-    "image": "mi stop.jpg",
-    "description": "Azoxystrobin 200 g/l, Difenoconazole 150 g/l, Special Additives 650 g/l. Dạng SC siêu mịn, hấp thụ tốt, đặc trị lem lép hạt, sáng bông, chống lép.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "mic-90",
-    "name": "MIC 90",
-    "code": "MXV - KALIMATE • 1 KG",
-    "category": "Phân bón hữu cơ / Cải tạo đất",
-    "image": "Mic 90.png",
-    "description": "K.Humate + Fulvic Acid, tan 100%, phun được qua lá. Giảm ngộ độc, cải thiện cấu trúc đất, cây nở bụi sung chồi, tăng vi sinh có lợi, gia tăng hệ rễ.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "multigard-300sc",
-    "name": "MULTIGARD 300SC",
-    "code": "Hiệu CYRO 300 • 220 ml/400L",
-    "category": "Thuốc trừ sâu / Dòi đục",
-    "image": "MUTILGARD 300SC.jpg",
-    "description": "Cyromazine 300 g/l, Special Additives 700 g/l. Đặc trị dòi đục quả, dòi đục lá, diệt ấu trùng ruồi đục lá/quả, ngăn hóa nhộng, cắt vòng đời, hiệu lực 14–21 ngày.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "nara-37ec",
-    "name": "NARA 37EC",
-    "code": "Hiệu NATO 37",
-    "category": "Thuốc trừ sâu",
-    "image": "NARA.jpg",
-    "description": "Profenofos 35% w/w, Abamectin 2% w/w, Special Additive 63% w/w. Xông hơi cực mạnh, sâu ngừng ăn ngừng thở và chết ngay.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "nekko-69wp",
-    "name": "NEKKO 69WP",
-    "code": "Hiệu TRONIN-TOP • 1KG",
-    "category": "Thuốc trừ bệnh",
-    "image": "NEKKO-69WP.webp",
-    "description": "Mancozeb 60% w/w, Dimethomorph 9% w/w, Phụ gia đặc biệt 31% w/w. Quét sạch nấm bệnh, trừ nấm phổ rộng, tác dụng đa thời điểm, bột cực mịn.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "nofara-35wg",
-    "name": "NOFARA 35WG",
-    "code": "Hiệu CHI-FA • Sản Phẩm Mới",
-    "category": "Thuốc trừ sâu",
-    "image": "NOFARA 35WG.png",
-    "description": "Thiamethoxam 35% w/w, Special additives 65% w/w. Đặc trị bọ trĩ, lưu dẫn mạnh, tác động nhanh.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "nofara-350sc",
-    "name": "NOFARA 350SC",
-    "code": "Hiệu XAMEGO 350 • 450ml",
-    "category": "Thuốc trừ sâu",
-    "image": "NOFARA.jpg",
-    "description": "Thiamethoxam 35% w/w, Special Additives 65% w/w. Thuốc mát, hạ gục nhanh gọn, diệt tận gốc, cắt vòng đời, ngăn tái nhiễm.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "nosau-85wp",
-    "name": "NOSAU 85WP",
-    "code": "Hiệu CATA GO • 100g",
-    "category": "Thuốc trừ sâu",
-    "image": "NOSAU 85WP.png",
-    "description": "Cartap 75% w/w, Imidacloprid 10% w/w, Special Additives 15% w/w. Hạ gục nhanh, chết cực nhanh, hiệu lực cực mạnh.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "one-clear-50wg",
-    "name": "One Clear 50WG",
-    "code": "100GR • Công Thức Mới",
-    "category": "Thuốc trừ bệnh",
-    "image": "ONE CLEAR 50WG.png",
-    "description": "Azoxystrobin 20% w/w, Cymoxanil 30% w/w, Special Additive 50% w/w. Đặc trị vàng lá chín sớm, lem lép hạt, cháy lá, thối quả, xì mủ nứt thân, rỉ sắt, đốm vòng, đốm mắt cua, thán thư, sương mai.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "organic-365",
-    "name": "ORGANIC 365",
-    "code": "ENVA06 • Can 20 LT",
-    "category": "Phân bón hữu cơ",
-    "image": "organic-365.jpg",
-    "description": "Phân bón hữu cơ (Organic fertilizer) — Organic Matter: 25%, C/N: 5, pH H₂O: 7.2, Density: 1.1.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "paclo-sc25",
-    "name": "PACLO-SC 25",
-    "code": "Paclobutrazol 25% • Dạng SC",
-    "category": "Điều hòa sinh trưởng",
-    "image": "PACLO-SC25.png",
-    "description": "Ra hoa đồng loạt, ra hoa nghịch vụ, hạn chế rụng hoa/nghẹn hoa, chặn đọt, tăng thụ phấn & đậu trái, lùn cây ngắn lóng, chống đổ ngã, sửa trái hạn chế sượng.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "phostagen",
-    "name": "Phostagen NPK Spray",
-    "code": "NEW • 1 lít",
-    "category": "Phân bón nuôi trái",
-    "image": "Phostagen (2).png",
-    "description": "Nuôi trái mọi giai đoạn: dinh dưỡng tổng hợp nuôi trái, giúp trái lớn nhanh đẹp mã, tăng phẩm chất trái.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "ph-up",
-    "name": "pH-UP",
-    "code": "500ML • 200-400L Nước",
-    "category": "Cải tạo đất / Tăng pH",
-    "image": "PH-UP.png",
-    "description": "Sản phẩm tăng pH đất ngay tức khắc: giảm độc tính kim loại nặng, nâng pH đất tăng hấp thụ dinh dưỡng, cải thiện vi sinh vật & cấu trúc đất, tăng hiệu quả phân bón và giảm nguy cơ nấm bệnh.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "pim-pim-75wp",
-    "name": "PIM.PIM 75WP",
-    "code": "Hiệu SUM - UP • 100g",
-    "category": "Thuốc trừ bệnh",
-    "image": "PIM.PIM 75WP.jpg",
-    "description": "Tricyclazole 75% w/w, Special Additives 25% w/w. Đặc trị đạo ôn: chặn đứng đạo ôn lá (cháy lá), cổ bông, cổ gié.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "prodife-5-8ec",
-    "name": "PRODIFE'S 5.8EC",
-    "code": "Hiệu OPER 580",
-    "category": "Thuốc trừ sâu",
-    "image": "prodife.jpg",
-    "description": "Emamectin benzoate 5.8% w/w, Surfactant + Solvent 1 lít. Đa tác động, xông hơi, thấm sâu; đặc trị sâu cuốn lá, sâu tơ, sâu xanh da láng, sâu cắn chẽn, sâu ăn tạp, bọ trĩ, nhện gié.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "pyramos-40sl",
-    "name": "PYRAMOS 40SL",
-    "code": "Hiệu KHÁNG KHUẨN MẠNH • 450ml",
-    "category": "Thuốc trừ bệnh sinh học",
-    "image": "PYRAMOS 40SL.png",
-    "description": "Ningnanmycin 40g/l, Special Additives 960g/l. Kháng sinh diệt khuẩn mạnh, thấm sâu, phổ rộng; đặc trị bạc lá, cháy bìa lá, lép vàng và bệnh do vi khuẩn (đốm đen, đốm vàng, thối rễ, thối nhũn, héo rũ, héo xanh, thối quả).",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "rocky-150sc",
-    "name": "ROCKY 150SC",
-    "code": "NEW • 100 ml",
-    "category": "Thuốc trừ sâu",
-    "image": "rocky.jpg",
-    "description": "Flonicamid 10%, Bifenthrin 5%, Special Additives 85%. Tê liệt sau 15 phút, hỗn hợp 2 hoạt chất mới cực mạnh đặc trị rầy phấn trắng (bọ phấn trắng).",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "romano-250ec",
-    "name": "ROMANO 250EC",
-    "code": "Hiệu MIFOS • 450ML / 500L",
-    "category": "Thuốc trừ sâu",
-    "image": "ROMANO 250EC.png",
-    "description": "Profenofos 200 g/L, Imidacloprid 50 g/L, Special Additives 750 g/L. Tiếp xúc nhanh, xông hơi mạnh, quét sạch sâu kháng, sâu gối lúa, hiệu lực với bọ trĩ, bọ xít, rầy bông, rầy nâu, rầy xanh, rầy trắng, rầy mềm, rầy nhớt, rệp sáp.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "salegold-250ec",
-    "name": "SALEGOLD 250EC",
-    "code": "Hiệu METALAXY NƯỚC • 240ml",
-    "category": "Thuốc trừ bệnh",
-    "image": "SALEGOLD.png",
-    "description": "Metalaxyl 250g/l, Special additives 750g/l. Diệt ngay nấm bệnh, khô nhanh vết bệnh, lưu dẫn mạnh, phân tán đều, đa tác động.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "samurai-800wg",
-    "name": "SAMURAI 800WG",
-    "code": "Hiệu SOGURO • 100G",
-    "category": "Thuốc trừ sâu",
-    "image": "samurai 800wg có cây lúa.png",
-    "description": "Nitenpyram 200g/kg, Pymetrozine 600g/kg, Special Additives 200g/kg. Chết ngay tức khắc, lưu dẫn cực mạnh, chết nhanh, cắt vòng đời.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "sau-hanh-sc",
-    "name": "BỘ SÂU HÀNH (TUKTUK 20SC + SIMSON 50SC)",
-    "code": "Hộp Đựng Thuốc • Dạng Sữa Mát Cây",
-    "category": "Thuốc trừ sâu / Sâu hành",
-    "image": "SÂU HÀNH SC.jpg",
-    "description": "Công thức đặc biệt đặc trị sâu hành: chặn đứng, diệt sạch sau 30 phút; tiếp xúc nhanh, chết nhanh, cắt vòng đời, lưu dẫn kéo dài.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "seal-200sl",
-    "name": "SEAL 200SL",
-    "code": "Hiệu GLUFO 200 • 900 ML",
-    "category": "Thuốc trừ cỏ không chọn lọc",
-    "image": "seal.jpg",
-    "description": "Glufosinate ammonium 200g/l, Phụ gia đặc biệt 1 lít. Cháy tận gốc, ngăn cỏ mọc lại lâu dài, diệt cỏ nhanh, lưu dẫn mạnh; đặc trị cỏ mần trầu, cỏ tranh, cỏ gấu, cỏ chỉ.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "sieubup-200wp",
-    "name": "SIEUBUP 200WP",
-    "code": "Hiệu FEDINO",
-    "category": "Thuốc trừ sâu",
-    "image": "SIEUBUP 200WP.png",
-    "description": "Buprofezin 150g/kg, Dinotefuran 50g/kg, Special Additives 800g/kg. Đánh nhanh diệt gọn, chống lột xác, knock-out tức thì, ung trứng, cắt vòng đời.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "simson-50sc",
-    "name": "SIMSON 50SC",
-    "code": "Dạng Sữa Mát Cây • 240 ml/500L",
-    "category": "Thuốc trừ sâu / Nhện đỏ",
-    "image": "simson 50sc.png",
-    "description": "Fenpyroximate 50 g/l, Special Additives 950 g/l. Đặc trị nhện đỏ, dạng sữa mát cây, chết nhanh, cắt vòng đời, lưu dẫn kéo dài.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "spider-240sc",
-    "name": "SPIDER 240SC",
-    "code": "Hiệu TRÙM NHỆN • 200ml/500L",
-    "category": "Thuốc trừ sâu / Nhện",
-    "image": "SPIDER 240SC.jpg",
-    "description": "Bifenazate 16% w/w, Spirodiclofen 8% w/w, Special Additives 76% w/w. Tê liệt sau 12h, bảo vệ cây 20 ngày, thuốc mát, lưu dẫn mạnh, quét luôn cả trứng, ung trứng cắt vòng đời.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "stardoba-715wp",
-    "name": "STARDOBA 715WP",
-    "code": "Hiệu DOOBAA • 100G",
-    "category": "Thuốc trừ bệnh",
-    "image": "STARDOBA 715WP.png",
-    "description": "Tricyclazole 700g/kg, Kasugamycin 15g/kg, Special Additives 285g/kg. Quét sạch nấm khuẩn: đặc trị đạo ôn (đạo ôn lá, cổ bông, cổ gié) và vi khuẩn (cháy bìa lá, bạc lá).",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "sun-coloraz-400ew",
-    "name": "SUN COLORAZ 400EW",
-    "code": "Hiệu THAN-THU • 240 ml",
-    "category": "Thuốc trừ bệnh",
-    "image": "sun coloraz.jpg",
-    "description": "Prochloraz 267 g/l, Tebuconazole 133 g/l, Phụ gia 600 g/l. Đặc trị cháy lá sầu riêng, chặn nhanh vết bệnh, khô nhanh vết bệnh, lưu dẫn mạnh, hiệu lực kéo dài, bảo vệ cây từ bên trong.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "tacogold-400ec",
-    "name": "TACOGOLD 400EC",
-    "code": "Hiệu DIỆT MẦM GOTANIL",
-    "category": "Thuốc trừ cỏ tiền nảy mầm",
-    "image": "Tacogold 400EC.jpeg",
-    "description": "Butachlor 100g/l, Pretilachlor 300g/l, Fenclorim 100g/l, Surfactant + solvent 1 lít. Diệt sạch mầm cỏ, diệt các loại cỏ (lúa cỏ, lúa cơi, cỏ lồng vực, đuôi phụng, chác lác, cỏ chỉ...).",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "takashi-225sc",
-    "name": "TAKASHI 225SC",
-    "code": "Hiệu GO-ROCK • 100 ml",
-    "category": "Thuốc trừ sâu",
-    "image": "Takashi.jpg",
-    "description": "Spirotetramat 11% w/w, Thiacloprid 11% w/w, Surfactant + Solvent 78% w/w. Hạ gục nhanh, mát bông không gây nóng, đánh nhanh diệt gọn.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "thipro-550ec",
+    "id": "sp-1",
     "name": "THIPRO 550EC",
-    "code": "Hiệu THIFOS 550",
-    "category": "Thuốc trừ sâu",
-    "image": "THIPRO 550EC (2).png",
-    "description": "Profenofos 450g/l, Thiamethoxam 100g/l, Special Additive 800g/l. Lưu dẫn - tiếp xúc - xông hơi - vị độc; hiệu lực cao với rầy trắng, rầy nâu, rầy xanh, rầy nhớt, bọ xít, rầy mềm, bọ trĩ, rệp sáp, sâu đục thân.",
-    "zalo": "0943537319"
+    "sub": "Hiệu THIFOS 550 • 450 ml",
+    "cat": "Thuốc trừ sâu",
+    "image": "images/thipro-550ec.png",
+    "ingredients": "Profenofos 450 g/l + Thiamethoxam 100 g/l + Special additives 450 g/l",
+    "targets": "Rệp sáp, mọt đục cành, sâu đục quả, nhện đỏ, kiến, rệp vảy xanh, rệp muội đen, sùng (bọ hà)",
+    "highlights": "Lưu dẫn, xông hơi, tiếp xúc mạnh; hạn chế sót sâu hại.",
+    "pack": "Pha 450ml cho 500–600 lít nước (Chai 450ml)",
+    "zalo": "0946606007"
   },
   {
-    "id": "tp-open-57ec",
-    "name": "TP - OPEN 57EC",
-    "code": "Hiệu Open 570 • 450ml",
-    "category": "Thuốc trừ sâu / Nhện đỏ",
-    "image": "TP_OPEN 57EC.jpg",
-    "description": "Propargite 57% w/w, Surfactant + Solvent 43% w/w. Tác động nhanh, đặc trị nhện đỏ.",
-    "zalo": "0943537319"
+    "id": "sp-2",
+    "name": "YAPOKO 250SC",
+    "sub": "Hiệu GOXAM 250 • 450 ml",
+    "cat": "Thuốc trừ sâu",
+    "image": "images/yapoko-250sc.png",
+    "ingredients": "Lambda-cyhalothrin 110 g/l + Thiamethoxam 140 g/l + Special additives 750 g/l",
+    "targets": "Rầy nâu, bọ xít hôi, sâu cuốn lá, sâu đục thân, bọ trĩ, sâu đục quả, dòi đục lá, bọ xít muỗi, sâu tơ, bọ nhảy",
+    "highlights": "Đặc trị rầy kháng, thấm sâu nhanh, diệt sạch nhóm chích hút.",
+    "pack": "Pha 450ml cho 500–600 lít nước (Chai 450ml)",
+    "zalo": "0946606007"
   },
   {
-    "id": "tuk-tuk-20sc",
-    "name": "TUKTUK 20SC",
-    "code": "Hiệu TUKTUK • 450 ml",
-    "category": "Thuốc trừ sâu",
-    "image": "TUK TUK 20SC.jpg",
-    "description": "Lambda-cyhalothrin 10% w/w, Thiamethoxam 10% w/w, Special Additives 80% w/w. Chết sau 5 phút, tiếp xúc nhanh, hiệu lực mạnh.",
-    "zalo": "0943537319"
+    "id": "sp-3",
+    "name": "MANCOBGO 80WP (VÀNG)",
+    "sub": "Man Vàng - Hiệu GOZEB 80 • 1 kg",
+    "cat": "Thuốc trừ bệnh",
+    "image": "images/mancobgo-80wp-vang.png",
+    "ingredients": "Mancozeb 80% w/w + Special additives 20% w/w",
+    "targets": "Thán thư, sương mai, thối quả, đốm lá",
+    "highlights": "Nguyên liệu ngoại nhập, trừ nấm bệnh phổ rộng, bột cực mịn.",
+    "pack": "60g–75g / bình 25 lít (Gói 1kg)",
+    "zalo": "0946606007"
   },
   {
-    "id": "tuxedo-500sc",
-    "name": "TUXEDO 500SC",
-    "code": "Hiệu NHỆN SỮA",
-    "category": "Thuốc trừ sâu / Nhện",
-    "image": "TUXEDO 500SC.jpg",
-    "description": "Diafenthiuron 500g/l, Special Additives 500g/l. Mát bông không gây nóng, sạch nhện kháng, lưu dẫn kéo dài, ung trứng, sạch nhện.",
-    "zalo": "0943537319"
+    "id": "sp-4",
+    "name": "BUTALO 60EC",
+    "sub": "Hiệu DIỆT MẦM OCHIGO • 1 lít",
+    "cat": "Thuốc trừ cỏ",
+    "image": "images/butalo-60ec.png",
+    "ingredients": "Butachlor 600 g/l + Special Additives 400 g/l",
+    "targets": "Lúa cỏ, cỏ lồng vực, cỏ đuôi phụng, cỏ cháo, cỏ chác, cỏ chỉ, rau trai, rau mương",
+    "highlights": "Thuốc trừ cỏ tiền nảy mầm, an toàn cho lúa, không gây chết vũng.",
+    "pack": "Pha 75ml / bình 20L (phun 2 bình cho 1.000m²; Chai 1 lít)",
+    "zalo": "0946606007"
   },
   {
-    "id": "vejeto-multi",
-    "name": "VEJETO MULTI",
-    "code": "NNV05 VEJETAMINE 20 • 5 Lít",
-    "category": "Phân bón hữu cơ",
-    "image": "VEJETO.png",
-    "description": "Phân bón hữu cơ nhập khẩu Turkey (Organic Matter 35–42%, N 4–5%, Fulvic 25–29%, K 2–3%, Amino acids 10.000 ppm, B, Zn, Mn, Mo, Vitamin, IBA, Enzyme). Kích thích ra rễ, ra hoa đậu trái nuôi trái, phục hồi cây.",
-    "zalo": "0943537319"
+    "id": "sp-5",
+    "name": "COMBI CHELATE",
+    "sub": "Vi lượng Chelate • 25 g",
+    "cat": "Phân bón",
+    "image": "images/combi-chelate.png",
+    "ingredients": "Mg: 6,6%; S: 10%; B: 5.000 ppm; Cu: 5.000 ppm; Fe: 5.000 ppm; Mn: 15.000 ppm; Zn: 45.000 ppm; Mo: 100 ppm",
+    "targets": "Cây ăn trái, cây công nghiệp, rau màu",
+    "highlights": "Cung cấp vi lượng dạng Chelate hấp thu nhanh, hạn chế rụng hoa/trái non.",
+    "pack": "25g cho phuy 200–220 lít nước (Gói 25g)",
+    "zalo": "0946606007"
   },
   {
-    "id": "zinc-plus-plus",
-    "name": "ZinC++ SIÊU KẼM",
-    "code": "1 LÍT • Siêu Kẽm",
-    "category": "Phân bón vi lượng",
-    "image": "ZIC C.jpeg",
-    "description": "Tăng đề kháng, lá xanh dày; tăng ra hoa, đậu trái, thụ phấn mạnh; gia tăng năng suất.",
-    "zalo": "0943537319"
+    "id": "sp-6",
+    "name": "PILOT 15AB",
+    "sub": "Hiệu ỐC 15 • 1 kg",
+    "cat": "Thuốc trừ ốc",
+    "image": "images/pilot-15ab.png",
+    "ingredients": "Metaldehyde 15% w/w + Special Additives 85% w/w",
+    "targets": "Ốc bươu vàng, ốc sên, ốc nhớt",
+    "highlights": "Có chất dẫn dụ ốc, trừ ốc cực mạnh.",
+    "pack": "4,0 kg/ha (Gói 1kg)",
+    "zalo": "0946606007"
   },
   {
-    "id": "zinc-micro",
-    "name": "ZINC MICRO",
-    "code": "ENVA ZN 2,5 • Can 20 LT",
-    "category": "Phân bón vi lượng",
-    "image": "ZinC micro.jpg",
-    "description": "Micronutrient fertilizer nhập khẩu Turkey — Zinc (Zn) 25,000/L, Density 1,127.",
-    "zalo": "0943537319"
-  },
-  {
-    "id": "zozavic-10-5ec",
-    "name": "ZOZAVIC 10.5EC",
-    "code": "Hiệu ZOZAVIC 105",
-    "category": "Thuốc trừ sâu / Nhện đỏ",
-    "image": "ZOZAVIC 10.5EC.png",
-    "description": "Pyridaben 10.2% w/w, Abamectin 0.3% w/w, Special Additives 89,5% w/w. Hạ gục cực nhanh (24 giờ), đặc trị nhện đỏ, ung trứng, hiệu lực nhanh, lưu dẫn kéo dài.",
-    "zalo": "0943537319"
+    "id": "sp-7",
+    "name": "BOOSTUP",
+    "sub": "Thuốc trợ lực • 100 ml",
+    "cat": "Thuốc trợ lực",
+    "image": "images/boostup.png",
+    "ingredients": "Surfactant Trixilosane Polyether 30%",
+    "targets": "Dùng chung với thuốc BVTV và phân bón lá / tưới gốc",
+    "highlights": "Loang trải đều, thấm sâu, bám dính cao, hạn chế rửa trôi khi gặp mưa.",
+    "pack": "Pha 5ml / bình 25 lít hoặc 100ml / 500 lít (Chai 100ml)",
+    "zalo": "0946606007"
   }
 ]
