@@ -1,682 +1,558 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+  <!-- Google Tag Manager -->
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TTGDV8PC"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K95B8W3JZH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K95B8W3JZH');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ochigo Catalogue — Danh Mục Sản Phẩm, Hình Ảnh & Đóng Lô</title>
+  <title>CÔNG TY TNHH OCHIGO VIỆT NAM - Catalogue &amp; Gia Công Đóng Lô Nhãn Riêng</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --bg: #f3f6f4;
-      --surface: #ffffff;
-      --surface-2: #f8fbf9;
-      --text: #14201a;
-      --muted: #56695f;
-      --primary: #15803d;
-      --primary-hover: #166534;
-      --primary-soft: #dcfce7;
-      --blue: #0369a1;
-      --blue-soft: #e0f2fe;
-      --amber: #b45309;
-      --amber-soft: #fef3c7;
-      --purple: #6d28d9;
-      --purple-soft: #ede9fe;
-      --border: #d9e4de;
-      --shadow: 0 6px 20px rgba(20, 32, 26, 0.06);
-      --radius: 12px;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
     body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.5;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      scroll-behavior: smooth;
     }
-
-    .app {
-      max-width: 1440px;
-      margin: 0 auto;
-      padding: 20px 16px 56px;
+    .hero-gradient {
+      background: linear-gradient(135deg, #064e3b 0%, #047857 52%, #0d9488 100%);
     }
-
-    .hero {
-      background: linear-gradient(135deg, #14532d 0%, #15803d 60%, #16a34a 100%);
-      color: #ffffff;
-      padding: 24px 26px;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      gap: 16px;
-      margin-bottom: 16px;
+    .glass-card {
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(8px);
     }
-
-    .hero h1 {
-      margin: 0 0 6px;
-      font-size: 1.55rem;
-      font-weight: 700;
-    }
-
-    .hero p {
-      margin: 0;
-      color: rgba(255, 255, 255, 0.9);
-      font-size: 0.94rem;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .btn {
-      height: 38px;
-      padding: 0 14px;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      background: #ffffff;
-      color: var(--text);
-      font-size: 0.88rem;
-      font-weight: 600;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      transition: all 0.15s ease;
-    }
-
-    .btn:hover {
-      background: #f1f5f9;
-    }
-
-    .btn-primary {
-      background: var(--primary);
-      border-color: var(--primary);
-      color: #ffffff;
-    }
-
-    .btn-primary:hover {
-      background: var(--primary-hover);
-    }
-
-    .btn-light-outline {
-      background: rgba(255, 255, 255, 0.14);
-      border-color: rgba(255, 255, 255, 0.35);
-      color: #ffffff;
-    }
-
-    .btn-light-outline:hover {
-      background: rgba(255, 255, 255, 0.24);
-    }
-
-    .controls {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 16px;
-      box-shadow: var(--shadow);
-      display: grid;
-      grid-template-columns: 1.7fr 1fr 1fr 1.1fr 1fr auto;
-      gap: 10px;
-      align-items: center;
-      margin-bottom: 14px;
-    }
-
-    input[type="search"],
-    select {
-      height: 40px;
-      width: 100%;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      background: #ffffff;
-      color: var(--text);
-      padding: 0 11px;
-      font-size: 0.9rem;
-    }
-
-    input[type="search"]:focus,
-    select:focus {
-      outline: none;
-      border-color: var(--primary);
-      box-shadow: 0 0 0 3px rgba(21, 128, 61, 0.15);
-    }
-
-    .seg {
-      display: inline-flex;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      overflow: hidden;
-      height: 40px;
-    }
-
-    .seg button {
-      border: none;
-      background: #ffffff;
-      color: var(--muted);
-      padding: 0 13px;
-      font-weight: 600;
-      font-size: 0.88rem;
-      cursor: pointer;
-    }
-
-    .seg button.active {
-      background: var(--primary);
-      color: #ffffff;
-    }
-
-    .meta-bar {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 14px;
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-
-    .notice {
-      padding: 12px 16px;
-      border-radius: 10px;
-      margin-bottom: 14px;
-      font-size: 0.9rem;
-      background: #eff6ff;
-      color: #1e3a8a;
-      border: 1px solid #bfdbfe;
-    }
-
-    .table-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      overflow-x: auto;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 1080px;
-    }
-
-    th {
-      background: #edf4ef;
-      color: var(--text);
-      font-size: 0.79rem;
-      text-transform: uppercase;
-      letter-spacing: 0.4px;
-      text-align: left;
-      padding: 12px 13px;
-      border-bottom: 2px solid var(--border);
-      cursor: pointer;
-      user-select: none;
-      white-space: nowrap;
-    }
-
-    th.no-sort {
-      cursor: default;
-    }
-
-    th:not(.no-sort):hover {
-      background: #e1ece5;
-    }
-
-    td {
-      padding: 11px 13px;
-      border-bottom: 1px solid var(--border);
-      vertical-align: top;
-      font-size: 0.9rem;
-    }
-
-    tbody tr:nth-child(even) td {
-      background: var(--surface-2);
-    }
-
-    tbody tr:hover td {
-      background: #f0fdf4;
-    }
-
-    .thumb-box {
-      width: 64px;
-      height: 64px;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      background: #f8fafc;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      padding: 0;
-    }
-
-    .thumb-box img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 3px 9px;
-      border-radius: 999px;
-      font-size: 0.77rem;
-      font-weight: 600;
-      white-space: nowrap;
-    }
-
-    .badge-pest {
-      background: var(--primary-soft);
-      color: var(--primary-hover);
-    }
-
-    .badge-disease {
-      background: var(--blue-soft);
-      color: var(--blue);
-    }
-
-    .badge-other {
-      background: var(--amber-soft);
-      color: var(--amber);
-    }
-
-    .batch-tag {
-      display: inline-block;
-      padding: 3px 8px;
-      border-radius: 6px;
-      background: var(--purple-soft);
-      color: var(--purple);
-      font-size: 0.78rem;
-      font-weight: 600;
-    }
-
-    .form-pill {
-      display: inline-block;
-      padding: 2px 8px;
-      border-radius: 6px;
-      background: #f1f5f9;
-      border: 1px solid #e2e8f0;
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 0.79rem;
-      font-weight: 700;
-    }
-
-    .name-main {
-      display: block;
-      font-weight: 700;
-      color: var(--text);
-    }
-
-    .id-sub {
-      display: block;
-      font-size: 0.74rem;
-      color: var(--muted);
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      margin-top: 2px;
-    }
-
-    .muted-dash {
-      color: #94a3b8;
-      font-style: italic;
-    }
-
-    .cards {
-      display: none;
-      grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
-      gap: 14px;
-    }
-
-    .cards.active {
-      display: grid;
-    }
-
-    .table-card.hidden {
-      display: none;
-    }
-
-    .item-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      display: flex;
-      flex-direction: column;
-    }
-
-    .card-img-wrap {
-      width: 100%;
-      height: 170px;
-      background: #f8fafc;
-      border-bottom: 1px solid var(--border);
-      cursor: pointer;
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
       overflow: hidden;
     }
-
-    .card-img-wrap img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .card-body {
-      padding: 15px 16px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      flex: 1;
-    }
-
-    .item-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .item-title {
-      margin: 0;
-      font-size: 1.04rem;
-    }
-
-    .item-row {
-      font-size: 0.88rem;
-    }
-
-    .item-label {
-      color: var(--muted);
-      font-weight: 600;
-    }
-
-    .item-note {
-      margin-top: auto;
-      padding-top: 8px;
-      border-top: 1px dashed var(--border);
-      font-size: 0.86rem;
-    }
-
-    .empty {
-      text-align: center;
-      padding: 40px 20px;
-      color: var(--muted);
-      background: var(--surface);
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-    }
-
-    .modal-backdrop {
-      position: fixed;
-      inset: 0;
-      background: rgba(15, 23, 42, 0.58);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 16px;
-      z-index: 50;
-    }
-
-    .modal-backdrop.open {
-      display: flex;
-    }
-
-    .modal {
-      background: #ffffff;
-      border-radius: var(--radius);
-      max-width: 820px;
-      width: 100%;
-      max-height: 88vh;
-      display: flex;
-      flex-direction: column;
+    .line-clamp-3 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
       overflow: hidden;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
-    }
-
-    .modal-header,
-    .modal-footer {
-      padding: 14px 18px;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .modal-footer {
-      border-bottom: none;
-      border-top: 1px solid var(--border);
-      justify-content: flex-end;
-    }
-
-    .modal-body {
-      padding: 16px 18px;
-      overflow: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    textarea {
-      width: 100%;
-      min-height: 280px;
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 0.84rem;
-      padding: 12px;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-    }
-
-    .lightbox-img {
-      max-width: 100%;
-      max-height: 62vh;
-      object-fit: contain;
-      border-radius: 8px;
-      margin: 0 auto;
-      display: block;
-    }
-
-    @media (max-width: 1120px) {
-      .controls {
-        grid-template-columns: repeat(3, 1fr);
-      }
-      .controls input[type="search"] {
-        grid-column: 1 / -1;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .controls {
-        grid-template-columns: 1fr;
-      }
-      .seg {
-        width: 100%;
-      }
-      .seg button {
-        flex: 1;
-      }
     }
   </style>
 </head>
-<body>
-  <div class="app">
-    <header class="hero">
-      <div>
-        <h1>DANH MỤC SẢN PHẨM OCHIGO</h1>
-        <p>Hình ảnh sản phẩm, danh mục đóng lô / quy cách, hoạt chất, dạng thuốc và ghi chú</p>
-      </div>
-      <div class="hero-actions">
-        <button type="button" class="btn btn-light-outline" onclick="openJsonModal()">Dán / Cập nhật JSON</button>
-        <button type="button" class="btn btn-primary" onclick="exportCSV()">Xuất file CSV</button>
-      </div>
-    </header>
+<body class="bg-slate-50 text-slate-800 antialiased">
 
-    <div id="sourceNotice" class="notice"></div>
-
-    <section class="controls" aria-label="Bộ lọc và tìm kiếm">
-      <input
-        type="search"
-        id="qInput"
-        placeholder="Tìm theo tên, hoạt chất, đóng lô, STT, ghi chú..."
-        autocomplete="off"
-      />
-      <select id="groupSelect" aria-label="Nhóm sản phẩm">
-        <option value="ALL">Tất cả nhóm</option>
-      </select>
-      <select id="batchSelect" aria-label="Danh mục đóng lô">
-        <option value="ALL">Tất cả đóng lô</option>
-      </select>
-      <select id="formSelect" aria-label="Dạng thuốc">
-        <option value="ALL">Tất cả dạng</option>
-      </select>
-      <select id="sortSelect" aria-label="Sắp xếp">
-        <option value="stt-asc">Sắp xếp: STT tăng dần</option>
-        <option value="stt-desc">Sắp xếp: STT giảm dần</option>
-        <option value="name-asc">Sắp xếp: Tên A → Z</option>
-        <option value="batch-asc">Sắp xếp: Đóng lô</option>
-      </select>
-      <div class="seg" role="group" aria-label="Chế độ xem">
-        <button type="button" id="viewTableBtn" class="active" onclick="switchView('table')">Bảng</button>
-        <button type="button" id="viewCardsBtn" onclick="switchView('cards')">Thẻ</button>
+  <!-- Top Utility Bar -->
+  <div class="bg-emerald-950 text-emerald-100 text-xs py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+        <span><strong>CÔNG TY TNHH OCHIGO VIỆT NAM</strong> — Better Crop Care Solutions</span>
+        <span class="hidden md:inline text-emerald-500">|</span>
+        <span class="hidden sm:inline">16.01 Lầu 16, Cao ốc GoldenKing, 15 Nguyễn Lương Bằng, P. Tân Mỹ, TP.HCM</span>
       </div>
-    </section>
-
-    <div class="meta-bar">
-      <div id="countText">Đang tải dữ liệu...</div>
-      <button type="button" class="btn" style="height:32px;padding:0 10px;font-size:0.82rem;" onclick="clearFilters()">
-        Đặt lại bộ lọc
-      </button>
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-1 font-medium">
+        <a href="tel:0943537319" class="hover:text-amber-300 transition">📞 Tư vấn: 0943 537 319 (Đức Thuận)</a>
+        <a href="mailto:ducthuanochigo@gmail.com" class="hover:text-amber-300 transition hidden sm:inline">✉️ ducthuanochigo@gmail.com</a>
+      </div>
     </div>
-
-    <div id="tableWrap" class="table-card">
-      <table>
-        <thead>
-          <tr>
-            <th class="no-sort" style="width: 86px;">Hình ảnh</th>
-            <th onclick="cycleSort('stt')">STT ↕</th>
-            <th onclick="cycleSort('group')">Nhóm ↕</th>
-            <th onclick="cycleSort('name')">Tên sản phẩm ↕</th>
-            <th>Hoạt chất</th>
-            <th onclick="cycleSort('form')">Dạng ↕</th>
-            <th onclick="cycleSort('batch')">Đóng lô / Quy cách ↕</th>
-            <th>Ghi chú</th>
-          </tr>
-        </thead>
-        <tbody id="tbody"></tbody>
-      </table>
-    </div>
-
-    <div id="cardsWrap" class="cards"></div>
   </div>
 
-  <!-- Modal dán / nạp mảng JSON -->
-  <div id="jsonModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="modal">
-      <div class="modal-header">
-        <h2 id="modalTitle" style="margin:0;font-size:1.08rem;">Dán hoặc chỉnh sửa dữ liệu JSON</h2>
-        <button type="button" class="btn" style="height:32px;padding:0 10px;" onclick="closeJsonModal()">Đóng</button>
+  <!-- Main Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+      <a href="#top" onclick="setMode('commercial')" class="flex items-center gap-3 min-w-0">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-emerald-600 to-teal-700 flex items-center justify-center text-white font-extrabold text-xl shadow-md shrink-0">
+          O
+        </div>
+        <div class="truncate">
+          <div class="font-extrabold text-emerald-900 text-base sm:text-lg leading-tight tracking-tight truncate">OCHIGO VIỆT NAM</div>
+          <div class="text-[11px] font-semibold text-emerald-600 uppercase tracking-wider truncate">Better Crop Care Solutions</div>
+        </div>
+      </a>
+
+      <!-- Mode Switcher -->
+      <div class="flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200 shrink-0">
+        <button id="tabCommercial" onclick="setMode('commercial')" class="px-3 sm:px-4 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition bg-emerald-700 text-white shadow-sm">
+          Catalogue Hàng Thương Mại
+        </button>
+        <button id="tabOem" onclick="setMode('oem')" class="px-3 sm:px-4 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition text-slate-600 hover:text-emerald-800 flex items-center gap-1.5">
+          <span>Gia Công Đóng Lô / Nhãn Riêng</span>
+          <span class="bg-amber-500 text-white text-[10px] px-1.5 py-0.5 rounded-full font-extrabold">OEM</span>
+        </button>
       </div>
-      <div class="modal-body">
-        <p style="margin:0;font-size:0.86rem;color:var(--muted);">
-          Hỗ trợ thêm các trường <code>image</code> (URL hoặc đường dẫn ảnh) và <code>batch</code> (danh mục đóng lô / quy cách). Nếu bỏ trống, hệ thống sẽ tự suy luận từ <code>note</code> hoặc tên/mã sản phẩm.
+
+      <nav class="hidden lg:flex items-center gap-5 text-sm font-semibold text-slate-700">
+        <a href="#catalogSection" class="hover:text-emerald-700 transition">Danh mục</a>
+        <a href="#about" class="hover:text-emerald-700 transition">Giới thiệu</a>
+        <a href="#contact" class="hover:text-emerald-700 transition">Liên hệ</a>
+      </nav>
+
+      <div class="flex items-center gap-2 shrink-0">
+        <button onclick="openOemCartModal()" id="headerCartBtn" class="hidden relative bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-300 font-bold text-xs sm:text-sm px-3 py-2 rounded-xl transition items-center gap-1.5">
+          <span>📋 Mã chọn</span>
+          <span id="cartCountBadge" class="bg-amber-600 text-white text-xs font-extrabold px-2 py-0.5 rounded-full">0</span>
+        </button>
+        <a href="https://zalo.me/0943537319" target="_blank" rel="noopener" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs sm:text-sm px-3.5 py-2 rounded-xl shadow-sm transition flex items-center gap-1.5">
+          <span>Chat Zalo</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="top" class="hero-gradient text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 24px 24px;"></div>
+    <div class="max-w-7xl mx-auto px-4 py-12 md:py-16 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-7 space-y-5">
+          <div id="heroBadge" class="inline-flex items-center gap-2 bg-white/15 border border-white/25 text-emerald-50 text-xs font-semibold px-3.5 py-1.5 rounded-full">
+            <span>🌿 Catalogue Phiên Bản 2 • Giải Pháp Bảo Vệ &amp; Dinh Dưỡng Cây Trồng</span>
+          </div>
+          <h1 id="heroTitle" class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight">
+            Giải Pháp Chăm Sóc Cây Trồng <span class="text-amber-300">Hiệu Quả &amp; Bền Vững</span>
+          </h1>
+          <p id="heroDesc" class="text-emerald-50/95 text-base sm:text-lg leading-relaxed max-w-2xl">
+            Danh mục sản phẩm chính hãng của <strong>Công ty TNHH Ochigo Việt Nam</strong> gồm thuốc trừ sâu, thuốc trừ bệnh, thuốc trừ cỏ, phân bón lá &amp; hữu cơ, thuốc trừ ốc và thuốc trợ lực — tối ưu năng suất cho nhà vườn và đại lý.
+          </p>
+
+          <!-- Search Box -->
+          <div class="glass-card rounded-2xl p-2 shadow-xl max-w-2xl">
+            <div class="flex flex-col sm:flex-row gap-2">
+              <div class="relative flex-1">
+                <input
+                  id="searchInput"
+                  type="text"
+                  oninput="renderCurrentView()"
+                  placeholder="Tìm tên thuốc, hiệu nhãn, hoạt chất, cây trồng, sâu/bệnh..."
+                  class="w-full pl-4 pr-10 py-3 rounded-xl text-slate-800 placeholder-slate-400 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-transparent"
+                />
+                <button
+                  id="clearSearchBtn"
+                  onclick="clearSearch()"
+                  title="Xóa từ khóa"
+                  class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 text-sm font-bold"
+                >✕</button>
+              </div>
+              <button
+                onclick="document.getElementById('catalogSection').scrollIntoView({behavior:'smooth'})"
+                class="bg-emerald-700 hover:bg-emerald-800 text-white font-bold px-6 py-3 rounded-xl text-sm sm:text-base transition shadow-md shrink-0"
+              >
+                Tra cứu ngay
+              </button>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 pt-1">
+            <button onclick="setMode('commercial')" id="heroBtnCommercial" class="bg-amber-400 hover:bg-amber-300 text-emerald-950 font-extrabold text-sm px-4 py-2.5 rounded-xl transition shadow">
+              Xem Hàng Thương Mại
+            </button>
+            <button onclick="setMode('oem')" id="heroBtnOem" class="bg-white/15 hover:bg-white/25 border border-white/30 text-white font-bold text-sm px-4 py-2.5 rounded-xl transition">
+              Xem Danh Mục Đóng Lô / Nhãn Riêng (400+ Mã)
+            </button>
+          </div>
+        </div>
+
+        <!-- Representative Card -->
+        <div class="lg:col-span-5">
+          <div class="bg-white text-slate-800 rounded-2xl p-6 shadow-2xl border border-emerald-100">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-4">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">Hỗ trợ trực tiếp</span>
+                <h2 class="text-xl font-extrabold text-slate-900 mt-2">Đức Thuận — Ochigo Việt Nam</h2>
+                <p class="text-xs text-slate-500 mt-0.5">Tư vấn kỹ thuật, báo giá đại lý &amp; gia công đóng lô</p>
+              </div>
+              <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-extrabold text-lg">
+                ĐT
+              </div>
+            </div>
+
+            <div class="space-y-3 text-sm">
+              <a href="tel:0943537319" class="flex items-center gap-3 p-3 rounded-xl bg-slate-50 hover:bg-emerald-50 transition border border-slate-100">
+                <span class="text-lg">📱</span>
+                <div>
+                  <div class="text-xs text-slate-500">Hotline / Zalo tư vấn</div>
+                  <div class="font-bold text-emerald-800 text-base">0943 537 319</div>
+                </div>
+              </a>
+              <a href="mailto:ducthuanochigo@gmail.com" class="flex items-center gap-3 p-3 rounded-xl bg-slate-50 hover:bg-emerald-50 transition border border-slate-100">
+                <span class="text-lg">✉️</span>
+                <div class="min-w-0">
+                  <div class="text-xs text-slate-500">Email hỗ trợ báo giá &amp; hồ sơ</div>
+                  <div class="font-bold text-slate-800 truncate">ducthuanochigo@gmail.com</div>
+                </div>
+              </a>
+              <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
+                <span class="text-lg">🏢</span>
+                <div>
+                  <div class="text-xs text-slate-500">Trụ sở chính</div>
+                  <div class="font-semibold text-slate-700 text-xs leading-relaxed">16.01 Lầu 16, Cao ốc GoldenKing, 15 Nguyễn Lương Bằng, P. Tân Mỹ, TP.HCM</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2.5 mt-5">
+              <a href="tel:0943537319" class="text-center bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-2.5 px-3 rounded-xl text-sm transition">
+                Gọi ngay
+              </a>
+              <a href="https://zalo.me/0943537319" target="_blank" rel="noopener" class="text-center bg-amber-500 hover:bg-amber-600 text-white font-bold py-2.5 px-3 rounded-xl text-sm transition">
+                Nhắn Zalo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <section class="bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+      <div class="p-3 rounded-xl bg-emerald-50/70">
+        <div id="statCommercialCount" class="text-2xl sm:text-3xl font-extrabold text-emerald-800">82</div>
+        <div class="text-xs sm:text-sm text-slate-600 font-medium mt-0.5">Sản phẩm thương mại</div>
+      </div>
+      <div class="p-3 rounded-xl bg-amber-50/80">
+        <div class="text-2xl sm:text-3xl font-extrabold text-amber-700">400+</div>
+        <div class="text-xs sm:text-sm text-slate-600 font-medium mt-0.5">Mã gia công đóng lô / OEM</div>
+      </div>
+      <div class="p-3 rounded-xl bg-teal-50/70">
+        <div class="text-2xl sm:text-3xl font-extrabold text-teal-800">6 + 5</div>
+        <div class="text-xs sm:text-sm text-slate-600 font-medium mt-0.5">Nhóm SP &amp; nhóm gia công</div>
+      </div>
+      <div class="p-3 rounded-xl bg-slate-100/80">
+        <div class="text-2xl sm:text-3xl font-extrabold text-slate-800">12/11/2026</div>
+        <div class="text-xs sm:text-sm text-slate-600 font-medium mt-0.5">Cập nhật danh mục đóng lô</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Catalog & OEM Section -->
+  <main id="catalogSection" class="max-w-7xl mx-auto px-4 py-10">
+
+    <!-- ==================== MODE 1: COMMERCIAL CATALOG ==================== -->
+    <div id="commercialView">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Catalogue Phiên Bản 2</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Danh Mục Sản Phẩm Thương Mại</h2>
+        </div>
+        <div id="commercialResultCount" class="text-sm font-semibold text-slate-600 bg-white px-4 py-2 rounded-xl border border-slate-200 shadow-2xs"></div>
+      </div>
+
+      <!-- Commercial Category Tabs -->
+      <div id="commercialCategoryTabs" class="flex flex-wrap gap-2 mb-7"></div>
+
+      <!-- Commercial Product Grid -->
+      <div id="commercialGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"></div>
+
+      <!-- Empty State Commercial -->
+      <div id="commercialEmpty" class="hidden text-center py-16 bg-white rounded-2xl border border-dashed border-slate-300">
+        <div class="text-4xl mb-3">🔎</div>
+        <h3 class="text-lg font-bold text-slate-800">Không tìm thấy sản phẩm phù hợp</h3>
+        <p class="text-sm text-slate-500 mt-1">Hãy thử từ khóa khác (ví dụ: <em>nhện đỏ, đạo ôn, rầy nâu, canxi bo, sầu riêng</em>) hoặc đổi nhóm sản phẩm.</p>
+        <button onclick="resetCommercialFilters()" class="mt-4 bg-emerald-700 hover:bg-emerald-800 text-white text-sm font-bold px-5 py-2.5 rounded-xl transition">
+          Hiển thị tất cả sản phẩm
+        </button>
+      </div>
+    </div>
+
+    <!-- ==================== MODE 2: OEM / PRIVATE LABEL ==================== -->
+    <div id="oemView" class="hidden space-y-6">
+      <div class="bg-gradient-to-r from-emerald-900 via-emerald-800 to-teal-800 text-white rounded-2xl p-6 sm:p-8 shadow-lg">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+          <div class="space-y-2 max-w-3xl">
+            <div class="inline-flex items-center gap-2 bg-amber-400/20 border border-amber-300/40 text-amber-200 text-xs font-bold px-3 py-1 rounded-full">
+              <span>🏭 DỊCH VỤ GIA CÔNG ĐÓNG LÔ &amp; NHÃN RIÊNG (OEM / PRIVATE LABEL)</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">
+              Danh Mục Hoạt Chất Gia Công Đóng Lô Theo Yêu Cầu
+            </h2>
+            <p class="text-emerald-100 text-sm sm:text-base leading-relaxed">
+              Hỗ trợ đóng lô, xây dựng nhãn riêng / gắn logo &amp; số điện thoại đối tác theo từng vùng thị trường (<em>Đà Nẵng vào Nam, Từ Huế vào Nam...</em>) với đầy đủ dạng bào chế <strong>WP, SC, EC, WG, SL, GR, OD, TB, SP, SG, EW, CS, SE, AB</strong>.
+            </p>
+          </div>
+          <div class="bg-white/10 border border-white/20 rounded-2xl p-4 shrink-0 space-y-1.5 text-xs sm:text-sm">
+            <div class="font-bold text-amber-300">Liên hệ nhận báo giá gia công:</div>
+            <div>Đại diện: <strong>Nguyễn Đức Thuận</strong></div>
+            <div>Tel/Zalo: <a href="tel:0943537319" class="underline font-bold text-white">0943 537 319</a></div>
+            <div>Email: <a href="mailto:ducthuanochigo@gmail.com" class="underline text-emerald-100">ducthuanochigo@gmail.com</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-2xs space-y-4">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
+          <div id="oemGroupTabs" class="flex flex-wrap gap-2"></div>
+          <div id="oemResultCount" class="text-sm font-bold text-emerald-800 bg-emerald-50 px-3.5 py-1.5 rounded-xl shrink-0"></div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-2 border-t border-slate-100">
+          <div>
+            <label class="block text-xs font-bold text-slate-500 mb-1">Dạng bào chế</label>
+            <select id="oemFormFilter" onchange="renderOem()" class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm bg-slate-50 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+              <option value="ALL">Tất cả dạng (WP, SC, EC, WG, SL...)</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-500 mb-1">Ghi chú / Vùng nhãn</label>
+            <select id="oemNoteFilter" onchange="renderOem()" class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm bg-slate-50 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+              <option value="ALL">Tất cả mã gia công</option>
+              <option value="HAS_NOTE">Có ghi chú / Vùng nhãn riêng</option>
+              <option value="DANANG">Đà Nẵng vào Nam</option>
+              <option value="HUE">Từ Huế vào Nam</option>
+              <option value="LOGO_SDT">Gắn Logo &amp; SĐT khách</option>
+            </select>
+          </div>
+          <div class="sm:col-span-2 flex items-end justify-between gap-2">
+            <button onclick="resetOemFilters()" class="px-4 py-2 rounded-xl border border-slate-300 hover:bg-slate-100 text-xs sm:text-sm font-semibold text-slate-700 transition">
+              Đặt lại bộ lọc
+            </button>
+            <button onclick="openOemCartModal()" class="flex-1 sm:flex-initial bg-amber-500 hover:bg-amber-600 text-white font-bold px-4 py-2 rounded-xl text-xs sm:text-sm transition shadow-sm flex items-center justify-center gap-2">
+              <span>📋 Xem danh sách mã đã chọn</span>
+              <span id="oemCartBtnCount" class="bg-white text-amber-700 px-2 py-0.5 rounded-full text-xs font-extrabold">0</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="bg-emerald-900 text-white text-xs uppercase tracking-wider">
+                <th class="py-3.5 px-3 w-12 text-center">Chọn</th>
+                <th class="py-3.5 px-3 w-16 text-center">STT</th>
+                <th class="py-3.5 px-4 min-w-[180px]">Tên thương mại</th>
+                <th class="py-3.5 px-4 min-w-[230px]">Hoạt chất</th>
+                <th class="py-3.5 px-3 w-20 text-center">Dạng</th>
+                <th class="py-3.5 px-4 min-w-[180px]">Ghi chú / Đối tượng / Vùng</th>
+                <th class="py-3.5 px-4 w-32 text-right">Báo giá</th>
+              </tr>
+            </thead>
+            <tbody id="oemTableBody" class="divide-y divide-slate-100 text-sm"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div id="oemEmpty" class="hidden text-center py-14 bg-white rounded-2xl border border-dashed border-slate-300">
+        <div class="text-4xl mb-2">🧪</div>
+        <h3 class="text-lg font-bold text-slate-800">Không tìm thấy mã hoạt chất phù hợp</h3>
+        <p class="text-sm text-slate-500 mt-1">Thử tìm theo tên thương mại, hoạt chất (ví dụ: <em>Abamectin, Mancozeb, Glufosinate, Azoxystrobin</em>) hoặc cây trồng.</p>
+        <button onclick="resetOemFilters()" class="mt-4 bg-emerald-700 hover:bg-emerald-800 text-white text-sm font-bold px-5 py-2.5 rounded-xl transition">
+          Xóa bộ lọc
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- About Company Section -->
+  <section id="about" class="bg-emerald-950 text-white py-14 mt-10">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-8 items-center">
+      <div class="md:col-span-7 space-y-4">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-300">Giới thiệu doanh nghiệp</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold leading-snug">Công ty TNHH Ochigo Việt Nam</h2>
+        <p class="text-emerald-100/90 text-sm sm:text-base leading-relaxed">
+          Công ty TNHH Ochigo Việt Nam là đơn vị hoạt động trong lĩnh vực nông nghiệp, chuyên cung cấp các giải pháp chăm sóc cây trồng hiệu quả và bền vững. Được thành lập với sứ mệnh hỗ trợ nền nông nghiệp Việt Nam phát triển theo hướng hiện đại, công ty tập trung vào nghiên cứu và cung cấp các sản phẩm đạt tiêu chuẩn cao, giúp nông dân nâng cao năng suất và chất lượng cây trồng.
         </p>
-        <textarea id="jsonTextarea"></textarea>
-        <div id="jsonError" style="color:#b91c1c;font-size:0.86rem;"></div>
+        <p class="text-emerald-100/90 text-sm sm:text-base leading-relaxed">
+          Với phương châm <strong>"Better Crop Care Solutions"</strong> – Giải pháp chăm sóc cây trồng tốt hơn, Ochigo Việt Nam cam kết mang đến các sản phẩm chất lượng, an toàn và thân thiện với môi trường, đồng thời nhận gia công đóng lô &amp; nhãn riêng linh hoạt theo nhu cầu đối tác.
+        </p>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn" onclick="closeJsonModal()">Hủy</button>
-        <button type="button" class="btn btn-primary" onclick="applyJsonFromModal()">Áp dụng dữ liệu</button>
+      <div class="md:col-span-5 grid grid-cols-1 gap-4">
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
+          <div class="text-amber-300 font-bold text-sm mb-1">✓ Giải pháp toàn diện</div>
+          <p class="text-xs sm:text-sm text-emerald-100/85">Đầy đủ nhóm thuốc trừ sâu, trừ bệnh, trừ cỏ, trừ ốc, phân bón lá &amp; hữu cơ, thuốc trợ lực.</p>
+        </div>
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
+          <div class="text-amber-300 font-bold text-sm mb-1">✓ Gia công đóng lô – Nhãn riêng chuyên nghiệp</div>
+          <p class="text-xs sm:text-sm text-emerald-100/85">Danh mục hơn 400 mã hoạt chất đa dạng dạng bào chế, hỗ trợ thiết kế/gắn nhãn riêng theo khu vực thị trường.</p>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Contact & Quick Order Section -->
+  <section id="contact" class="py-14 bg-slate-100 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-12 gap-8">
+      <div class="lg:col-span-5 space-y-4">
+        <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Thông tin liên hệ</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Kết Nối Cùng Ochigo Việt Nam</h2>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Quý đại lý, nhà phân phối và bà con nhà vườn cần tư vấn quy trình phòng trừ sâu bệnh, dinh dưỡng cây trồng hoặc báo giá gia công đóng lô vui lòng liên hệ trực tiếp:
+        </p>
+
+        <div class="bg-white rounded-2xl p-5 border border-slate-200 space-y-3 text-sm shadow-2xs">
+          <div>
+            <div class="text-xs text-slate-400 font-semibold uppercase">Văn phòng công ty</div>
+            <div class="font-bold text-slate-800">CÔNG TY TNHH OCHIGO VIỆT NAM</div>
+            <div class="text-slate-600 text-xs mt-0.5">16.01 Lầu 16, Cao ốc GoldenKing, Số 15 Nguyễn Lương Bằng, Phường Tân Mỹ, Thành phố Hồ Chí Minh, Việt Nam</div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-3 pt-2 border-t border-slate-100">
+            <div>
+              <div class="text-xs text-slate-400">Điện thoại văn phòng</div>
+              <div class="font-semibold text-slate-700">(028) 5411 2207</div>
+            </div>
+            <div>
+              <div class="text-xs text-slate-400">Website / Email công ty</div>
+              <div class="font-semibold text-emerald-700">www.ochigo.vn • info@ochigo.vn</div>
+            </div>
+          </div>
+          <div class="pt-2 border-t border-slate-100 bg-emerald-50/70 -mx-5 -mb-5 p-4 rounded-b-2xl">
+            <div class="text-xs font-bold text-emerald-800 uppercase">Phụ trách kinh doanh &amp; gia công</div>
+            <div class="font-extrabold text-slate-900 mt-0.5">Đức Thuận (Nguyễn Đức Thuận)</div>
+            <div class="text-xs text-slate-700 mt-1">
+              Hotline/Zalo: <a href="tel:0943537319" class="font-bold text-emerald-700">0943 537 319</a> • Email: <a href="mailto:ducthuanochigo@gmail.com" class="font-semibold text-emerald-700">ducthuanochigo@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7">
+        <form onsubmit="submitInquiryForm(event)" class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-4">
+          <h3 class="text-xl font-extrabold text-slate-900">Gửi Yêu Cầu Tư Vấn / Báo Giá</h3>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-600 mb-1">Họ và tên / Tên đại lý *</label>
+              <input id="inqName" type="text" required placeholder="VD: Anh Minh - Đại lý VTNN..." class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-600 mb-1">Số điện thoại / Zalo *</label>
+              <input id="inqPhone" type="tel" required placeholder="Nhập SĐT liên hệ lại" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500" />
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-600 mb-1">Nhu cầu quan tâm</label>
+              <select id="inqType" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                <option value="Báo giá hàng thương mại Ochigo">Báo giá hàng thương mại Ochigo</option>
+                <option value="Gia công đóng lô / Nhãn riêng (OEM)">Gia công đóng lô / Nhãn riêng (OEM)</option>
+                <option value="Tư vấn kỹ thuật cây trồng">Tư vấn kỹ thuật cây trồng</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-600 mb-1">Khu vực / Tỉnh thành</label>
+              <input id="inqArea" type="text" placeholder="VD: Lâm Đồng, Đắk Lắk, Tiền Giang, Đồng Tháp..." class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-600 mb-1">Sản phẩm hoặc mã gia công cần hỏi *</label>
+            <textarea id="inqMessage" rows="3" required placeholder="Ghi rõ tên sản phẩm, mã gia công, dạng đóng gói hoặc số lượng dự kiến..." class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"></textarea>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 pt-1">
+            <button type="submit" class="bg-emerald-700 hover:bg-emerald-800 text-white font-bold px-6 py-3 rounded-xl text-sm transition shadow-sm">
+              Gửi qua Zalo (Đức Thuận)
+            </button>
+            <button type="button" onclick="sendInquiryViaEmail()" class="bg-slate-800 hover:bg-slate-900 text-white font-bold px-5 py-3 rounded-xl text-sm transition">
+              Gửi qua Email
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 text-xs py-6 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
+      <div>© 2026 <strong>CÔNG TY TNHH OCHIGO VIỆT NAM</strong>. Bảo lưu mọi quyền.</div>
+      <div>Phụ trách tư vấn: <strong>Đức Thuận</strong> • 0943 537 319 • ducthuanochigo@gmail.com</div>
+    </div>
+  </footer>
+
+  <!-- Floating Zalo Button -->
+  <a
+    href="https://zalo.me/0943537319"
+    target="_blank"
+    rel="noopener"
+    title="Chat Zalo với Đức Thuận - 0943 537 319"
+    class="fixed bottom-5 right-5 z-40 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-3 rounded-full shadow-2xl flex items-center gap-2 text-sm transition hover:scale-105"
+  >
+    <span>💬</span>
+    <span class="hidden sm:inline">Zalo Đức Thuận</span>
+  </a>
+
+  <!-- ==================== MODAL 1: COMMERCIAL PRODUCT DETAIL ==================== -->
+  <div id="productModal" class="fixed inset-0 z-50 hidden bg-slate-950/60 backdrop-blur-xs items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200">
+      <div class="sticky top-0 bg-white border-b border-slate-100 px-6 py-4 flex items-center justify-between">
+        <span id="modalCategoryBadge" class="text-xs font-extrabold uppercase tracking-wider px-3 py-1 rounded-full bg-emerald-100 text-emerald-800"></span>
+        <button onclick="closeProductModal()" class="text-slate-400 hover:text-slate-700 text-xl font-bold px-2">✕</button>
+      </div>
+      <div id="modalProductContent" class="p-6 space-y-4"></div>
     </div>
   </div>
 
-  <!-- Modal xem ảnh lớn -->
-  <div id="imgModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="imgModalTitle">
-    <div class="modal" style="max-width: 600px;">
-      <div class="modal-header">
-        <h2 id="imgModalTitle" style="margin:0;font-size:1.05rem;">Chi tiết hình ảnh & đóng lô</h2>
-        <button type="button" class="btn" style="height:32px;padding:0 10px;" onclick="closeImgModal()">Đóng</button>
+  <!-- ==================== MODAL 2: OEM SELECTED CODES CART ==================== -->
+  <div id="oemCartModal" class="fixed inset-0 z-50 hidden bg-slate-950/60 backdrop-blur-xs items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-3xl w-full max-h-[90vh] flex flex-col shadow-2xl border border-slate-200">
+      <div class="px-6 py-4 border-b border-slate-100 flex items-center justify-between">
+        <div>
+          <h3 class="text-lg font-extrabold text-slate-900">Danh Sách Mã Gia Công Đóng Lô Đã Chọn</h3>
+          <p class="text-xs text-slate-500">Gửi nhanh danh sách mã này tới Đức Thuận để nhận báo giá gia công &amp; nhãn riêng</p>
+        </div>
+        <button onclick="closeOemCartModal()" class="text-slate-400 hover:text-slate-700 text-xl font-bold px-2">✕</button>
       </div>
-      <div class="modal-body">
-        <img id="imgPreviewLarge" class="lightbox-img" src="" alt="" />
-        <div id="imgPreviewMeta" style="font-size:0.9rem;color:var(--text);"></div>
+
+      <div class="p-6 overflow-y-auto flex-1 space-y-4">
+        <div id="oemCartItems" class="space-y-2.5"></div>
+
+        <div class="grid sm:grid-cols-2 gap-3 pt-3 border-t border-slate-100">
+          <div>
+            <label class="block text-xs font-bold text-slate-600 mb-1">Tên đơn vị / Khách hàng</label>
+            <input id="oemCustomerName" type="text" placeholder="VD: Công ty / Đại lý..." class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-600 mb-1">Yêu cầu đóng gói / Nhãn riêng</label>
+            <input id="oemLabelNote" type="text" placeholder="VD: Chai 450ml / Gói 100g / Nhãn riêng..." class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm" />
+          </div>
+        </div>
+      </div>
+
+      <div class="px-6 py-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 rounded-b-2xl">
+        <button onclick="clearOemCart()" class="text-xs sm:text-sm font-semibold text-rose-600 hover:text-rose-700">
+          Xóa tất cả mã đã chọn
+        </button>
+        <div class="flex flex-wrap items-center gap-2.5">
+          <button onclick="copyOemCartText()" class="bg-white hover:bg-slate-100 border border-slate-300 text-slate-800 font-bold px-4 py-2.5 rounded-xl text-xs sm:text-sm transition">
+            Copy danh sách
+          </button>
+          <button onclick="sendOemCartZalo()" class="bg-emerald-700 hover:bg-emerald-800 text-white font-bold px-4 py-2.5 rounded-xl text-xs sm:text-sm transition">
+            Gửi Zalo báo giá
+          </button>
+        </div>
       </div>
     </div>
   </div>
 
   <script>
-    function createPlaceholderDataUrl(label, form) {
-      const safeLabel = String(label || "OCHIGO").slice(0, 18).replace(/[<>&"]/g, "");
-      const safeForm = String(form || "OEM").slice(0, 8).replace(/[<>&"]/g, "");
-      const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240">
-        <rect width="240" height="240" fill="#eef4f0"/>
-        <rect x="20" y="20" width="200" height="200" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
-        <text x="120" y="96" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#15803d">OCHIGO · ${safeForm}</text>
-        <text x="120" y="126" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#334155">${safeLabel}</text>
-        <text x="120" y="154" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#64748b">Chưa gán ảnh sản phẩm</text>
-      </svg>`;
-      return "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(svg);
+    const ZALO_PHONE = "0943537319";
+    const CONTACT_EMAIL = "ducthuanochigo@gmail.com";
+
+    let currentMode = "commercial";
+    let selectedCommercialCat = "Tất cả";
+    let selectedOemGroup = "Tất cả";
+    let COMMERCIAL_PRODUCTS = [];
+    let OEM_CODES = [];
+    let selectedOemIds = new Set();
+
+    function removeDiacritics(str = "") {
+      return String(str)
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/đ/g, "d")
+        .replace(/Đ/g, "D")
+        .toLowerCase();
     }
 
-    const INITIAL_ITEMS = [
-      { "id": "oem-thuoc-tru-sau-173-232", "stt": 173, "group": "Thuốc trừ sâu", "name": "TVG28 650SP", "active": "Nitepyram 650g/kg", "form": "SP", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-sau-175-234", "stt": 175, "group": "Thuốc trừ sâu", "name": "Unimectin 116WG", "active": "Abamectin 78g/kg + Emamectin Benzoate 38g/kg", "form": "WG", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-sau-176-235", "stt": 176, "group": "Thuốc trừ sâu", "name": "Tvdan 300WP", "active": "Buprofezin 200g/kg + Imidacloprid 100g/kg", "form": "WP", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-sau-178-237", "stt": 178, "group": "Thuốc trừ sâu", "name": "BP Ram 500SG", "active": "Nitenpyram 500g/kg", "form": "SG", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-sau-179-238", "stt": 179, "group": "Thuốc trừ sâu", "name": "Promathion 55WG", "active": "Azadirachtin 3g/kg + Emamectin benzoate 52g/kg", "form": "WG", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-sau-180-239", "stt": 180, "group": "Thuốc trừ sâu", "name": "AZMILAN 300SC", "active": "Tricyclazole 300g/l", "form": "SC", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-sau-181-240", "stt": 181, "group": "Thuốc trừ sâu", "name": "Igro 240SC", "active": "Chlorfenapyr 240 g/l", "form": "SC", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-sau-182-241", "stt": 182, "group": "Thuốc trừ sâu", "name": "IE-MAX 150EC", "active": "Emamectin 50g/l + Indoxacarb 100g/l", "form": "EC", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-sau-183-242", "stt": 183, "group": "Thuốc trừ sâu", "name": "Yonmix 27SC", "active": "Spirodiclofen 270g/l", "form": "SC", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-sau-184-243", "stt": 184, "group": "Thuốc trừ sâu", "name": "Schezgold 500WG", "active": "Pymetrozine 500g/kg", "form": "WG", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-sau-185-244", "stt": 185, "group": "Thuốc trừ sâu", "name": "Hacomai 57EC", "active": "Propargite 57%w/w", "form": "EC", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-sau-187-246", "stt": 187, "group": "Thuốc trừ sâu", "name": "Bpalatox 100EC", "active": "Alpha-cypermethrin 100g/l", "form": "EC", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-sau-188-247", "stt": 188, "group": "Thuốc trừ sâu", "name": "Moousa 60WG", "active": "Emamectin benzoate 60g/kg", "form": "WG", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-sau-190-249", "stt": 190, "group": "Thuốc trừ sâu", "name": "Moousa 50EC", "active": "Emamectin benzoate 50g/l", "form": "EC", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-sau-191-250", "stt": 191, "group": "Thuốc trừ sâu", "name": "SPIRO 240SC", "active": "Spirodiclofen 240g/l", "form": "SC", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-sau-193-252", "stt": 193, "group": "Thuốc trừ sâu", "name": "Apolo 25SC", "active": "Buprofezin 250g/l", "form": "SC", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-sau-194-253", "stt": 194, "group": "Thuốc trừ sâu", "name": "Bạch tượng 64EC", "active": "Emamectin benzoate 60 g/l + Matrine 4g/l", "form": "EC", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-sau-196-255", "stt": 196, "group": "Thuốc trừ sâu", "name": "BV.Cropamin 50WP", "active": "Copper Oxychloride 45% + Kasugamycin 5%", "form": "WP", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-benh-2-257", "stt": 2, "group": "Thuốc trừ bệnh", "name": "PROBICOL 200WP", "active": "Bismerthiazol 190g/kg + Kasugamycin 10g/kg", "form": "WP", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-benh-3-258", "stt": 3, "group": "Thuốc trừ bệnh", "name": "GAMYCINUSA 185WP", "active": "Kasugamycin 15g/kg + Streptomycin sulfate 170g/kg", "form": "WP", "batch": "Lô đặc thù / Vùng", "image": "", "note": "bạc lá/lúa" },
-      { "id": "oem-thuoc-tru-benh-4-259", "stt": 4, "group": "Thuốc trừ bệnh", "name": "AZOBEM 400SC", "active": "Azoxystrobin 30 g/l + Tricyclazole 370 g/l", "form": "SC", "batch": "Lô đặc thù / Vùng", "image": "", "note": "đạo ôn/lúa" },
-      { "id": "oem-thuoc-tru-benh-5-260", "stt": 5, "group": "Thuốc trừ bệnh", "name": "MYCINUSA 80SL", "active": "Ningnanmycin 65 g/l + Kasugamycin 10g/l", "form": "SL", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-benh-7-262", "stt": 7, "group": "Thuốc trừ bệnh", "name": "KAMYCINUSA 75SL", "active": "Ningnanmycin 65 g/l + Kasugamycin 10g/l", "form": "SL", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-benh-9-264", "stt": 9, "group": "Thuốc trừ bệnh", "name": "BRETIL SUPER 300EC", "active": "Difenoconazole 150g/l + propiconazole 150g/l", "form": "EC", "batch": "Lô gia công (Đà Nẵng → Nam)", "image": "", "note": "Chỉ để logo & số đt khách lên nhãn làm từ Đà Nẵng vào Nam" },
-      { "id": "oem-thuoc-tru-benh-10-265", "stt": 10, "group": "Thuốc trừ bệnh", "name": "AF - Hymexyl 30SL", "active": "Hymexazol 30% w/w", "form": "SL", "batch": "Lô đặc thù / Vùng", "image": "", "note": "Bệnh truyền qua đất: chết nhanh (hồ tiêu, dưa chuột, ớt...); điều trị toàn thân + khử trùng đất. Ngăn ngừa cây con chết; thúc đẩy sự phát triển của rễ; tăng cường sức đề kháng và khả năng chống chịu stress cho cây con" },
-      { "id": "oem-thuoc-tru-benh-11-266", "stt": 11, "group": "Thuốc trừ bệnh", "name": "AF - Pycofen 40SC", "active": "Difenoconazole 15% w/w + Pyraclostrobin 25% w/w", "form": "SC", "batch": "Lô đặc thù / Vùng", "image": "", "note": "Bệnh thán thư, bệnh sẹo, bệnh phấn trắng, đốm đen, sương mai, gỉ sắt... Bệnh đạo ôn, lem lép hạt..." },
-      { "id": "oem-thuoc-tru-benh-12-267", "stt": 12, "group": "Thuốc trừ bệnh", "name": "AU- Morax 60WG", "active": "Cymoxanil 40% + Pyraclostrobin 20%", "form": "WG", "batch": "Lô đặc thù / Vùng", "image": "", "note": "Cà phê / rỉ sắt" },
-      { "id": "oem-thuoc-tru-benh-13-268", "stt": 13, "group": "Thuốc trừ bệnh", "name": "AU - Perzoxin 48SC", "active": "Azoxystrobin 30% + Dimethomorph 18%", "form": "SC", "batch": "Lô đặc thù / Vùng", "image": "", "note": "Khoai tây / mốc sương" },
-      { "id": "oem-thuoc-tru-benh-15-270", "stt": 15, "group": "Thuốc trừ bệnh", "name": "AU- Perfect 36SC", "active": "Kasugamycin 3% + Oxine copper 33%", "form": "SC", "batch": "Lô đặc thù / Vùng", "image": "", "note": "Cà phê / rỉ sắt" },
-      { "id": "oem-thuoc-tru-benh-17-272", "stt": 17, "group": "Thuốc trừ bệnh", "name": "Spring Inner 32SC", "active": "Fluopicolide 8% + pyraclostrobin 24%", "form": "SC", "batch": "Lô đặc thù / Vùng", "image": "", "note": "Cà phê / rỉ sắt" },
-      { "id": "oem-thuoc-tru-benh-18-273", "stt": 18, "group": "Thuốc trừ bệnh", "name": "Antimer-So 800WP", "active": "Bismerthiazol 200g/kg + tricyclazole 400g/kg + sulfur 200g/kg", "form": "WP", "batch": "Lô vùng (Huế → Nam)", "image": "", "note": "Từ Huế vào Nam" },
-      { "id": "oem-thuoc-tru-benh-19-274", "stt": 19, "group": "Thuốc trừ bệnh", "name": "Asmiltatopsuper 400SC", "active": "Azoxystrobin 250g/l + Difenoconazole 150g/l", "form": "SC", "batch": "Lô vùng (Huế → Nam)", "image": "", "note": "Từ Huế vào Nam" },
-      { "id": "oem-thuoc-tru-benh-20-275", "stt": 20, "group": "Thuốc trừ bệnh", "name": "Copper acetate 5% + Moroxydine hydrochloride 15% w/w", "active": "Copper acetate 5% + Moroxydine hydrochloride 15% w/w", "form": "WP", "batch": "Lô gia công (Đà Nẵng → Nam)", "image": "", "note": "Chỉ để logo & số đt khách lên nhãn làm từ Đà Nẵng vào Nam" },
-      { "id": "oem-thuoc-tru-benh-21-276", "stt": 21, "group": "Thuốc trừ bệnh", "name": "JAPA VIL 110SC", "active": "Hexaconazole 110g/l", "form": "SC", "batch": "Lô vùng (Đà Nẵng → Nam)", "image": "", "note": "Đà Nẵng và các tỉnh phía Nam" },
-      { "id": "oem-thuoc-tru-benh-22-277", "stt": 22, "group": "Thuốc trừ bệnh", "name": "PIM.PIM 75WP", "active": "Tricyclazole 75% w/w", "form": "WP", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-benh-24-279", "stt": 24, "group": "Thuốc trừ bệnh", "name": "SUN COTROBIL 100g/l", "active": "Hexaconazole 100g/l", "form": "SC", "batch": "Lô đặc thù / Vùng", "image": "", "note": "Đốm nâu/lạc" },
-      { "id": "oem-thuoc-tru-benh-25-280", "stt": 25, "group": "Thuốc trừ bệnh", "name": "HATAKA WP", "active": "Bacillus amyloliquefaciens H201 1×10 CFU/g", "form": "WP", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-benh-26-281", "stt": 26, "group": "Thuốc trừ bệnh", "name": "TP - ZEP 18EC", "active": "18 %w/w : Tổ hợp dầu thực vật (dầu màng tang, dầu sả, dầu hồng, dầu hương nhu, dầu chanh)", "form": "EC", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-benh-27-282", "stt": 27, "group": "Thuốc trừ bệnh", "name": "NOFADA 822WP", "active": "Hexaconazole 32g/kg + Isoprothiolane 350g/kg + Tricyclazole 440g/kg", "form": "WP", "batch": "Lô đặc thù / Vùng", "image": "", "note": "Đạo ôn/lúa" },
-      { "id": "oem-thuoc-tru-benh-28-283", "stt": 28, "group": "Thuốc trừ bệnh", "name": "KING-CIDE JAPAN 460SC", "active": "Difenoconazole 155g/l + Propiconazole 155g/l + Tebuconazole 50g/l", "form": "EC", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-benh-29-284", "stt": 29, "group": "Thuốc trừ bệnh", "name": "MI STOP 350SC", "active": "Azoxystrobin 200 g/l + Difenoconazole 150 g/l", "form": "SC", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-benh-30-285", "stt": 30, "group": "Thuốc trừ bệnh", "name": "MITOP ONE 390SC", "active": "Azoxystrobin 210 g/l + Difenoconazole 130 g/l + Hexaconazole 50g/l", "form": "SC", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-benh-32-287", "stt": 32, "group": "Thuốc trừ bệnh", "name": "IMPERIAL 610WP", "active": "Isoprothiolane 460g/kg + Tricyclazole 400g/kg", "form": "WP", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-benh-34-289", "stt": 34, "group": "Thuốc trừ bệnh", "name": "DOHAZOL 250SC", "active": "Tricyclazole 220g/l + Hexaconazole 30g/l", "form": "SC", "batch": "Lô chuẩn OEM", "image": "", "note": "" },
-      { "id": "oem-thuoc-tru-benh-35-290", "stt": 35, "group": "Thuốc trừ bệnh", "name": "CHAPAO 770WP", "active": "Copper Hydroxide 770g/kg", "form": "WP", "batch": "Lô chuẩn OEM", "image": "", "note": "" }
-    ];
-
-    let items = [];
-    let filteredCache = [];
-
-    function esc(v) {
-      return String(v ?? "")
+    function escapeHtml(str = "") {
+      return String(str)
         .replace(/&/g, "&amp;")
         .replace(/</g, "&lt;")
         .replace(/>/g, "&gt;")
@@ -684,347 +560,451 @@
         .replace(/'/g, "&#39;");
     }
 
-    function fixActive(str) {
-      return String(str ?? "")
-        .trim()
-        .replace(/\bIndoxacrd\b/gi, "Indoxacarb")
-        .replace(/\bkasugamycin\b/g, "Kasugamycin")
-        .replace(/\bsulfue\b/gi, "sulfur")
-        .replace(/\s*\+\s*/g, " + ")
-        .replace(/\s{2,}/g, " ");
+    // Tạo đường dẫn ảnh an toàn cho file ở thư mục gốc repo (hỗ trợ khoảng trắng, dấu tiếng Việt, viết hoa/thường)
+    function buildImageSrc(imagePath = "") {
+      const clean = String(imagePath || "").trim().replace(/^\/+/, "");
+      if (!clean) return "";
+      return "./" + clean.split("/").map(seg => encodeURIComponent(seg)).join("/");
     }
 
-    function guessGroup(raw) {
-      const g = String(raw.group ?? "").trim();
-      if (g) return g;
-      const id = String(raw.id ?? "").toLowerCase();
-      if (id.includes("thuoc-tru-sau")) return "Thuốc trừ sâu";
-      if (id.includes("thuoc-tru-benh")) return "Thuốc trừ bệnh";
-      return "Khác";
-    }
-
-    function guessBatch(raw, noteText) {
-      const direct = String(raw.batch ?? raw.packaging ?? raw.lot ?? "").trim();
-      if (direct) return direct;
-      const n = String(noteText ?? "").toLowerCase();
-      if (n.includes("logo") || n.includes("số đt khách") || n.includes("nhãn")) {
-        return "Lô gia công (Đà Nẵng → Nam)";
-      }
-      if (n.includes("huế vào nam") || n.includes("đà nẵng và các tỉnh phía nam")) {
-        return "Lô vùng (Đà Nẵng / Huế → Nam)";
-      }
-      if (n.trim()) {
-        return "Lô đặc thù / Vùng";
-      }
-      return "Lô chuẩn OEM";
-    }
-
-    function resolveImageUrl(raw, name, form) {
-      const candidate = raw.image || raw.img || raw.photo || (Array.isArray(raw.images) ? raw.images[0] : "");
-      const trimmed = String(candidate ?? "").trim();
-      if (trimmed) return trimmed;
-      return createPlaceholderDataUrl(name, form);
-    }
-
-    function normalizeData(arr) {
-      if (!Array.isArray(arr)) return [];
-      return arr.map((row, idx) => {
-        const name = String(row.name ?? "").trim() || "(Không có tên)";
-        const form = String(row.form ?? "").trim().toUpperCase() || "-";
-        const note = String(row.note ?? "").trim();
-        return {
-          id: String(row.id ?? `row-${idx + 1}`).trim(),
-          stt: Number.isFinite(Number(row.stt)) ? Number(row.stt) : idx + 1,
-          group: guessGroup(row),
-          name,
-          active: fixActive(row.active) || "(Chưa có hoạt chất)",
-          form,
-          batch: guessBatch(row, note),
-          image: resolveImageUrl(row, name, form),
-          note
-        };
-      });
-    }
-
-    function badgeClass(group) {
-      const s = group.toLowerCase();
-      if (s.includes("sâu")) return "badge badge-pest";
-      if (s.includes("bệnh")) return "badge badge-disease";
-      return "badge badge-other";
-    }
-
-    function rebuildFilterOptions() {
-      const groupSel = document.getElementById("groupSelect");
-      const batchSel = document.getElementById("batchSelect");
-      const formSel = document.getElementById("formSelect");
-
-      const prevG = groupSel.value;
-      const prevB = batchSel.value;
-      const prevF = formSel.value;
-
-      const groups = [...new Set(items.map(x => x.group))];
-      const batches = [...new Set(items.map(x => x.batch))];
-      const forms = [...new Set(items.map(x => x.form).filter(f => f !== "-"))].sort();
-
-      groupSel.innerHTML = `<option value="ALL">Tất cả nhóm (${items.length})</option>` +
-        groups.map(g => {
-          const c = items.filter(x => x.group === g).length;
-          return `<option value="${esc(g)}">${esc(g)} (${c})</option>`;
-        }).join("");
-
-      batchSel.innerHTML = `<option value="ALL">Tất cả đóng lô (${batches.length})</option>` +
-        batches.map(b => {
-          const c = items.filter(x => x.batch === b).length;
-          return `<option value="${esc(b)}">${esc(b)} (${c})</option>`;
-        }).join("");
-
-      formSel.innerHTML = `<option value="ALL">Tất cả dạng</option>` +
-        forms.map(f => `<option value="${esc(f)}">Dạng ${esc(f)}</option>`).join("");
-
-      if ([...groupSel.options].some(o => o.value === prevG)) groupSel.value = prevG;
-      if ([...batchSel.options].some(o => o.value === prevB)) batchSel.value = prevB;
-      if ([...formSel.options].some(o => o.value === prevF)) formSel.value = prevF;
-    }
-
-    function sortList(list, sortKey) {
-      const copy = [...list];
-      switch (sortKey) {
-        case "stt-desc":
-          return copy.sort((a, b) => b.stt - a.stt);
-        case "name-asc":
-          return copy.sort((a, b) => a.name.localeCompare(b.name, "vi"));
-        case "batch-asc":
-          return copy.sort((a, b) => a.batch.localeCompare(b.batch, "vi") || a.stt - b.stt);
-        case "stt-asc":
-        default:
-          return copy.sort((a, b) => a.stt - b.stt);
-      }
-    }
-
-    function cycleSort(col) {
-      const sel = document.getElementById("sortSelect");
-      if (col === "stt") {
-        sel.value = sel.value === "stt-asc" ? "stt-desc" : "stt-asc";
-      } else if (col === "name") {
-        sel.value = "name-asc";
-      } else if (col === "batch") {
-        sel.value = "batch-asc";
-      }
-      render();
-    }
-
-    function openImgModalByIndex(idx) {
-      const item = filteredCache[idx];
-      if (!item) return;
-      document.getElementById("imgModalTitle").textContent = `${item.name} (#${item.stt})`;
-      const imgEl = document.getElementById("imgPreviewLarge");
-      imgEl.src = item.image;
-      imgEl.alt = item.name;
-      imgEl.onerror = () => {
-        imgEl.src = createPlaceholderDataUrl(item.name, item.form);
+    function getCatBadgeStyle(cat) {
+      const map = {
+        "Thuốc trừ sâu": "bg-rose-50 text-rose-700 border-rose-200",
+        "Thuốc trừ bệnh": "bg-sky-50 text-sky-700 border-sky-200",
+        "Thuốc trừ cỏ": "bg-lime-50 text-lime-800 border-lime-200",
+        "Phân bón": "bg-emerald-50 text-emerald-800 border-emerald-200",
+        "Thuốc trừ ốc": "bg-purple-50 text-purple-700 border-purple-200",
+        "Thuốc trợ lực": "bg-amber-50 text-amber-800 border-amber-200"
       };
-      document.getElementById("imgPreviewMeta").innerHTML = `
-        <div><strong>Nhóm:</strong> ${esc(item.group)} · <strong>Dạng:</strong> ${esc(item.form)}</div>
-        <div><strong>Đóng lô / Quy cách:</strong> ${esc(item.batch)}</div>
-        <div><strong>Hoạt chất:</strong> ${esc(item.active)}</div>
-        <div><strong>Ghi chú:</strong> ${item.note ? esc(item.note) : "Không có"}</div>
-      `;
-      document.getElementById("imgModal").classList.add("open");
+      return map[cat] || "bg-slate-100 text-slate-700 border-slate-200";
     }
 
-    function closeImgModal() {
-      document.getElementById("imgModal").classList.remove("open");
+    function normalizeProduct(item, index) {
+      const name = item.name || item.title || item.product_name || item.code || `Sản phẩm ${index + 1}`;
+      const sub = item.sub || item.code || item.subtitle || item.brand || "";
+      const cat = item.cat || item.category || item.group || "Khác";
+      const image = item.image || item.img || item.thumbnail || item.photo || "";
+      const ingredients = item.ingredients || item.active || item.composition || "";
+      const targets = item.targets || item.pest || item.crop || "";
+      const highlights = item.highlights || item.description || item.desc || item.usage || "";
+      const pack = item.pack || item.packaging || item.volume || item.dosage || "";
+      const zalo = item.zalo || ZALO_PHONE;
+
+      return {
+        id: item.id || `sp-${index + 1}`,
+        name,
+        sub,
+        cat,
+        image,
+        ingredients,
+        targets,
+        highlights,
+        pack,
+        zalo
+      };
     }
 
-    function render() {
-      const q = document.getElementById("qInput").value.trim().toLowerCase();
-      const g = document.getElementById("groupSelect").value;
-      const b = document.getElementById("batchSelect").value;
-      const f = document.getElementById("formSelect").value;
-      const sortKey = document.getElementById("sortSelect").value;
+    function setMode(mode) {
+      currentMode = mode;
+      const isCommercial = mode === "commercial";
+      document.getElementById("commercialView").classList.toggle("hidden", !isCommercial);
+      document.getElementById("oemView").classList.toggle("hidden", isCommercial);
 
-      const filtered = items.filter(row => {
-        if (g !== "ALL" && row.group !== g) return false;
-        if (b !== "ALL" && row.batch !== b) return false;
-        if (f !== "ALL" && row.form !== f) return false;
-        if (!q) return true;
-        const blob = `${row.stt} ${row.group} ${row.name} ${row.active} ${row.form} ${row.batch} ${row.note} ${row.id}`.toLowerCase();
-        return blob.includes(q);
+      const tabComm = document.getElementById("tabCommercial");
+      const tabOem = document.getElementById("tabOem");
+      if (isCommercial) {
+        tabComm.className = "px-3 sm:px-4 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition bg-emerald-700 text-white shadow-sm";
+        tabOem.className = "px-3 sm:px-4 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition text-slate-600 hover:text-emerald-800 flex items-center gap-1.5";
+      } else {
+        tabOem.className = "px-3 sm:px-4 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition bg-emerald-700 text-white shadow-sm flex items-center gap-1.5";
+        tabComm.className = "px-3 sm:px-4 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition text-slate-600 hover:text-emerald-800";
+      }
+      renderCurrentView();
+    }
+
+    function clearSearch() {
+      const input = document.getElementById("searchInput");
+      input.value = "";
+      document.getElementById("clearSearchBtn").classList.add("hidden");
+      renderCurrentView();
+    }
+
+    function renderCurrentView() {
+      const input = document.getElementById("searchInput");
+      const clearBtn = document.getElementById("clearSearchBtn");
+      if (clearBtn) {
+        clearBtn.classList.toggle("hidden", !input.value.trim());
+      }
+      if (currentMode === "commercial") {
+        renderCommercialTabs();
+        renderCommercial();
+      } else {
+        renderOem();
+      }
+    }
+
+    function renderCommercialTabs() {
+      const container = document.getElementById("commercialCategoryTabs");
+      if (!container) return;
+
+      const cats = ["Tất cả"];
+      COMMERCIAL_PRODUCTS.forEach((p) => {
+        if (p.cat && !cats.includes(p.cat)) cats.push(p.cat);
       });
 
-      filteredCache = sortList(filtered, sortKey);
+      container.innerHTML = cats.map((cat) => {
+        const count = cat === "Tất cả"
+          ? COMMERCIAL_PRODUCTS.length
+          : COMMERCIAL_PRODUCTS.filter((p) => p.cat === cat).length;
+        const active = selectedCommercialCat === cat;
+        const cls = active
+          ? "bg-emerald-700 text-white border-emerald-700 shadow-sm"
+          : "bg-white text-slate-700 border-slate-200 hover:border-emerald-400 hover:text-emerald-800";
+        return `<button onclick="selectCommercialCat('${escapeHtml(cat)}')" class="px-3.5 py-2 rounded-xl border text-xs sm:text-sm font-bold transition ${cls}">${escapeHtml(cat)} (${count})</button>`;
+      }).join("");
+    }
 
-      document.getElementById("countText").innerHTML =
-        `Đang hiển thị <strong>${filteredCache.length}</strong> / <strong>${items.length}</strong> sản phẩm`;
+    function selectCommercialCat(cat) {
+      selectedCommercialCat = cat;
+      renderCommercialTabs();
+      renderCommercial();
+    }
 
-      const tbody = document.getElementById("tbody");
-      const cardsWrap = document.getElementById("cardsWrap");
+    function resetCommercialFilters() {
+      selectedCommercialCat = "Tất cả";
+      const searchInput = document.getElementById("searchInput");
+      if (searchInput) searchInput.value = "";
+      const clearBtn = document.getElementById("clearSearchBtn");
+      if (clearBtn) clearBtn.classList.add("hidden");
+      renderCommercialTabs();
+      renderCommercial();
+    }
 
-      if (filteredCache.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="8"><div class="empty">Không có sản phẩm nào khớp với từ khóa hoặc bộ lọc.</div></td></tr>`;
-        cardsWrap.innerHTML = `<div class="empty" style="grid-column:1/-1;">Không có sản phẩm nào khớp với từ khóa hoặc bộ lọc.</div>`;
+    function renderCommercial() {
+      const grid = document.getElementById("commercialGrid");
+      const empty = document.getElementById("commercialEmpty");
+      const countEl = document.getElementById("commercialResultCount");
+      if (!grid) return;
+
+      const rawQuery = (document.getElementById("searchInput")?.value || "").trim();
+      const q = removeDiacritics(rawQuery);
+
+      const filtered = COMMERCIAL_PRODUCTS.filter((p) => {
+        const matchCat = selectedCommercialCat === "Tất cả" || p.cat === selectedCommercialCat;
+        if (!matchCat) return false;
+        if (!q) return true;
+        const hay = removeDiacritics(`${p.name} ${p.sub} ${p.cat} ${p.image} ${p.ingredients} ${p.targets} ${p.highlights} ${p.pack}`);
+        return hay.includes(q);
+      });
+
+      if (countEl) {
+        countEl.textContent = `Hiển thị ${filtered.length} / ${COMMERCIAL_PRODUCTS.length} sản phẩm`;
+      }
+
+      if (filtered.length === 0) {
+        grid.innerHTML = "";
+        if (empty) empty.classList.remove("hidden");
         return;
       }
 
-      tbody.innerHTML = filteredCache.map((row, idx) => {
-        const fallback = createPlaceholderDataUrl(row.name, row.form);
-        return `
-          <tr>
-            <td>
-              <button type="button" class="thumb-box" title="Xem ảnh lớn" onclick="openImgModalByIndex(${idx})">
-                <img src="${esc(row.image)}" alt="${esc(row.name)}" onerror="this.onerror=null;this.src='${esc(fallback)}';" />
-              </button>
-            </td>
-            <td><strong>${esc(row.stt)}</strong></td>
-            <td><span class="${badgeClass(row.group)}">${esc(row.group)}</span></td>
-            <td>
-              <span class="name-main">${esc(row.name)}</span>
-              <span class="id-sub">${esc(row.id)}</span>
-            </td>
-            <td>${esc(row.active)}</td>
-            <td><span class="form-pill">${esc(row.form)}</span></td>
-            <td><span class="batch-tag">${esc(row.batch)}</span></td>
-            <td>${row.note ? esc(row.note) : `<span class="muted-dash">—</span>`}</td>
-          </tr>
-        `;
-      }).join("");
+      if (empty) empty.classList.add("hidden");
 
-      cardsWrap.innerHTML = filteredCache.map((row, idx) => {
-        const fallback = createPlaceholderDataUrl(row.name, row.form);
+      grid.innerHTML = filtered.map((p) => {
+        const imgSrc = buildImageSrc(p.image);
+        const badgeClass = getCatBadgeStyle(p.cat);
         return `
-          <article class="item-card">
-            <div class="card-img-wrap" onclick="openImgModalByIndex(${idx})" title="Bấm để xem ảnh lớn">
-              <img src="${esc(row.image)}" alt="${esc(row.name)}" onerror="this.onerror=null;this.src='${esc(fallback)}';" />
+          <article class="bg-white rounded-2xl border border-slate-200 hover:border-emerald-400 shadow-2xs hover:shadow-md transition flex flex-col justify-between overflow-hidden">
+            <div>
+              <div class="relative h-48 bg-slate-50 border-b border-slate-100 flex items-center justify-center p-3 overflow-hidden">
+                ${imgSrc
+                  ? `<img src="${imgSrc}" alt="${escapeHtml(p.name)}" loading="lazy" class="max-h-full max-w-full object-contain transition duration-300 hover:scale-105" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" />
+                     <div class="hidden text-center text-xs text-slate-400 px-2">Chưa tải được ảnh:<br><span class="font-semibold text-slate-500">${escapeHtml(p.image)}</span></div>`
+                  : `<div class="text-xs text-slate-400">Chưa có ảnh sản phẩm</div>`
+                }
+                <span class="absolute top-2.5 left-2.5 text-[11px] font-bold px-2.5 py-0.5 rounded-full border ${badgeClass}">${escapeHtml(p.cat)}</span>
+              </div>
+
+              <div class="p-4 space-y-2">
+                <h3 class="font-extrabold text-slate-900 text-base leading-snug line-clamp-2">${escapeHtml(p.name)}</h3>
+                ${p.sub ? `<div class="text-xs font-semibold text-emerald-700">${escapeHtml(p.sub)}</div>` : ""}
+                ${p.ingredients ? `<p class="text-xs text-slate-600 line-clamp-2"><strong>Thành phần:</strong> ${escapeHtml(p.ingredients)}</p>` : ""}
+                ${p.targets ? `<p class="text-xs text-slate-600 line-clamp-2"><strong>Công dụng:</strong> ${escapeHtml(p.targets)}</p>` : ""}
+                ${p.highlights ? `<p class="text-xs text-slate-500 line-clamp-2">${escapeHtml(p.highlights)}</p>` : ""}
+              </div>
             </div>
-            <div class="card-body">
-              <div class="item-top">
-                <span class="${badgeClass(row.group)}">${esc(row.group)}</span>
-                <span class="form-pill">#${esc(row.stt)} · ${esc(row.form)}</span>
-              </div>
-              <h2 class="item-title">${esc(row.name)}</h2>
-              <div class="item-row"><span class="item-label">Đóng lô:</span> <span class="batch-tag">${esc(row.batch)}</span></div>
-              <div class="item-row"><span class="item-label">Hoạt chất:</span> ${esc(row.active)}</div>
-              <div class="item-note">
-                <span class="item-label">Ghi chú:</span>
-                ${row.note ? esc(row.note) : `<span class="muted-dash">Không có ghi chú</span>`}
-              </div>
+
+            <div class="px-4 pb-4 pt-2 flex items-center justify-between gap-2 border-t border-slate-100 mt-2">
+              <button onclick="openProductModal('${escapeHtml(p.id)}')" class="text-xs font-bold text-emerald-700 hover:text-emerald-900 py-1.5">
+                Xem chi tiết
+              </button>
+              <a href="https://zalo.me/${encodeURIComponent(p.zalo || ZALO_PHONE)}?text=${encodeURIComponent("Xin báo giá sản phẩm: " + p.name)}" target="_blank" rel="noopener" class="bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold px-3 py-1.5 rounded-lg transition">
+                Hỏi giá Zalo
+              </a>
             </div>
           </article>
         `;
       }).join("");
     }
 
-    function switchView(mode) {
-      const isCards = mode === "cards";
-      document.getElementById("tableWrap").classList.toggle("hidden", isCards);
-      document.getElementById("cardsWrap").classList.toggle("active", isCards);
-      document.getElementById("viewTableBtn").classList.toggle("active", !isCards);
-      document.getElementById("viewCardsBtn").classList.toggle("active", isCards);
+    function openProductModal(id) {
+      const p = COMMERCIAL_PRODUCTS.find((item) => String(item.id) === String(id));
+      if (!p) return;
+      const modal = document.getElementById("productModal");
+      const badge = document.getElementById("modalCategoryBadge");
+      const content = document.getElementById("modalProductContent");
+      const imgSrc = buildImageSrc(p.image);
+
+      badge.textContent = p.cat || "Sản phẩm";
+      content.innerHTML = `
+        <div class="flex flex-col sm:flex-row gap-5 items-start">
+          <div class="w-full sm:w-52 h-52 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center p-3 shrink-0">
+            ${imgSrc
+              ? `<img src="${imgSrc}" alt="${escapeHtml(p.name)}" class="max-h-full max-w-full object-contain" onerror="this.style.display='none'" />`
+              : `<span class="text-xs text-slate-400">Không có ảnh</span>`
+            }
+          </div>
+          <div class="space-y-2.5 flex-1">
+            <h3 class="text-xl font-extrabold text-slate-900">${escapeHtml(p.name)}</h3>
+            ${p.sub ? `<div class="text-sm font-bold text-emerald-700">${escapeHtml(p.sub)}</div>` : ""}
+            ${p.pack ? `<div class="text-xs bg-emerald-50 text-emerald-800 font-semibold px-3 py-1.5 rounded-lg inline-block">Quy cách / Liều lượng: ${escapeHtml(p.pack)}</div>` : ""}
+            ${p.ingredients ? `<div class="text-sm text-slate-700"><strong>Thành phần:</strong> ${escapeHtml(p.ingredients)}</div>` : ""}
+            ${p.targets ? `<div class="text-sm text-slate-700"><strong>Đặc trị / Công dụng:</strong> ${escapeHtml(p.targets)}</div>` : ""}
+            ${p.highlights ? `<div class="text-sm text-slate-600 leading-relaxed">${escapeHtml(p.highlights)}</div>` : ""}
+          </div>
+        </div>
+        <div class="pt-4 border-t border-slate-100 flex flex-wrap justify-end gap-2.5">
+          <button onclick="closeProductModal()" class="px-4 py-2 rounded-xl border border-slate-300 text-sm font-semibold text-slate-700 hover:bg-slate-50">Đóng</button>
+          <a href="https://zalo.me/${encodeURIComponent(p.zalo || ZALO_PHONE)}?text=${encodeURIComponent("Tư vấn & báo giá sản phẩm: " + p.name)}" target="_blank" rel="noopener" class="px-5 py-2 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white text-sm font-bold">
+            Liên hệ Zalo báo giá
+          </a>
+        </div>
+      `;
+
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
     }
 
-    function clearFilters() {
-      document.getElementById("qInput").value = "";
-      document.getElementById("groupSelect").value = "ALL";
-      document.getElementById("batchSelect").value = "ALL";
-      document.getElementById("formSelect").value = "ALL";
-      document.getElementById("sortSelect").value = "stt-asc";
-      render();
+    function closeProductModal() {
+      const modal = document.getElementById("productModal");
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
     }
 
-    function exportCSV() {
-      const headers = ["STT", "Nhóm", "Tên sản phẩm", "Hoạt chất", "Dạng", "Đóng lô", "Hình ảnh", "Ghi chú", "ID"];
+    function initOemFilters() {
+      const groupTabs = document.getElementById("oemGroupTabs");
+      if (!groupTabs) return;
+      const groups = ["Tất cả", "Thuốc trừ sâu", "Thuốc trừ bệnh", "Thuốc trừ cỏ", "Phân bón", "Khác"];
+      groupTabs.innerHTML = groups.map((g) => {
+        const active = selectedOemGroup === g;
+        const cls = active
+          ? "bg-emerald-700 text-white border-emerald-700"
+          : "bg-slate-50 text-slate-700 border-slate-200 hover:border-emerald-400";
+        return `<button onclick="selectOemGroup('${g}')" class="px-3 py-1.5 rounded-xl border text-xs font-bold transition ${cls}">${g}</button>`;
+      }).join("");
+    }
+
+    function selectOemGroup(g) {
+      selectedOemGroup = g;
+      initOemFilters();
+      renderOem();
+    }
+
+    function resetOemFilters() {
+      selectedOemGroup = "Tất cả";
+      const formFilter = document.getElementById("oemFormFilter");
+      const noteFilter = document.getElementById("oemNoteFilter");
+      const searchInput = document.getElementById("searchInput");
+      if (formFilter) formFilter.value = "ALL";
+      if (noteFilter) noteFilter.value = "ALL";
+      if (searchInput) searchInput.value = "";
+      initOemFilters();
+      renderOem();
+    }
+
+    function renderOem() {
+      const tbody = document.getElementById("oemTableBody");
+      const empty = document.getElementById("oemEmpty");
+      const countEl = document.getElementById("oemResultCount");
+      if (!tbody) return;
+
+      const q = removeDiacritics((document.getElementById("searchInput")?.value || "").trim());
+      const rows = OEM_CODES.filter((item) => {
+        if (selectedOemGroup !== "Tất cả" && item.group !== selectedOemGroup) return false;
+        if (!q) return true;
+        return removeDiacritics(`${item.name} ${item.active} ${item.form} ${item.note}`).includes(q);
+      });
+
+      if (countEl) countEl.textContent = `${rows.length} mã gia công`;
+
+      if (rows.length === 0) {
+        tbody.innerHTML = "";
+        if (empty) empty.classList.remove("hidden");
+        return;
+      }
+
+      if (empty) empty.classList.add("hidden");
+      tbody.innerHTML = rows.map((item, idx) => {
+        const checked = selectedOemIds.has(item.id) ? "checked" : "";
+        return `
+          <tr class="hover:bg-emerald-50/40">
+            <td class="py-3 px-3 text-center"><input type="checkbox" ${checked} onchange="toggleOemItem('${escapeHtml(item.id)}')" /></td>
+            <td class="py-3 px-3 text-center text-slate-500">${idx + 1}</td>
+            <td class="py-3 px-4 font-bold text-slate-900">${escapeHtml(item.name || "")}</td>
+            <td class="py-3 px-4 text-slate-700">${escapeHtml(item.active || "")}</td>
+            <td class="py-3 px-3 text-center font-semibold text-emerald-800">${escapeHtml(item.form || "")}</td>
+            <td class="py-3 px-4 text-xs text-slate-600">${escapeHtml(item.note || "")}</td>
+            <td class="py-3 px-4 text-right">
+              <a href="https://zalo.me/${ZALO_PHONE}?text=${encodeURIComponent("Báo giá gia công mã: " + item.name)}" target="_blank" rel="noopener" class="text-xs font-bold text-emerald-700 hover:underline">Báo giá</a>
+            </td>
+          </tr>
+        `;
+      }).join("");
+    }
+
+    function toggleOemItem(id) {
+      if (selectedOemIds.has(id)) selectedOemIds.delete(id);
+      else selectedOemIds.add(id);
+      updateCartBadges();
+    }
+
+    function updateCartBadges() {
+      const count = selectedOemIds.size;
+      const badge = document.getElementById("cartCountBadge");
+      const oemBtnCount = document.getElementById("oemCartBtnCount");
+      const headerCartBtn = document.getElementById("headerCartBtn");
+      if (badge) badge.textContent = count;
+      if (oemBtnCount) oemBtnCount.textContent = count;
+      if (headerCartBtn) {
+        headerCartBtn.classList.toggle("hidden", count === 0);
+        headerCartBtn.classList.toggle("flex", count > 0);
+      }
+    }
+
+    function openOemCartModal() {
+      const modal = document.getElementById("oemCartModal");
+      const container = document.getElementById("oemCartItems");
+      const items = OEM_CODES.filter((item) => selectedOemIds.has(item.id));
+      container.innerHTML = items.length
+        ? items.map((i) => `<div class="p-3 rounded-xl bg-slate-50 border border-slate-200 flex justify-between items-center text-sm"><div><strong>${escapeHtml(i.name)}</strong> <span class="text-slate-500">(${escapeHtml(i.active)})</span></div><button onclick="toggleOemItem('${escapeHtml(i.id)}'); openOemCartModal();" class="text-rose-600 text-xs font-bold">Bỏ</button></div>`).join("")
+        : `<div class="text-center text-sm text-slate-500 py-6">Chưa chọn mã gia công nào.</div>`;
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+    }
+
+    function closeOemCartModal() {
+      const modal = document.getElementById("oemCartModal");
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    }
+
+    function clearOemCart() {
+      selectedOemIds.clear();
+      updateCartBadges();
+      renderOem();
+      openOemCartModal();
+    }
+
+    function getOemCartSummaryText() {
+      const customer = document.getElementById("oemCustomerName")?.value.trim() || "";
+      const note = document.getElementById("oemLabelNote")?.value.trim() || "";
+      const items = OEM_CODES.filter((item) => selectedOemIds.has(item.id));
       const lines = [
-        headers.join(","),
-        ...filteredCache.map(r => [
-          r.stt,
-          r.group,
-          r.name,
-          r.active,
-          r.form,
-          r.batch,
-          r.image.startsWith("data:") ? "" : r.image,
-          r.note,
-          r.id
-        ].map(val => `"${String(val ?? "").replace(/"/g, '""')}"`).join(","))
-      ];
-      const blob = new Blob(["\uFEFF" + lines.join("\n")], { type: "text/csv;charset=utf-8;" });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = "ochigo-catalogue-dong-lo.csv";
-      a.click();
-      URL.revokeObjectURL(url);
+        "YÊU CẦU BÁO GIÁ GIA CÔNG ĐÓNG LÔ / NHÃN RIÊNG:",
+        customer ? `- Đơn vị: ${customer}` : null,
+        note ? `- Quy cách / Nhãn: ${note}` : null,
+        ...items.map((i, idx) => `${idx + 1}. ${i.name} (${i.active || i.form || ""})`)
+      ].filter(Boolean);
+      return lines.join("\n");
     }
 
-    function openJsonModal() {
-      document.getElementById("jsonError").textContent = "";
-      document.getElementById("jsonTextarea").value = JSON.stringify(items, null, 2);
-      document.getElementById("jsonModal").classList.add("open");
+    function copyOemCartText() {
+      const txt = getOemCartSummaryText();
+      navigator.clipboard?.writeText(txt);
+      alert("Đã copy danh sách mã đã chọn.");
     }
 
-    function closeJsonModal() {
-      document.getElementById("jsonModal").classList.remove("open");
+    function sendOemCartZalo() {
+      const txt = encodeURIComponent(getOemCartSummaryText());
+      window.open(`https://zalo.me/${ZALO_PHONE}?text=${txt}`, "_blank", "noopener");
     }
 
-    function applyJsonFromModal() {
-      const rawText = document.getElementById("jsonTextarea").value.replace(/^\uFEFF/, "").trim();
-      const errEl = document.getElementById("jsonError");
-      try {
-        const parsed = JSON.parse(rawText);
-        if (!Array.isArray(parsed)) {
-          errEl.textContent = "Dữ liệu phải là một mảng JSON dạng [ { ... }, { ... } ].";
-          return;
+    function buildGeneralInquiryText() {
+      const name = document.getElementById("inqName")?.value.trim() || "";
+      const phone = document.getElementById("inqPhone")?.value.trim() || "";
+      const type = document.getElementById("inqType")?.value || "";
+      const area = document.getElementById("inqArea")?.value.trim() || "";
+      const msg = document.getElementById("inqMessage")?.value.trim() || "";
+      return [
+        "YÊU CẦU TƯ VẤN / BÁO GIÁ OCHIGO VIỆT NAM:",
+        `- Họ tên/Đại lý: ${name || "(chưa nhập)"}`,
+        `- SĐT/Zalo: ${phone || "(chưa nhập)"}`,
+        `- Nhu cầu: ${type}`,
+        `- Khu vực: ${area || "(chưa nhập)"}`,
+        `- Nội dung: ${msg || "(chưa nhập)"}`
+      ].join("\n");
+    }
+
+    function submitInquiryForm(e) {
+      e.preventDefault();
+      const text = encodeURIComponent(buildGeneralInquiryText());
+      window.open(`https://zalo.me/${ZALO_PHONE}?text=${text}`, "_blank", "noopener");
+    }
+
+    function sendInquiryViaEmail() {
+      const subject = encodeURIComponent("Liên hệ tư vấn / báo giá Ochigo Việt Nam");
+      const body = encodeURIComponent(buildGeneralInquiryText());
+      window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
+    }
+
+    ["productModal", "oemCartModal"].forEach((id) => {
+      document.getElementById(id)?.addEventListener("click", (e) => {
+        if (e.target.id === id) {
+          if (id === "productModal") closeProductModal();
+          else closeOemCartModal();
         }
-        items = normalizeData(parsed);
-        rebuildFilterOptions();
-        render();
-        document.getElementById("sourceNotice").textContent =
-          `Đã cập nhật ${items.length} sản phẩm kèm hình ảnh và danh mục đóng lô.`;
-        closeJsonModal();
-      } catch (e) {
-        errEl.textContent = "JSON chưa hợp lệ: " + e.message;
-      }
-    }
+      });
+    });
 
-    async function loadExternalIfAvailable() {
-      const files = ["./data.json", "./catalogue.json", "./products.json"];
-      for (const f of files) {
-        try {
-          const res = await fetch(f, { cache: "no-store" });
-          if (!res.ok) continue;
-          const txt = (await res.text()).replace(/^\uFEFF/, "").trim();
-          const parsed = JSON.parse(txt);
-          if (Array.isArray(parsed) && parsed.length > 0) {
-            return { data: parsed, source: f };
-          }
-        } catch (_) {}
-      }
-      return null;
-    }
+    async function initCatalogue() {
+      try {
+        const res = await fetch("./products.json", { cache: "no-store" });
+        if (!res.ok) throw new Error(`HTTP ${res.status} khi tải products.json`);
+        const json = await res.json();
 
-    async function init() {
-      document.getElementById("qInput").addEventListener("input", render);
-      document.getElementById("groupSelect").addEventListener("change", render);
-      document.getElementById("batchSelect").addEventListener("change", render);
-      document.getElementById("formSelect").addEventListener("change", render);
-      document.getElementById("sortSelect").addEventListener("change", render);
+        const rawProducts = Array.isArray(json)
+          ? json
+          : (Array.isArray(json.products) ? json.products : (Array.isArray(json.commercial) ? json.commercial : []));
 
-      const external = await loadExternalIfAvailable();
-      if (external) {
-        items = normalizeData(external.data);
-        document.getElementById("sourceNotice").textContent =
-          `Đang tải ${items.length} sản phẩm từ ${external.source} (đã bật cột Hình ảnh & lọc Đóng lô).`;
-      } else {
-        items = normalizeData(INITIAL_ITEMS);
-        document.getElementById("sourceNotice").textContent =
-          `Đang hiển thị ${items.length} sản phẩm có cột Hình ảnh & bộ lọc Đóng lô. Bấm "Dán / Cập nhật JSON" để nạp thêm danh sách dài hơn hoặc gán link ảnh/đóng lô riêng.`;
+        COMMERCIAL_PRODUCTS = rawProducts.map(normalizeProduct);
+
+        if (json && !Array.isArray(json) && Array.isArray(json.oem)) {
+          OEM_CODES = json.oem.map((item, idx) => ({
+            id: item.id || `oem-${idx + 1}`,
+            name: item.name || item.code || "",
+            active: item.active || item.ingredients || "",
+            form: item.form || "",
+            note: item.note || "",
+            group: item.group || "Khác"
+          }));
+        }
+
+        const statEl = document.getElementById("statCommercialCount");
+        if (statEl) statEl.textContent = String(COMMERCIAL_PRODUCTS.length);
+
+        const heroBtnComm = document.getElementById("heroBtnCommercial");
+        if (heroBtnComm) heroBtnComm.textContent = `Xem Hàng Thương Mại (${COMMERCIAL_PRODUCTS.length} SP)`;
+      } catch (err) {
+        console.error("Lỗi nạp products.json:", err);
       }
 
-      rebuildFilterOptions();
-      render();
+      renderCommercialTabs();
+      renderCommercial();
+      initOemFilters();
+      renderOem();
+      updateCartBadges();
     }
 
-    init();
+    initCatalogue();
   </script>
 </body>
 </html>
