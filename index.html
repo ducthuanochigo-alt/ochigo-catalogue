@@ -216,7 +216,7 @@
         <div class="text-xs sm:text-sm text-slate-600 font-medium mt-0.5">Sản phẩm thương mại</div>
       </div>
       <div class="p-3 rounded-xl bg-amber-50/80">
-        <div class="text-2xl sm:text-3xl font-extrabold text-amber-700">400+</div>
+        <div id="statOemCount" class="text-2xl sm:text-3xl font-extrabold text-amber-700">400+</div>
         <div class="text-xs sm:text-sm text-slate-600 font-medium mt-0.5">Mã gia công đóng lô / OEM</div>
       </div>
       <div class="p-3 rounded-xl bg-teal-50/70">
@@ -560,7 +560,6 @@
         .replace(/'/g, "&#39;");
     }
 
-    // Tạo đường dẫn ảnh an toàn cho file ở thư mục gốc repo (hỗ trợ khoảng trắng, dấu tiếng Việt, viết hoa/thường)
     function buildImageSrc(imagePath = "") {
       const clean = String(imagePath || "").trim().replace(/^\/+/, "");
       if (!clean) return "";
@@ -601,6 +600,17 @@
         highlights,
         pack,
         zalo
+      };
+    }
+
+    function normalizeOemItem(item, idx) {
+      return {
+        id: item.id || `oem-${idx + 1}`,
+        name: item.name || item.code || item.product_name || "",
+        active: item.active || item.ingredients || item.composition || "",
+        form: item.form || item.type || "",
+        note: item.note || item.region || item.target || "",
+        group: item.group || item.category || "Khác"
       };
     }
 
@@ -792,15 +802,28 @@
 
     function initOemFilters() {
       const groupTabs = document.getElementById("oemGroupTabs");
-      if (!groupTabs) return;
-      const groups = ["Tất cả", "Thuốc trừ sâu", "Thuốc trừ bệnh", "Thuốc trừ cỏ", "Phân bón", "Khác"];
-      groupTabs.innerHTML = groups.map((g) => {
-        const active = selectedOemGroup === g;
-        const cls = active
-          ? "bg-emerald-700 text-white border-emerald-700"
-          : "bg-slate-50 text-slate-700 border-slate-200 hover:border-emerald-400";
-        return `<button onclick="selectOemGroup('${g}')" class="px-3 py-1.5 rounded-xl border text-xs font-bold transition ${cls}">${g}</button>`;
-      }).join("");
+      const formSelect = document.getElementById("oemFormFilter");
+      if (groupTabs) {
+        const groups = ["Tất cả", "Thuốc trừ sâu", "Thuốc trừ bệnh", "Thuốc trừ cỏ", "Phân bón", "Khác"];
+        OEM_CODES.forEach((item) => {
+          if (item.group && !groups.includes(item.group)) groups.push(item.group);
+        });
+        groupTabs.innerHTML = groups.map((g) => {
+          const active = selectedOemGroup === g;
+          const cls = active
+            ? "bg-emerald-700 text-white border-emerald-700"
+            : "bg-slate-50 text-slate-700 border-slate-200 hover:border-emerald-400";
+          return `<button onclick="selectOemGroup('${escapeHtml(g)}')" class="px-3 py-1.5 rounded-xl border text-xs font-bold transition ${cls}">${escapeHtml(g)}</button>`;
+        }).join("");
+      }
+
+      if (formSelect) {
+        const currentVal = formSelect.value || "ALL";
+        const forms = Array.from(new Set(OEM_CODES.map((i) => (i.form || "").trim()).filter(Boolean)));
+        formSelect.innerHTML = `<option value="ALL">Tất cả dạng (WP, SC, EC, WG, SL...)</option>` +
+          forms.map((f) => `<option value="${escapeHtml(f)}">${escapeHtml(f)}</option>`).join("");
+        formSelect.value = forms.includes(currentVal) ? currentVal : "ALL";
+      }
     }
 
     function selectOemGroup(g) {
@@ -817,8 +840,20 @@
       if (formFilter) formFilter.value = "ALL";
       if (noteFilter) noteFilter.value = "ALL";
       if (searchInput) searchInput.value = "";
+      const clearBtn = document.getElementById("clearSearchBtn");
+      if (clearBtn) clearBtn.classList.add("hidden");
       initOemFilters();
       renderOem();
+    }
+
+    function matchOemNoteFilter(noteText, filterVal) {
+      if (!filterVal || filterVal === "ALL") return true;
+      const n = removeDiacritics(noteText || "");
+      if (filterVal === "HAS_NOTE") return n.trim().length > 0;
+      if (filterVal === "DANANG") return n.includes("da nang");
+      if (filterVal === "HUE") return n.includes("hue");
+      if (filterVal === "LOGO_SDT") return n.includes("logo") || n.includes("sdt") || n.includes("so dien thoai");
+      return true;
     }
 
     function renderOem() {
@@ -828,10 +863,15 @@
       if (!tbody) return;
 
       const q = removeDiacritics((document.getElementById("searchInput")?.value || "").trim());
+      const formVal = document.getElementById("oemFormFilter")?.value || "ALL";
+      const noteVal = document.getElementById("oemNoteFilter")?.value || "ALL";
+
       const rows = OEM_CODES.filter((item) => {
         if (selectedOemGroup !== "Tất cả" && item.group !== selectedOemGroup) return false;
+        if (formVal !== "ALL" && (item.form || "").trim() !== formVal) return false;
+        if (!matchOemNoteFilter(item.note, noteVal)) return false;
         if (!q) return true;
-        return removeDiacritics(`${item.name} ${item.active} ${item.form} ${item.note}`).includes(q);
+        return removeDiacritics(`${item.name} ${item.active} ${item.form} ${item.note} ${item.group}`).includes(q);
       });
 
       if (countEl) countEl.textContent = `${rows.length} mã gia công`;
@@ -965,36 +1005,52 @@
       });
     });
 
-    async function initCatalogue() {
+    async function tryFetchJson(path) {
       try {
-        const res = await fetch("./products.json", { cache: "no-store" });
-        if (!res.ok) throw new Error(`HTTP ${res.status} khi tải products.json`);
-        const json = await res.json();
+        const res = await fetch(path, { cache: "no-store" });
+        if (!res.ok) return null;
+        return await res.json();
+      } catch (_) {
+        return null;
+      }
+    }
 
-        const rawProducts = Array.isArray(json)
-          ? json
-          : (Array.isArray(json.products) ? json.products : (Array.isArray(json.commercial) ? json.commercial : []));
-
+    async function initCatalogue() {
+      const prodJson = await tryFetchJson("./products.json");
+      if (prodJson) {
+        const rawProducts = Array.isArray(prodJson)
+          ? prodJson
+          : (Array.isArray(prodJson.products) ? prodJson.products : (Array.isArray(prodJson.commercial) ? prodJson.commercial : []));
         COMMERCIAL_PRODUCTS = rawProducts.map(normalizeProduct);
 
-        if (json && !Array.isArray(json) && Array.isArray(json.oem)) {
-          OEM_CODES = json.oem.map((item, idx) => ({
-            id: item.id || `oem-${idx + 1}`,
-            name: item.name || item.code || "",
-            active: item.active || item.ingredients || "",
-            form: item.form || "",
-            note: item.note || "",
-            group: item.group || "Khác"
-          }));
+        if (!Array.isArray(prodJson) && Array.isArray(prodJson.oem)) {
+          OEM_CODES = prodJson.oem.map(normalizeOemItem);
         }
+      }
 
-        const statEl = document.getElementById("statCommercialCount");
-        if (statEl) statEl.textContent = String(COMMERCIAL_PRODUCTS.length);
+      if (OEM_CODES.length === 0) {
+        const oemJson = await tryFetchJson("./oem.json");
+        if (oemJson) {
+          const rawOem = Array.isArray(oemJson)
+            ? oemJson
+            : (Array.isArray(oemJson.oem) ? oemJson.oem : (Array.isArray(oemJson.items) ? oemJson.items : []));
+          OEM_CODES = rawOem.map(normalizeOemItem);
+        }
+      }
 
-        const heroBtnComm = document.getElementById("heroBtnCommercial");
-        if (heroBtnComm) heroBtnComm.textContent = `Xem Hàng Thương Mại (${COMMERCIAL_PRODUCTS.length} SP)`;
-      } catch (err) {
-        console.error("Lỗi nạp products.json:", err);
+      const statCommEl = document.getElementById("statCommercialCount");
+      if (statCommEl && COMMERCIAL_PRODUCTS.length > 0) {
+        statCommEl.textContent = String(COMMERCIAL_PRODUCTS.length);
+      }
+
+      const statOemEl = document.getElementById("statOemCount");
+      if (statOemEl && OEM_CODES.length > 0) {
+        statOemEl.textContent = String(OEM_CODES.length);
+      }
+
+      const heroBtnComm = document.getElementById("heroBtnCommercial");
+      if (heroBtnComm && COMMERCIAL_PRODUCTS.length > 0) {
+        heroBtnComm.textContent = `Xem Hàng Thương Mại (${COMMERCIAL_PRODUCTS.length} SP)`;
       }
 
       renderCommercialTabs();
