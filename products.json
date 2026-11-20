@@ -1655,12 +1655,12 @@
     "danhMuc": "Phân bón",
     "hinhAnh": "PACLO-SC25.png"
   },
-  {
+  {{
     "id": "guitar",
     "name": "Guitar",
     "brandLabel": "GUITAR",
     "category": "Phân bón",
-    "image": "GUITAR & PIANO",
+    "image": "guitar.png",
     "activeIngredients": "Available Phosphate (P2O5hh): 5%; Soluble Potash (K2Ohh): 25%; Độ ẩm: 5%",
     "additives": "Vitamin B1 (Thiamine), Sophora japonica extract, Monopotassium Phosphate, Potassium carbonate, Vitamin (Thiamine, Acid ascorbic...), Chelated (EDTA): Zn, Mg, Ca, Cu...",
     "targets": "Vô gạo nhanh, sáng bông, năng lượng, chắc cây, xanh lá đòng, tạo hạt vượt trội",
@@ -1676,14 +1676,14 @@
     "quy_cach": "500 ml",
     "phuGia": "Vitamin B1 (Thiamine), Sophora japonica extract, Monopotassium Phosphate, Potassium carbonate, Vitamin (Thiamine, Acid ascorbic...), Chelated (EDTA): Zn, Mg, Ca, Cu...",
     "danhMuc": "Phân bón",
-    "hinhAnh": "GUITAR & PIANO"
+    "hinhAnh": "guitar.png"
   },
   {
     "id": "piano",
     "name": "Piano",
     "brandLabel": "PIANO (NNV05-VEJETAMINE 20)",
     "category": "Phân bón",
-    "image": "GUITAR & PIANO",
+    "image": "piano.png",
     "activeIngredients": "Hữu cơ: 35%; Nts: 4%; Tỷ lệ C/N: 12; pHH2O: 5.0; Tỷ trọng: 1.1",
     "additives": "Phụ gia dinh dưỡng hữu cơ nhập khẩu Turkey",
     "targets": "Chuyển Vàng thành Xanh tức khắc, khỏe cây mướt lá đầy hạt sáng hạt, thúc đẩy chuyển hóa vào gạo nhanh, phục hồi cây suy yếu, dưỡng cây",
@@ -1699,7 +1699,7 @@
     "quy_cach": "500 ml",
     "phuGia": "Phụ gia dinh dưỡng hữu cơ nhập khẩu Turkey",
     "danhMuc": "Phân bón",
-    "hinhAnh": "GUITAR & PIANO"
+    "hinhAnh": "piano.png"
   },
   {
     "id": "cabozin",
