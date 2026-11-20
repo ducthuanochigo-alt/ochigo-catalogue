@@ -597,29 +597,29 @@
     "danhMuc": "Thuốc trừ sâu",
     "hinhAnh": "exceed 440ec.jpeg"
   },
-{
-      "id": "bo-doi-xy-simson-50sc-tuk-tuk-20sc",
-      "name": "BỘ ĐÔI XY (Simson 50SC Chai X + Tuk Tuk 20SC Chai Y)",
-      "brandLabel": "CHAI X / CHAI Y",
-      "category": "Thuốc trừ sâu",
-      "image": "bo-doi-xy.jpg",
-      "activeIngredients": "Simson 50SC (Chai X): Fenpyroximate 50 g/l; Tuk Tuk 20SC (Chai Y): Lambda-cyhalothrin 10% w/w + Thiamethoxam 10% w/w",
-      "additives": "Special Additives 950 g/l (Chai X); Special Additives 80% w/w (Chai Y)",
-      "targets": "Sâu hành, nhện đỏ, rệp muội, bọ trĩ, sâu tơ...",
-      "dosage": "50ml chai X + 50ml chai Y pha 25 lít nước",
-      "packing": "240 ml",
-      "hoatChat": "Simson 50SC (Chai X): Fenpyroximate 50 g/l; Tuk Tuk 20SC (Chai Y): Lambda-cyhalothrin 10% w/w + Thiamethoxam 10% w/w",
-      "hoat_chat": "Simson 50SC (Chai X): Fenpyroximate 50 g/l; Tuk Tuk 20SC (Chai Y): Lambda-cyhalothrin 10% w/w + Thiamethoxam 10% w/w",
-      "dacTri": "Sâu hành, nhện đỏ, rệp muội, bọ trĩ, sâu tơ...",
-      "dac_tri": "Sâu hành, nhện đỏ, rệp muội, bọ trĩ, sâu tơ...",
-      "lieuLuong": "50ml chai X + 50ml chai Y pha 25 lít nước",
-      "lieu_luong": "50ml chai X + 50ml chai Y pha 25 lít nước",
-      "quyCach": "240 ml",
-      "quy_cach": "240 ml",
-      "phuGia": "Special Additives 950 g/l (Chai X); Special Additives 80% w/w (Chai Y)",
-      "danhMuc": "Thuốc trừ sâu",
-      "hinhAnh": "bo-doi-xy.jpg"
-    },
+  {
+    "id": "bo-doi-xy-simson-50sc-tuk-tuk-20sc",
+    "name": "BỘ ĐÔI XY (Simson 50SC Chai X + Tuk Tuk 20SC Chai Y)",
+    "brandLabel": "CHAI X / CHAI Y",
+    "category": "Thuốc trừ sâu",
+    "image": "bộ đôi.jpg",
+    "activeIngredients": "Simson 50SC (Chai X): Fenpyroximate 50 g/l; Tuk Tuk 20SC (Chai Y): Lambda-cyhalothrin 10% w/w + Thiamethoxam 10% w/w",
+    "additives": "Special Additives 950 g/l (Chai X); Special Additives 80% w/w (Chai Y)",
+    "targets": "Sâu hành, nhện đỏ, rệp muội, bọ trĩ, sâu tơ...",
+    "dosage": "50ml chai X + 50ml chai Y pha 25 lít nước",
+    "packing": "240 ml",
+    "hoatChat": "Simson 50SC (Chai X): Fenpyroximate 50 g/l; Tuk Tuk 20SC (Chai Y): Lambda-cyhalothrin 10% w/w + Thiamethoxam 10% w/w",
+    "hoat_chat": "Simson 50SC (Chai X): Fenpyroximate 50 g/l; Tuk Tuk 20SC (Chai Y): Lambda-cyhalothrin 10% w/w + Thiamethoxam 10% w/w",
+    "dacTri": "Sâu hành, nhện đỏ, rệp muội, bọ trĩ, sâu tơ...",
+    "dac_tri": "Sâu hành, nhện đỏ, rệp muội, bọ trĩ, sâu tơ...",
+    "lieuLuong": "50ml chai X + 50ml chai Y pha 25 lít nước",
+    "lieu_luong": "50ml chai X + 50ml chai Y pha 25 lít nước",
+    "quyCach": "240 ml",
+    "quy_cach": "240 ml",
+    "phuGia": "Special Additives 950 g/l (Chai X); Special Additives 80% w/w (Chai Y)",
+    "danhMuc": "Thuốc trừ sâu",
+    "hinhAnh": "bộ đôi.jpg"
+  },
   {
     "id": "djong-24ec",
     "name": "Djong 24EC",
@@ -1655,12 +1655,12 @@
     "danhMuc": "Phân bón",
     "hinhAnh": "PACLO-SC25.png"
   },
-  {{
+  {
     "id": "guitar",
     "name": "Guitar",
     "brandLabel": "GUITAR",
     "category": "Phân bón",
-    "image": "guitar.png",
+    "image": "GUITAR & PIANO.jpg",
     "activeIngredients": "Available Phosphate (P2O5hh): 5%; Soluble Potash (K2Ohh): 25%; Độ ẩm: 5%",
     "additives": "Vitamin B1 (Thiamine), Sophora japonica extract, Monopotassium Phosphate, Potassium carbonate, Vitamin (Thiamine, Acid ascorbic...), Chelated (EDTA): Zn, Mg, Ca, Cu...",
     "targets": "Vô gạo nhanh, sáng bông, năng lượng, chắc cây, xanh lá đòng, tạo hạt vượt trội",
@@ -1676,14 +1676,14 @@
     "quy_cach": "500 ml",
     "phuGia": "Vitamin B1 (Thiamine), Sophora japonica extract, Monopotassium Phosphate, Potassium carbonate, Vitamin (Thiamine, Acid ascorbic...), Chelated (EDTA): Zn, Mg, Ca, Cu...",
     "danhMuc": "Phân bón",
-    "hinhAnh": "guitar.png"
+    "hinhAnh": "GUITAR & PIANO.jpg"
   },
   {
     "id": "piano",
     "name": "Piano",
     "brandLabel": "PIANO (NNV05-VEJETAMINE 20)",
     "category": "Phân bón",
-    "image": "piano.png",
+    "image": "GUITAR & PIANO.jpg",
     "activeIngredients": "Hữu cơ: 35%; Nts: 4%; Tỷ lệ C/N: 12; pHH2O: 5.0; Tỷ trọng: 1.1",
     "additives": "Phụ gia dinh dưỡng hữu cơ nhập khẩu Turkey",
     "targets": "Chuyển Vàng thành Xanh tức khắc, khỏe cây mướt lá đầy hạt sáng hạt, thúc đẩy chuyển hóa vào gạo nhanh, phục hồi cây suy yếu, dưỡng cây",
@@ -1699,7 +1699,7 @@
     "quy_cach": "500 ml",
     "phuGia": "Phụ gia dinh dưỡng hữu cơ nhập khẩu Turkey",
     "danhMuc": "Phân bón",
-    "hinhAnh": "piano.png"
+    "hinhAnh": "GUITAR & PIANO.jpg"
   },
   {
     "id": "cabozin",
@@ -1936,7 +1936,7 @@
     "name": "Pilot 15AB",
     "brandLabel": "ỐC 15",
     "category": "Thuốc trừ ốc",
-    "image": "PILOT 15AB",
+    "image": "PILOT 15AB.png",
     "activeIngredients": "Metaldehyde 15% w/w",
     "additives": "Special Additives 85% w/w",
     "targets": "Ốc bươu vàng, ốc sên, ốc nhớt",
@@ -1952,14 +1952,14 @@
     "quy_cach": "1 kg",
     "phuGia": "Special Additives 85% w/w",
     "danhMuc": "Thuốc trừ ốc",
-    "hinhAnh": "PILOT 15AB"
+    "hinhAnh": "PILOT 15AB.png"
   },
   {
     "id": "np-snailicide-700wp",
     "name": "NP Snailicide 700WP",
     "brandLabel": "ỐC GONIC",
     "category": "Thuốc trừ ốc",
-    "image": "NP SNAILICIDE 700WP",
+    "image": "NP SNAILICIDE 700WP.png",
     "activeIngredients": "Niclosamide 700 g/kg",
     "additives": "Special additives 300 g/kg",
     "targets": "Ốc bươu vàng",
@@ -1975,7 +1975,7 @@
     "quy_cach": "100 g",
     "phuGia": "Special additives 300 g/kg",
     "danhMuc": "Thuốc trừ ốc",
-    "hinhAnh": "NP SNAILICIDE 700WP"
+    "hinhAnh": "NP SNAILICIDE 700WP.png"
   },
   {
     "id": "boostup",
